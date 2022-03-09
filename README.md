@@ -1,1 +1,1 @@
-# prjx
+# prjx templates
