@@ -165,15 +165,13 @@ and also iPads specifically.
     align-items: stretch;
 }
 #navDeskPri21 nav a {
-    font-family: "robotoC";
-    font-weight:700;
-    font-size:1.2em;
-    letter-spacing: 0.03em;
+    font-family: "twk";
+    font-weight:300;
+    font-size:1em;
     padding-left:0.3em;
     padding-right:0.3em;
     border-bottom:4px solid #fff;
     border-top:4px solid rgba(0,0,0,0);
-    text-transform: uppercase;
     text-align: center;
     display: flex;
     align-items: center;
@@ -272,7 +270,7 @@ div#strip21 a.cart h5 {
     margin:0;
     padding: 0;
     color: rgba(120,120,120,1.0);
-    font-family: 'robotoC';
+    font-family: 'twk';
     font-size:1.2em;
 }
 div#strip21 a.cart:hover h5 {

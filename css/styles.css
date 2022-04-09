@@ -7,8 +7,7 @@
 /* typography */
 h1, h2, h3,
 .big, .bigger, .imgTeaser .title {
-    font-family: "robotoC";
-    text-transform: uppercase;
+    font-family: "twk";
 }
 
 .centerMe {
@@ -45,20 +44,20 @@ p {
     max-width:95%;
 }
 h1, .bigger, .imgTeaser .title {
-    font-size: 2.5em;
+    font-size: 2.2em;
     line-height: 1.05em;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.025em;
 
 }
 h2, .big {
     font-size: 1.6em;
     line-height: 1.3em;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.02em;
     padding-top: 0.3em;
 
 }
 h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.1em;
     letter-spacing: 0.02em;
 }
@@ -169,8 +168,8 @@ nav a span {
     align-items: flex-end;
 }
 #navDeskPri nav a {
-    font-family: "robotoC";
-    font-weight:700;
+    font-family: "twk";
+    font-weight:300;
     font-size:1em;
     letter-spacing: 0.03em;
     padding-left:0.9em;
@@ -178,7 +177,6 @@ nav a span {
     line-height:54px;
     border-bottom:4px solid #fff;
     border-top:2px solid #fff;
-    text-transform: uppercase;
 }
 #navDeskPri nav a.activeLink {
     border-bottom:4px solid #000 ;
@@ -211,7 +209,7 @@ div.topNav nav a {
     border-left: 1px solid #e9e9e9;
 }
 div.topNav nav a:first-child {
-    font-family: "robotoC";
+    font-family: "twk";
     font-weight:300;
     font-size:0.85em;
     padding: 1em 1.5em 0.8em 1.5em;
@@ -241,7 +239,7 @@ aside nav a {
 }
 
 div.tagLine h2 {
-    font-family: "robotoC";
+    font-family: "twk";
     font-style: italic;
     font-weight:300;
     font-size:0.8em;
@@ -292,11 +290,9 @@ p.financeTheme {
 
 
 .gridRow .imgTeaser {
-    font-family: "robotoC";
-    text-transform: uppercase;
+    font-family: "twk";
     font-weight: 700;
     font-size: 1em;
-    letter-spacing: 0.03em;
 }
 
 .gridRow .imgTeaser a {
@@ -320,12 +316,10 @@ p.financeTheme {
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    font-family: "robotoC";
-    text-transform: uppercase;
+    font-family: "twk";
     text-decoration: none;
     font-size: 1em;
-    font-weight: 700;
-    letter-spacing: 0.04em;
+    font-weight: 500;
     text-align:center;
     margin-top:5px;
     margin-bottom:5px;
@@ -690,14 +684,14 @@ table thead {
 }
 .big {
     line-height:1em;
-    font-weight:900;
+    font-weight:700;
     margin-bottom:0.3em;
     padding:0;
     padding-bottom: 0.2em;
 }
 .bigger {
     line-height:0.9em;
-    font-weight:900;
+    font-weight:700;
     margin-bottom:0.3em;
     padding:0;
     padding-bottom: 0.2em;
@@ -761,7 +755,6 @@ footer ul.vanilla {
 
 #breadcrumb > nav {
     font-size: 11px;
-    text-transform: uppercase;
 }
 #breadcrumb > nav a.activeLink {
     color:rgba(239,10,10,1.0);
@@ -845,10 +838,8 @@ div.related article.productTeasers > header {
 }
 div.related article.productTeasers > header h3,
 div.tabContent h3 {
-    font-family: "robotoC";
-    text-transform: uppercase;
+    font-family: "twk";
     font-size:1.3em;
-    letter-spacing: 0.02em;
     font-weight:700;
 }
 div.related article.productTeasers > header span,
@@ -990,7 +981,7 @@ div#navDeskSec {
     }
 }
 html, body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", twk, "Helvetica Neue", Arial, sans-serif;
     font-family: "sf";
     font-weight: 300;
     font-size: 16px;
@@ -1227,7 +1218,6 @@ div.qfilters a i {
     color:rgba(40,40,40,0.15);
 }
 div.qfilters a > span {
-    text-transform: uppercase;
     font-size:0.9em;
     font-weight:700;
 }
@@ -3604,7 +3594,7 @@ div.owl-brand-slider strong {
 div.owl-carousel-slider h1,
 div.owl-brand-slider h1 {
     font-size:5.8em;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 0.95em;
     margin: 0;
     letter-spacing: -1px;
@@ -3612,18 +3602,14 @@ div.owl-brand-slider h1 {
 div.owl-carousel-slider h2,
 div.owl-brand-slider h2 {
     font-size:3.5em;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1em;
     letter-spacing: -0.5px;
-}
-div.owl-brand-slider h2,
-div.owl-brand-slider h3 {
-    text-transform: uppercase;
 }
 div.owl-carousel-slider h3,
 div.owl-brand-slider h3 {
     font-size:2em;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.2em;
 }
 div.owl-carousel-slider h4,
@@ -3701,9 +3687,6 @@ div.owl-brand-slider h4 {
     div.owl-brand-slider h3 {
         font-size: 1.4em;
         line-height: 1.1em;
-    }
-    div.owl-brand-slider h3 {
-        text-transform: uppercase;
     }
     div.owl-carousel-slider h4,
     div.owl-brand-slider h4 {
@@ -4005,10 +3988,10 @@ article.customShop p {
    max-width:100%;
 }
 article.customShop h2 {
-    font-size:2.1em;
+    font-size:1.8em;
 }
 article.customShop h3 {
-    font-weight:600;
+    font-weight:500;
     font-size:1.6em;
 }
 .featureProduct .featDesc i,
@@ -4168,11 +4151,11 @@ div.shopProduct p {
    max-width:100%;
 }
 div.shopProduct h2 {
-    font-size:2.1em;
+    font-size:2em;
 }
 div.shopProduct h3 {
-    font-weight:600;
-    font-size:1.6em;
+    font-weight:700;
+    font-size:1.8em;
 }
 div.shopProduct a.ctaShop {
     color: rgba(255,255,255,1.0);
@@ -4255,9 +4238,6 @@ div.carouselThumbs.shopProduct div.item div.shopDesc h5,
 div.carouselThumbs.shopProduct div.item div.shopDesc h6 {
     font-size: 12px;
     line-height: 1.3em;
-}
-div.carouselThumbs.shopProduct div.item div.shopDesc h5 {
-    text-transform: uppercase;
 }
 
 
@@ -4431,8 +4411,7 @@ header.brand-header nav a:visited {
     text-decoration: none;
     font-weight: 700;
     font-size:1.1em;
-    text-transform: uppercase;
-    font-family: "robotoC";
+    font-family: "twk";
     padding: 15px 20px;
     flex-basis: 40%;
     margin-right:7px;
@@ -4533,11 +4512,9 @@ main.brand-micro article.gridRow {
     padding-bottom:2.5vw;
 }
 main.brand-micro .gridRow section h3 {
-    font-family: "robotoC";
-    text-transform: uppercase;
+    font-family: "twk";
     font-weight: 700;
     font-size: 1em;
-    letter-spacing: 0.03em;
 }
 main.brand-micro .gridRow section h3  {
     font-size: 1.05em;
