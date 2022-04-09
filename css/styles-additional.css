@@ -177,7 +177,7 @@ and also iPads specifically.
     align-items: center;
 }
 #navDeskPri21 nav a.activeLink {
-    border-bottom:4px solid #000 ;
+    border-bottom:4px solid rgba(87,166,123,1.0) ;
 }
 @media screen and (min-width: 1001px) and (max-width:1300px) {
     #navDeskPri21 nav a {
@@ -229,7 +229,7 @@ div#strip21 div.topNav nav a i {
 }
 div#strip21 div.topNav nav a:hover,
 div#strip21 div.topNav nav a:hover i {
-    color:rgba(255,0,0,1.0);
+    color:rgba(87,166,123,1.0)
 }
 div#strip21 div.topNav nav a span {
     color:rgba(140,140,140,1.0);  
@@ -274,7 +274,7 @@ div#strip21 a.cart h5 {
     font-size:1.2em;
 }
 div#strip21 a.cart:hover h5 {
-    color: rgba(255,0,0,1.0);
+    color: rgba(87,166,123,1.0)
 }
 div#strip21 a.cart.active {
     border:1px solid #79D900 !important;
@@ -368,7 +368,7 @@ div#strip21 a.cart.active:hover i {
     color: rgba(120,120,120,1.0);
 }
 .searchTDstyle button.bcs-searchbox-submit:hover i {
-    color: rgba(255,0,0,1.0);
+    color: rgba(87,166,123,1.0)
 }
 
 /* need a tweener catch for v.small desktops 
