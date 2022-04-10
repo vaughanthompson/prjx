@@ -1085,3 +1085,21 @@ div.owl-brand-slider h4 {
         font-size: 1.8em;
     }
 }
+
+
+
+
+
+/* 2022 live chat embed status */
+span.chatStatus {
+    font-size: 0.7em;
+    padding:0.2em 0.6em;
+    background-color: #ccc;
+    color: #000000 !important;
+    border-radius: 20px;
+}
+
+span.chatStatus.online {
+    background-color: rgba(87,166,123,1.0);
+    color: #fff !important;
+}
