@@ -149,7 +149,9 @@ a:hover, a:active {
     color:rgba(87,166,123,1.0);
 }
 a.activeLink {
-    font-weight:700 !important;
+    font-weight:500 !important;
+    color:rgba(87,166,123,1.0) !important;
+
  }
 #masthead nav {
     display: flex;
