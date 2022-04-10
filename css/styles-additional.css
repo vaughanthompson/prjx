@@ -145,7 +145,10 @@ and also iPads specifically.
 /* new desktop navigation */
 /* navigation and links */
 #strip21,
-#navDeskSec21,
+#navDeskSec21 {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
 #navDeskPri21 {
     padding-left: 10vw;
     padding-right: 10vw;
@@ -155,7 +158,7 @@ and also iPads specifically.
     background-color: #000000;
     background-image: url(/images/pattern-fadeRL.svg);
     background-repeat: no-repeat;
-    background-size: 25%;
+    background-size: 23%;
     background-position: 105% 65%;
 }
 
@@ -216,7 +219,7 @@ div#strip21 div.topNav {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: 1.25em;
     margin-bottom: 1.25em;
 }
 div#strip21 div.topNav nav {
@@ -724,3 +727,361 @@ div.couponFrame div.offerCopy h2 {
         padding-top:4vh;
     }
 }  
+
+
+
+
+
+
+/* 2022 new sliders */
+
+div.owl-carousel-slider,
+.owl-carousel-related {
+    margin-bottom: 1vw;
+    position: relative;
+}
+div.owl-brand-slider,
+article.teaser.banner {
+    margin-bottom: 0;
+    position: relative;
+}
+div.owl-carousel-slider div.item,
+div.owl-brand-slider div.item {
+    height: 75vh;
+    /* prevent flashing on infinite loop */
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.0, 1.0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+div.owl-carousel-slider.shop div.item {
+    height: 45vh;
+    /* prevent flashing on infinite loop */
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.0, 1.0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+div.owl-brand-slider div.item {
+    height: 75vh;
+}
+div.owl-carousel-slider div.picturefill-background {
+    height:75vh;
+}
+div.owl-carousel-slider.shop div.picturefill-background {
+    height:45vh;
+}
+div.owl-brand-slider div.picturefill-background,
+article.teaser.banner div.picturefill-background {
+    height:60vh;
+}
+div.owl-brand-slider.series div.picturefill-background {
+    height:60vh;
+    padding-top:4vh;
+    padding-bottom:4vh;
+}
+div.owl-brand-slider.series div.item {
+    height:68vh;
+}
+
+div.owl-carousel-slider div.picturefill-background div.scontain,
+div.owl-brand-slider div.picturefill-background div.scontain,
+article.teaser.banner div.picturefill-background div.scontain {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex:1 1 auto;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.2), rgba(0,0,0,0.0),rgba(0,0,0,0.2),rgba(0,0,0,0.5));
+}
+div.owl-brand-slider.series div.picturefill-background div.scontain {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    flex:1 1 auto;
+    background-image:none;
+}
+div.owl-carousel-slider div.picturefill-background div.scontain img,
+div.owl-brand-slider div.picturefill-background div.scontain img,
+article.teaser.banner div.picturefill-background div.scontain img {
+    margin: 0px auto;
+}
+div.owl-brand-slider.series div.picturefill-background div.scontain img {
+    margin: 0px;
+}
+
+div.owl-carousel-slider div.picturefill-background div.scontain.left,
+div.owl-brand-slider div.picturefill-background div.scontain.left,
+article.teaser.banner div.picturefill-background div.scontain.left {
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 10vw;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.1), rgba(0,0,0,0.0));
+
+}
+div.owl-carousel-slider.shop div.picturefill-background div.scontain.left {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.6), rgba(0,0,0,0.0));
+}
+div.owl-carousel-slider div.picturefill-background div.scontain.right,
+div.owl-brand-slider div.picturefill-background div.scontain.right,
+article.teaser.banner div.picturefill-background div.scontain.right {
+    justify-content: flex-end;
+    text-align: left;
+    padding-right: 10vw;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.5),rgba(0,0,0,0.1), rgba(0,0,0,0.0));
+}
+div.owl-carousel-slider div.picturefill-background div.scontain.left img,
+div.owl-carousel-slider div.picturefill-background div.scontain.right img,
+div.owl-brand-slider div.picturefill-background div.scontain.left img,
+div.owl-brand-slider div.picturefill-background div.scontain.right img,
+article.teaser.banner div.picturefill-background div.scontain.left img,
+article.teaser.banner div.picturefill-background div.scontain.right img {
+    max-width:90%;
+    margin:0;
+}
+div.owl-carousel-slider div.picturefill-background div.scontain.top,
+div.owl-brand-slider div.picturefill-background div.scontain.top,
+article.teaser.banner div.picturefill-background div.scontain.top {
+    align-items: flex-start;
+}
+div.owl-carousel-slider div.picturefill-background div.scontain.bottom,
+div.owl-brand-slider div.picturefill-background div.scontain.bottom,
+article.teaser.banner div.picturefill-background div.scontain.bottom {
+    align-items: flex-end;
+}
+
+div.owl-carousel-slider div.picturefill-background section,
+div.owl-brand-slider div.picturefill-background section,
+article.teaser.banner div.picturefill-background section {
+    width: 45%;
+    margin-top:7vh;
+    margin-bottom:7vh;
+}
+div.owl-carousel-slider.shop  div.picturefill-background section {
+    width: 65%;
+    margin-top:5vh;
+    margin-bottom:5vh;   
+}
+
+div.owl-brand-slider div.picturefill-background section,
+article.teaser.banner div.picturefill-background section {
+    width: 55%;
+    margin-top:7vh;
+    margin-bottom:7vh;
+}
+div.owl-brand-slider.series div.picturefill-background section {
+    width: 70%;
+    padding-left: 0;
+}
+@media screen and (min-width:1000px) {
+    div.owl-brand-slider.series div.picturefill-background section {
+        width: 45%;
+        padding-left: 5.5vw;
+        margin-left:0;
+    }
+} 
+
+div.owl-carousel-slider img.slider-image,
+div.owl-brand-slider img.slider-image,
+article.teaser.banner img.slider-image {
+    display: block;
+}
+div.owl-carousel-slider a.ctaButton {
+    background-color: rgba(87,166,123,1.0);
+    border-color:rgba(87,166,123,1.0);
+    color:rgba(0,0,0,1.0);
+    display: inline-block;
+    margin-top: 1em;
+}
+div.owl-carousel-slider a.ctaButton:hover {
+    background-color: rgba(255,255,255,1.0);
+    border-color:rgba(255,255,255,1.0);
+    color:rgba(87,166,123,1.0);
+}
+
+div.owl-brand-slider a.ctaButton,
+article.teaser.banner a.ctaButton {
+    background-color: rgba(255,255,255,1.0);
+    border-color:rgba(255,255,255,1.0);
+    color:rgba(40,40,40,1.0);
+    display: inline-block;
+    margin-top: 0.5em;
+    border-radius: 0;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+div.owl-brand-slider a.ctaButton:hover,
+article.teaser.banner a.ctaButton:hover {
+    background-color: rgba(40,40,40,1.0);
+    border-color:rgba(40,40,40,1.0);
+    color:rgba(255,255,255,1.0);
+}
+
+div.owl-carousel-slider h1,
+div.owl-carousel-slider h2,
+div.owl-carousel-slider h3,
+div.owl-carousel-slider h4,
+div.owl-carousel-slider h5,
+div.owl-carousel-slider h6,
+div.owl-carousel-slider p,
+div.owl-brand-slider h1,
+div.owl-brand-slider h2,
+div.owl-brand-slider h3,
+div.owl-brand-slider h4,
+div.owl-brand-slider h5,
+div.owl-brand-slider h6,
+div.owl-brand-slider p {
+    color: #ffffff;
+    text-transform: none;
+    padding:0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.owl-brand-slider.series h1,
+div.owl-brand-slider.series h2,
+div.owl-brand-slider.series h3,
+div.owl-brand-slider.series h4,
+div.owl-brand-slider.series h5,
+div.owl-brand-slider.series h6,
+div.owl-brand-slider.series p {
+    color: rgba(40,40,40,1.0);
+}
+
+div.owl-carousel-slider strong,
+div.owl-brand-slider strong {
+    color:var(--brand2);
+}
+div.owl-carousel-slider h1,
+div.owl-brand-slider h1 {
+    font-size:5.8em;
+    font-weight: 700;
+    line-height: 0.95em;
+    margin: 0;
+    letter-spacing: -1px;
+}
+div.owl-carousel-slider h2,
+div.owl-brand-slider h2 {
+    font-size:3.5em;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: -0.5px;
+}
+div.owl-carousel-slider h3,
+div.owl-brand-slider h3 {
+    font-size:2em;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+div.owl-carousel-slider h4,
+div.owl-brand-slider h4 {
+    font-size:1.6em;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+div.owl-brand-slider h4 {
+    font-size:1.3em;
+    font-weight: 200;
+    line-height: 1.3em;
+
+}
+
+@media screen and (max-width: 750px) {
+    div.owl-brand-slider div.picturefill-background {
+        height:80vh;
+    }
+    div.owl-brand-slider div.item {
+        height: 80vh;
+    }
+    div.owl-carousel-slider.shop div.picturefill-background {
+        height:70vh;
+    }
+    div.owl-carousel-slider.shop div.item {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    
+    div.owl-carousel-slider div.picturefill-background div.scontain,
+    div.owl-brand-slider div.picturefill-background div.scontain {
+        padding-left: 5% !important;
+        align-items: flex-end !important;
+        justify-content: flex-start !important;
+        background-image: linear-gradient(to top right, rgba(0,0,0,0.8),rgba(0,0,0,0.4), rgba(0,0,0,0.0)) !important;
+    }
+    div.owl-brand-slider.series div.picturefill-background div.scontain {
+        background-image: none !important;
+    }
+    div.owl-brand-slider div.picturefill-background div.scontain {
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align:left;
+    }
+    div.owl-carousel-slider.shop div.picturefill-background div.scontain {
+        padding-left: 5% !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(0,0,0,0.8), rgba(0,0,0,0.2)) !important;
+    }
+    div.owl-carousel-slider div.picturefill-background section {
+        width: 80%;
+    }
+    div.owl-brand-slider div.picturefill-background section {
+        width: 80%;
+        /* margin:0px auto;*/
+    }
+    div.owl-carousel-slider h1,
+    div.owl-brand-slider h1 {
+        font-size: 3.4em;
+        letter-spacing: 0;
+        line-height: 1em;
+    }
+    div.owl-carousel-slider h2,
+    div.owl-brand-slider h2 {
+        font-size: 2.2em;
+        letter-spacing: 0;
+        line-height: 1em;
+    }
+    div.owl-carousel-slider h3,
+    div.owl-brand-slider h3 {
+        font-size: 1.4em;
+        line-height: 1.1em;
+    }
+    div.owl-carousel-slider h4,
+    div.owl-brand-slider h4 {
+        font-size: 1.05em;
+        line-height: 1.2em;
+    }
+    div.owl-carousel-slider h5,
+    div.owl-brand-slider h5 {
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+    div.owl-carousel-slider h6,
+    div.owl-brand-slider h6 {
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+    div.owl-carousel-slider p,
+    div.owl-brand-slider p {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    div.owl-carousel-slider div.picturefill-background section {
+        width: 65%;
+    }
+    div.owl-brand-slider div.picturefill-background section {
+        width: 65%;
+        margin:0px auto;
+    }
+    div.owl-carousel-slider p.h1,
+    div.owl-brand-slider p.h1 {
+        font-size: 1.8em;
+    }
+}

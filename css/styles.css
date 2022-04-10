@@ -311,20 +311,26 @@ p.financeTheme {
     background-color: rgba(245,245,245,1.0);
     border: 2px solid rgba(40,40,40,1.0);
     color:rgba(40,40,40,1.0);
-    padding: 12px 30px;
+    padding:  12px 36px 12px 12px;
     min-width: 90px;
     min-height: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    font-family: "twk";
+    justify-content: flex-start;
+    border-radius: 0;
     text-decoration: none;
     font-size: 1em;
     font-weight: 500;
     text-align:center;
     margin-top:5px;
     margin-bottom:5px;
+    position: relative;
+}
+a.ctaButton::after {
+    content: '>';
+    right:12px;
+    line-height: 1em;
+    position: absolute;
 }
 
 .imgTeaser.featureProduct .ctaShop, .imgTeaser.featureProduct a.ctaShop,
@@ -1001,7 +1007,7 @@ footer {
 }
 @media screen and (min-width: 1000px) {
     main {
-        padding:2vw 4vw;
+        padding:4vw 6vw;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -1078,8 +1084,11 @@ i.inline {
     width:auto;
     height:auto;
     padding: 0;
-    font-size:90%;
-    line-height: 0.9em;
+    font-size:1.3em;
+    line-height: 0.8em;
+    position: relative;
+    margin-top: -0.3em;
+    bottom: -0.15em;
 }
 i.brand-bg {
     color: #ffffff;
