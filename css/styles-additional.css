@@ -150,8 +150,8 @@ and also iPads specifically.
     padding-right: 8vw;
 }
 #navDeskPri21 {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 9vw;
+    padding-right: 9vw;
 }
 
 #masthead21 {
@@ -159,10 +159,11 @@ and also iPads specifically.
     background-image: url(/images/pattern-fadeRL.svg);
     background-repeat: no-repeat;
     background-size: 23%;
-    background-position: 105% 73%;
+    background-position: 105% 50%;
 }
 
-#masthead21 nav {
+#masthead21 nav,
+.brandNav nav {
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
@@ -180,15 +181,17 @@ and also iPads specifically.
 }
 #navDeskPri21 nav a {
     font-family: "twk";
-    padding:1em 0.4em;
-    border-bottom:5px solid #fff;
-    border-top:5px solid rgba(0,0,0,0);
+    padding:1.1em 0.4em;
+    border-bottom:4px solid #fff;
+    border-top:4px solid rgba(0,0,0,0);
     text-align: center;
     display: flex;
     align-items: center;
+    transition: 0.4s;
 }
+#navDeskPri21 nav a:hover,
 #navDeskPri21 nav a.activeLink {
-    border-bottom:5px solid rgba(87,166,123,1.0) ;
+    border-bottom:4px solid rgba(87,166,123,1.0) ;
 }
 #navDeskPri21 nav a img {
     height:27px;
@@ -737,7 +740,7 @@ div.couponFrame div.offerCopy h2 {
 
 div.owl-carousel-slider,
 .owl-carousel-related {
-    margin-bottom: 1vw;
+    margin-bottom: 0;
     position: relative;
 }
 div.owl-brand-slider,
@@ -889,36 +892,7 @@ div.owl-brand-slider img.slider-image,
 article.teaser.banner img.slider-image {
     display: block;
 }
-div.owl-carousel-slider a.ctaButton {
-    background-color: rgba(87,166,123,1.0);
-    border-color:rgba(87,166,123,1.0);
-    color:rgba(0,0,0,1.0);
-    display: inline-block;
-    margin-top: 1em;
-}
-div.owl-carousel-slider a.ctaButton:hover {
-    background-color: rgba(255,255,255,1.0);
-    border-color:rgba(255,255,255,1.0);
-    color:rgba(87,166,123,1.0);
-}
 
-div.owl-brand-slider a.ctaButton,
-article.teaser.banner a.ctaButton {
-    background-color: rgba(255,255,255,1.0);
-    border-color:rgba(255,255,255,1.0);
-    color:rgba(40,40,40,1.0);
-    display: inline-block;
-    margin-top: 0.5em;
-    border-radius: 0;
-    padding-top:15px;
-    padding-bottom:15px;
-}
-div.owl-brand-slider a.ctaButton:hover,
-article.teaser.banner a.ctaButton:hover {
-    background-color: rgba(40,40,40,1.0);
-    border-color:rgba(40,40,40,1.0);
-    color:rgba(255,255,255,1.0);
-}
 
 div.owl-carousel-slider h1,
 div.owl-carousel-slider h2,
@@ -1103,3 +1077,194 @@ span.chatStatus.online {
     background-color: rgba(87,166,123,1.0);
     color: #fff !important;
 }
+
+
+
+
+/* 2022 override legacy typography */
+html, body {
+    color: #000000;
+}
+p {
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+.header2022 p {
+    font-size: 0.8em;
+    font-weight: 200 !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+    margin:0;
+    padding:0;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+h1 {
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: -0.03em;
+    line-height: 1.1em;
+}
+.header2022 h1 {
+    font-size: 2.1em;
+    color: rgba(87,166,123,1.0);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    padding-bottom: 0.7em;
+    margin-bottom: 0.7em;
+}
+h2 {
+    font-weight: 700;
+    font-size: 2.1em;
+    letter-spacing: -0.03em;
+}
+h3 {
+    font-weight: 300;
+    font-size: 2.1em;
+    letter-spacing: -0.04em;
+}
+h4 {
+    font-weight: 300;
+    font-size: 1.8em;
+    letter-spacing: -0.03em;
+}
+h5 {
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: -0.02em;
+    line-height: 1.25em;
+}
+h6 {
+    font-weight: 300;
+    font-size: 1.3em;
+    letter-spacing: -0.02em;
+    line-height: 1.25em;
+}
+
+
+
+/* button styles */
+.ctaButton, a.ctaButton {
+    background-color: rgba(87,166,123,1.0);
+    color:rgba(0,0,0,1.0);
+    display: inline-block;
+    margin-top: 1em;
+    text-align: left;
+    border: 2px solid rgba(87,166,123,1.0);
+    padding:  12px 36px 12px 12px;
+    min-width: 90px;
+    min-height: 15px;
+    border-radius: 0;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom:5px;
+    position: relative;
+}
+a.ctaButton::after {
+    content: '>';
+    right:12px;
+    line-height: 1em;
+    position: absolute;
+}
+
+.imgTeaser.featureProduct .ctaShop, .imgTeaser.featureProduct a.ctaShop,
+.ctaShop, a.ctaShop {
+    background-color: rgba(239,10,10,1.0);
+    border-color:rgba(239,10,10,1.0);
+    color:rgba(255,255,255,1.0);
+
+}
+.ctaShop i, a.ctaShop i {
+    color: white;
+}
+
+.ctaButton:hover,
+.ctaButton.activeLink {
+    background-color: rgba(255,255,255,1.0);
+    border-color:rgba(255,255,255,1.0);
+    color:rgba(87,166,123,1.0);
+    cursor: pointer;
+}
+.imgTeaser.featureProduct a.ctaShop:hover,
+.ctaButton.ctaShop:hover {
+    background-color: rgba(255,255,255,1.0);
+    border-color:rgba(239,10,10,1.0);
+    color:rgba(239,10,10,1.0);
+}
+.ctaInline, a.ctaInline {
+   display: inline-block;
+}
+
+
+
+
+/* adjust for full-width mastheads */
+body > article.intro.header2022 {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0;
+}
+body > article.intro.header2022 > div.scontain {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+body > article.intro.header2022 > div.scontain > section {
+    padding: 0;
+}
+body > article.intro.header2022 > div.scontain > section:first-child {
+    margin: 2em 0 2.5em 10vw;
+    flex-basis: 55vw;
+    display: block;
+    align-self: center;
+}
+body > article.intro.header2022 > div.scontain > section:first-child > * {
+    max-width:100%;
+}
+body > article.intro.header2022 > div.scontain > section:last-child,
+body > article.intro.header2022 > div.scontain > section:last-child > div.imgTeaser {
+    min-width: 30vw;    
+    min-height: 30vw;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: 50% 50%;
+    border: none;
+    background-color:rgba(0,0,0,0);
+}
+body > article.intro.header2022 > div.scontain > section:first-child > p {
+    column-count: 2;
+    column-gap: 3vw;
+}
+body > article.intro.header2022 > div.scontain > section:last-child > div.imgTeaser {
+    background-image: url(/images/overlayArrow.svg);
+    background-size: auto 105%;
+    background-position: left center;
+}
+body > article.intro.header2022 > div.scontain > section:last-child > div.imgTeaser > div.scontain {
+    background-color:rgba(0,0,0,0);
+}
+
+
+
+/* 2022 adjust layout body */
+footer {
+    border-top:none;
+    background-color: rgba(87,166,123,1.0);
+}
+footer a {
+    transition: 0.3s;
+}
+footer a:hover {
+    color: #fff;
+}
+@media screen and (min-width: 1000px) {
+    main {
+        padding:3vw 8vw;
+    }
+    footer {
+        padding: 2vw 6vw;
+    }
+}
+

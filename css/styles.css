@@ -1027,19 +1027,16 @@ border-bottom: 1px solid #dedede;
 
 div.logo {
     display:flex;
-    padding-left:15px;
-    padding-right:25px;
+   
     width:160px;
     height: 70px;
     justify-content: center;
     align-items: center;
-    background:#000000;
 }
 div.logo svg {
     width:100%;
     height: auto;
     margin-top:3px;
-    background:#000000;
 }
 
 
@@ -1542,8 +1539,8 @@ div.brands a img {
 }
 
 footer div.brands {
-    margin-top: 2em;
-    justify-content: flex-start;
+    margin-top: 1em;
+    justify-content: space-between;
 }
 .modelWrapper div.brands {
     margin-bottom: 1em;
@@ -1558,21 +1555,20 @@ footer div.brands {
 main > div.brands,
 footer > div.brands {
     justify-content: space-between;
-    padding:1em 0vw;
-    margin-bottom: 1.2vw;
+    padding:1em 3vw;
+    margin-bottom: 1vw;
 }
 main div.brands a,
 footer > div.brands a {
     margin:0;
-    max-height: 35px;
-    flex:0 1 auto;
-    padding-left:5px;
-    padding-right: 5px;
+    max-height: 27px;
+    padding: 5px;
 }
 main div.brands a img,
 footer > div.brands a img {
-    width:100%;
-    height:auto;
+    width:auto;
+    height: 27px;
+
 }
 
 /* footer div.brands a {
@@ -1606,7 +1602,7 @@ footer > div.brands a img {
 @media screen and (min-width: 1300px) {
     main > div.brands,
     footer > div.brands {
-        padding:1em 8vw 1.5em 8vw;
+        padding:1em 2vw 1.5em 2vw;
     }
 }
 
@@ -2809,7 +2805,7 @@ div.cmsRelated {
         padding-right:2vw;
         padding-left: 2vw;
         padding-bottom:1em !important;
-        border-left: 1px solid #efefef;
+        border-left: 1px solid #000000;
     }
     footer section:first-child {
         border-left: none;
@@ -3535,36 +3531,9 @@ div.owl-brand-slider img.slider-image,
 article.teaser.banner img.slider-image {
     display: block;
 }
-div.owl-carousel-slider a.ctaButton {
-    background-color: rgba(239,10,10,1.0);
-    border-color:rgba(239,10,10,1.0);
-    color:rgba(255,255,255,1.0);
-    display: inline-block;
-    margin-top: 1em;
-}
-div.owl-carousel-slider a.ctaButton:hover {
-    background-color: rgba(255,255,255,1.0);
-    border-color:rgba(255,255,255,1.0);
-    color:rgba(239,10,10,1.0);
-}
 
-div.owl-brand-slider a.ctaButton,
-article.teaser.banner a.ctaButton {
-    background-color: rgba(255,255,255,1.0);
-    border-color:rgba(255,255,255,1.0);
-    color:rgba(40,40,40,1.0);
-    display: inline-block;
-    margin-top: 0.5em;
-    border-radius: 0;
-    padding-top:15px;
-    padding-bottom:15px;
-}
-div.owl-brand-slider a.ctaButton:hover,
-article.teaser.banner a.ctaButton:hover {
-    background-color: rgba(40,40,40,1.0);
-    border-color:rgba(40,40,40,1.0);
-    color:rgba(255,255,255,1.0);
-}
+
+
 
 div.owl-carousel-slider h1,
 div.owl-carousel-slider h2,
