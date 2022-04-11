@@ -1172,9 +1172,9 @@ a.ctaButton::after {
 
 .imgTeaser.featureProduct .ctaShop, .imgTeaser.featureProduct a.ctaShop,
 .ctaShop, a.ctaShop {
-    background-color: rgba(239,10,10,1.0);
-    border-color:rgba(239,10,10,1.0);
-    color:rgba(255,255,255,1.0);
+    background-color: rgba(87,166,123,1.0);
+    border-color:rgba(87,166,123,1.0);
+    color:rgba(0,0,0,1.0) !important;
 
 }
 .ctaShop i, a.ctaShop i {
@@ -1191,8 +1191,8 @@ a.ctaButton::after {
 .imgTeaser.featureProduct a.ctaShop:hover,
 .ctaButton.ctaShop:hover {
     background-color: rgba(255,255,255,1.0);
-    border-color:rgba(239,10,10,1.0);
-    color:rgba(239,10,10,1.0);
+    border-color:rgba(255,255,255,1.0);
+    color:rgba(87,166,123,1.0) !important;
 }
 .ctaInline, a.ctaInline {
    display: inline-block;
