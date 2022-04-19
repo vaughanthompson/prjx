@@ -1148,7 +1148,7 @@ h6 {
 /* button styles */
 .ctaButton, a.ctaButton {
     background-color: rgba(87,166,123,1.0);
-    color:rgba(0,0,0,1.0);
+    color:rgba(255,255,255,1.0);
     display: inline-block;
     margin-top: 1em;
     text-align: left;
@@ -1174,7 +1174,7 @@ a.ctaButton::after {
 .ctaShop, a.ctaShop {
     background-color: rgba(87,166,123,1.0);
     border-color:rgba(87,166,123,1.0);
-    color:rgba(0,0,0,1.0) !important;
+    color:rgba(255,255,255,1.0) !important;
 
 }
 .ctaShop i, a.ctaShop i {

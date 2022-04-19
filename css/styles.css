@@ -366,14 +366,14 @@ div.modelWrapper .ctaButton.ctaShop:hover {
 }
 
 .imgTeaser .ctaButton {
-    background-color: rgba(255,255,255,1.0);
-    border-color: rgba(255,255,255,1.0);
+    background-color: rgba(87,166,123,1.0);
+    border-color: rgba(87,166,123,1.0);
     display: inline-flex;
 }
 .imgTeaser .ctaButton:hover {
-    background: none;
+    background: rgba(255,255,255,1.0);
     border-color: rgba(255,255,255,1.0);
-    color: rgba(255,255,255,1.0);
+    color: rgba(87,166,123,1.0);
 }
 .ctaGreen,
 .ctaGreen:hover,
@@ -3997,7 +3997,7 @@ article.customShop .imgTeaser div.scontain {
 .imgTeaser.featureProduct div.scontain {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 article.customShop .imgTeaser.featureProduct div.scontain {
@@ -4143,14 +4143,14 @@ div.shopProduct a.ctaShop:hover {
 }
 
 div.shopProduct header {
-    border-bottom:4px solid rgba(239,10,10,1.0);
+    border-bottom:4px solid rgba(87,166,123,1.0);
     width:100%;
     margin-bottom: 1.5em;    
     padding: 0;
     padding-top:0 !important;
 }
 div.shopProduct.clearance header > * {
-    color: rgba(239,10,10,1.0);
+    color: rgba(87,166,123,1.0);
 }
 div.shopProduct {
     background-color: #ffffff;
@@ -4206,11 +4206,11 @@ div.carouselThumbs.shopProduct div.item div.shopDesc h6 {
 }
 div.carouselThumbs.shopProduct div.item div.shopDesc h4,
 div.carouselThumbs.shopProduct div.item div.shopDesc h5 {
-    color: rgba(239,10,10,1.0);
+    color: rgba(87,166,123,1.0);
 }
 div.carouselThumbs.shopProduct div.item div.shopDesc h4 {
     font-size: 1.2em;
-    font-weight: 800;
+    font-weight: 700;
 }
 div.carouselThumbs.shopProduct div.item div.shopDesc h5,
 div.carouselThumbs.shopProduct div.item div.shopDesc h6 {
