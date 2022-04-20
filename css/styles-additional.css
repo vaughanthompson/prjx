@@ -1268,3 +1268,150 @@ footer a:hover {
     }
 }
 
+
+
+
+/*
+div#breadcrumb,
+div.catWrapper,
+div.catWrapper header {
+    border:1px solid red;
+}
+*/
+div#breadcrumb {
+    padding:0 2em 1em 2em;
+    margin-bottom: 1em;
+}
+div.catWrapper > aside {
+    padding:1em 1.5em 1em 0;
+}
+div.catWrapper article > header {
+    padding:1em 1.5em;
+}
+div.catWrapper div.utils {
+    margin-bottom: 1.5em;
+    padding: 0 1.5em;
+}
+div.catWrapper div.utils > div {
+    padding: 0.5em 0;
+    border-color: rgba(87,166,123,1.0);
+}
+div.catWrapper div.utils div.sort > div:first-of-type {
+    display: flex;
+}
+div.catWrapper div.utils div.sort select {
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 0;
+}
+div.catWrapper div.utils h3 {
+    color: rgba(87,166,123,1.0);
+}
+div.catWrapper header h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+div.catWrapper h3,
+div.modelContain h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+div.catWrapper > aside h3 {
+    font-size: 1.2em;
+    color: rgba(87,166,123,1.0);
+}
+div.catGroup nav {
+    margin: 1em 0;
+    padding-bottom: 1em;
+    border-bottom:4px solid rgba(87,166,123,1.0);
+}
+div.modelWrapper h1 {
+    margin-bottom: 0.3em;
+    max-width: 100%;
+    color: rgba(87,166,123,1.0);
+}
+.tabBtns a.activeTab,
+.tabAutoSBtns a.activeTab {
+    color: rgba(87,166,123,1.0);
+    background-color: #ffffff;
+}
+main.brand-micro .tabBtns a.activeTab {
+    background-color: rgba(87,166,123,1.0);
+    color: #ffffff;
+}
+.stickyTabs .tabBtns {
+    margin:0 8vw;
+}
+.tabContainer header,
+.tabContainer div.related header {
+    border-bottom: 4px solid rgba(87,166,123,1.0) !important;
+    margin-bottom: 2em !important;
+    padding-bottom: 1.2em !important;
+    padding-top:0;
+}
+div.related article.productTeasers > header h3,
+div.tabContent h3 {
+    font-family: "twk";
+    font-size:1.4em;
+    font-weight:700;
+    color: rgba(87,166,123,1.0);
+}
+div.related article.productTeasers > header span,
+div.tabContent h3 span {
+    font-weight:300;
+}
+div.qfilters a {
+    text-decoration:none;
+    border:2px solid rgba(0,0,0,0.25);
+    color:rgba(0,0,0,0.25);
+    width:48px;
+    height:48px;
+    border-radius: 50%;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 3px;
+    font-size:1em;
+}
+div.qfilters a.activeLink {
+    border:2px solid rgba(87,166,123,1.0);
+    color:rgba(0,0,0,1.0);
+}
+div.qfilters a.activeLink i {
+    color:rgba(0,0,0,1.0);
+}
+div.qfilters a i {
+    font-size:1.4em;
+    color:rgba(0,0,0,0.25);
+}
+div.qfilters a > span {
+    font-size:0.9em;
+    font-weight:700;
+}
+div.qfilters a:not(.activeLink):hover,
+div.qfilters a:not(.activeLink):hover i {
+    color:rgba(87,166,123,1.0);
+    border-color:rgba(87,166,123,1.0);
+}
+div.pagination nav a {
+    border:1px solid rgba(240,240,240,1.0);
+    padding: 0.5vw 0.8vw;
+    margin-left:1px;
+    margin-right:1px;
+    text-decoration:none;
+    border-radius:0px;
+}
+div.pagination nav a.activeLink {
+    background-color: rgba(87,166,123,1.0);
+    border-color: rgba(0,0,0,1.0);
+    color: rgba(245,245,245,1.0) !important;
+}
+div.pagination nav a:first-child,
+div.pagination nav a:last-child {
+    border:none;
+}
+div.pagination nav a:not(.activeLink):hover {
+    color:rgba(0,0,0,1.0);
+    background-color: rgba(220,220,220,1.0);
+}
