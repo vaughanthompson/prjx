@@ -1163,7 +1163,10 @@ h6 {
     margin-bottom:5px;
     position: relative;
 }
-a.ctaButton::after {
+.ctaButton::after,
+a.ctaButton::after,
+.ctaShop::after,
+a.ctaShop::after {
     content: '>';
     right:12px;
     line-height: 1em;
@@ -1464,4 +1467,25 @@ div.sep {
     .tabContainer div.related header {
         border-bottom: 3px solid rgba(87,166,123,1.0) !important;
     }
+}
+
+.grid div.priceCTA h2 {
+    font-size:1.4em;
+    margin:0;
+}
+a.ctaShop, .ctaShop {
+   margin-bottom: 0 !important;
+}
+div.lozenge.itemDeal {
+    background-color: rgba(0,0,0,1.0);
+}
+div.lozenge.itemDeal h3 {
+   font-size: 0.8em;
+}
+.priceCTA div.ctaInner h2.wasPrice {
+    color:rgba(87,166,123,1.0);
+}
+p.wasPrice {
+    color:rgba(87,166,123,1.0);
+    font-weight: 600;
 }
