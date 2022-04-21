@@ -766,7 +766,7 @@ div.owl-carousel-slider.shop div.item {
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 div.owl-brand-slider div.item {
-    height: 75vh;
+    height: 60vh;
 }
 div.owl-carousel-slider div.picturefill-background {
     height:75vh;
@@ -1414,4 +1414,54 @@ div.pagination nav a:last-child {
 div.pagination nav a:not(.activeLink):hover {
     color:rgba(0,0,0,1.0);
     background-color: rgba(220,220,220,1.0);
+}
+
+
+/* brand micro site updates */
+div#carouselIndicator div#cI-hook > div.active {
+    background-color: rgba(87,166,123,1.0) !important;
+}
+header.brand-header a.active {
+    padding-top: 23px !important;
+    padding-bottom: 23px !important;
+    background-color: rgba(87,166,123,1.0) !important;
+    color: rgba(255,255,255,1.0) !important;
+}
+header.brand-header nav a:hover {
+    background-color: rgba(87,166,123,1.0);
+    color: rgba(255,255,255,1.0);
+}
+div.owl-brand-slider div.picturefill-background div.scontain {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    flex:1 1 auto;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.2), rgba(0,0,0,0.0),rgba(0,0,0,0.2),rgba(0,0,0,0.5));
+}
+main.brand-micro .tabBtns a {
+    display: inline-block;
+    padding:1.5vw 1vw;
+    font-weight:500;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+div.sep {
+    height:10px;
+    background-color: rgba(87,166,123,1.0);
+}
+@media screen and (max-width: 1000px) {
+    div.tabContent {
+        border-top: 1px solid rgba(87,166,123,1.0);
+    }
+}
+@media screen and (min-width: 1001px) {
+    main.brand-micro div.tabContainer {
+        border-bottom:10px solid rgba(87,166,123,1.0);
+    }
+    .tabContainer header,
+    .tabContainer div.related header {
+        border-bottom: 3px solid rgba(87,166,123,1.0) !important;
+    }
 }
