@@ -1235,6 +1235,8 @@ body > article.intro.header2022 > div.scontain > section:last-child > div.imgTea
     background-position: 50% 50%;
     border: none;
     background-color:rgba(0,0,0,0);
+    align-self: stretch;
+    overflow: hidden;
 }
 body > article.intro.header2022 > div.scontain > section:first-child > p {
     column-count: 2;
@@ -1248,7 +1250,36 @@ body > article.intro.header2022 > div.scontain > section:last-child > div.imgTea
 body > article.intro.header2022 > div.scontain > section:last-child > div.imgTeaser > div.scontain {
     background-color:rgba(0,0,0,0);
 }
-
+body.shopOnline > article.intro.header2022 {
+    background-color: rgba(87,166,123,1.0);
+}
+body.shopOnline > article.intro.header2022 > div.scontain > section:last-child,
+body.shopOnline > article.intro.header2022 > div.scontain > section:last-child > div.imgTeaser {
+    min-width: 25vw;
+    max-width: 25vw;    
+    min-height: 15vw;
+    align-self: stretch;
+    overflow: hidden;
+}
+body.shopOnline > article.intro.header2022 > div.scontain > section:last-child > div.imgTeaser {
+    background-image: url(/images/overlayArrowBLK.svg);
+    height: 100%;
+}
+body.shopOnline > article.intro.header2022 h1 {
+    color: #000000;
+    border: none;
+    padding-bottom: 0;
+}
+body.shopOnline > article.intro.header2022 > div.scontain > section:first-child > p {
+    column-count: 1;
+    max-width: 75%;
+}
+body.shopOnline > article.intro.header2022 a:link,
+body.shopOnline > article.intro.header2022 a:visited,
+body.shopOnline > article.intro.header2022 a:hover,
+body.shopOnline > article.intro.header2022 a:active {
+    color: #000000;
+}
 
 
 /* 2022 adjust layout body */
@@ -1269,6 +1300,7 @@ footer a:hover {
     footer {
         padding: 2vw 6vw;
     }
+
 }
 
 
@@ -1310,24 +1342,40 @@ div.catWrapper div.utils div.sort select {
 div.catWrapper div.utils h3 {
     color: rgba(87,166,123,1.0);
 }
-div.catWrapper header h2 {
-    font-size: 1.4em;
+div.catWrapper header h2,
+div.catWrapper.shopLanding h2 {
+    font-size: 1.6em;
     font-weight: 600;
 }
 div.catWrapper h3,
 div.modelContain h3 {
     font-size: 1.4em;
-    font-weight: 600;
+    font-weight: 600 !important;
+}
+div.catWrapper header h3 {
+    font-size: 1.6em;
 }
 div.catWrapper > aside h3 {
     font-size: 1.2em;
     color: rgba(87,166,123,1.0);
 }
-div.catGroup nav {
+div.catGroup nav,
+div.shopLanding aside.catSidebar nav {
     margin: 1em 0;
     padding-bottom: 1em;
     border-bottom:4px solid rgba(87,166,123,1.0);
 }
+body.shopOnline article.productTeasers {
+    margin-top: 2em;
+}
+@media screen and (min-width: 1000px) {
+    div.catWrapper > div {
+        flex-basis:65vw;
+    }
+
+}
+
+
 div.modelWrapper h1 {
     margin-bottom: 0.3em;
     max-width: 100%;
@@ -1489,3 +1537,56 @@ p.wasPrice {
     color:rgba(87,166,123,1.0);
     font-weight: 600;
 }
+
+
+/* autosearch tweaks */
+div.autoSearch {
+    margin-top: 2em;
+}
+div.autoSearch div.tabAutoSBtns a {
+    color:#ffffff;
+    background-color:rgba(159,159,159,1.0);
+    padding:1.0em 2em 0.9em 2em;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0;
+}
+div.autoSearch .ctaButton,
+div.autoSearch a.ctaButton {
+    margin-top: 0;
+    margin-bottom:5px;
+}
+
+
+/* shop tweaks */
+@media screen and (min-width: 1001px) {
+    div.shopLanding .grid.productTeasers section > div.item {
+        margin-bottom: 2em;
+    }
+    @supports (display: grid) {
+        div.shopLanding .grid.productTeasers section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+            grid-column-gap:3%;
+        }    
+    }
+    @supports not (display: grid) {
+        div.shopLanding .grid.productTeasers > div > section > div.item  {
+            flex-basis: 20%;
+            margin-right:2%;
+        }    
+    }   
+}
+article.productTeasers > div.scontain {
+    border-bottom:1px solid #ffffff;
+    padding-bottom:2em;
+    margin-bottom:2em;
+}
+
+
+div.shopLanding .grid.productTeasers picture.teaser > img {
+    object-fit: cover;
+    object-position: center;
+    height:auto;
+}
+

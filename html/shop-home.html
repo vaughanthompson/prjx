@@ -272,11 +272,10 @@
     <article class="intro header2022" >
         <div class="scontain">
             <section>
-                <h1>Welcome to the TDX Online Shop</h1>
-                <p>Here we offer a range of quality oils, consumables and filters for the home or enthusiast buyers. Order online for delivery New Zealand wide.</p>
-                <p>If you're in the trade, looking for bulk purchasing or wanting access to our full range of   - head on over to the TradeDoor to apply for an account.</p>
+                <h1>Welcome to the TDX Shop</h1>
+                <p>Here we offer a range of quality oils, consumables and filters for the home or enthusiast buyers. Order online for delivery New Zealand wide. If you're in the trade, looking for bulk purchasing or wanting access to our full range of   - head on over to the <a href="https://https://cptransdiesel.co.nz" target="_blank">TradeDoor to apply for an account.</a></p>
             </section>
-            <section style="background-image: url(/images/pattern-LR-flipped.svg);">
+            <section style="background-image: url(/images/pattern-LR-flippedBLK.svg);">
                 <div class="imgTeaser">
                     <div class="scontain">
                         <section>
@@ -760,7 +759,6 @@
         </article>
     </div>
 
-<script src="_framework/blazor.server.js"></script>
 
  
 
@@ -960,7 +958,55 @@
     
         
 
-
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                margin: 10,
+                rewind: true,
+                loop: false,
+                autoplay: false,
+                autoplayTimeout: 6000,
+                autoplayHoverPause: true,
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                touchDrag: true,
+                mouseDrag: true,
+                stopOnHover: false,
+                dots: false,
+                nav: true,
+                navText: ["<span class='icon-arrow-back'></span>", "<span class='icon-arrow-forward'></span>"],
+                autoplaySpeed: 6000,
+                smartSpeed: 250,
+                fluidSpeed: 1,
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 0,
+                        slideBy: 2
+                    },
+                    // breakpoint from 480 up
+                    500: {
+                        items: 2,
+                        margin: 0,
+                        slideBy: 2
+                    },
+                    // breakpoint from 768 up
+                    1000: {
+                        items: 3,
+                        margin: 0,
+                        slideBy: 1
+                    },
+                    // breakpoint from 768 up
+                    1300: {
+                        items: 4,
+                        margin: 0,
+                        slideBy: 2
+                    }
+                }
+            });
+        });
+    </script>
 
 
     <script type="text/javascript">
