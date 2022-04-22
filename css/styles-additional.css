@@ -1590,3 +1590,12 @@ div.shopLanding .grid.productTeasers picture.teaser > img {
     height:auto;
 }
 
+small {
+    font-size: 70%;
+  }
+  .stockY strong,
+.stockY strong i {
+    color: rgba(87,166,123,1.0);
+}
+  
+
