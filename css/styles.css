@@ -783,11 +783,14 @@ div.alertTicker {
     font-size: 90%;
     background-color: rgba(87,166,123,1.0);
 }
+div.alertTicker, 
+div.alertTicker a {
+    color: #000000;
+}
 div.alertTicker.urgent, 
 div.alertTicker.urgent a {
     color: #ffffff;
 }
-
 
 
 
