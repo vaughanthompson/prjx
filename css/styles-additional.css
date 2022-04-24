@@ -231,7 +231,7 @@ div#strip21 div.topNav nav {
     padding-right: 1.5em;
 }
 div#strip21 div.topNav nav a {
-    padding: 0.5em 1.15em;
+    padding: 0.75em 1.15em 0.75em 1.15em;
     color:rgba(255,255,255,1.0);
     border-left: none;
     white-space: nowrap;
@@ -1102,8 +1102,8 @@ html, body {
 p {
     font-weight: 300;
     line-height: 1.5em;
-    margin-top: 0.3em;
-    margin-bottom: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 1em;
 }
 .header2022 p {
     font-size: 0.8em;
@@ -1113,8 +1113,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2em;
     margin:0;
     padding:0;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
 }
 h1 {
     font-weight: 700;
@@ -1127,7 +1127,7 @@ h1 {
     color: rgba(87,166,123,1.0);
     border-bottom: 1px solid rgba(255,255,255,0.5);
     padding-bottom: 0.7em;
-    margin-bottom: 0.7em;
+    padding-bottom: 0.7em;
 }
 h2 {
     font-weight: 700;
@@ -1677,7 +1677,11 @@ nav.mblnav {
     z-index: 2500;
     background-color: rgba(0,0,0,1.0);
 }
-
+@media screen and (min-width: 1100px) {
+    #navHeader, div.navHeight {
+        display: none;
+    }
+}
 
 
 
@@ -1846,4 +1850,140 @@ div.gallery div.mainImg {
         margin:0 10vw;
     }
 
+}
+
+
+
+
+/* new dropdowns */
+div.containDropDown {
+    display: block;
+    position: relative;
+}
+div.dropDownPosition {
+    position: absolute;
+    z-index: 500;
+    width:100vw;
+    top:-1.25em;
+}
+div.dropDownContent {
+    color: rgba(87,166,123,1.0);
+}
+div.dropDownContent a:link,
+div.dropDownContent a:visited {
+    color: rgba(255,255,255,1.0);
+    text-decoration: none;
+}
+div.dropDownContent a:hover,
+div.dropDownContent a:active {
+    color: rgba(87,166,123,1.0);
+}
+div.dropDownContent {
+    display: flex;
+    min-height:40vh;
+}
+div.dropDownContent > div.col {
+    padding: 2vw 3vw 2vw 3vw;
+    flex-basis: 20%;
+}
+div.dropDownContent > div:first-of-type {
+    flex-basis: 60%;
+}
+div.dropDownContent > div:last-of-type {
+    padding: 0px;
+    padding-top: 1px;
+}
+div.dropDownContent div.navHolder {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2.5vw;
+}
+div.dropDownContent div.navHolder > nav {
+    flex-basis: 20%;
+}
+div.dropDownContent h2 {
+    font-size:1.4em;
+    padding-bottom: 0.8em;
+}
+div.dropDownContent h3 {
+    font-size:1.2em;
+    padding-bottom: 0.8em;
+}
+div.dropDownContent p {
+    color: rgba(255,255,255,0.5);
+    margin-top: 0;
+    padding-top: 0;
+}
+div.dropDownContent ul {
+    margin-top: 0.5em;
+    padding-left: 1.5vw;
+}
+div.dropDownContent li {
+    border:none;
+    line-height: 1.2em;
+    padding:0;
+    padding-bottom: 0.5em;
+}
+div.dropDownContent nav > a {
+    line-height: 1.2em;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+div.dropDownContent li a {
+    font-weight: 300;
+}
+div.dropDownContent li a:link,
+div.dropDownContent li a:visited {
+    color:rgba(87,166,123,1.0);
+}
+div.dropDownContent li a:hover,
+div.dropDownContent li a:active {
+    color:rgba(255,255,255,1.0);
+}
+div.dDownImageHolder,
+div.dDownImg {
+    display: block;
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    overflow: hidden;
+}
+div.dDownImg {
+    display: block;
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 106%;
+    background-position: left center;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+div.dDownImg {
+    background-image: url(/images/overlayArrow.svg);
+}
+
+a.activeDDown,
+a.activeDDown:hover {
+    background-color: rgba(87,166,123,1.0);
+    color:#ffffff !important;
+}
+
+div.containDropDown {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    div.containDropDown {
+        display: none;
+    }
+}
+@media screen and (min-width:1100px) {
+    div.dropDownCContainer {
+        border-top: 1px solid rgba(87,166,123,1.0);
+        background-color: rgba(0,0,0,1.0);
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
 }
