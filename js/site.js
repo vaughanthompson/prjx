@@ -17,9 +17,10 @@
         margin:0,
         rewind:true,
         loop:true,
-        autoplay:false,
-        autoplayTimeout:7000,
+        autoplay:true,
+        autoplayTimeout:10000,
         autoplayHoverPause:true,
+        animateIn: 'fadeIn',
         touchDrag:true,
         mouseDrag:true,
         stopOnHover:false,
@@ -27,7 +28,7 @@
         nav:true,
         navText: ["<span class='icon-arrow-back'></span>","<span class='icon-arrow-forward'></span>"],
         autoplaySpeed:2000,
-        smartSpeed:1000,
+        smartSpeed:2000,
         fluidSpeed:1
     });
 
