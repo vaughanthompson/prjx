@@ -2060,7 +2060,7 @@ div.owl-carousel-slider div.picturefill-background div.scontain.darken {
     div.owl-carousel-slider div.picturefill-background div.scontain.arrow-in-left,
     div.owl-carousel-slider div.picturefill-background div.scontain.arrow-out-left,
     div.owl-carousel-slider div.picturefill-background div.scontain.darken {
-        background-image: none;
+        background-image: none !important;
         background-color: rgba(0,0,0,0.6);
     }
 }
