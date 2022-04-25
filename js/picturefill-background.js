@@ -15,9 +15,9 @@
      */
     w.picturefillBackgroundOptions = {
         selector: "picturefill-background",
-        backgroundSize: "cover",
+        //backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "50% 50%"
+        //backgroundPosition: "50% 50%"
     };
 
     /**

@@ -31,14 +31,14 @@
 	cursor: default;
 }
 .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .owl-theme .owl-dots {
     text-align: center;
     -webkit-tap-highlight-color: transparent;
     background:none;
-    margin-top: -40px;
-    margin-bottom: 10px;
+    margin-top: -45px;
+    margin-bottom: 0;
     position: relative;
 }
 .owl-theme .owl-dots .owl-dot {
@@ -49,7 +49,7 @@
 .owl-theme .owl-dots .owl-dot span {
     width: 10px;
     height: 10px;
-    margin: 10px 0px 5px 0px;
+    margin:10px 0px 20px 0px;
     background-color:rgba(87,166,123,0.5); 
     display: block;
     backface-visibility: visible;

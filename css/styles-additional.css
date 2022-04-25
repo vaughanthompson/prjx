@@ -742,6 +742,7 @@ div.owl-carousel-slider,
 .owl-carousel-related {
     margin-bottom: 0;
     position: relative;
+    background-color: #000000;
 }
 div.owl-brand-slider,
 article.teaser.banner {
@@ -750,7 +751,7 @@ article.teaser.banner {
 }
 div.owl-carousel-slider div.item,
 div.owl-brand-slider div.item {
-    height: 75vh;
+    height: 73vh;
     /* prevent flashing on infinite loop */
     backface-visibility: hidden;
     transform: translateZ(0) scale(1.0, 1.0);
@@ -769,7 +770,7 @@ div.owl-brand-slider div.item {
     height: 60vh;
 }
 div.owl-carousel-slider div.picturefill-background {
-    height:75vh;
+    height:73vh;
 }
 div.owl-carousel-slider.shop div.picturefill-background {
     height:45vh;
@@ -823,7 +824,6 @@ article.teaser.banner div.picturefill-background div.scontain.left {
     text-align: left;
     padding-left: 10vw;
     background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.1), rgba(0,0,0,0.0));
-
 }
 div.owl-carousel-slider.shop div.picturefill-background div.scontain.left {
     background-image: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.6), rgba(0,0,0,0.0));
@@ -860,8 +860,8 @@ div.owl-carousel-slider div.picturefill-background section,
 div.owl-brand-slider div.picturefill-background section,
 article.teaser.banner div.picturefill-background section {
     width: 45%;
-    margin-top:7vh;
-    margin-bottom:7vh;
+    margin-top:3vh;
+    margin-bottom:3vh;
 }
 div.owl-carousel-slider.shop  div.picturefill-background section {
     width: 65%;
@@ -1985,5 +1985,85 @@ div.containDropDown {
         background-color: rgba(0,0,0,1.0);
         margin-left: 6vw;
         margin-right: 6vw;
+    }
+}
+
+
+
+
+
+/* home banner brand application */
+div.picturefill-background {
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+div.owl-carousel-slider div.picturefill-background div.scontain {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex:1 1 auto;
+    background-image:none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.owl-carousel-slider div.picturefill-background div.scontain.left {
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 10vw;
+}
+
+div.owl-carousel-slider div.picturefill-background div.scontain.arrow-out-right {
+    background-image: url(/images/slider-arrow-out-right@3x.png);
+    background-position: -35.5vw 50%;
+}
+
+div.owl-carousel-slider div.picturefill-background div.scontain.arrow-in-right {
+    background-image: url(/images/slider-arrow-inset-right@3x.png);
+    background-position: 30vw 50%;
+}
+
+div.owl-carousel-slider div.picturefill-background div.scontain.arrow-in-left {
+    background-image: url(/images/slider-arrow-inset-left@3x.png);
+    background-position: -24vw 50%;
+}
+
+div.owl-carousel-slider div.picturefill-background div.scontain.arrow-out-left {
+    background-image: url(/images/slider-arrow-out-left@3x.png);
+    background-position: 35.5vw 50%;
+}
+
+div.owl-carousel-slider div.picturefill-background div.scontain.darken {
+    background-image: none;
+    background-color: rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width:1100px) {
+    div.owl-carousel-slider div.picturefill-background div.scontain.right {
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 10vw;
+    }
+        
+    div.owl-carousel-slider div.picturefill-background div.scontain.arrow-out-right,
+    div.owl-carousel-slider div.picturefill-background div.scontain.arrow-in-right,
+    div.owl-carousel-slider div.picturefill-background div.scontain.arrow-in-left,
+    div.owl-carousel-slider div.picturefill-background div.scontain.arrow-out-left,
+    div.owl-carousel-slider div.picturefill-background div.scontain.darken {
+        background-image: none;
+        background-color: rgba(0,0,0,0.6);
+    }
+}
+
+
+@media screen and (min-width:1100px) {
+    div.picturefill-background.push-right {
+        background-position: 25vw 50%;
+    }
+    div.picturefill-background.push-left {
+        background-position: -20vw 50%;
     }
 }
