@@ -1291,6 +1291,7 @@ body.shopOnline > article.intro.header2022 h1 {
     padding-bottom: 0;
 }
 body.shopOnline > article.intro.header2022 > div.scontain > section:first-child > p {
+    margin-top: 2em;
     column-count: 1;
     max-width: 75%;
 }
