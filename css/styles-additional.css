@@ -1686,7 +1686,12 @@ nav.mblnav {
 
 
 
-
+/* 2022 content updates */
+article.content > header {
+    color: rgba(87,166,123,1.0);
+    border-color: rgba(87,166,123,1.0);
+    border-bottom-width: 4px;
+}
 
 
 
@@ -1958,7 +1963,7 @@ div.dDownImg {
     background-size: auto 106%;
     background-position: left center;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.0);
 }
 div.dDownImg {
     background-image: url(/images/overlayArrow.svg);
