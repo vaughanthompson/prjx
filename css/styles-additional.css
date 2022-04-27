@@ -1265,7 +1265,7 @@ body > article.intro.header2022 > div.scontain > section:first-child > p {
 body > article.intro.header2022 > div.scontain > section:last-child > div.imgTeaser {
     background-image: url(/images/overlayArrow.svg);
     background-size: auto 105%;
-    background-position: left center;
+    background-position: -1px center;
 }
 body > article.intro.header2022 > div.scontain > section:last-child > div.imgTeaser > div.scontain {
     background-color:rgba(0,0,0,0);
@@ -1862,140 +1862,6 @@ div.gallery div.mainImg {
 
 
 
-/* new dropdowns */
-div.containDropDown {
-    display: block;
-    position: relative;
-}
-div.dropDownPosition {
-    position: absolute;
-    z-index: 500;
-    width:100vw;
-    top:-1.25em;
-}
-div.dropDownContent {
-    color: rgba(87,166,123,1.0);
-}
-div.dropDownContent a:link,
-div.dropDownContent a:visited {
-    color: rgba(255,255,255,1.0);
-    text-decoration: none;
-}
-div.dropDownContent a:hover,
-div.dropDownContent a:active {
-    color: rgba(87,166,123,1.0);
-}
-div.dropDownContent {
-    display: flex;
-    min-height:40vh;
-}
-div.dropDownContent > div.col {
-    padding: 2vw 3vw 2vw 3vw;
-    flex-basis: 20%;
-}
-div.dropDownContent > div:first-of-type {
-    flex-basis: 60%;
-}
-div.dropDownContent > div:last-of-type {
-    padding: 0px;
-    padding-top: 1px;
-}
-div.dropDownContent div.navHolder {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 2.5vw;
-}
-div.dropDownContent div.navHolder > nav {
-    flex-basis: 20%;
-}
-div.dropDownContent h2 {
-    font-size:1.4em;
-    padding-bottom: 0.8em;
-}
-div.dropDownContent h3 {
-    font-size:1.2em;
-    padding-bottom: 0.8em;
-}
-div.dropDownContent p {
-    color: rgba(255,255,255,0.5);
-    margin-top: 0;
-    padding-top: 0;
-}
-div.dropDownContent ul {
-    margin-top: 0.5em;
-    padding-left: 1.5vw;
-}
-div.dropDownContent li {
-    border:none;
-    line-height: 1.2em;
-    padding:0;
-    padding-bottom: 0.5em;
-}
-div.dropDownContent nav > a {
-    line-height: 1.2em;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-div.dropDownContent li a {
-    font-weight: 300;
-}
-div.dropDownContent li a:link,
-div.dropDownContent li a:visited {
-    color:rgba(87,166,123,1.0);
-}
-div.dropDownContent li a:hover,
-div.dropDownContent li a:active {
-    color:rgba(255,255,255,1.0);
-}
-div.dDownImageHolder,
-div.dDownImg {
-    display: block;
-    width:100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left center;
-    overflow: hidden;
-}
-div.dDownImg {
-    display: block;
-    width:100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: auto 106%;
-    background-position: left center;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.0);
-}
-div.dDownImg {
-    background-image: url(/images/overlayArrow.svg);
-}
-
-a.activeDDown,
-a.activeDDown:hover {
-    background-color: rgba(87,166,123,1.0);
-    color:#ffffff !important;
-}
-
-div.containDropDown {
-    display: none;
-}
-
-@media screen and (max-width:1100px) {
-    div.containDropDown {
-        display: none;
-    }
-}
-@media screen and (min-width:1100px) {
-    div.dropDownCContainer {
-        border-top: 1px solid rgba(87,166,123,1.0);
-        background-color: rgba(0,0,0,1.0);
-        margin-left: 6vw;
-        margin-right: 6vw;
-    }
-}
-
-
 
 
 
@@ -2074,3 +1940,249 @@ div.owl-carousel-slider div.picturefill-background div.scontain.darken {
         background-position: -20vw 50%;
     }
 }
+
+
+
+
+
+
+/* new dropdowns */
+div.containDropDown {
+    display: block;
+    position: relative;
+}
+div.dropDownPosition {
+    position: absolute;
+    z-index: 500;
+    width:100vw;
+    top:-1.25em;
+}
+div.dropDownContent {
+    color: rgba(87,166,123,1.0);
+}
+div.dropDownContent a:link,
+div.dropDownContent a:visited,
+a.smallTeaser p strong {
+    color: rgba(255,255,255,1.0);
+    text-decoration: none;
+}
+div.dropDownContent a:hover,
+div.dropDownContent a:active,
+a.smallTeaser p strong:hover {
+    color: rgba(87,166,123,1.0);
+}
+div.dropDownContent {
+    display: flex;
+    min-height:40vh;
+}
+div.dropDownContent > div.col {
+    padding: 2vw 3vw 2vw 3vw;
+    flex-basis: 20%;
+    border: 1px solid red;
+    margin-bottom: 2em;
+
+}
+div.dropDownContent > div:first-of-type {
+    flex-basis: 70%;
+    padding-right: 0;
+}
+div.dropDownContent > div:last-of-type {
+    padding: 0px;
+    padding-top: 1px;
+    margin-bottom: 0;
+}
+div.dropDownContent div.navHolder {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2.5vw;
+}
+div.dropDownContent div.navHolder > nav {
+    flex-basis: 20%;
+}
+div.dropDownContent h2 {
+    font-size:1.4em;
+    padding-bottom: 0.8em;
+}
+div.dropDownContent h3 {
+    font-size:1.2em;
+    padding-bottom: 0.8em;
+}
+div.dropDownContent p {
+    color: rgba(255,255,255,0.5);
+    margin-top: 0;
+    padding-top: 0;
+}
+div.dropDownContent ul {
+    margin-top: 0.5em;
+    padding-left: 1.5vw;
+}
+div.dropDownContent li {
+    border:none;
+    line-height: 1.2em;
+    padding:0;
+    padding-bottom: 0.5em;
+}
+div.dropDownContent nav > a {
+    line-height: 1.2em;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+div.dropDownContent li a,
+a.smallTeaser p strong {
+    font-weight: 300;
+}
+div.dropDownContent li a:link,
+div.dropDownContent li a:visited {
+    color:rgba(87,166,123,1.0);
+}
+div.dropDownContent li a:hover,
+div.dropDownContent li a:active {
+    color:rgba(255,255,255,1.0);
+}
+div.dDownImageHolder,
+div.dDownImg {
+    display: block;
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    overflow: hidden;
+}
+div.dDownImg {
+    display: block;
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 106%;
+    background-position: -2px center;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.0);
+}
+div.dDownImg {
+    background-image: url(/images/overlayArrow.svg);
+}
+
+a.activeDDown,
+a.activeDDown:hover {
+    background-color: rgba(87,166,123,1.0);
+    color:#ffffff !important;
+}
+
+div.imgNav {
+    border:1px solid red;
+}
+
+div.containDropDown {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    div.containDropDown {
+        display: none;
+    }
+}
+@media screen and (min-width:1100px) {
+    div.dropDownCContainer {
+        border-top: 1px solid rgba(87,166,123,1.0);
+        background-color: rgba(0,0,0,1.0);
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+}
+
+
+
+
+
+/* 2022 image ctrl */
+img.thumb {
+    max-width: 6vw;
+}
+@media screen and (max-width:1000px) {
+    img.thumb {
+        max-width: 7vh;
+    }
+}
+a.smallTeaser {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #000;
+    padding: 0.5em 1em 0.5em 0;
+    /* margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-radius: 0;
+    min-width: 20vw;
+    max-width: 20vw;*/
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+    border-bottom: 2px solid rgba(87,166,123,1.0);
+  }
+  @media screen and (max-width: 750px) {
+    a.smallTeaser {
+      min-width: auto;
+      max-width: 100%;
+    }
+  }
+  a.smallTeaser span {
+    display: block;
+    -webkit-box-flex: 0;
+    -o-box-flex: 0;
+    -ms-box-flex: 0;
+    box-flex: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    background-color: rgba(87,166,123,1.0);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 0;
+    margin-right: 1em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  a.smallTeaser span i {
+    color: #fff;
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 0;
+  }
+  a.smallTeaser p {
+    margin: 0;
+  }
+  a.smallTeaser p strong {
+    display: block;
+    margin-bottom: 5px;
+    line-height: 1.2em;
+    font-size: 1.1em;
+  }
+  a.smallTeaser p u {
+    font-weight: 600;
+  }
+  @media (pointer: fine) {
+    a.smallTeaser:hover {
+      -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+      -webkit-transition: 0.25s;
+      transition: 0.25s;
+    }
+  }
+  /*
+  @media (pointer: coarse) {
+    a.smallTeaser {
+      -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+    }
+  }
+*/
