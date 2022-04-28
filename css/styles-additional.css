@@ -2100,6 +2100,11 @@ div.containDropDown {
 img.thumb {
     max-width: 6vw;
 }
+picture.blackBG {
+    padding: 12px 15px;
+    background-color: #000000;
+}
+
 @media screen and (max-width:1000px) {
     img.thumb {
         max-width: 7vh;
