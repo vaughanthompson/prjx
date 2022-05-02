@@ -1976,28 +1976,28 @@ div.dropDownContent {
     min-height:40vh;
 }
 div.dropDownContent > div.col {
-    padding: 2vw 3vw 2vw 3vw;
+    padding: 2vw 2vw 2vw 2vw;
     flex-basis: 20%;
-    border: 1px solid red;
     margin-bottom: 2em;
 
 }
 div.dropDownContent > div:first-of-type {
-    flex-basis: 70%;
-    padding-right: 0;
+    flex-basis: 75%;
+    padding-right:0;
 }
 div.dropDownContent > div:last-of-type {
     padding: 0px;
     padding-top: 1px;
     margin-bottom: 0;
+    flex-basis: 25%;
 }
 div.dropDownContent div.navHolder {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 2.5vw;
+    column-gap: 1vw;
 }
 div.dropDownContent div.navHolder > nav {
-    flex-basis: 20%;
+    flex-basis: 22%;
 }
 div.dropDownContent h2 {
     font-size:1.4em;
@@ -2014,7 +2014,7 @@ div.dropDownContent p {
 }
 div.dropDownContent ul {
     margin-top: 0.5em;
-    padding-left: 1.5vw;
+    padding-left: 20px;
 }
 div.dropDownContent li {
     border:none;
@@ -2191,3 +2191,6 @@ a.smallTeaser {
     }
   }
 */
+
+
+
