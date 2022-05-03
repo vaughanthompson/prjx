@@ -2205,8 +2205,7 @@ a.smallTeaser {
 
 
 
-/* blog style content */
-
+/* blog style content & custom pages */
 
 article.blog p {
     max-width: 100%;
@@ -2220,7 +2219,19 @@ article.blog {
     margin-top: 1em;
     padding: 3vw;
 }
+article.spaced {
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+}
 @media screen and (min-width:1100px) {
+    article.bigtype h1 {
+        border: none;
+        line-height: 1.4em;
+        padding: 0;
+        font-size: 6em;
+        margin-left: -4px;
+    }
+    
     article.blog {
         margin-top: 0;
         padding-left: 20vw;
@@ -2228,5 +2239,25 @@ article.blog {
         padding-top: 5vw;
         padding-bottom: 5vw;
     }
+
+    article.spaced {
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+    }
+    article.spaced h1 {
+        padding-bottom: 3vw;
+    }
+
+    .insetVideo {
+        background-color: #000000;
+        margin: 2vw 8vw 1vw 8vw;
+        z-index: 10;
+        position: relative;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    }
+    .pullUpContent {
+        margin-top: -7vw;
+    }
+  
     
 }

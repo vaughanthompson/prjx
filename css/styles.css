@@ -82,12 +82,12 @@ p, li, td {
     padding-top: 0.3em;
     padding-bottom: 0.2em;
     line-height:1.4em;
-    font-size:0.9em;
+    font-size:0.95em;
 }
 .content p,
 .content li,
 .content td {
-    font-size:0.9em;
+    font-size:0.95em;
 }
 footer {
     font-size:90%;
