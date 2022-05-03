@@ -824,6 +824,8 @@ article.teaser.banner div.picturefill-background div.scontain.left {
     text-align: left;
     padding-left: 10vw;
     background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.1), rgba(0,0,0,0.0));
+    background-image: none;
+
 }
 div.owl-carousel-slider.shop div.picturefill-background div.scontain.left {
     background-image: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.6), rgba(0,0,0,0.0));
@@ -2201,3 +2203,30 @@ a.smallTeaser {
 
 
 
+
+
+/* blog style content */
+
+
+article.blog p {
+    max-width: 100%;
+}
+
+picture.inset {
+    width:90%;
+    margin: 0px auto;
+}
+article.blog {
+    margin-top: 1em;
+    padding: 3vw;
+}
+@media screen and (min-width:1100px) {
+    article.blog {
+        margin-top: 0;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+    
+}
