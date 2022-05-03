@@ -2071,7 +2071,13 @@ a.activeDDown:hover {
 }
 
 div.imgNav {
-    border:1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+    row-gap: 1vw;
+}
+div.imgNav > a {
+    flex: 0 1 40%;
 }
 
 div.containDropDown {
@@ -2115,10 +2121,10 @@ a.smallTeaser {
     display: -ms-inline-flexbox;
     display: inline-box;
     display: inline-flex;
-    -webkit-box-align: center;
-    -o-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: flex-end;
+    -o-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
     background-color: #000;
     padding: 0.5em 1em 0.5em 0;
     /* margin-bottom: 2em;
@@ -2128,7 +2134,7 @@ a.smallTeaser {
     max-width: 20vw;*/
     -webkit-transition: 0.15s;
     transition: 0.15s;
-    border-bottom: 2px solid rgba(87,166,123,1.0);
+    border-bottom: 1px solid rgba(87,166,123,1.0);
   }
   @media screen and (max-width: 750px) {
     a.smallTeaser {
@@ -2165,6 +2171,7 @@ a.smallTeaser {
   }
   a.smallTeaser p {
     margin: 0;
+    line-height: 1.2em;
   }
   a.smallTeaser p strong {
     display: block;
