@@ -2294,6 +2294,13 @@ div.tdxintroInner > section.insetRight {
 div.tdxintroInner > section.bottom {
     align-self: flex-end;
 }
+div.tdxintroInner > section.spaceApart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
 div.tdxintroInner section.cols.two {
    display: flex;
    column-gap: 3vw;
@@ -2311,6 +2318,11 @@ div.tdxintroInner section.cols.two div {
 .tdxintroContain.shade {
     background-color: rgba(245,245,245,1.0);
 }
+
+picture.medLarge {
+    max-width:75%;
+}
+
 
 
 /* typo */
