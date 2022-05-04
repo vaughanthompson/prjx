@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?3bzdhc');
-  src:  url('fonts/icomoon.eot?3bzdhc#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?3bzdhc') format('truetype'),
-    url('fonts/icomoon.woff?3bzdhc') format('woff'),
-    url('fonts/icomoon.svg?3bzdhc#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?bqmvtl');
+  src:  url('fonts/icomoon.eot?bqmvtl#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bqmvtl') format('truetype'),
+    url('fonts/icomoon.woff?bqmvtl') format('woff'),
+    url('fonts/icomoon.svg?bqmvtl#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ic-mark2:before {
+  content: "\e9c9";
+  color: #57a57b;
+}
 .icon-brand-allison:before {
   content: "\e98b";
 }
