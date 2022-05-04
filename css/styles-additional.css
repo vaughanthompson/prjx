@@ -2226,10 +2226,10 @@ article.spaced {
 @media screen and (min-width:1100px) {
     article.bigtype h1 {
         border: none;
-        line-height: 1.4em;
         padding: 0;
+        margin-bottom:15px;
         font-size: 6em;
-        margin-left: -4px;
+        margin-left: -7px;
     }
     
     article.blog {
@@ -2260,4 +2260,87 @@ article.spaced {
     }
   
     
+}
+
+
+
+
+/* tdx intro */
+div.tdxintroContain {
+    min-height: 80vh;
+    padding: 10vh 15vw;
+    position: relative;
+}
+div.tdxintroInner {
+    margin-top: 10vh;
+    min-height: 60vh;
+    display: flex;
+    column-gap: 3vw;
+    border: 1px solid red;
+}
+div.tdxintroInner.col {
+    margin-top: 10vh;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vw;
+}
+div.tdxintroInner > section {
+    flex:1 1 50%;
+}
+div.tdxintroInner > section.insetRight {
+    padding-left: 20vw;
+}
+div.tdxintroInner > section.bottom {
+    align-self: flex-end;
+}
+div.tdxintroInner section.cols.two {
+   display: flex;
+   column-gap: 3vw;
+} 
+div.tdxintroInner section.cols.two div {
+    flex: 1 1 50%;
+ } 
+ .tdxintroContain {
+    background-color: #fff;
+}
+ .tdxintroContain.dark {
+    background-color: #000;
+    color: #fff;
+}
+.tdxintroContain.shade {
+    background-color: rgba(245,245,245,1.0);
+}
+
+
+/* typo */
+.preTDX,
+.preTDX h1 {
+    font-family: 'sf';
+}
+div.tdxintroContain p {
+    font-size: 1.05em;
+}
+
+div.tdxintroContain .large {
+    font-size: 8em;
+}
+div.tdxintroContain .large {
+    font-size: 8em;
+}
+div.tdxintroContain .light {
+    font-size: 5em;
+    font-weight: 200;
+    font-family: 'sf';
+}
+div.tdxintroContain h2.light {
+    font-size: 3.3em;
+    font-weight: 200;
+    font-family: 'sf';
+}
+div.tdxintroContain .green {
+    color: rgba(87,166,123,1.0);
+}
+div.tdxintroContain .grey {
+    color: rgba(150,150,150,1.0);
 }
