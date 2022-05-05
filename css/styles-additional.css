@@ -2206,7 +2206,9 @@ a.smallTeaser {
 
 
 /* blog style content & custom pages */
-
+.noPad {
+    padding:0 !important;
+}
 article.blog p {
     max-width: 100%;
 }
@@ -2219,10 +2221,28 @@ article.blog {
     margin-top: 1em;
     padding: 3vw;
 }
-article.spaced {
-    margin-bottom: 10vw;
-    margin-top: 10vw;
+
+article.darkarrowed {
+    padding:5vw;
 }
+article.darkarrowed {
+    background-color: #000000;
+    color: #ffffff;
+}
+article.darkarrowed h1 {
+    color: rgba(87,166,123,1.0);
+}
+@media screen and (max-width:1100px) {
+    article.spaced {
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+    }
+    article.darkarrowed div.scontain section:first-of-type {
+        margin-bottom: 2em;
+    }
+}
+
+
 @media screen and (min-width:1100px) {
     article.bigtype h1 {
         border: none;
@@ -2241,11 +2261,11 @@ article.spaced {
     }
 
     article.spaced {
-        margin-bottom: 3vw;
-        margin-top: 3vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
     }
     article.spaced h1 {
-        padding-bottom: 3vw;
+        padding-bottom: 2vw;
     }
 
     .insetVideo {
@@ -2257,6 +2277,29 @@ article.spaced {
     }
     .pullUpContent {
         margin-top: -7vw;
+    }
+    article.darkarrowed {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    article.darkarrowed div.scontain section:first-of-type {
+        background-image: url('/images/2022/misc/brandp-d.jpg');
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-self: stretch;
+    }
+    article.darkarrowed div.scontain section:last-of-type {
+        flex-basis: 40%;
+        padding-right: 5%;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+    article.centerVert div.scontain {
+        align-items: center;
+        justify-content: space-between;
     }
   
     
@@ -2319,6 +2362,9 @@ div.tdxintroInner section.cols.two div {
     background-color: rgba(245,245,245,1.0);
 }
 
+picture.med {
+    max-width:40%;
+}
 picture.medLarge {
     max-width:75%;
 }
