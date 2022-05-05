@@ -2312,13 +2312,7 @@ article.darkarrowed h1 {
 div.tdxintroContain {
     position: relative;
 }
-div.tdxintroInner {
-    padding: 15vh 10vw;
-    min-height: 50vh;
-    display: flex;
-    column-gap: 3vw;
-}
-div.tdxintroInner.full {
+div.tdxintroInner  {
     padding: 20vh 10vw;
     min-height: 55vh;
     display: flex;
@@ -2355,7 +2349,7 @@ div.tdxintroInner section.cols.two {
    column-gap: 2vw;
 } 
 div.tdxintroInner section.cols.two div {
-    flex: 1 1 50%;
+    flex: 0 1 50%;
  } 
  .tdxintroContain {
     background-color: #fff;
@@ -2372,7 +2366,7 @@ picture.med {
     max-width:40%;
 }
 picture.medLarge {
-    max-width:75%;
+    max-width:65%;
 }
 
 @media screen and (min-width:1100px) {
@@ -2381,6 +2375,9 @@ picture.medLarge {
         flex-wrap: nowrap;
         align-items: stretch;
 
+    }
+    div.fiftyfifty.rev {
+        flex-direction: row-reverse;
     }
     div.fiftyfifty > * {
         flex:0 0 50%
@@ -2391,6 +2388,13 @@ picture.medLarge {
     div.fiftyfifty > *:last-child div.tdxintroInner {
         padding-left: 5vw;
     }
+    div.fiftyfifty.rev > *:first-child div.tdxintroInner {
+        padding-left: 5vw;
+    }
+    div.fiftyfifty.rev > *:last-child div.tdxintroInner {
+        padding-right: 5vw;
+        padding-left: 10vw;
+    }
 }
 
 /* typo */
@@ -2400,6 +2404,7 @@ picture.medLarge {
 }
 div.tdxintroContain p {
     font-size: 1.05em;
+    line-height: 1.3em;
 }
 
 div.tdxintroContain .large {
@@ -2409,13 +2414,13 @@ div.tdxintroContain .large {
     font-size: 8em;
 }
 div.tdxintroContain .light {
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: 200;
     font-family: 'sf';
-    max-width: 90%;
+    max-width: 95%;
 }
 div.tdxintroContain h2.light {
-    font-size: 3.3em;
+    font-size: 3em;
     font-weight: 200;
     font-family: 'sf';
 }
