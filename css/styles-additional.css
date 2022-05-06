@@ -2404,52 +2404,6 @@ div.tdxintroContain.patternBG {
 }
 
 
-@media screen and (min-width:1100px) {
-    div.fiftyfifty {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: stretch;
-
-    }
-    div.fiftyfifty.rev {
-        flex-direction: row-reverse;
-    }
-    div.fiftyfifty > * {
-        flex:0 0 50%
-    }
-    div.fiftyfifty > *:first-child div.tdxintroInner {
-        padding-right: 5vw;
-    }
-    div.fiftyfifty > *:last-child div.tdxintroInner {
-        padding-left: 5vw;
-    }
-    div.fiftyfifty.rev > *:first-child div.tdxintroInner {
-        padding-left: 5vw;
-    }
-    div.fiftyfifty.rev > *:last-child div.tdxintroInner {
-        padding-right: 5vw;
-        padding-left: 10vw;
-    }
-    div.tdxintroInner.arrow {
-        background-image: url(/images/overlayArrow.svg);
-        background-position: -1px 50%;
-        background-repeat: no-repeat;
-        background-size:100% auto ;
-    }
-    div.tdxintroInner.arrowW {
-        background-image: url(/images/overlayArr-White.svg);
-        background-position: -1px 50%;
-        background-repeat: no-repeat;
-        background-size:100% auto ;
-    }
-    div.tdxintroInner.arrowRev {
-        background-image: url(/images/overlayArrow-inset-rev.svg);
-        background-position: 1px 50%;
-        background-repeat: no-repeat;
-        background-size:100% auto ;
-    }
-}
-
 /* typo */
 .preTDX,
 .preTDX h1 {
@@ -2460,9 +2414,7 @@ div.tdxintroContain p {
     line-height: 1.3em;
 }
 
-div.tdxintroContain .large {
-    font-size: 8em;
-}
+
 div.tdxintroContain .large {
     font-size: 8em;
 }
@@ -2491,4 +2443,128 @@ div.tdxintroContain .green {
 }
 div.tdxintroContain .grey {
     color: rgba(150,150,150,1.0);
+}
+
+@media screen and (max-width:1100px) {
+    div.tdxintroContain .large {
+        font-size: 3em;
+    }
+
+    div.tdxintroContain .medLarge {
+        font-size: 3em;
+        line-height: 1em;
+    }
+    div.tdxintroContain .light {
+        font-size: 2.5em;
+        font-weight: 200;
+        max-width: 95%;
+    }
+    div.tdxintroContain h2.light {
+        font-size: 1.8em;
+        font-weight: 200;
+    }
+    div.tdxintroInner > section.insetRight {
+        padding-left: 0;
+    }
+    div.tdxintroInner section.cols.two {
+        display: block;
+     } 
+     div.tdxintroInner.darken {
+        background-color:rgba(0,0,0,0.5);
+    }
+    div.tdxintroInner.full  {
+        min-height: 80vh;
+    }
+    div.tdxintroInner  {
+        padding: 15vh 10vw;
+        display: block;
+    }
+    section.spaceApart {
+        padding:4vh 0;
+    }
+    div.tdxintroContain picture.medLarge {
+        max-width:80%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+    }
+    div.tdxintroInner.reduceMbl {
+        min-height: 10vh;
+    }
+    div.tdxintroContain .badge {
+        display: block;
+        position: absolute; 
+        margin-left:8vw;
+        top:8vw;
+        width:20px;
+        height: 20px;
+        font-size: 20px;
+    }
+    div.tdxintroContain .inlineTxt {
+        font-size: 0.75em;
+        position: relative;
+        left:-80px;
+        margin-right: -80px;
+        display: none;
+    }
+    div.m {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1100px) {
+    div.fiftyfifty {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+
+    }
+    div.fiftyfifty.rev {
+        flex-direction: row-reverse;
+    }
+    div.fiftyfifty > * {
+        flex:0 0 50%;
+    }
+    div.fiftyfifty > *:first-child div.tdxintroInner {
+        padding-right: 5vw;
+    }
+    div.fiftyfifty > *:last-child div.tdxintroInner {
+        padding-left: 5vw;
+    }
+    div.fiftyfifty.rev > *:first-child div.tdxintroInner {
+        padding-left: 5vw;
+    }
+    div.fiftyfifty.rev > *:last-child div.tdxintroInner {
+        padding-right: 5vw;
+        padding-left: 10vw;
+    }
+
+    div.tdxintroContain.picturefill-background {
+        display: flex;
+    }
+    div.tdxintroContain.picturefill-background div.tdxintroInner.arrow,
+    div.tdxintroContain.picturefill-background div.tdxintroInner.arrowW,
+    div.tdxintroContain.picturefill-background div.tdxintroInner.arrowRev {
+        align-self: stretch;
+        flex-basis: 100%;   
+    }
+    div.tdxintroInner.arrow {
+        background-image: url(/images/overlayArrow.svg);
+        background-position: -1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
+    div.tdxintroInner.arrowW {
+        background-image: url(/images/overlayArr-White.svg);
+        background-position: -1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
+    div.tdxintroInner.arrowRev {
+        background-image: url(/images/overlayArrow-inset-rev.svg);
+        background-position: 1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
 }
