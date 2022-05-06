@@ -2313,8 +2313,8 @@ div.tdxintroContain {
     position: relative;
 }
 div.tdxintroInner  {
-    padding: 20vh 10vw;
-    min-height: 55vh;
+    padding: 15vh 10vw;
+    min-height: 65vh;
     display: flex;
     column-gap: 3vw;
 }
@@ -2358,6 +2358,9 @@ div.tdxintroInner section.cols.two div {
     background-color: #000;
     color: #fff;
 }
+.tdxintroContain.dark.border {
+    border-top:1px solid rgba(255,255,255,0.5);
+}
 .tdxintroContain.shade {
     background-color: rgba(245,245,245,1.0);
 }
@@ -2368,6 +2371,18 @@ picture.med {
 picture.medLarge {
     max-width:65%;
 }
+
+.badge {
+    display: block;
+    position: absolute; 
+    margin-left:1vw;
+    top:1.3vw;
+    width:36px;
+    height: 36px;
+    font-size: 36px;
+
+}
+
 
 @media screen and (min-width:1100px) {
     div.fiftyfifty {
@@ -2394,6 +2409,9 @@ picture.medLarge {
     div.fiftyfifty.rev > *:last-child div.tdxintroInner {
         padding-right: 5vw;
         padding-left: 10vw;
+    }
+    div.tdxintroInner.arrow {
+        background-image: url(/images/overlayArrow.svg);
     }
 }
 
@@ -2424,6 +2442,10 @@ div.tdxintroContain h2.light {
     font-weight: 200;
     font-family: 'sf';
 }
+div.tdxintroContain h6 {
+    max-width: 95%;
+}
+
 div.tdxintroContain .green {
     color: rgba(87,166,123,1.0);
 }
