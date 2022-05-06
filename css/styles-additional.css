@@ -2321,6 +2321,9 @@ div.tdxintroInner  {
 div.tdxintroInner.darken {
     background-color:rgba(0,0,0,0.3);
 }
+div.tdxintroInner.overrideHeight {
+    min-height: 10vh;
+}
 div.tdxintroInner.col {
     display: flex;
     flex-direction: column;
@@ -2332,7 +2335,7 @@ div.tdxintroInner > section {
 
 }
 div.tdxintroInner > section.insetRight {
-    padding-left: 20vw;
+    padding-left: 30vw;
 }
 div.tdxintroInner > section.bottom {
     align-self: flex-end;
@@ -2381,7 +2384,18 @@ picture.medLarge {
     width:36px;
     height: 36px;
     font-size: 36px;
-
+}
+.inlineTxt {
+    font-size: 0.75em;
+    position: relative;
+    left:-80px;
+    margin-right: -80px;
+}
+div.tdxintroContain.patternBG {
+    background-image: url(/images/pattern-fadeRL.svg);
+    background-repeat: no-repeat;
+    background-size:auto 50%;
+    background-position: 10% 120%;
 }
 
 
@@ -2417,6 +2431,12 @@ picture.medLarge {
         background-repeat: no-repeat;
         background-size:100% auto ;
     }
+    div.tdxintroInner.arrowRev {
+        background-image: url(/images/overlayArrow-inset-rev.svg);
+        background-position: 1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
 }
 
 /* typo */
@@ -2435,15 +2455,20 @@ div.tdxintroContain .large {
 div.tdxintroContain .large {
     font-size: 8em;
 }
+div.tdxintroContain .medLarge {
+    font-size: 5em;
+    line-height: 1em;
+}
 div.tdxintroContain .light {
     font-size: 4em;
     font-weight: 200;
-    font-family: 'sf';
     max-width: 95%;
 }
 div.tdxintroContain h2.light {
     font-size: 3em;
     font-weight: 200;
+}
+div.tdxintroContain.preTDX h2.light {
     font-family: 'sf';
 }
 div.tdxintroContain h6 {
