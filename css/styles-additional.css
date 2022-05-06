@@ -2330,11 +2330,14 @@ div.tdxintroInner.fS {
 div.tdxintroInner.col {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 3vw;
 }
 div.tdxintroInner > section {
     flex:1 1 50%;
-
+}
+div.tdxintroInner.col > section {
+    flex:0 1 25%;
 }
 div.tdxintroInner > section.insetRight {
     padding-left: 30vw;
@@ -2371,14 +2374,14 @@ div.tdxintroInner section.cols.two div {
     background-color: rgba(245,245,245,1.0);
 }
 
-picture.med {
+div.tdxintroContain picture.med {
     max-width:40%;
 }
-picture.medLarge {
+div.tdxintroContain picture.medLarge {
     max-width:65%;
 }
 
-.badge {
+div.tdxintroContain .badge {
     display: block;
     position: absolute; 
     margin-left:1vw;
@@ -2387,7 +2390,7 @@ picture.medLarge {
     height: 30px;
     font-size: 30px;
 }
-.inlineTxt {
+div.tdxintroContain .inlineTxt {
     font-size: 0.75em;
     position: relative;
     left:-80px;
