@@ -2324,6 +2324,9 @@ div.tdxintroInner.darken {
 div.tdxintroInner.overrideHeight {
     min-height: 10vh;
 }
+div.tdxintroInner.fS {
+    min-height: 70vh;
+}
 div.tdxintroInner.col {
     display: flex;
     flex-direction: column;
@@ -2331,7 +2334,6 @@ div.tdxintroInner.col {
 }
 div.tdxintroInner > section {
     flex:1 1 50%;
-    border: 1px solid red;
 
 }
 div.tdxintroInner > section.insetRight {
@@ -2381,9 +2383,9 @@ picture.medLarge {
     position: absolute; 
     margin-left:1vw;
     top:1.3vw;
-    width:36px;
-    height: 36px;
-    font-size: 36px;
+    width:30px;
+    height: 30px;
+    font-size: 30px;
 }
 .inlineTxt {
     font-size: 0.75em;
@@ -2427,6 +2429,12 @@ div.tdxintroContain.patternBG {
     }
     div.tdxintroInner.arrow {
         background-image: url(/images/overlayArrow.svg);
+        background-position: -1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
+    div.tdxintroInner.arrowW {
+        background-image: url(/images/overlayArr-White.svg);
         background-position: -1px 50%;
         background-repeat: no-repeat;
         background-size:100% auto ;
