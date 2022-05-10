@@ -1276,7 +1276,6 @@ body > article.intro.header2022 > div.scontain > section:first-child p {
     margin-bottom: 0em;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
-    border:1px solid cyan;
     line-height: 1.6em;
     break-inside: avoid-column;
 
