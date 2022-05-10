@@ -1259,21 +1259,26 @@ body > article.intro.header2022 > div.scontain > section:last-child > div.imgTea
     align-self: stretch;
     overflow: hidden;
 }
-body > article.intro.header2022 > div.scontain > section:first-child > div.columnize {
-    padding-top: 2em;
+body > article.intro.header2022 > div.scontain > section:first-child {
     column-count: 2;
     column-gap: 3vw;
-    widows: 0;
-    orphans: 2;
+    break-before: auto;
+
 }
-body > article.intro.header2022 > div.scontain > section:first-child p,
-body > article.intro.header2022 > div.scontain > section:first-child > div.columnize p {
+body > article.intro.header2022 > div.scontain > section:first-child > h1 {
+    column-span: all;
+    margin-bottom: 1em;
+}
+body > article.intro.header2022 > div.scontain > section:first-child p {
     margin-top: 0em;
     margin-bottom: 0em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
     border:1px solid cyan;
-    break-inside:avoid;
-}
+    line-height: 1.6em;
+    break-inside: avoid-column;
 
+}
 body > article.intro.header2022 > div.scontain > section:last-child > div.imgTeaser {
     background-image: url(/images/overlayArrow.svg);
     background-size: auto 105%;
@@ -1307,6 +1312,8 @@ body.shopOnline > article.intro.header2022 > div.scontain > section:first-child 
     column-count: 1;
     max-width: 75%;
 }
+
+
 body.shopOnline > article.intro.header2022 a:link,
 body.shopOnline > article.intro.header2022 a:visited,
 body.shopOnline > article.intro.header2022 a:hover,
