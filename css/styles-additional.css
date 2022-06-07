@@ -2394,7 +2394,9 @@ div.tdxintroInner section.cols.two div {
 .tdxintroContain.shade {
     background-color: rgba(245,245,245,1.0);
 }
-
+div.tdxintroContain picture.small {
+    max-width:150px;
+}
 div.tdxintroContain picture.med {
     max-width:40%;
 }
@@ -2434,7 +2436,9 @@ div.tdxintroContain p {
     font-size: 1.05em;
     line-height: 1.3em;
 }
-
+div.tdxintroContain li {
+    font-size: 1.05em;
+}
 
 div.tdxintroContain .large {
     font-size: 8em;
@@ -2498,6 +2502,10 @@ div.tdxintroContain .grey {
     }
     div.tdxintroInner  {
         padding: 15vh 10vw;
+        display: block;
+    }
+    div.tdxintroInner.textOnly  {
+        padding: 5vh 10vw;
         display: block;
     }
     section.spaceApart {
