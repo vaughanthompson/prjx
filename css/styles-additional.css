@@ -2604,7 +2604,7 @@ div.tdxintroContain .grey {
 /* xperience landing */
 div.xperienceCover {
     width:100%; height: 73vh; position: absolute; z-index:100; 
-    background-color: rgba(0,0,0,0.0); 
+    background-color: rgba(0,0,0,0.2); 
     background-image: url(/images/misc/xperience-desk.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -2615,15 +2615,19 @@ div.xperienceCover {
     align-items: center;
 }
 div.xperienceCover.darker {
-    background-color: rgba(0,0,0,0.8); 
+    background-color: rgba(0,0,0,0.6); 
 }
 div.xperienceCover h1 {
     font-weight: 900;
-    font-size: 4em;
-    color: rgba(87,166,123,1.0);
+    font-size: 6em;
     padding-top: 0;
     margin-top: -0.3em;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.75);
+    color: #ffffff;
+    text-transform: uppercase;
+    /*text-shadow: 2px 2px 2px rgba(0,0,0,0.75);*/
+}
+div.xperienceCover h1 span {
+    color: rgba(87,166,123,1.0);
 }
 div.xperienceCover h2,
 div.xperienceCover h3,
@@ -2662,7 +2666,7 @@ div.prodTeaserAnywhere div.item {
 }
 div.prodTeaserAnywhere div.item div.commonInfo,
 div.prodTeaserAnywhere div.item div.summarySpecs {
-
+    border:1px solid red;
 }
 
 div.prodTeaserAnywhere div.item a {
