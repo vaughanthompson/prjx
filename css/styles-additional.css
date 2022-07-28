@@ -2639,6 +2639,27 @@ div.xperienceCover h4 {
     text-transform: uppercase;
     letter-spacing: 1em;
 }
+.xperience .thumblistHolder div.item {
+    align-items: flex-start;
+}
+.xperience .thumblistHolder h3,
+.xperience .thumblistHolder p {
+    line-height: 1.3em !important;
+    margin-bottom: 0.25em !important;
+}
+
+picture.smlLogo {
+    display: inline-block;
+}
+picture.smlLogo img {
+    height:40px; 
+    width:auto;
+}
+picture.smlLogo.adjustUp img {
+    height:50px; 
+    width:auto;
+}
+
 
 
 

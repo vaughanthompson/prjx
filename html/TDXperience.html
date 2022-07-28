@@ -273,53 +273,47 @@
         <h1>TD<span>X</span>perience</h1>
     </div>
 
-        
+    <div class=" teaserFull picturefill-background" style="position:relative; height: 73vh;">
+        <!-- for video -->
+            <div class="vidCover"></div>
+            <div id="vidHolder">
+                <video id="bgvid" class="hidden-xs" autoplay muted style="height:73vh ;">
+                    <source type="video/mp4" data-src="/video/1_1 (Stitched Clip).mp4">
+                </video>
+            </div>
+            <!-- for video -->
+            <span data-src="/images/2022/misc/vid-placeholder-m.jpg"></span><!-- use 4:3 aspect for ph -->
+            <span data-src="/images/2022/misc/vid-placeholder-d.jpg" data-media="(min-width: 1100px)"></span>
+    </div>
+    <!-- for production place the listener after scripts at end of page -->
+    <!-- for bg video loop -->
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+            var bgv = document.getElementById("bgvid");
 
-    
+            var visible = !!(bgv.offsetWidth ||
+            bgv.offsetHeight ||
+            bgv.getClientRects().length);
 
-                    <div class=" teaserFull picturefill-background" style="position:relative; height: 73vh;">
-          
-    
-                        <!-- for video -->
-                            <div class="vidCover"></div>
-                            <div id="vidHolder">
-                                <video id="bgvid" class="hidden-xs" autoplay muted style="height:73vh ;">
-                                    <source type="video/mp4" data-src="/video/1_1 (Stitched Clip).mp4">
-                                </video>
-                            </div>
-                         <!-- for video -->
-                         <span data-src="/images/2022/misc/vid-placeholder-m.jpg"></span><!-- use 4:3 aspect for ph -->
-                         <span data-src="/images/2022/misc/vid-placeholder-d.jpg" data-media="(min-width: 1100px)"></span>
-                    </div>
-                    <!-- for production place the listener after scripts at end of page -->
-                    <!-- for bg video loop -->
-                    <script type="text/javascript">
-                        window.addEventListener("load", function() {
-                            var bgv = document.getElementById("bgvid");
+            if (visible) {
+            var children = bgv.getElementsByTagName("source");
+                for (var i = 0; i < children.length; ++i) {
+                children[i].src = children[i].getAttribute("data-src");
+                }
+            }
+            bgv.load();
 
-                            var visible = !!(bgv.offsetWidth ||
-                            bgv.offsetHeight ||
-                            bgv.getClientRects().length);
+            var iterations = 1;
+            bgvid.addEventListener('ended', function () {
+                if (iterations < 3) {
+                    this.currentTime = 0;
+                    this.play();
+                    iterations ++;
+                }
+            }, false);
 
-                            if (visible) {
-                            var children = bgv.getElementsByTagName("source");
-                                for (var i = 0; i < children.length; ++i) {
-                                children[i].src = children[i].getAttribute("data-src");
-                                }
-                            }
-                            bgv.load();
-
-                            var iterations = 1;
-                            bgvid.addEventListener('ended', function () {
-                                if (iterations < 3) {
-                                    this.currentTime = 0;
-                                    this.play();
-                                    iterations ++;
-                                }
-                            }, false);
-
-                        });
-                    </script>
+        });
+    </script>
                     
 
 
@@ -331,9 +325,8 @@
 
     <div class="scontain">
         <section>                     
-           <h4>Discover what Volvo, Yanmar and Shell means for our valued customers.</h4>
-
-           <h4>With the support of the TDX team, see & hear them 'X-periencing' the very best of their products in the field.</h4>
+           <h4>Discover what Volvo, Yanmar and Shell and the support of the TDX team means for our valued customers.</h4>
+           <h4>See & hear them 'Xperiencing' the very best of their products in the field in this short web-video series.</h4>
         </section>
 
         <section class="d">
@@ -350,87 +343,80 @@
 
 <hr>
 
-    <article class="col3 content ">
+    <article class="col3 content xperience">
 
         <div class="scontain">
             
            
             <section class="thumblistHolder">     
-                <picture style="width:50%;">
+                <picture class="smlLogo">
                     <img src="/images/icons/icons2022/brand-volvo.svg">
                 </picture>     
 
                 <ul>
                     <li>
-                        <div class="item"><picture> <img src="/images/misc/lozenges/loz-fleetcare.jpg" alt=""> </picture>
+                        <div class="item"><picture> <img src="/images/2022/misc/volvo-james.jpg" alt=""> </picture>
                             <div>
-                                <h3>"Quote of a few words ..."</h3>
-                                <p>- FirstName, Company.</p>
+                                <h3>"Attention to detail and taking the time to understand our business"</h3>
+                                <p>- James Rutter, EnviroNZ.</p>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="item"><picture> <img src="/images/misc/lozenges/loz-fleetcare.jpg" alt=""> </picture>
+                        <div class="item"><picture> <img src="/images/2022/misc/volvo-nathan.jpg" alt=""> </picture>
                             <div>
-                                <h3>"Quote of a few words ..."</h3>
-                                <p>- FirstName, Company.</p>
+                                <h3>"Fuel efficient, value for money with great backup and support from TDX"</h3>
+                                <p>- Nathan Gibbons, Stevenson Aggregates.</p>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="item"><picture> <img src="/images/misc/lozenges/loz-fleetcare.jpg" alt=""> </picture>
+                        <div class="item"><picture> <img src="/images/2022/misc/volvo-cam.jpg" alt=""> </picture>
                             <div>
-                                <h3>"Quote of a few words ..."</h3>
-                                <p>- FirstName, Company.</p>
+                                <h3>"You get to know when you're talking to someone who knows their machines"</h3>
+                                <p>- Cam Paton, Paton Civil.</p>
                             </div>
                         </div>
                     </li>
                 </ul>
 
-                <a href="TDX-perience-Volvo.html" class="ctaButton">The Volvo TDX-perience</a>
+                <a href="TDX-perience-Volvo.html" class="ctaButton">The Volvo TDXperience</a>
                 <br><br><br><br>
             </section>
             <section class="thumblistHolder">   
-                <picture style="width:55%;">
+                <picture class="smlLogo">
                     <img src="/images/icons/icons2022/brand-yanmar-CLR.svg">
                 </picture>
 
                 <ul>
                     <li>
-                        <div class="item"><picture> <img src="/images/misc/lozenges/loz-fleetcare.jpg" alt=""> </picture>
+                        <div class="item"><picture> <img src="/images/2022/misc/yanmar-michael.jpg" alt=""> </picture>
                             <div>
-                                <h3>"Quote of a few words ..."</h3>
-                                <p>- FirstName, Company.</p>
+                                <h3>"I find Yanmars are one of the best out there. One phone call to TDX and the servicing is done in our yard."</h3>
+                                <p>- Michael Jones, Dyers Road Landscape & Hire.</p>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="item"><picture> <img src="/images/misc/lozenges/loz-fleetcare.jpg" alt=""> </picture>
+                        <div class="item"><picture> <img src="/images/2022/misc/yanmar-edward.jpg" alt=""> </picture>
                             <div>
-                                <h3>"Quote of a few words ..."</h3>
-                                <p>- FirstName, Company.</p>
+                                <h3>"Yanmar is extremely reliable and TDX understand what we're trying to achieve"</h3>
+                                <p>- Edward Basset, NC Hire.</p>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="item"><picture> <img src="/images/misc/lozenges/loz-fleetcare.jpg" alt=""> </picture>
-                            <div>
-                                <h3>"Quote of a few words ..."</h3>
-                                <p>- FirstName, Company.</p>
-                            </div>
-                        </div>
-                    </li>
+                    
                 </ul>
-                <a href="TDX-perience-Yanmar.html" class="ctaButton">The Yanmar TDX-perience</a>
+                <a href="TDX-perience-Yanmar.html" class="ctaButton">The Yanmar TDXperience</a>
                 <br><br><br><br>
             </section>
             <section class="thumblistHolder">
-                <picture style="width:55%;height: auto;">          
+                <picture class="smlLogo adjustUp">
                     <img src="/images/icons/icons2022/brand-shell-CLR.svg">
                 </picture>
                 <ul>
                     <li>
-                        <div class="item"><picture> <img src="/images/misc/lozenges/loz-fleetcare.jpg" alt=""> </picture>
+                        <div class="item"><picture> <img src="/images/2022/misc/shell.jpg" alt=""> </picture>
                             <div>
                                 <h3>"Quote of a few words ..."</h3>
                                 <p>- FirstName, Company.</p>
@@ -438,7 +424,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="item"><picture> <img src="/images/misc/lozenges/loz-fleetcare.jpg" alt=""> </picture>
+                        <div class="item"><picture> <img src="/images/2022/misc/shell.jpg" alt=""> </picture>
                             <div>
                                 <h3>"Quote of a few words ..."</h3>
                                 <p>- FirstName, Company.</p>
@@ -446,7 +432,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="item"><picture> <img src="/images/misc/lozenges/loz-fleetcare.jpg" alt=""> </picture>
+                        <div class="item"><picture> <img src="/images/2022/misc/shell.jpg" alt=""> </picture>
                             <div>
                                 <h3>"Quote of a few words ..."</h3>
                                 <p>- FirstName, Company.</p>
@@ -454,7 +440,7 @@
                         </div>
                     </li>
                 </ul>
-                <a href="TDX-perience-Shell.html" class="ctaButton">The Shell TDX-perience</a>
+                <a href="TDX-perience-Shell.html" class="ctaButton">The Shell TDXperience</a>
                 <br><br><br><br>
             </section>               
         </div>
