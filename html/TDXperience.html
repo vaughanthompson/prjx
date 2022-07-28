@@ -270,95 +270,57 @@
 
 
     <div class="xperienceCover">
-        <h1>The TD<span>X</span>perience</h1>
+        <h1>TD<span>X</span>perience</h1>
     </div>
 
-    <div class="owl-carousel-slider owl-theme owl-theme-slider">
-       
-       
-        <div class="item">
-            <!-- same  article cms stucture options one col eg -->
-            <article>
-                <div class="scontain">
-                    <section style="position: relative; overflow: hidden;">
-                        <div class="picturefill-background">
-                            <div class="scontain">
-                                <section>
-                                    &nbsp;
-                                </section>
-                            </div>
-                            <span data-src="/images/2022/28m.jpg"></span><!-- use 4:3 aspect for ph -->
-                            <span data-src="/images/2022/28d.jpg" data-media="(min-width: 1100px)"></span>
-
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </div>
-        <div class="item">
-            <!-- same  article cms stucture options one col eg -->
-            <article>
-                <div class="scontain">
-                    <section style="position: relative; overflow: hidden;">
-                        <div class="picturefill-background">
-                            <div class="scontain">
-                                <section>
-                                    &nbsp;
-                                </section>
-                            </div>
-                            <span data-src="/images/2022/06m.jpg"></span><!-- use 4:3 aspect for ph -->
-                            <span data-src="/images/2022/06d.jpg" data-media="(min-width: 1100px)"></span>
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </div>
-        <div class="item">
-            <!-- same  article cms stucture options one col eg -->
-            <article>
-                <div class="scontain">
-                    <section style="position: relative; overflow: hidden;">
-                        <div class="picturefill-background">
-                                <div class="scontain">
-                                    <section>
-                                        &nbsp;
-                                    </section>
-                                </div>
-                            <span data-src="/images/2022/34m.jpg"></span><!-- use 4:3 aspect for ph -->
-                            <span data-src="/images/2022/34d.jpg" data-media="(min-width: 1100px)"></span>
-
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </div>
-        <div class="item">
-            <!-- same  article cms stucture options one col eg -->
-            <article>
-                <div class="scontain">
-                    <section style="position: relative; overflow: hidden;">
-                        <div class="picturefill-background">
-                                <div class="scontain">
-                                    <section>
-                                        &nbsp;
-                                    </section>
-                                </div>
-                            <span data-src="/images/2022/30m.jpg"></span><!-- use 4:3 aspect for ph -->
-                            <span data-src="/images/2022/30d.jpg" data-media="(min-width: 1100px)"></span>
-
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </div>
-       
-    </div>
-
+        
 
     
 
+                    <div class=" teaserFull picturefill-background" style="position:relative; height: 73vh;">
+          
+    
+                        <!-- for video -->
+                            <div class="vidCover"></div>
+                            <div id="vidHolder">
+                                <video id="bgvid" class="hidden-xs" autoplay muted style="height:73vh ;">
+                                    <source type="video/mp4" data-src="/video/1_1 (Stitched Clip).mp4">
+                                </video>
+                            </div>
+                         <!-- for video -->
+                         <span data-src="/images/2022/misc/vid-placeholder-m.jpg"></span><!-- use 4:3 aspect for ph -->
+                         <span data-src="/images/2022/misc/vid-placeholder-d.jpg" data-media="(min-width: 1100px)"></span>
+                    </div>
+                    <!-- for production place the listener after scripts at end of page -->
+                    <!-- for bg video loop -->
+                    <script type="text/javascript">
+                        window.addEventListener("load", function() {
+                            var bgv = document.getElementById("bgvid");
 
+                            var visible = !!(bgv.offsetWidth ||
+                            bgv.offsetHeight ||
+                            bgv.getClientRects().length);
 
+                            if (visible) {
+                            var children = bgv.getElementsByTagName("source");
+                                for (var i = 0; i < children.length; ++i) {
+                                children[i].src = children[i].getAttribute("data-src");
+                                }
+                            }
+                            bgv.load();
+
+                            var iterations = 1;
+                            bgvid.addEventListener('ended', function () {
+                                if (iterations < 3) {
+                                    this.currentTime = 0;
+                                    this.play();
+                                    iterations ++;
+                                }
+                            }, false);
+
+                        });
+                    </script>
+                    
 
 
 
