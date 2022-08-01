@@ -2617,7 +2617,7 @@ div.xperienceCover {
     align-items: center;
 }
 div.xperienceCover.darker {
-    background-color: rgba(0,0,0,0.6); 
+    background-color: rgba(0,0,0,0.4); 
 }
 div.xperienceCover h1 {
     font-weight: 900;
@@ -2628,7 +2628,17 @@ div.xperienceCover h1 {
     text-transform: uppercase;
     /*text-shadow: 2px 2px 2px rgba(0,0,0,0.75);*/
 }
-div.xperienceCover h1 span {
+div.xperienceCover h2 {
+    font-weight: 900;
+    font-size: 3.6em;
+    padding-top: 0;
+    margin-top: -0.3em;
+    color: #ffffff;
+    text-transform: uppercase;
+    /*text-shadow: 2px 2px 2px rgba(0,0,0,0.75);*/
+}
+div.xperienceCover h1 span,
+div.xperienceCover h2 span {
     color: rgba(87,166,123,1.0);
 }
 div.xperienceCover h2,
@@ -2637,7 +2647,11 @@ div.xperienceCover h4 {
     color: #ffffff;
     margin:0;
     text-transform: uppercase;
-    letter-spacing: 1em;
+    /* letter-spacing: 1em;*/
+}
+div.xperienceCover picture {
+    border:1px solid red;
+    width:50%;
 }
 .xperience .thumblistHolder div.item {
     align-items: flex-start;
@@ -2659,7 +2673,32 @@ picture.smlLogo.adjustUp img {
     height:50px; 
     width:auto;
 }
+div.videoFrame {
+    padding:5px; 
+    background-color:#ffffff;
+    border-radius: 4px; 
+    box-shadow: 0 5px 15px 5px rgba(0,0,0,0.2);
+    margin-bottom: 1em;
+}
+article.largeVideoOverlap {
+    margin-top:-10vh; 
+    position: relative; 
+    z-index: 2200; 
+    padding-left:7vw ; 
+    padding-right: 7vw; 
+    margin-bottom:7.5vh;
+}
 
+article.largeVideoOverlap h4 {
+    width:65%;
+    margin: 1em auto;
+}
+
+div.vidDesc {
+    padding: 1em 2em;
+    width:80%;
+    margin-bottom: 5vh;
+}
 
 
 
@@ -2667,6 +2706,11 @@ picture.smlLogo.adjustUp img {
     div.xperienceCover {
         background-image: url(/images/misc/xperience-mob.svg);
     }
+    div.xperienceCover h1,
+    div.xperienceCover h2 {
+        font-size: 2.4em;
+    }
+
 }
 
 div.overLapImage {
@@ -2682,14 +2726,25 @@ div.overLapImage picture {
 
 
 div.prodTeaserAnywhere div.item {
-    border: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
     margin: 2em 1em;
+    padding-bottom: 2em;
     border-radius: 4px;
     overflow: hidden;
 }
+
+div.prodTeaserAnywhere div.item a {
+    display: flex;
+    align-items: center;
+}
+div.prodTeaserAnywhere div.item picture {
+    max-width: 150px;
+    margin-bottom: 0;
+}
+
 div.prodTeaserAnywhere div.item div.commonInfo,
 div.prodTeaserAnywhere div.item div.summarySpecs {
-    border:1px solid red;
+    padding:0.5em 1em;
 }
 
 div.prodTeaserAnywhere div.item a {
@@ -2697,6 +2752,6 @@ div.prodTeaserAnywhere div.item a {
 }
 
 div.prodTeaserAnywhere div.item a h4 {
-    font-weight: 700;
-    font-size: 1.2em;
+    font-weight: 500;
+    font-size: 1em;
 }
