@@ -2617,7 +2617,7 @@ div.xperienceCover {
     align-items: center;
 }
 div.xperienceCover.darker {
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.55); 
 }
 div.xperienceCover h1 {
     font-weight: 900;
@@ -2649,8 +2649,7 @@ div.xperienceCover h4 {
     text-transform: uppercase;
     /* letter-spacing: 1em;*/
 }
-div.xperienceCover picture {
-    border:1px solid red;
+div.xperienceCover picture.logo {
     width:50%;
 }
 .xperience .thumblistHolder div.item {
@@ -2705,12 +2704,62 @@ div.vidDesc {
 @media screen and (max-width:1200px) {
     div.xperienceCover {
         background-image: url(/images/misc/xperience-mob.svg);
+        background-size: cover;
     }
     div.xperienceCover h1,
     div.xperienceCover h2 {
-        font-size: 2.4em;
+        font-size: 1.8em;
     }
-
+    .xperience h3,
+    .xperience h4,
+    .xperience h5,
+    .xperience h6 {
+        font-size: 1.2em !important;
+    }
+    div.xperienceCover picture.logo {
+        width:75%;
+    }
+    article.largeVideoOverlap {
+        margin-top:-15vh; 
+        padding-left:3vw ; 
+        padding-right: 3vw; 
+        margin-bottom:5vh;
+    }
+    article.largeVideoOverlap h4 {
+        width:90%;
+        margin: 2em auto;
+    }
+    div.vidDesc {
+        padding: 0;
+        width:90%;
+        margin: 2em auto 4em auto;
+    }
+    article.xperience .thumblistHolder {
+        border: 1px solid rgba(0,0,0,0.1);
+        padding: 3vw;
+        border-radius: 4px;
+        margin-bottom: 2em;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    }
+    article.xperience .thumblistHolder > br {
+        display: none;
+    }
+    article.xperience .thumblistHolder picture {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    article.xperience .thumblistHolder picture.smlLogo img,
+    article.xperience .thumblistHolder picture.smlLogo.adjustUp img {
+        width: 80% !important;
+        height: auto;
+        margin: 0 auto;
+    }
+    article.xperience .thumblistHolder a.ctaButton {
+        display: block;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
 }
 
 div.overLapImage {
