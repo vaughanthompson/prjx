@@ -2787,6 +2787,9 @@ div.prodTeaserAnywhere div.item {
     border-radius: 4px;
     overflow: hidden;
 }
+div.prodTeaserAnywhere div.item:last-child {
+    border-bottom: none;
+}
 
 div.prodTeaserAnywhere div.item a {
     display: flex;
