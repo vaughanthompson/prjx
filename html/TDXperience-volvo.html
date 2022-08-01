@@ -273,7 +273,7 @@
         <picture class="logo">
             <img src="/images/icons/icons2022/brand-volvo-REV.svg">
         </picture>
-        <h2>A&nbsp;&nbsp;TD<span>X</span>perience</h2>
+        <h2>TD<span>X</span>perience</h2>
         <br>
         <br>
     </div>
@@ -283,12 +283,12 @@
             <div class="vidCover"></div>
             <div id="vidHolder">
                 <video id="bgvid" class="hidden-xs" autoplay muted style="height:73vh ;">
-                    <source type="video/mp4" data-src="/video/xperience-all-stitched_1.mp4">
+                    <source type="video/mp4" data-src="/video/TDXperience_Volvo_RAW_1.mp4">
                 </video>
             </div>
             <!-- for video -->
-            <span data-src="/images/2022/misc/vid-placeholder-m.jpg"></span><!-- use 4:3 aspect for ph -->
-            <span data-src="/images/2022/misc/vid-placeholder-d.jpg" data-media="(min-width: 1100px)"></span>
+            <span data-src="/images/2022/misc/vid-placeholder-volvo-m.jpg"></span><!-- use 4:3 aspect for ph -->
+            <span data-src="/images/2022/misc/vid-placeholder-volvo-d.jpg" data-media="(min-width: 1100px)"></span>
     </div>
     <!-- for production place the listener after scripts at end of page -->
     <!-- for bg video loop -->
@@ -310,7 +310,7 @@
 
             var iterations = 1;
             bgvid.addEventListener('ended', function () {
-                if (iterations < 3) {
+                if (iterations < 4) {
                     this.currentTime = 0;
                     this.play();
                     iterations ++;
