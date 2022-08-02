@@ -2703,7 +2703,7 @@ div.vidDesc {
 
 @media screen and (max-width:1200px) {
     div.xperienceCover {
-        background-image: url(/images/misc/xperience-mob.svg);
+        background-image: url(/images/misc/xperience-mob_1.svg);
         background-size: cover;
     }
     div.xperienceCover h1,
@@ -2761,10 +2761,10 @@ div.vidDesc {
         margin-right: 3vw;
     }
     div.xperienceCover {
-        background-color: rgba(0,0,0,0.5); 
+        background-color: rgba(0,0,0,0.1); 
     }
     div.xperienceCover.darker {
-        background-color: rgba(0,0,0,0.5); 
+        background-color: rgba(0,0,0,0.1); 
     }
 }
 
