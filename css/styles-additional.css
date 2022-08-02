@@ -2616,9 +2616,12 @@ div.xperienceCover {
     justify-content: center;
     align-items: center;
 }
+
 div.xperienceCover.darker {
-    background-color: rgba(0,0,0,0.25); 
+    background-image: url(/images/misc/xperience-int-desk.svg);
+    background-color: rgba(0,0,0,0.5); 
 }
+
 div.xperienceCover h1 {
     font-weight: 900;
     font-size: 6em;
@@ -2633,6 +2636,7 @@ div.xperienceCover h2 {
     font-size: 3.6em;
     padding-top: 0;
     margin-top: -0.3em;
+    letter-spacing: 0;
     color: #ffffff;
     text-transform: uppercase;
     /*text-shadow: 2px 2px 2px rgba(0,0,0,0.75);*/
@@ -2706,6 +2710,10 @@ div.vidDesc {
         background-image: url(/images/misc/xperience-mob_1.svg);
         background-size: cover;
     }
+    div.xperienceCover.darker {
+        background-image: url(/images/misc/xperience-mob2.svg);
+        background-size: cover;
+    }
     div.xperienceCover h1,
     div.xperienceCover h2 {
         font-size: 1.8em;
@@ -2720,7 +2728,7 @@ div.vidDesc {
         width:75%;
     }
     article.largeVideoOverlap {
-        margin-top:-15vh; 
+        margin-top:-10vh; 
         padding-left:3vw ; 
         padding-right: 3vw; 
         margin-bottom:5vh;
@@ -2761,10 +2769,10 @@ div.vidDesc {
         margin-right: 3vw;
     }
     div.xperienceCover {
-        background-color: rgba(0,0,0,0.1); 
+        background-color: rgba(0,0,0,0.0); 
     }
     div.xperienceCover.darker {
-        background-color: rgba(0,0,0,0.1); 
+        background-color: rgba(0,0,0,0.5); 
     }
 }
 
