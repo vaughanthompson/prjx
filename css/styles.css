@@ -3057,7 +3057,7 @@ div.videoFrame div.pbVideo {
 .hidden-xs {
     display: none
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
     .hidden-xs {
         display: block
     }
