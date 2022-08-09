@@ -2607,7 +2607,7 @@ div.xperienceCover {
     position: absolute; 
     z-index:2100; 
     background-color: rgba(0,0,0,0.0); 
-    background-image: url(/images/misc/xperience-desk_1.svg);
+    background-image: url(/images/2022/misc/xperience-desk1.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 101% auto;
@@ -2618,7 +2618,7 @@ div.xperienceCover {
 }
 
 div.xperienceCover.darker {
-    background-image: url(/images/misc/xperience-int-desk.svg);
+    background-image: url(/images/2022/misc/xperience-desk2.svg);
     background-color: rgba(0,0,0,0.5); 
 }
 
@@ -2707,11 +2707,11 @@ div.vidDesc {
 
 @media screen and (max-width:1200px) {
     div.xperienceCover {
-        background-image: url(/images/misc/xperience-mob_1.svg);
+        background-image: url(/images/2022/misc/xperience-mob1.svg);
         background-size: cover;
     }
     div.xperienceCover.darker {
-        background-image: url(/images/misc/xperience-mob2.svg);
+        background-image: url(/images/2022/misc/xperience-mob2.svg);
         background-size: cover;
     }
     div.xperienceCover h1,
