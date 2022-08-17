@@ -2681,7 +2681,7 @@ div.videoFrame {
     background-color:#ffffff;
     border-radius: 4px; 
     box-shadow: 0 5px 15px 5px rgba(0,0,0,0.2);
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 article.largeVideoOverlap {
     margin-top:-10vh; 
@@ -2693,6 +2693,10 @@ article.largeVideoOverlap {
 }
 
 article.largeVideoOverlap h4 {
+    width:65%;
+    margin: 1em auto;
+}
+article.largeVideoOverlap h6 {
     width:65%;
     margin: 1em auto;
 }
@@ -2733,7 +2737,8 @@ div.vidDesc {
         padding-right: 3vw; 
         margin-bottom:5vh;
     }
-    article.largeVideoOverlap h4 {
+    article.largeVideoOverlap h4,
+    article.largeVideoOverlap h6 {
         width:90%;
         margin: 2em auto;
     }
@@ -2804,7 +2809,8 @@ div.prodTeaserAnywhere div.item a {
     align-items: center;
 }
 div.prodTeaserAnywhere div.item picture {
-    max-width: 150px;
+    width: 80px;
+    min-width: 80px;
     margin-bottom: 0;
 }
 
