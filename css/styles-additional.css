@@ -2622,6 +2622,11 @@ div.xperienceCover.darker {
     background-color: rgba(0,0,0,0.5); 
 }
 
+div.xperienceCover.internal-shell.darker {
+    background-color: rgba(0,0,0,0.75); 
+}
+
+
 div.xperienceCover h1 {
     font-weight: 900;
     font-size: 6em;
@@ -2684,7 +2689,7 @@ div.videoFrame {
     margin-bottom: 3em;
 }
 article.largeVideoOverlap {
-    margin-top:-10vh; 
+    margin-top:-0vh; 
     position: relative; 
     z-index: 2200; 
     padding-left:7vw ; 
