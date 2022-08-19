@@ -865,6 +865,7 @@ article.teaser.banner div.picturefill-background section {
     margin-top:3vh;
     margin-bottom:3vh;
 }
+
 div.owl-carousel-slider.shop  div.picturefill-background section {
     width: 65%;
     margin-top:5vh;
@@ -886,6 +887,9 @@ div.owl-brand-slider.series div.picturefill-background section {
         width: 45%;
         padding-left: 5.5vw;
         margin-left:0;
+    }
+    div.owl-carousel-slider div.picturefill-background div.xperience section {
+        width: 75%;
     }
 } 
 
@@ -964,6 +968,12 @@ div.owl-brand-slider h4 {
 
 }
 
+div.owl-carousel-slider div.picturefill-background div.xperience section h2 {
+    font-weight:900;
+    font-size: 4.6em;
+}
+
+
 @media screen and (max-width: 1000px) {
     div.owl-carousel-slider div.item {
         height: 73vh;
@@ -987,7 +997,11 @@ div.owl-brand-slider h4 {
 }
 
 @media screen and (max-width: 1000px) {
-
+    div.owl-carousel-slider div.picturefill-background div.xperience section h2 {
+        font-weight:900;
+        font-size:2.2em;
+    }
+    
     
     div.owl-carousel-slider div.picturefill-background div.scontain,
     div.owl-brand-slider div.picturefill-background div.scontain {
@@ -1020,6 +1034,20 @@ div.owl-brand-slider h4 {
     div.owl-carousel-slider div.picturefill-background section a.ctaButton {
         align-self: flex-end;
     }
+
+    div.owl-carousel-slider div.picturefill-background div.xperience section {
+        width: 90vw;
+        height: 45vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+    div.owl-carousel-slider div.picturefill-background div.xperience section a.ctaButton {
+        align-self: center !important;
+        margin: 10px auto 0px auto;
+    }
+   
+
     div.owl-brand-slider div.picturefill-background section {
         width: 80vw;
         /* margin:0px auto;*/
@@ -1932,6 +1960,13 @@ div.owl-carousel-slider div.picturefill-background div.scontain.arrow-out-left {
     background-position: 35.5vw 50%;
 }
 
+div.owl-carousel-slider div.picturefill-background div.scontain.xperience {
+    background-image: url(/images/2022/misc/xperience-desk2.svg);
+    background-position: 50% 50%;
+    background-size: 101% auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
 div.owl-carousel-slider div.picturefill-background div.scontain.darken {
     background-image: none;
     background-color: rgba(0,0,0,0.4);
@@ -1950,6 +1985,12 @@ div.owl-carousel-slider div.picturefill-background div.scontain.darken {
     div.owl-carousel-slider div.picturefill-background div.scontain.arrow-out-left,
     div.owl-carousel-slider div.picturefill-background div.scontain.darken {
         background-image: none !important;
+        background-color: rgba(0,0,0,0.6);
+    }
+    div.owl-carousel-slider div.picturefill-background div.scontain.xperience {
+        background-image: url(/images/2022/misc/xperience-mob2.svg) !important;
+        background-position: 50% 50%;
+        background-size: 130% auto;
         background-color: rgba(0,0,0,0.6);
     }
 }
