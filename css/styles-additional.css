@@ -1677,6 +1677,12 @@ small {
     flex-basis: 35%;
     text-align: left;
 }
+#navHeader a.mLogo > img {
+    height:30px;
+    width:auto;
+    margin-left: 5px;
+}
+
 
 #navHeader a#navCart {
     background-color: rgba(255,255,255,0.2);
