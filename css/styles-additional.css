@@ -2879,3 +2879,355 @@ div.prodTeaserAnywhere div.item a h4 {
     font-weight: 500;
     font-size: 1em;
 }
+
+
+
+.brandColor {
+    color: rgba(87,166,123,1.0) !important;
+}
+
+
+
+/* unearthed */
+a.pictureLink img {
+    border-radius: 0.4em;
+    margin-bottom: 1em;
+}
+a.pictureLink {
+    margin-bottom: 3vh;
+}
+@media screen and (max-width:1100px) {
+    a.pictureLink {
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 2vh;
+        align-items: center;
+        background-color: rgba(0,0,0,0.04);
+        padding: 1vw;
+        border-radius: 0.6em;
+    }
+    a.pictureLink > img {
+        max-width: 20%; 
+        margin-bottom: 0;
+    }
+    a.pictureLink > h5 {
+        font-size:1.2em
+    }
+}
+
+.simpleFlex {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+.simpleFlex > * {
+    flex: 1 1 100%;
+}    
+@media screen and (min-width:1100px) {
+    .simpleFlex {
+        column-gap: 3vw;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+    
+    .simpleFlex > * {
+        flex: 0 1 30%;
+    }
+}
+
+
+.multiCol {
+    column-count: 2;
+    column-gap: 3vw;
+}
+.spanCols,
+.multiCol picture {
+    column-span: all;
+}
+.noMulti {
+    break-inside: avoid-column;
+}
+
+.multiCol p {
+    break-after: auto;
+}
+
+
+
+/* tdx intro */
+div.edContain {
+    position: relative;
+}
+div.editorial  {
+    padding: 15vh 10vw;
+    min-height: 55vh;
+    display: flex;
+    column-gap: 3vw;
+}
+div.editorial.darken {
+    background-color:rgba(0,0,0,0.3);
+}
+div.editorial.overrideHeight {
+    min-height: 10vh;
+}
+div.editorial.fS {
+    min-height: 70vh;
+}
+div.editorial.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3vw;
+}
+div.editorial > section {
+    flex:1 1 50%;
+}
+div.editorial.col > section {
+    flex:0 1 25%;
+}
+div.editorial > section.insetRight {
+    padding-left: 30vw;
+}
+div.editorial > section.bottom {
+    align-self: flex-end;
+}
+div.editorial > section.spaceApart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+div.editorial section.cols.two {
+   display: flex;
+   column-gap: 2vw;
+} 
+div.editorial section.cols.two div {
+    flex: 0 1 50%;
+ } 
+ .edContain {
+    background-color: #fff;
+}
+ .edContain.dark {
+    background-color: #000;
+    color: #fff;
+}
+.edContain.border,
+.fiftyfifty.border {
+    border-bottom:1px solid rgba(100,100,100,1);
+}
+.edContain.shade {
+    background-color: rgba(245,245,245,1.0);
+}
+div.edContain picture.small {
+    max-width:150px;
+}
+div.edContain picture.med {
+    max-width:40%;
+}
+div.edContain picture.medLarge {
+    max-width:65%;
+}
+
+div.edContain .badge {
+    display: block;
+    position: absolute; 
+    margin-left:1vw;
+    top:1.3vw;
+    width:30px;
+    height: 30px;
+    font-size: 30px;
+}
+div.edContain .inlineTxt {
+    font-size: 0.75em;
+    position: relative;
+    left:-80px;
+    margin-right: -80px;
+}
+div.edContain.patternBG {
+    background-image: url(/images/pattern-fadeRL.svg);
+    background-repeat: no-repeat;
+    background-size:auto 50%;
+    background-position: 10% 120%;
+}
+
+
+/* typo */
+div.edContain p {
+    font-size: 1em;
+    line-height: 1.3em;
+}
+div.edContain li {
+    font-size: 1em;
+}
+div.edContain .large {
+    font-size: 8em;
+}
+div.edContain .medLarge {
+    font-size: 5em;
+    line-height: 1em;
+}
+div.edContain .light {
+    font-size: 4em;
+    font-weight: 200;
+    max-width: 95%;
+}
+div.edContain h2.light {
+    font-size: 3em;
+    font-weight: 200;
+}
+div.edContain h6 {
+    max-width: 95%;
+}
+
+div.edContain .green {
+    color: rgba(87,166,123,1.0);
+}
+div.edContain .grey {
+    color: rgba(150,150,150,1.0);
+}
+
+@media screen and (max-width:1100px) {
+    div.edContain .large {
+        font-size: 3em;
+    }
+
+    div.edContain .medLarge {
+        font-size: 3em;
+        line-height: 1em;
+    }
+    div.edContain .light {
+        font-size: 2.5em;
+        font-weight: 200;
+        max-width: 95%;
+    }
+    div.edContain h2.light {
+        font-size: 1.8em;
+        font-weight: 200;
+    }
+    div.editorial > section.insetRight {
+        padding-left: 0;
+    }
+    div.editorial section.cols.two {
+        display: block;
+     } 
+     div.editorial.darken {
+        background-color:rgba(0,0,0,0.5);
+    }
+    div.editorial.full  {
+        min-height: 80vh;
+    }
+    div.editorial  {
+        padding: 15vh 10vw;
+        display: block;
+    }
+    div.editorial.textOnly  {
+        padding: 5vh 10vw;
+        display: block;
+    }
+    section.spaceApart {
+        padding:4vh 0;
+    }
+    div.edContain picture.medLarge {
+        max-width:80%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+    }
+    div.editorial.reduceMbl {
+        min-height: 10vh;
+    }
+    div.edContain .badge {
+        display: block;
+        position: absolute; 
+        margin-left:8vw;
+        top:8vw;
+        width:20px;
+        height: 20px;
+        font-size: 20px;
+    }
+    div.edContain .inlineTxt {
+        font-size: 0.75em;
+        position: relative;
+        left:-80px;
+        margin-right: -80px;
+        display: none;
+    }
+    div.m {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1100px) {
+    div.sixtyforty {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+
+    }
+    div.sixtyforty.rev {
+        flex-direction: row-reverse;
+    }
+    div.sixtyforty > * {
+        flex:1 1 50%;
+    }
+    div.sixtyforty.rev > *:first-child {
+        flex-basis: 35%;
+    }
+    div.sixtyforty.rev > *:last-child {
+        flex-basis: 65%;
+    }
+    div.sixtyforty > *:first-child {
+        flex-basis: 35%;
+    }
+    div.sixtyforty > *:last-child {
+        flex-basis: 65%;
+    }
+
+    div.sixtyforty > *:first-child div.editorial {
+        padding-right: 5vw;
+    }
+    div.sixtyforty > *:last-child div.editorial {
+        padding-left: 5vw;
+    }
+    div.sixtyforty.rev > *:first-child div.editorial {
+        padding-left: 5vw;
+    }
+    div.sixtyforty.rev > *:last-child div.editorial {
+        padding-right: 5vw;
+        padding-left: 10vw;
+    }
+
+    div.edContain.picturefill-background {
+        display: flex;
+    }
+    div.edContain.picturefill-background div.editorial.arrow,
+    div.edContain.picturefill-background div.editorial.arrowW,
+    div.edContain.picturefill-background div.editorial.arrowRev {
+        align-self: stretch;
+        flex-basis: 100%;   
+    }
+    div.editorial.arrow {
+        background-image: url(/images/overlayArrow.svg);
+        background-position: -1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
+    div.editorial.arrowW {
+        background-image: url(/images/overlayArr-White.svg);
+        background-position: -1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
+    div.editorial.arrowRev {
+        background-image: url(/images/overlayArrow-inset-rev.svg);
+        background-position: 1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
+}

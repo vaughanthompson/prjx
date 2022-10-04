@@ -68,6 +68,9 @@ h4 {
     font-size: 1.15em;
     font-weight: 700;
 }
+h4 span {
+    font-weight:300;
+}
 h5 {
     font-size: 1em;
 }
@@ -1023,7 +1026,8 @@ hr {
 border:none;
 border-bottom: 1px solid #dedede;
 }
-.content hr {
+.content hr,
+hr.thickLine {
     border-bottom: 4px solid rgba(87,166,123,1.0);
   
 }
