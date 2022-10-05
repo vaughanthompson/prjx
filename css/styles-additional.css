@@ -3032,7 +3032,7 @@ div.edContain picture.small {
 div.edContain picture.med {
     max-width:40%;
 }
-div.edContain picture.medLarge {
+div.edContain picture.mLarge {
     max-width:65%;
 }
 
@@ -3135,7 +3135,7 @@ div.edContain .grey {
     section.spaceApart {
         padding:4vh 0;
     }
-    div.edContain picture.medLarge {
+    div.edContain picture.mLarge {
         max-width:80%;
         margin-top: 5vh;
         margin-bottom: 5vh;
