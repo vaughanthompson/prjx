@@ -3019,6 +3019,10 @@ div.editorial section.cols.two div {
     background-color: #000;
     color: #fff;
 }
+.edContain.brand {
+    background-color: rgba(87,166,123,1.0);
+    color: #fff;
+}
 .edContain.border,
 .fiftyfifty.border {
     border-bottom:1px solid rgba(100,100,100,1);
@@ -3167,6 +3171,21 @@ div.edContain .grey {
 }
 
 @media screen and (min-width:1100px) {
+    div.fiftyfifty > *:first-child div.editorial {
+        padding-right: 3vw;
+    }
+    div.fiftyfifty > *:last-child div.editorial {
+        padding-left: 3vw;
+    }
+    div.fiftyfifty.rev > *:first-child div.editorial {
+        padding-left: 3vw;
+    }
+    div.fiftyfifty.rev > *:last-child div.editorial {
+        padding-right: 5vw;
+        padding-left: 10vw;
+    }
+ 
+
     div.sixtyforty {
         display: flex;
         flex-wrap: nowrap;
@@ -3211,6 +3230,9 @@ div.edContain .grey {
     }
     div.edContain.picturefill-background div.editorial.arrow,
     div.edContain.picturefill-background div.editorial.arrowW,
+    div.edContain.picturefill-background div.editorial.arrowG,
+    div.edContain.picturefill-background div.editorial.arrowGRev,
+    div.edContain.picturefill-background div.editorial.arrowWRev,
     div.edContain.picturefill-background div.editorial.arrowRev {
         align-self: stretch;
         flex-basis: 100%;   
@@ -3227,8 +3249,26 @@ div.edContain .grey {
         background-repeat: no-repeat;
         background-size:100% auto ;
     }
+    div.editorial.arrowG {
+        background-image: url(/images/overlayArr-Green.svg);
+        background-position: -1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
     div.editorial.arrowRev {
         background-image: url(/images/overlayArrow-inset-rev.svg);
+        background-position: 1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
+    div.editorial.arrowWRev {
+        background-image: url(/images/overlayArr-White1.svg);
+        background-position: 1px 50%;
+        background-repeat: no-repeat;
+        background-size:100% auto ;
+    }
+    div.editorial.arrowGRev {
+        background-image: url(/images/overlayArr-Green.svg);
         background-position: 1px 50%;
         background-repeat: no-repeat;
         background-size:100% auto ;
