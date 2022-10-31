@@ -2940,24 +2940,29 @@ span.pictureLink {
     .simpleFlex > * {
         flex: 0 1 30%;
     }
+
+    .simpleFlex4 > * {
+        flex: 0 1 22%;
+    }
+    .multiCol {
+        column-count: 2;
+        column-gap: 3vw;
+    }
+    .spanCols,
+    .multiCol picture {
+        column-span: all;
+    }
+    .noMulti {
+        break-inside: avoid-column;
+    }
+    
+    .multiCol p {
+        break-after: auto;
+    }
 }
 
 
-.multiCol {
-    column-count: 2;
-    column-gap: 3vw;
-}
-.spanCols,
-.multiCol picture {
-    column-span: all;
-}
-.noMulti {
-    break-inside: avoid-column;
-}
 
-.multiCol p {
-    break-after: auto;
-}
 
 
 
