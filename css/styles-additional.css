@@ -3279,3 +3279,53 @@ div.edContain .grey {
         background-size:100% auto ;
     }
 }
+
+
+
+
+/* reversed table formatting */
+table.revTable,
+table.revTable td {
+    color: white;
+    border-bottom:1px solid grey;
+    padding:5px 5px 3px 5px;
+    font-size: 0.95em;
+}
+
+table.revTable td:first-child {
+    color: rgba(87,166,123,1.0);
+}
+
+
+
+@media screen and (max-width:1100px) {
+    section.xmasHours h2 {
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+    section.xmasHours p.locs  {
+        margin-bottom:0;
+        margin-top:7px;
+        font-size: 0.8em;
+        line-height: 1.2em;
+    }
+    section.xmasHours {
+        width:90% !important;
+        margin-bottom: 0vh !important;
+        min-height: 60vh;
+    }
+
+    table.revTable,
+    table.revTable td {
+    font-size: 0.9em;
+    }
+
+    table.revTable {
+        border-top:1px solid grey;
+
+    }
+
+    table.revTable td:first-child {
+        color: white;
+    }
+}
