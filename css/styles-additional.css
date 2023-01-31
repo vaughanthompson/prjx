@@ -3329,3 +3329,53 @@ table.revTable td:first-child {
         color: white;
     }
 }
+
+
+
+
+
+
+/** styles support for calc layout **/
+
+div.flex-col {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+    row-gap: 1vw;
+    margin: 1em 3vw 2em 0;
+}
+div.flex-col > * {
+    flex: 1 0 30%;
+}
+div.formItem label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.modelThumbCalc {
+    flex: 1 0 20% !important;
+    border:1px solid red;
+    padding:5px;
+}
+
+.modelThumbCalc {
+    text-decoration: none !important;
+}
+
+
+
+
+
+
+/* override mobile padding */
+@media screen and (max-width:1100px) {
+    .reducePadMob {
+        padding-top:10vh !important;
+        padding-bottom:5vh !important;
+    }
+    .reducePadBottomMob {
+        padding-bottom:0.5em !important;
+    }
+    .reducePadTopMob {
+        padding-top:0.5em !important;
+    }
+}
