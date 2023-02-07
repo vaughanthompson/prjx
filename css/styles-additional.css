@@ -3340,12 +3340,12 @@ table.revTable td:first-child {
 div.flex-col {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 2vw;
+    column-gap: 1.25em;
     row-gap: 1vw;
     margin: 1em 3vw 2em 0;
 }
 div.flex-col > * {
-    flex: 1 0 30%;
+    flex: 1 0 40%;
 }
 div.formItem label {
     display: inline-block;
@@ -3353,15 +3353,142 @@ div.formItem label {
 }
 .modelThumbCalc {
     flex: 1 0 20% !important;
-    border:1px solid red;
-    padding:5px;
+    border:2px solid #ffffff;
+    padding:10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: 500ms;
 }
-
+.modelThumbCalc.activeLink {
+    border:2px solid rgba(87,166,123,1.0);
+}
 .modelThumbCalc {
     text-decoration: none !important;
 }
+.modelThumbCalc h5 {
+    font-size: 1.1em;
+    line-height: 1em;
+}
+.modelThumbCalc h6 {
+    font-size: 0.8em;
+    line-height: 1.3em;
+}
+.selectVs {
+    flex: 1 0 20% !important;
+    align-self: center;
+}
+.selectVs h5 {
+    margin:0;
+    line-height: 1em;
+    padding: 0;
+    text-align: center;
+    font-size: 1.4em;
+}
+.selectVs .select-container {
+    display: block;
+}
+.selectVs select {
+    margin: 0;
+    max-width: 100%;
+}
+.keySaving {
+    flex: 1 0 20% !important;
+}
+.keySaving div.lozenge {
+    background-color: rgba(87,166,123,1.0) !important;
+    border:2px solid rgba(87,166,123,1.0);
+    height:10vw;
+    width:10vw;
+    position: relative;
+    top:0;
+    right:0;
+    margin: 0px auto;
+}
+.keySaving div.lozenge h2 {
+    font-size:1.8em;
+    letter-spacing: 0;
+}
+.keySaving p {
+    font-size:0.95em;
+    padding: 20px 0;
+    max-width:100%;
+    line-height: 1.1em;
+    text-align: center;
+    font-weight:500;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+div.chartContain {
+    position: relative;
+    height: 50vh;
+    width:100%;
+}
+@media screen and (min-width:1100px) {
+    article.calcRow1 {
+        padding-bottom: 1.5em;
+    }
+    article.calcRow2 {
+        padding-top:0em;
+        padding-bottom: 0;
+    }
+}
 
+.ctaContain,
+.versusStats,
+.ctaEnquiry {
+    display: none;
+}
 
+@media screen and (max-width:1000px) {
+    article.featureStats {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    article.featureStats div.scontain {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    article.calcRow1 {
+        padding-bottom: 0;
+    }
+    div.flex-col {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 3vh;
+        margin: 1em 3vw 2em 0;
+    }
+    .modelThumbCalc {
+        display: flex;
+        align-items: center;
+        column-gap: 3vw;
+    }
+    .modelThumbCalc > img {
+        width:25vw;
+    }
+    .keySaving div.lozenge { 
+        height:40vw;
+        width:40vw; 
+    }
+    .keySaving p {
+        font-size:1.2em;
+        line-height: 1.3em;
+        font-weight:500;
+    }
+    .selectVs .select-container {
+        display: block;
+        width:70vw;
+        margin-left: 1em;
+    }
+    .selectVs select {
+        margin: 0;
+        max-width: 100%;
+    }
+
+}
 
 
 

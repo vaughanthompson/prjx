@@ -1,0 +1,13 @@
+﻿/* print friendly */
+
+div.navHeader,
+nav.mblnav,
+div.navHeight,
+div#masthead21,
+body > footer {
+    display: none;
+}
+
+article {
+    height:auto;
+}
