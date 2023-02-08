@@ -280,7 +280,7 @@
              
 
 
-    <article class="intro header2022 " >
+    <article class="intro header2022 notPrint" >
         <div class="scontain">
             <section>
                 <h1><strong class="brandColor">Volvo E-Series Hybrid</strong><br><span>Savings Calculator</span></h1>
@@ -344,7 +344,7 @@
 
 
 
-            <h5>Select a Volvo Hybrid:</h5>
+            <h5 class="notPrint">Select a Volvo Hybrid:</h5>
             <div class="flex-col">
             
             <a href="#" class="modelThumbCalc select-ec250e">
@@ -959,6 +959,8 @@
                 display: false
             }
         },
+        responsive: true,
+        //maintainAspectRatio: false,
         aspectRatio: 1.25,
         scales: {
         x: {

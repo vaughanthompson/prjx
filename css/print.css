@@ -1,13 +1,70 @@
 ﻿/* print friendly */
 
-div.navHeader,
-nav.mblnav,
-div.navHeight,
-div#masthead21,
-body > footer {
-    display: none;
-}
+@media print {
+    div.navHeader,
+    nav.mblnav,
+    div.navHeight,
+    div#masthead21,
+    .ctaButton,
+    article.ctaEnquiry,
+    body > footer {
+        display: none !important;
+    }
+    
+    article {
+        height:auto;
+    }
+    
+    .notPrint {
+        display: none;
+    }
+    
+    main {
+        padding-top:1vh;
+        font-size: 50%;
+    }
+    .modelThumbCalc:not(.activeLink) {
+        display: none;
+    }
+    .modelThumbCalc.activeLink {
+        display: flex;
+        font-size: 150%;
+        color: #333 !important;
+        column-gap: 20px;
+        align-items: center;
+        padding:10px;
+    }
+    .modelThumbCalc.activeLink img {
+        width:80px;
+    }
+    div.chartContain {
+        position: relative;
+        height: auto;
+        width:100%;
+    }
+    .keySaving div.lozenge { 
+        height:130px;
+        width:130px; 
+    }
+    .keySaving div.lozenge h2 {
+        font-size:2.2em;
+        color:#333;
+    }
+    .keySaving p {
+        font-size:1.8em;
+        line-height: 1.3em;
+        font-weight:500;
+    }
+    .selectVs h5 {
+        font-size: 2em;
+        color: #333 !important;
+    }
+    article.featureStats {
+        page-break-before: always;
+    }
+    article.featureStats div.ctaContain h6.brandColor {
+        color: #333 !important;
+        font-size: 1.8em;
+    }
 
-article {
-    height:auto;
 }
