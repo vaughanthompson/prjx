@@ -3421,7 +3421,7 @@ div.formItem label {
 }
 div.chartContain {
     position: relative;
-    height: 45vh;
+    /* height: 45vh; */
     width:100%;
 }
 @media screen and (min-width:1100px) {
@@ -3439,6 +3439,8 @@ div.chartContain {
 .ctaEnquiry {
     display: none;
 }
+
+
 
 @media screen and (max-width:1000px) {
     article.featureStats {
