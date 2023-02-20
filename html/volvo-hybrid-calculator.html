@@ -956,10 +956,11 @@
         offsetY: -13,
         formatter: function(val, index) {
             //return '$' + (val/1000).toFixed(0) + 'K';
-            return '$' + val.toFixed(0);
+            //return '$' + val.toFixed(0);
+            return val.toFixed(0);
         },
         style: {
-            fontSize: '13px'
+            fontSize: '16px'
         },
         background: {
             enabled: true,
@@ -974,14 +975,14 @@
     },
     series: [
         {
-        name: 'Total Cost',
+        name: 'Litres Per Year',
         type: 'bar',
-        data: [350000, 200000, 150000, 270000],
+        data: [26901, 19670, 16719, 28937],
         },
         {
-        name: "Emissions",
+        name: "Cost",
         type: 'line',
-        data: [14000, 10000, 12000, 28000]
+        data: [62949, 46028, 38783, 67713],
         },
     ],
     stroke: {
@@ -1011,7 +1012,7 @@
     },
     yaxis: [
         {
-        seriesName: 'Column A',
+        seriesName: 'Litres',
         axisTicks: {
             show: true
         },
@@ -1027,7 +1028,7 @@
             },
             formatter: function(val, index) {
                 //return val.toFixed(0);
-                return '$' + (val/1000).toFixed(0) + 'K';
+                return (val/1000).toFixed(0) + 'K';
             }
         }
         },
@@ -1036,7 +1037,7 @@
         show: false
         }, {
         opposite: true,
-        seriesName: 'Emissions',
+        seriesName: 'Cost',
         axisTicks: {
             show: true
         },
