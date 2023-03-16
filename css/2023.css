@@ -1,0 +1,89 @@
+/* new 2023 css additions */
+
+/* misc type classes */
+.bidTotal span {
+    font-weight: 400;
+    font-size: 80%;
+}
+
+
+/* misc color classes */
+.darkText {
+    color: #231f20;
+}
+.ctaButton.inActive,
+.ctaButton.inActive:hover {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #fff;
+}
+
+
+/* image handling */
+.smallIcon {
+    width:260px;
+    height: auto;
+}
+.smallerIcon {
+    width:100px;
+    height: auto;
+}
+.smallestIcon {
+    width:50px;
+    height: auto;
+}
+.auctionImage {
+    border:1px solid #fff;
+    box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.1);
+}
+@media screen and (max-width:1100px) {
+    .auctionImage {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+/* parent flex overrides */
+.centerEverything {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+@media screen and (min-width:1100px) {
+    .flip div.scontain {
+        flex-direction: row-reverse;
+    }
+}
+
+
+/* 3rd party theming */
+.braintreeClr {
+    color: rgba(242,106,50,1.0);
+}
+hr.braintree {
+    border-color: rgba(242,106,50,1.0);
+}
+article.braintreeBg {
+    background-color: rgba(242,106,50,1.0);
+    background-image: url(/images/2023/braintree/tile.png);
+}
+article.braintreeBg a:link:not(.ctaButton),
+article.braintreeBg a:hover:not(.ctaButton),
+article.braintreeBg a:active:not(.ctaButton),
+article.braintreeBg a:visited:not(.ctaButton) {
+    color: #fff !important;
+}
+article.braintreeBg h1 {
+    color: #fff !important;
+    padding-bottom: 5px;
+}
+article.braintreeBg div.scontain section:first-of-type {
+    background-image: url('/images/2023/braintree/BT5.jpg');
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: stretch;
+    min-height:50vh;
+}
