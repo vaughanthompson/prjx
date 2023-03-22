@@ -67,6 +67,10 @@ div#currentBids li {
     .flip div.scontain {
         flex-direction: row-reverse;
     }
+    div.editorial.micro  {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
 }
 
 /* gallery updates - square images */
