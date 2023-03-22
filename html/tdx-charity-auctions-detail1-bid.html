@@ -594,9 +594,22 @@
                         <a href="#terms">Please check any auction notes before placing a bid.</a>
                     </p>
 
-                    <a href="tdx-charity-auctions-detail1.html" class="ctaButton">Login (register) to Bid</a>
-             
-                    <img src="/images/2023/braintree/icon.svg" class="smallestIcon" style="float: right;">
+                       <img src="/images/2023/braintree/icon.svg" class="smallestIcon d" style="float: right;">
+         
+
+                    <form method="post" id="frmBid" novalidate="novalidate">    
+                        <span id="Submit" class="submitW">
+                            <input name="__Invariant" type="hidden" value="BidAmount"> 
+                            <div class="sideBySide">
+                                <input class="noMargin" type="number" placeholder="Enter your bid" data-val="true" data-val-number="The field Your bid must be a number." data-val-regex="Bid amount can only have up to two decimal places." data-val-regex-pattern="^\d+(\.\d{1,2})?$" data-val-required="The Your bid field is required." id="BidAmount" name="BidAmount" value="">
+                                <input type="submit" value="Submit Bid" class="ctaButton noMargin">
+                            </div>
+                        </span>
+                    </form>
+
+          
+
+
                 </section>
 
                 <section class="d">

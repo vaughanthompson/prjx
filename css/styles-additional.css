@@ -65,7 +65,7 @@ main.brand-micro div.enquiry {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     .hideMobile {
         display:none;
     }
@@ -314,7 +314,7 @@ div#strip21 a.cart.active:hover i {
     #masthead21 {display:none;}
 }   
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
     #strip21 {
         display: flex;
         justify-content: space-between;
@@ -462,7 +462,7 @@ div.speechBubble a.ctaButton {
    min-width:50px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
 
     .iframeContainer {
         display: none;
@@ -974,7 +974,7 @@ div.owl-carousel-slider div.picturefill-background div.xperience section h2 {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     div.owl-carousel-slider div.item {
         height: 73vh;
     }
@@ -996,7 +996,7 @@ div.owl-carousel-slider div.picturefill-background div.xperience section h2 {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     div.owl-carousel-slider div.picturefill-background div.xperience section h2 {
         font-weight:900;
         font-size:2.2em;
@@ -1551,7 +1551,7 @@ div.sep {
     height:10px;
     background-color: rgba(87,166,123,1.0);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     div.tabContent {
         border-top: 1px solid rgba(87,166,123,1.0);
     }
@@ -1785,7 +1785,7 @@ div.gallery div.mainImg {
     padding-top: 2em;
     padding-bottom:2em;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     div.alertTicker {
         padding:6vw 8vw;
         text-align: left;
@@ -1850,7 +1850,7 @@ div.gallery div.mainImg {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
     main {
         padding:3vw 2vw;
     }

@@ -5,6 +5,9 @@
     font-weight: 400;
     font-size: 80%;
 }
+.noMargin {
+    margin: 0 !important;
+}
 
 
 /* misc color classes */
@@ -43,17 +46,7 @@ div.donatedBy {
     align-items: flex-start;
     column-gap: 25px;
 }
-div#currentBids li {
-    display: flex;
-    justify-content: space-between;
-}
 
-@media screen and (max-width:1100px) {
-    .auctionImage {
-        margin-top: 2em;
-        margin-bottom: 2em;
-    }
-}
 
 /* parent flex overrides */
 .centerEverything {
@@ -61,6 +54,49 @@ div#currentBids li {
     display: flex;
     justify-content: center;
     align-items:center;
+}
+
+.sideBySide {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 1em;
+    width:320px;
+}
+div#currentBids li {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5vw;
+    white-space: nowrap;
+}
+@media screen and (max-width:750px) {
+    h5.bidTotal {
+        margin-bottom: 1em;
+    }
+    h5.bidTotal span {
+        display: block;
+    }
+    h5.bidTotal br {
+        display: none;
+    }
+    div#currentBids li span {
+        order: 1;
+    }
+    div#currentBids li span:last-of-type {
+        order: 0;
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .auctionImage {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    div#currentBids li {
+        flex-wrap: wrap;
+    }
+
 }
 
 @media screen and (min-width:1100px) {
@@ -71,6 +107,10 @@ div#currentBids li {
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
+    .sideBySide {
+        width:350px;
+    }
+
 }
 
 /* gallery updates - square images */
