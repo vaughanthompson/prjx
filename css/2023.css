@@ -120,7 +120,7 @@ div#currentBids li {
 /* gallery updates - square images */
 .auctionImage {
     border:1px solid #fff;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+    /* box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);*/
 }
 div.gallery.square div.galleryItem div.pbVideo {
     margin-bottom: 0;
@@ -189,23 +189,51 @@ article.braintreeBg div.scontain section:first-of-type {
 
 
 /* minor item grid */
+.gridy > div.item p {
+    margin: 0;
+    padding: 0;
+}
+.gridy > div.item h6 {
+    padding: 0;
+    padding-bottom:5px;
+}
+.gridy > div.item p span,
+.gridy > div.item p strong {
+    white-space: nowrap;
+}
+.gridy > div.item > img {
+    width:130px;  
+}
+.gridy > div.item > div {
+    margin-top: 1em; 
+    padding: 10px; 
+}
+
 @media screen and (min-width: 1001px) {
-    .grid > div.item {
-        padding: 20px;
-        background-color: #fff;    
+    .gridy {
+        margin-top: 2em;
     }
-    .grid > div.item > div {
-        padding: 10px;
+    .gridy > div.item {
+        padding: 20px;
+        background-color: #fff; 
+        display: flex;
+        align-items: flex-start;
+        column-gap: 25px;  
+    }
+    .gridy > div.item > div {
+        padding: 0px;
+        margin-top: 0;
+
     }
     @supports (display: grid) {
-        .grid {
+        .gridy {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
             grid-column-gap:3%;
         }    
     }
     @supports not (display: grid) {
-        .grid > div.item  {
+        .gridy > div.item  {
             flex-basis: 20%;
             margin-right:2%;
         }    
