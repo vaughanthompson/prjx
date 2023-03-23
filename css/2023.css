@@ -118,9 +118,9 @@ div#currentBids li {
 }
 
 /* gallery updates - square images */
-div.gallery.square div.galleryItem {
+.auctionImage {
     border:1px solid #fff;
-    box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
 }
 div.gallery.square div.galleryItem div.pbVideo {
     margin-bottom: 0;
@@ -185,4 +185,29 @@ article.braintreeBg div.scontain section:first-of-type {
     article.braintreeBg {
         padding-top:7vh;
     }
+}
+
+
+/* minor item grid */
+@media screen and (min-width: 1001px) {
+    .grid > div.item {
+        padding: 20px;
+        background-color: #fff;    
+    }
+    .grid > div.item > div {
+        padding: 10px;
+    }
+    @supports (display: grid) {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+            grid-column-gap:3%;
+        }    
+    }
+    @supports not (display: grid) {
+        .grid > div.item  {
+            flex-basis: 20%;
+            margin-right:2%;
+        }    
+    }   
 }
