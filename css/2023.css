@@ -8,6 +8,10 @@
 .noMargin {
     margin: 0 !important;
 }
+.blur {
+    filter:blur(10px)
+}
+    
 
 
 /* misc color classes */
@@ -155,7 +159,9 @@ hr.braintree {
 }
 article.braintreeBg {
     background-color: rgba(242,106,50,1.0);
+    color: #ffffff;
     background-image: url(/images/2023/braintree/tile.png);
+    padding:5vw;
 }
 article.braintreeBg a:link:not(.ctaButton),
 article.braintreeBg a:hover:not(.ctaButton),
@@ -168,10 +174,15 @@ article.braintreeBg h1 {
     padding-bottom: 5px;
 }
 article.braintreeBg div.scontain section:first-of-type {
-    background-image: url('/images/2023/braintree/BT5.jpg');
+    background-image: none;
     background-position: 100% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     align-self: stretch;
     min-height:50vh;
+}
+@media screen and (max-width:1100px) {
+    article.braintreeBg {
+        padding-top:7vh;
+    }
 }

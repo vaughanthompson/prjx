@@ -2351,7 +2351,7 @@ div.cmsRelated {
     .col2.twoThird > div > section:last-child {
         flex-basis: 26.5%;
         padding:2% 3%;
-        background-color: rgba(240,240,240,1.0);
+        /*background-color: rgba(240,240,240,1.0);*/
 
     }
     article.intro > div.scontain > section {
