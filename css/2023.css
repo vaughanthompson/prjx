@@ -92,16 +92,7 @@ div#currentBids li {
     }
 }
 
-@media screen and (max-width:1100px) {
-    .auctionImage {
-        margin-top: 2em;
-        margin-bottom: 2em;
-    }
-    div#currentBids li {
-        flex-wrap: wrap;
-    }
 
-}
 
 @media screen and (min-width:1100px) {
     .flip div.scontain {
@@ -202,14 +193,36 @@ article.braintreeBg div.scontain section:first-of-type {
     white-space: nowrap;
 }
 .gridy > div.item > img {
-    width:130px;  
+    width:130px;
+    margin-bottom: 0;
 }
 .gridy > div.item > div {
-    margin-top: 1em; 
     padding: 10px; 
 }
+@media screen and (max-width: 750px) {
+    .gridy {
+        margin-top: 2em;
+    }
+    .gridy a.ctaButton,
+    article.col2.twoThird.braintree a.ctaButton {
+        display: block;
+        margin-bottom: 1em;
+    }
+    .gridy > div.item h6 {
+        font-size: 1.2em;
+        padding-bottom: 1em;
+    }
+}
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 750px) {
+    .gridy > div.item {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 25px;  
+    }
+}
+
+@media screen and (min-width: 1101px) {
     .gridy {
         margin-top: 2em;
     }
@@ -222,8 +235,6 @@ article.braintreeBg div.scontain section:first-of-type {
     }
     .gridy > div.item > div {
         padding: 0px;
-        margin-top: 0;
-
     }
     @supports (display: grid) {
         .gridy {
@@ -238,4 +249,67 @@ article.braintreeBg div.scontain section:first-of-type {
             margin-right:2%;
         }    
     }   
+}
+
+
+
+@media screen and (max-width:1100px) {
+    .gridy > div.item > img {
+        width:100px;  
+
+    }
+    .gridy > div.item {
+        border-bottom:1px solid #ccc;
+        margin-top: 2.5vh;
+        margin-bottom: 5vh;
+        padding-bottom: 1em;
+    }
+    .auctionImage {
+        max-width: 130px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    div#currentBids li {
+        flex-wrap: wrap;
+    }
+    article.col2.twoThird.braintree h6.brandColor,
+    .minorAuctions h6.brandColor {
+        font-size: 1em;
+        padding-bottom: 0;
+    }
+    article.col2.twoThird.braintree h2,
+    .minorAuctions h3 {
+        font-size: 1.4em;
+        font-weight: 700;
+        padding-bottom: 0;
+    }
+    article.col2.twoThird.braintree p {
+        margin-bottom: 0;
+        padding-bottom: 0.5em;
+        font-size:0.95em;
+    }
+    article.col2.twoThird.braintree p strong {
+       font-weight: 300;
+    }
+    article.col2.twoThird.braintree h5.bidTotal {
+        margin-bottom: 0;
+        font-size: 1.1em;
+    }
+    article.col2.twoThird.braintree {
+        /* background-color: rgba(0,0,0,0.0255); */
+        border-radius: 4px;
+        padding: 5vw;
+        margin-top:5vh;
+        margin-bottom:5vh;
+    }
+    article.col2.twoThird.braintree section {
+        padding-bottom: 0;
+    }
+    article.col2.twoThird.braintree img.smallestIcon {
+        display: none;
+    }
+    article.col2.twoThird.braintree a.ctaButton {
+        margin-bottom: 1em;
+    }
+
 }
