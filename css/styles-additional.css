@@ -3347,6 +3347,9 @@ div.flex-col {
 div.flex-col > * {
     flex: 1 0 40%;
 }
+div.flex-col.nowrap {
+    flex-wrap: nowrap;
+}
 div.formItem label {
     display: inline-block;
     margin-bottom: 5px;
@@ -3359,6 +3362,7 @@ div.formItem label {
     border-radius: 8px;
     transition: 500ms;
 }
+
 .modelThumbCalc.activeLink {
     border:2px solid rgba(87,166,123,1.0);
 }
