@@ -199,6 +199,9 @@ article.braintreeBg div.scontain section:first-of-type {
 .gridy > div.item > div {
     padding: 10px; 
 }
+article.col2.twoThird.braintree p {
+    margin-bottom: 0;
+}
 @media screen and (max-width: 750px) {
     .gridy {
         margin-top: 2em;
@@ -223,12 +226,21 @@ article.braintreeBg div.scontain section:first-of-type {
 }
 
 @media screen and (min-width: 1101px) {
+    article.col2.twoThird.braintree {
+        background-color: rgba(255,255,255,0.5);
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-bottom: 2vw;
+    }
+    article.col2.twoThird.braintree h2 {
+        padding-bottom: 0.5em;
+    }
     .gridy {
-        margin-top: 2em;
+        margin-top: 3em;
     }
     .gridy > div.item {
-        padding: 20px;
-        background-color: #fff; 
+        padding: 0px;
+        /* background-color: #fff; */
         display: flex;
         align-items: flex-start;
         column-gap: 25px;  
@@ -240,7 +252,8 @@ article.braintreeBg div.scontain section:first-of-type {
         .gridy {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-            grid-column-gap:3%;
+            grid-column-gap:3vw;
+            grid-row-gap:3vw ;
         }    
     }
     @supports not (display: grid) {
@@ -284,7 +297,6 @@ article.braintreeBg div.scontain section:first-of-type {
         padding-bottom: 0;
     }
     article.col2.twoThird.braintree p {
-        margin-bottom: 0;
         padding-bottom: 0.5em;
         font-size:0.95em;
     }
@@ -296,11 +308,11 @@ article.braintreeBg div.scontain section:first-of-type {
         font-size: 1.1em;
     }
     article.col2.twoThird.braintree {
-        /* background-color: rgba(0,0,0,0.0255); */
+        background-color: rgba(255,255,255,1.0);
         border-radius: 4px;
         padding: 5vw;
-        margin-top:5vh;
-        margin-bottom:5vh;
+        margin-top:4vh;
+        margin-bottom:4vh;
     }
     article.col2.twoThird.braintree section {
         padding-bottom: 0;
