@@ -47,8 +47,9 @@
 
 div.donatedBy {
     display: flex;
-    align-items: flex-start;
-    column-gap: 25px;
+    align-items: center;
+    column-gap: 35px;
+    max-width: 90%;
 }
 
 
@@ -154,10 +155,10 @@ article.braintreeBg {
     background-image: url(/images/2023/braintree/tile.png);
     padding:5vw;
 }
-article.braintreeBg a:link:not(.ctaButton),
-article.braintreeBg a:hover:not(.ctaButton),
-article.braintreeBg a:active:not(.ctaButton),
-article.braintreeBg a:visited:not(.ctaButton) {
+article.braintreeBg a:link:not(.ctaButton, .minorCTA),
+article.braintreeBg a:hover:not(.ctaButton, .minorCTA),
+article.braintreeBg a:active:not(.ctaButton, .minorCTA),
+article.braintreeBg a:visited:not(.ctaButton, .minorCTA) {
     color: #fff !important;
 }
 article.braintreeBg h1 {
@@ -204,7 +205,9 @@ article.col2.twoThird.braintree p {
         margin-top: 2em;
     }
     .gridy a.ctaButton,
-    article.col2.twoThird.braintree a.ctaButton {
+    article.col2.twoThird.braintree a.ctaButton,
+    .braintreeBg a.ctaButton,
+    .braintreeBg a.minorCTA {
         display: block;
         margin-bottom: 1em;
     }
