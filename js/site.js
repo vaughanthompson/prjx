@@ -83,6 +83,18 @@
 
 */
 
+    /* simple show hide */
+    $('.showContent').hide();
+    $('.showContent .close').click(function(){
+        $('.showContent').hide();
+        return false;
+    });
+
+    $('.triggerShow').click(function(){
+        $('.showContent').show();
+        return false;
+    });
+
 
 
     $('#toTop').css('opacity','0.0');
