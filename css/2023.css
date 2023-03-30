@@ -1,7 +1,7 @@
 /* new 2023 css additions */
 
 /* misc type classes */
-.bidTotal span {
+.bidTotal span:not(:first-child) {
     font-weight: 400;
     font-size: 80%;
 }
