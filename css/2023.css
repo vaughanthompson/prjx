@@ -47,9 +47,21 @@
 
 div.donatedBy {
     display: flex;
-    align-items: center;
+    flex-direction: column-reverse;
+    align-items: flex-start;
     column-gap: 35px;
+    row-gap: 15px;
     max-width: 90%;
+}
+@media screen and (min-width:750px) {
+    div.donatedBy {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 35px;
+        row-gap: 0;
+        max-width: 90%;
+    }
 }
 
 
