@@ -134,6 +134,10 @@ and also iPads specifically.
     /*
 	Label the data
 	*/
+
+    .table-responsive input[type=number] {
+        margin-left:auto;
+    }
 }
 
 
