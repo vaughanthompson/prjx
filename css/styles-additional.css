@@ -3523,3 +3523,62 @@ div.chartContain {
         padding-top:0.5em !important;
     }
 }
+
+
+
+
+/* fullscreen view */
+body.fullscreen {
+    background: rgba(0,0,0,1.0);
+    color: rgba(87,166,123,1.0);
+    color: rgba(255,255,255,1.0);
+}
+
+body.fullscreen div.container {
+    width:100vw;
+    height:100vh;    
+    background-blend-mode: multiply;
+    background: linear-gradient(to right, rgba(0,0,0,0.0),rgba(0,0,0,0.0),rgba(255,255,255,0.10));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+body.fullscreen div.container div.bgImage {
+    width:70vw;
+    height:60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+    background-image: url(/images/mark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+body.fullscreen div.container div.inset {
+    width:50vw;
+    text-align: center;
+    
+}
+
+body.fullscreen div.container div.inset div.message {
+    width:70%;
+    margin: 0px auto;
+}
+
+@media screen and (max-width:1100px) {
+    body.fullscreen div.container div.bgImage {
+        width:80vw;
+        height:70vh;
+    }
+    body.fullscreen div.container div.inset {
+        width:90vw;
+        text-align: center;
+    }  
+    body.fullscreen div.container div.inset div.message {
+        width:80%;
+    }  
+}
+
