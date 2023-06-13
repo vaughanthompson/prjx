@@ -1031,6 +1031,11 @@ hr.thickLine {
     border-bottom: 4px solid rgba(87,166,123,1.0);
   
 }
+hr.short {
+    width:100px;
+    margin-left: 0;
+
+}
 
 div.logo {
     display:flex;
@@ -1134,6 +1139,9 @@ i.iso {
     padding-left: 0;
     width: auto;
     height: auto;
+}
+a.icon {
+    text-decoration: none !important;
 }
 i.ok, i.summary {
     color:green;

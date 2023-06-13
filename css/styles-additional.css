@@ -2430,7 +2430,7 @@ div.tdxintroInner > section.spaceApart {
 
 div.tdxintroInner section.cols.two {
    display: flex;
-   column-gap: 2vw;
+   column-gap: 4vw;
 } 
 div.tdxintroInner section.cols.two div {
     flex: 0 1 50%;
@@ -2458,6 +2458,10 @@ div.tdxintroContain picture.med {
 div.tdxintroContain picture.medLarge {
     max-width:65%;
 }
+div.tdxintroContain picture.matchPara {
+    max-width:90%;
+}
+
 
 div.tdxintroContain .badge {
     display: block;
@@ -2479,6 +2483,12 @@ div.tdxintroContain.patternBG {
     background-repeat: no-repeat;
     background-size:auto 50%;
     background-position: 10% 120%;
+}
+div.tdxintroContain.patternBG1 {
+    background-image: url(/images/pattern-fadeRL.svg);
+    background-repeat: no-repeat;
+    background-size:auto 30%;
+    background-position: 50% 0;
 }
 
 
