@@ -386,3 +386,14 @@ article.col2.twoThird.braintree p {
             margin-left: 5vw;
     }
 }
+
+
+
+
+.noPadBottom {
+    padding-bottom: 0 !important;
+}
+
+.noPadTop {
+    padding-top: 0 !important;
+}

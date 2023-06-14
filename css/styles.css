@@ -563,6 +563,12 @@ ul.bigIcon li:before {
     margin-left:-70px;
 }
 
+ul.inlineList li {
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+}
+
 
 @media screen and (max-width: 600px) {
     ul.sideBySide3 li {
@@ -604,8 +610,9 @@ ul.bigIcon li:before {
 
 }
 @media screen and (min-width: 1001px) {
-    ul.inlineList li {
-        display: inline-block;
+
+    ul.inlineList {
+        display: flex;
         padding-right: 5%;
     }
     ul.sideBySide,
