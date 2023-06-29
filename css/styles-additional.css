@@ -2418,6 +2418,16 @@ div.tdxintroInner.col > section {
 div.tdxintroInner > section.insetRight {
     padding-left: 30vw;
 }
+div.tdxintroInner > section.insetCenter {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+div.tdxintroInner > section.alignCenter {
+   text-align: center;
+}
+div.tdxintroInner > section.alignCenter img {
+    margin:0px auto;
+ }
 div.tdxintroInner > section.bottom {
     align-self: flex-end;
 }
@@ -2441,6 +2451,26 @@ div.tdxintroInner section.cols.two div {
  .tdxintroContain.dark {
     background-color: #000;
     color: #fff;
+}
+.tdxintroContain.semi {
+    background-color: rgba(0,0,0,0.40); 
+}
+.tdxintroContain.noBG {
+    background-color: rgba(0,0,0,0.05);
+}
+.fixedBG {
+    background-attachment: fixed;
+}
+.fullscreen {
+    height:95vh;
+}
+.tdxintroContain.baseLayer {
+    z-index: 0;
+    position: absolute;
+    width: 100vw;
+}
+.tdxintroContain {
+    z-index: 1;
 }
 .tdxintroContain.border,
 .fiftyfifty.border {
