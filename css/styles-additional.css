@@ -2472,6 +2472,21 @@ div.tdxintroInner section.cols.two div {
 .tdxintroContain {
     z-index: 1;
 }
+
+@media screen and (max-width:1100px) {
+    .tdxintroContain.semi {
+        background-color: rgba(0,0,0,0.0); 
+    }
+    .tdxintroContain.noBG {
+        background-color: rgba(0,0,0,0.0);
+    }
+    .fixedBG {
+        background-attachment:unset;
+    }
+}
+
+
+
 .tdxintroContain.border,
 .fiftyfifty.border {
     border-bottom:1px solid rgba(100,100,100,1);
