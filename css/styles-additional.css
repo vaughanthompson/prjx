@@ -2608,7 +2608,7 @@ div.tdxintroContain .grey {
         background-color:rgba(0,0,0,0.5);
     }
     div.tdxintroInner.full  {
-       /* min-height: 80vh;*/
+       min-height: 80vh;
     }
     div.tdxintroInner  {
         padding: 15vh 10vw;
