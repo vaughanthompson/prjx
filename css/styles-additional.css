@@ -3637,3 +3637,9 @@ body.fullscreen div.container div.inset div.message {
     }  
 }
 
+
+@media screen and (min-width:1100px) {
+    .noBGdesk {
+        background: none;
+    }
+}
