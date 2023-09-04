@@ -235,7 +235,7 @@ div#strip21 div.topNav nav {
     padding-right: 1.5em;
 }
 div#strip21 div.topNav nav a {
-    padding: 0.75em 1.15em 0.75em 1.15em;
+    padding: 0.75em .8vw 0.75em .8vw;
     color:rgba(255,255,255,1.0);
     border-left: none;
     white-space: nowrap;
