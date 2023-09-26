@@ -397,3 +397,485 @@ article.col2.twoThird.braintree p {
 .noPadTop {
     padding-top: 0 !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* yanmar custom banner and big deal page */
+.countDownBanner {
+    color: #fff;
+}
+.countDownBanner div.scontain {
+    display: flex;
+    align-items: center;
+}
+.countDownBanner section {
+    padding: 0;
+    align-self: stretch;
+    position: relative;
+}
+.countDownBanner section.moveRight {
+    /*position:absolute;
+    left:7.5vw;*/
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    padding-top: 1vw;
+}
+.countDownBanner section.moveLeft {
+    /*position:absolute;
+    right:10vw;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: -3vw;
+}
+.yanmar-lockup img {
+    height: 55vh;
+    width: auto;
+    align-self: center;
+    margin: 0 !important;
+}
+
+div.countdown > div {
+    display: inline-block;
+}
+
+.loader.preLive {
+    --b: 25px;  /* border thickness */
+    --n: 55;    /* number of dashes*/
+    --g: 5deg; /* gap between dashes*/
+    --c: #d71240;   /* the color */
+ 
+    width: 35vw; /* size */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000,var(--c)) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+            mask:
+      repeating-conic-gradient(#0000 0deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation: load 2s infinite steps(var(--n));
+  }
+  @keyframes load {to{transform: rotate(1turn)}}
+
+
+  .loader.live {
+    --b: 25px;  /* border thickness */
+    --n: 55;    /* number of dashes*/
+    --g: 5deg; /* gap between dashes*/
+    --c: rgba(87,166,123,1.0);   /* the color */
+ 
+    width: 35vw; /* size */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000,var(--c)) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+            mask:
+      repeating-conic-gradient(#0000 0deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation: load 2s infinite steps(var(--n));
+  }
+  @keyframes load {to{transform: rotate(1turn)}}
+
+
+  .countDownBanner div.posLoader {
+    position: absolute;
+    margin-top: -17.5vw;
+    top:50%;
+    z-index: 1000;
+  }
+  .countDownBanner div.posLoader div.loader {
+    margin: 0px auto;
+  }
+
+  .countDownBanner div.posCounter {
+    position: relative;
+    z-index: 2000;
+    align-self: center;
+    min-width:65%;
+  }
+
+  .countDownBanner div.posCounter a {
+    color:#ffffff;
+  }
+
+  .countDownBanner picture.yanmar-lockup {
+    position: relative;
+    z-index: 2000;
+  }
+
+  .countDownBanner div.posCounter .topLine,
+  .countDownBanner div.posCounter .bottomLine {
+    font-weight: 900;
+    font-size: 1.3em;
+    padding: 10px 10px 10px 10px;
+    max-width:90%;
+    margin: 0px auto;
+  }
+
+  .countDownBanner div.posCounter .topLine {
+    font-size: 2.5em;
+    text-transform: uppercase;
+  }
+
+  .countDownBanner div.posCounter .bottomLine {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .countDownBanner div.posCounter.preLive .topLine,
+  .countDownBanner div.posCounter.preLive .bottomLine {
+    background-color:rgba(215,18,64,0.8);
+    color:#ffffff;
+  }
+
+  .countDownBanner div.posCounter.live .topLine,
+  .countDownBanner div.posCounter.live .bottomLine {
+    background-color:rgba(87,166,123,0.8);
+    color:#ffffff;
+  }
+
+  .countDownBanner div.posCounter div.small {
+    font-size: 14px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color:#000;
+  }
+
+  .countDownBanner div.posCounter div.countdown.styled {
+    background-color: rgba(0,0,0,0.8);
+    font-weight: 300;
+    font-size: 3em;
+    padding: 5px 10px 7px 10px;
+    letter-spacing: -1px;
+  }
+
+  .countDownBanner div.machine {
+    position: absolute;
+    z-index: 500;
+    top:2vw;
+    /* left:-3.5vw; */
+    left:-20px;
+  }
+
+  .countDownBanner div.machine img {
+    width: auto;
+    height: 60vh;
+  }
+
+  .countDownBanner div.machine.preLive img {
+    filter:blur(5px)
+  }
+
+
+
+
+
+  @media screen and (max-width:1100px) {
+
+    div.mobLogo {
+        padding-bottom: 1em;
+        padding-left: 0.5em;
+    }
+    div.mobLogo img {
+        height: 31vh;
+        width: auto;
+        margin: 0 !important;    
+    }
+    .countDownBanner section.moveLeft {
+        display: flex;
+        justify-content: center;
+        width:92.5vw !important;
+        height: 60vh !important;
+    }
+    .countDownBanner div.posCounter {
+        width: 100%;
+    }
+    .countDownBanner div.posCounter .topLine,
+    .countDownBanner div.posCounter .bottomLine {
+      font-size: 1.25em;
+      padding: 10px 10px 10px 10px;
+      max-width: auto;
+      width:100%;
+      margin: 0px auto;
+    }
+    .countDownBanner div.posCounter div.countdown.styled {
+        font-size: 2em;
+        letter-spacing: -1px;
+      }
+    .countDownBanner div.machine {
+        left:0;
+        top:1em;
+      }
+    .countDownBanner div.machine img {
+        width: 50%;
+        height: auto;
+        margin: 0 0 0 auto !important;
+    }
+
+    .loader.preLive,
+    .loader.live {
+       width: 70vw; /* size */
+
+    }
+    .countDownBanner div.posLoader {
+        position: absolute;
+        margin-top: -17.5vw;
+        top:17.5%;
+        z-index: 1000;
+      }
+      .countDownBanner div.posLoader {
+        display: none;
+      }
+  }
+
+
+
+article.dealPageMasthead,
+article.dealPageContent {
+    background-color: #000;
+}
+div.offerDetails {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+p.terms {
+    font-size: 0.9em;
+    color: #888888;
+}
+.offerDetails hr {
+    border-width: 1px;
+}
+.offerDetails h3 {
+    color: #888888;
+}
+.offerDetails h6 {
+    color: #888888;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.offerDetails p.terms, 
+.offerDetails h3, 
+.offerDetails h4, 
+.offerDetails h5,
+.offerDetails h6 {
+    width:90%;
+    margin: 0px auto;
+}
+.offerDetails div.pricePoint {
+    position: relative;
+}
+.offerDetails div.pricePoint h2 {
+    font-size: 3.8em;
+}
+.offerDetails div.pricePoint h2 span.label {
+    font-size: 0.4em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    margin-left:-10px;
+    margin-bottom: 4px;
+}
+
+article.dealPageContent h1 span {
+    font-weight: 300;
+}
+
+article.dealPageContent .countDownBanner div.posCounter .topLine,
+article.dealPageContent .countDownBanner div.posCounter .bottomLine {
+    max-width: auto;
+    width:70%;
+}
+
+article.dealPageMasthead .countDownBanner div.machine {
+    position: absolute;
+    z-index: 500;
+    top:2vw;
+    left:10px;
+}
+  
+article.dealPageMasthead .countDownBanner div.machine img {
+    width: auto;
+    height: 55vh;
+}
+
+
+@media screen and (max-width:1100px) {
+    article.dealPageMasthead div.picturefill-background,
+    article.dealPageMasthead section.moveLeft {
+        height: auto !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    article.dealPageMasthead section div.scontain {
+        padding: 10vw 5vw 15vw 5vw;
+    }
+    article.dealPageMasthead .countDownBanner div.machine {
+        position: relative;
+        left:0;
+        margin-top: -45px;
+    }
+    article.dealPageMasthead .countDownBanner div.machine img {
+        width: auto;
+        height: 40vh;
+    }
+    article.dealPageMasthead div.posCounter,
+    article.dealPageMasthead div.posLoader {
+        display: none;
+    }
+    article.dealPageMasthead div.mobLogo  {
+        margin-right:-15px;
+    }
+    article.dealPageMasthead div.mobLogo img {
+        height: 35vh;
+    }
+    article.dealPageContent section div.scontain {
+        display: block;
+        padding: 5vw 10vw 5vw 10vw;
+    }
+    article.dealPageContent div.countDownBanner {
+        margin-top: 10vh;
+    }
+    article.dealPageContent .countDownBanner div.posCounter .topLine,
+    article.dealPageContent .countDownBanner div.posCounter .bottomLine,
+    article.dealPageContent .countDownBanner div.posCounter div.countdown.styled {
+        max-width: auto;
+        width:90%;
+        padding:10px 5% 10px 5% !important;
+    }
+}
+
+
+  @media screen and (min-width:1100px) {
+    div.mobLogo {
+        display: none;
+    }
+    article.dealPageMasthead div.picturefill-background {
+        height: 73vh;
+    }
+    article.dealPageMasthead section div.scontain {
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex:1 1 auto;
+        column-gap: 3vw;
+    }
+    article.dealPageContent section div.scontain {
+        display: flex;
+        justify-content: center;
+        column-gap: 7vw;     
+    }
+    article.dealPageMasthead section div.scontain section {
+        width:45%;
+        margin-top:3vh;
+    }
+    article.dealPageContent section div.scontain section {
+        width:35%;
+    }
+    article.dealPageContent .offerDetails {
+        text-align: center;
+    }
+    article.dealPageContent div.countDownBanner {
+        margin-top: 1em;
+    }
+
+
+  }
+
+
+
+
+
+
+
+.packageAdditions {
+    margin: 1em 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 1em;
+    width:90%;
+}
+.packageAdditions div.plus {
+    width:50px;
+    flex-shrink: 0;
+}
+.packageAdditions div.thumbnail {
+    background-color:rgba(87,166,123,1.0);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120px;
+    width:180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+.packageAdditions div.thumbnail img {
+    height:85%;
+    width: auto;
+}
+.packageAdditions h5 {
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width:1100px) {
+    .packageAdditions {
+        width:100%;
+    }
+    .packageAdditions div.plus {
+        display: none;
+    }
+    .packageAdditions div.thumbnail {
+        width:90px;
+        height:60px;
+    }
+
+}
+
+
+
+.nowrap {
+    white-space: nowrap;
+}
+
