@@ -795,7 +795,17 @@ article.dealPageMasthead .countDownBanner div.machine img {
         justify-content: center;
         text-align: center;
         flex:1 1 auto;
-        column-gap: 3vw;
+        column-gap: 0vw;
+    }
+
+
+    article.dealPageMasthead .countDownBanner div.machine {
+        top:3.5vw;
+        left:auto;
+    }
+
+    article.dealPageMasthead .countDownBanner section.moveRight {
+        justify-content: center;
     }
     article.dealPageContent section div.scontain {
         display: flex;
@@ -803,11 +813,11 @@ article.dealPageMasthead .countDownBanner div.machine img {
         column-gap: 7vw;     
     }
     article.dealPageMasthead section div.scontain section {
-        width:45%;
+        width:40%;
         margin-top:3vh;
     }
     article.dealPageContent section div.scontain section {
-        width:35%;
+        width:33%;
     }
     article.dealPageContent .offerDetails {
         text-align: center;
