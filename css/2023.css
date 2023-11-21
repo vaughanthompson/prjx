@@ -445,11 +445,19 @@ article.col2.twoThird.braintree p {
     margin-left: -3vw;
 }
 .yanmar-lockup img {
-    height: 55vh;
-    width: auto;
+    /*height: 55vh;
+    width: auto;*/
     align-self: center;
     margin: 0 !important;
 }
+.yanmar-lockup-2 img {
+    /*height: 47vh;*/
+    width: auto;
+    align-self: center;
+    margin: 0 !important;
+    border:1px solid red;
+}
+
 
 div.countdown > div {
     display: inline-block;
@@ -810,14 +818,16 @@ article.dealPageMasthead .countDownBanner div.machine img {
     article.dealPageContent section div.scontain {
         display: flex;
         justify-content: center;
-        column-gap: 7vw;     
+        column-gap: 4vw;  
+        padding-top: 3vw;
+   
     }
     article.dealPageMasthead section div.scontain section {
         width:40%;
         margin-top:3vh;
     }
     article.dealPageContent section div.scontain section {
-        width:33%;
+        width:36%;
     }
     article.dealPageContent .offerDetails {
         text-align: center;
@@ -839,10 +849,11 @@ article.dealPageMasthead .countDownBanner div.machine img {
     margin: 1em 0;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: nowrap;
-    column-gap: 1em;
-    width:90%;
+    column-gap: 2vw;
+    width:95%;
+    margin-bottom: 2vw;
 }
 .packageAdditions div.plus {
     width:50px;
@@ -864,9 +875,40 @@ article.dealPageMasthead .countDownBanner div.machine img {
     height:85%;
     width: auto;
 }
+.packageAdditions div.option {
+    background-color:rgba(87,166,123,1.0);
+    padding: 1em;
+    flex-basis: 100px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-self: stretch;
+}
+
+
+.packageAdditions div.option h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+}
+.packageAdditions div.option h4 {
+    margin: 0;
+    padding: 0;
+}
+
 .packageAdditions h5 {
     font-weight: 300;
     font-size: 1.3em;
+    padding-bottom: 0;
+}
+.packageAdditions ul {
+    padding-left:1em;
+    margin-bottom: 10px;
+}
+.packageAdditions ul li {
+    list-style-type: disc;
+    padding-top: 0;
+    padding-bottom: 2px;
+    border:none;
 }
 
 @media screen and (max-width:1100px) {
