@@ -1,0 +1,12 @@
+/*  2024 css additions */
+.marginMe {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.smallLink {
+    font-size: 12px;
+}
+
+.simpleTabs {
+    border:1px solid red;
+}

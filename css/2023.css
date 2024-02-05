@@ -829,6 +829,15 @@ article.dealPageMasthead .countDownBanner div.machine img {
     article.dealPageContent section div.scontain section {
         width:36%;
     }
+    article.dealPageContent section div.scontain section:last-child {
+        width:25%;
+    }
+    article.dealPageContent.twoThirds section div.scontain section {
+        width:47%;
+    }
+    article.dealPageContent.twoThirds section div.scontain section:last-child {
+        width:25%;
+    }
     article.dealPageContent .offerDetails {
         text-align: center;
     }
@@ -852,7 +861,7 @@ article.dealPageMasthead .countDownBanner div.machine img {
     align-items: flex-start;
     flex-wrap: nowrap;
     column-gap: 2vw;
-    width:95%;
+    width:98%;
     margin-bottom: 2vw;
 }
 .packageAdditions div.plus {
@@ -911,9 +920,17 @@ article.dealPageMasthead .countDownBanner div.machine img {
     border:none;
 }
 
+.packageAdditions .thumb {
+    background-color: #fff; 
+    padding: 2vw 0; 
+    max-width:40% ; 
+    border-radius: 40px;
+}
+
 @media screen and (max-width:1100px) {
     .packageAdditions {
         width:100%;
+        flex-direction: column-reverse;
     }
     .packageAdditions div.plus {
         display: none;
@@ -921,6 +938,12 @@ article.dealPageMasthead .countDownBanner div.machine img {
     .packageAdditions div.thumbnail {
         width:90px;
         height:60px;
+    }
+
+    .packageAdditions .thumb {
+        max-width:100%;
+        padding: 10vw 0;
+        margin-bottom: 2em;
     }
 
 }
