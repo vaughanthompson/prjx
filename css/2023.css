@@ -868,6 +868,12 @@ article.dealPageMasthead .countDownBanner div.machine img {
     width:50px;
     flex-shrink: 0;
 }
+.packageAdditions div.minWidth {
+    width:40%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    flex-shrink: 0;
+}
 .packageAdditions div.thumbnail {
     background-color:rgba(87,166,123,1.0);
     background-repeat: no-repeat;
@@ -944,6 +950,10 @@ article.dealPageMasthead .countDownBanner div.machine img {
         max-width:100%;
         padding: 10vw 0;
         margin-bottom: 2em;
+    }
+
+    .packageAdditions div.minWidth {
+        width:100%;
     }
 
 }

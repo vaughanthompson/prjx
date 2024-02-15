@@ -4459,7 +4459,7 @@ div#carouselIndicator div#cI-hook > div:last-child {
 div#carouselIndicator div#cI-hook > div.active {
     background-color: rgba(239,10,10,1.0) !important;
 }
-@media screen and (max-width:1100px) {
+@media screen and (max-width:760px) {
     img.logo_brand {
         height:50px;
         width:auto;
@@ -4503,6 +4503,19 @@ div#carouselIndicator div#cI-hook > div.active {
     }
     header.brand-header nav {
         margin-top:7px;
+    }
+    header.brand-header div.brand-subHead {
+        display: block;
+    }
+    header.brand-header div.brand-subHead > div {
+        text-align: center;
+        margin: 0 !important;
+    }
+    header.brand-header div.brand-subHead .logo_brand {
+        margin: 0px auto;
+        width: 70vw;
+        height: auto;
+        margin-bottom: 1em;
     }
 }
 
