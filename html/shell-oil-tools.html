@@ -313,18 +313,16 @@
 
 
 
-<header class="brand-header">
+<header class="brand-header oilFinder">
     <div class="brand-subHead">
         <div>
-            <img src="/images/logos/shell.svg" alt="Shell Lubricants Distributor" class="logo_brand">
+            <h2>Find a Shell Lubricant</h2>
         </div>
-        <div style="margin-left:auto;">
-            <a href="https://www.transdiesel.com/shell#" class="ctaButton ctaInline enquiryTrigOne">Contact Our Shell Team</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+        <div>
+            <img src="/images/logos/shell.svg" alt="Shell Lubricants Distributor" class="shell">
         </div>
-        <div style="margin-left:10px;">
-            <a href="https://www.statusoilanalysis.co.nz/" target="_blank"><img src="/images/logos/statusoil/logo.svg" alt="Status Oil Analyis - Sampling kits and lab testing" class="logo_brand-sub"></a>
-            <a href="https://www.statusoilanalysis.co.nz/" target="_blank" class="smallLink">DIY Oil Sample Kits</a>
+        <div class="d" style="border-left: 1px solid rgba(87,166,123,1.0);">
+            <p style="margin-bottom: 0; padding-bottom: 0;" class="smallLink">Still can't find your perfect Shell product? <a href="https://www.transdiesel.com/shell#" class="brand"><strong>Get in touch</strong></a></p>
         </div>
     </div>
 
@@ -422,11 +420,13 @@
 
 
 
+    
 
 
-    <!-- links version of tabs -->
-    <div class="simpleTabs linksTabs">
-        <div class="tabItem">
+
+
+    <div class="simpleTabs desktopTabs">
+        <div class="tabItem activeTab">
             <a href="#" class="tabTrigger">
                 <div>
                     <strong>Vehicle Rego Oil Search</strong><br><span class="smallLink">Get the right Shell Oil for your specific vehicle</span>
@@ -454,6 +454,131 @@
     </div>
 
 
+    <div class="simpleTabs mobileTabs hasContent oilFinder">
+        <div class="tabItem">
+            <a href="#" class="tabTrigger">
+                <div>
+                    <strong>Vehicle Rego Oil Search</strong><br><span class="smallLink">Get the right Shell Oil for your specific vehicle</span>
+                </div>
+                <div class="imageThumb" style="background-image: url(/images/2024/oil-finder-rego-1.svg);"></div>
+            </a>
+
+            <div class="simpleTabsContent">
+                <div class="autoIframeDuplicate">
+                    <h1 class="subtitle">Enter your vehicle's registration number below.</h1>
+                    <div class="autoIframeDuplicate-content">
+                        <!-- copied from existing autosearch UI-->
+                        <p style="text-align: center;">You can add additional vehicles at any time and view products for each separately. <a asp-area="Identity" asp-page="/Account/SignInRegister" asp-route-returnurl="/shop">Sign/register</a> to save your vehicles in your account profile.</p>
+
+                        <form>
+                            <div class="formCols">
+                                <div>
+                                    <input type="text" placeholder="Enter Vehicle Registration">
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)" class="ctaButton ctaShop ctaInline" style="margin-top: 0;">Find my vehicle</a>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="results">
+                            <br>
+                            <hr>
+                            <br>
+                            <div class="formCols">
+                                <div><h4>DODGE JOURNEY R/T 01/2012 ~ 10/2017</h4><span class="tinyCopy">12~17 Dodge Journey 3.6L</span></div>
+                                <div><a href="javascript:void(0)" class="ctaButton ctaShop  ">Shop for My Vehicle&nbsp;&nbsp;</a></div>
+                            </div>
+                        </div>
+                        <!-- copied from existing autosearch UI-->
+                    </div>
+                    <br>
+                    <p class="smallLink">&nbsp;&nbsp;&nbsp;&nbsp;Powered by Autoinfo</p>
+                </div>     
+            </div>
+        </div>
+
+        <div class="tabItem">
+            <a href="#" class="tabTrigger">
+                <div>
+                    <strong>Vehicle Model Oil Finder</strong><br><span class="smallLink">Get the right Shell Oil with a few selections</span>
+                </div>
+                <div class="imageThumb" style="background-image: url(/images/2024/oil-finder-vehicle-1.svg);"></div>
+            </a>
+
+            <div class="simpleTabsContent">
+                <div class="autoIframeDuplicate"> 
+                    <h1 class="subtitle">Start by selecting a vehicle make and refine until you find your vehicle.</h1>
+                    <div class="autoIframeDuplicate-content">
+                        <p style="text-align: center;">You can add additional vehicles at any time and view products for each separately. <a asp-area="Identity" asp-page="/Account/SignInRegister" asp-route-returnurl="/shop">Sign/register</a> to save your vehicles in your account profile.</p>
+                                    
+                        <!-- copied from existing autosearch UI-->
+                        <div class="formCols">
+                            <div>
+                                <select>
+                                    <option value="- Popular Makes -">- Popular Makes -</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select disabled="">
+                                    <option>Model</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select disabled="">
+                                    <option>Year</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select disabled="">
+                                    <option>Series</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select disabled="">
+                                    <option>Series</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select disabled="">
+                                    <option>Details</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- end copied from existing autosearch UI-->
+                    </div>
+                    <br>
+                    <p class="smallLink">&nbsp;&nbsp;&nbsp;&nbsp;Powered by Autoinfo</p>
+                </div>      
+            </div>
+        </div>
+
+        <div class="tabItem">
+            <a href="#" class="tabTrigger">
+                <div>
+                    <strong>Shell LubeMatch</strong><br><span class="smallLink">Heavy vehicle, construction &amp; other applications</span>
+                </div>
+                <div class="imageThumb" style="background-image: url(/images/2024/oil-finder-other-1.svg);"></div>
+            </a>
+            <div class="simpleTabsContent hasIframe">
+               
+                    
+                <iframe src="https://prod-transdieseltrade.netlube.com.au/" frameborder="0" class="lubeSearchiFrame"></iframe>
+                
+                <script type="text/javascript">
+                    window.onmessage = (event) => {
+                        if (event.data.partNumber) {
+                            alert('This product can be ordered through our TradeDoor customer portal. You will be redirected there now.');
+                            document.location = 'https://tradedoor.tdxltd.co.nz?productCode=' + event.data.partNumber;
+                        }
+                    }
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+
 
     
 
@@ -462,386 +587,7 @@
 
 
 
-
-
-
-    <nav class="brand-landing-home">
-
-        <a href="/shell-helix-motor-oil">Automotive</a>
-        <a href="/shell-lubricants-for-transport-fleets">Fleet &amp; Transport</a>
-        <a href="/shell-mining">Quarrying &amp; Mining</a>
-        <a href="/shell-manufacturing">Manufacturing</a>
-        <a href="/shell-construction">Construction</a>
-        <a href="/shell-tdx">Shell &amp; TDX</a>
-        <a href="/shell-sustainability">Sustainability</a>
-    </nav>
-</header>
-
-<!-- create a manual nav for the carousel here
-this will match the width of the nav elements above-->
-<div id="carouselIndicator" class="d">
-    <div id="cI-hook" class="dashes owl-dots">
-        <div id="ci-one" class="owl-dot active"></div>
-        <div id="ci-two" class="owl-dot "></div>
-        <div id="ci-three" class="owl-dot "></div>
-        <div id="ci-four" class="owl-dot "></div>
-        <div id="ci-five" class="owl-dot "></div>
-        <div id="ci-six" class="owl-dot"></div>
-        <div id="ci-seven" class="owl-dot"></div>
-    </div>
-    <div class="filler"></div>
-</div>
-
-
-
-<div class="owl-theme owl-brand-slider">
-    <div class="item">
-        <article>
-            <div class="scontain">
-                <section style="position: relative; overflow: hidden;">
-                    <div class="picturefill-background">
-                        <div class="scontain left">
-                            <section>
-                                <h2>No matter why you drive</h2>
-                                <h4>Shell Helix Motor Oils are designed for ultimate engine performance, so you can keep your passion for driving alive and drive On.</h4>
-                                <a href="/shell-helix-motor-oil" class="ctaButton">Find out more</a>
-                            </section>
-                        </div>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-auto/slider-SH-2/m.jpg"></span><!-- use 4:3 aspect for ph -->
-                        <span data-src="https://transdiesel.com/shell-micro/landing-auto/slider-SH-2/l.jpg" data-media="(min-width: 1000px)"></span>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-auto/slider-SH-2/xl.jpg" data-media="(min-width: 1200px)"></span>
-                    </div>
-                </section>
-            </div>
-        </article>
-    </div>
-    <div class="item">
-        <!-- same  article cms stucture options one col eg -->
-        <article>
-            <div class="scontain">
-                <section style="position: relative; overflow: hidden;">
-                    <div class="picturefill-background multiply1">
-                        <div class="scontain left">
-                            <section>
-                                <h2>Trusted by NZ Fleets</h2>
-                                <h4>Shell's range of Diesel Engine Oils and lubricants<br> can make a real difference to your bottom line.</h4>
-                                <a href="brand-shell-fleet-transport.html" class="ctaButton">Find out more</a>
-                            </section>
-                        </div>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-fleet/slider-SH-2/m.jpg"></span><!-- use 4:3 aspect for ph -->
-                        <span data-src="https://transdiesel.com/shell-micro/landing-fleet/slider-SH-2/l.jpg" data-media="(min-width: 1000px)"></span>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-fleet/slider-SH-2/xl.jpg" data-media="(min-width: 1200px)"></span>
-                    </div>
-                </section>
-            </div>
-        </article>
-    </div>
-    <div class="item">
-        <!-- same article cms stucture options - two col eg -->
-        <article>
-            <div class="scontain">
-                <section style="position: relative; overflow: hidden;">
-                    <div class="picturefill-background">
-                        <div class="scontain left">
-                            <section>
-                                <h2>A tough industry. Severe operating conditions.</h2>
-                                <h4>Shell's range of lubricants and greases can help you to get the most out of your equipment in challenging environments.</h4>
-                                <a href="/shell-mining" class="ctaButton">Find out more</a>
-                            </section>
-                        </div>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-mining/slider-SH-mining1/m.jpg"></span><!-- use 4:3 aspect for ph -->
-                        <span data-src="https://transdiesel.com/shell-micro/landing-mining/slider-SH-mining1/l.jpg" data-media="(min-width: 1000px)"></span>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-mining/slider-SH-mining1/xl.jpg" data-media="(min-width: 1200px)"></span>
-                    </div>
-                </section>
-            </div>
-        </article>
-    </div>
-    <div class="item">
-        <!-- same article cms stucture options - three col eg -->
-        <article>
-            <div class="scontain">
-                <section style="position: relative; overflow: hidden;">
-                    <div class="picturefill-background">
-                        <div class="scontain left">
-                            <section>
-                                <h2>Drive success by reducing costs</h2>
-                                <h4>Shell's range of lubricants for the manufacturing sector can help to drive success by reducing operating costs and extending equipment life.</h4>
-                                <a href="/shell-manufacturing" class="ctaButton">Find out more</a>
-                            </section>
-                        </div>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-manufacturing/slider-SH-manufacturing1/m.jpg"></span><!-- use 4:3 aspect for ph -->
-                        <span data-src="https://transdiesel.com/shell-micro/landing-manufacturing/slider-SH-manufacturing1/l.jpg" data-media="(min-width: 1000px)"></span>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-manufacturing/slider-SH-manufacturing1/xl.jpg" data-media="(min-width: 1200px)"></span>
-                    </div>
-                </section>
-            </div>
-        </article>
-    </div>
-    <div class="item">
-        <!-- same article cms stucture options - three col eg -->
-        <article>
-            <div class="scontain">
-                <section style="position: relative; overflow: hidden;">
-                    <div class="picturefill-background">
-                        <div class="scontain left">
-                            <section>
-                                <h2>Stay on time and on budget</h2>
-                                <h4>High-quality lubricants are essential to ensuring equipment always performs at it's best on the job, keeping projects on budget and on time.</h4>
-                                <a href="/shell-construction" class="ctaButton">Find out more</a>
-                            </section>
-                        </div>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-construction/slider-SH-construction1/m.jpg"></span><!-- use 4:3 aspect for ph -->
-                        <span data-src="https://transdiesel.com/shell-micro/landing-construction/slider-SH-construction1/l.jpg" data-media="(min-width: 1000px)"></span>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-construction/slider-SH-construction1/xl.jpg" data-media="(min-width: 1200px)"></span>
-                    </div>
-                </section>
-            </div>
-        </article>
-    </div>
-    <div class="item">
-        <!-- same article cms stucture options - three col eg -->
-        <article>
-            <div class="scontain">
-                <section style="position: relative; overflow: hidden;">
-                    <div class="picturefill-background">
-                        <div class="scontain left">
-                            <section>
-                                <h2>Ask Rob<br> <span style="color: rgba(87,166,123,1.0);">Our Oil Guy</span></h2>
-                                <h4>Hi. Join me to learn about the different oils and lubricants<br> and what they mean for your vehicle.</h4>
-                                <a href="/shell-construction" class="ctaButton">Ask Rob</a>
-
-                            </section>
-                        </div>
-                        <span data-src="/images/misc/askrob-mob.jpg"></span><!-- use 4:3 aspect for ph -->
-                        <span data-src="/images/misc/askrob-tab.jpg" data-media="(min-width: 1000px)"></span>
-                        <span data-src="/images/misc/askrob-desk.jpg" data-media="(min-width: 1200px)"></span>
-                    </div>
-                </section>
-            </div>
-        </article>
-    </div>
-    <div class="item">
-        <!-- same article cms stucture options - three col eg -->
-        <article>
-            <div class="scontain">
-                <section style="position: relative; overflow: hidden;">
-                    <div class="picturefill-background">
-                        <div class="scontain left">
-                            <section>
-                                <h2>Sustainability Goals</h2>
-                                <h4>Find out how Shell &amp; TDX are stepping up to the challenge.</h4>
-                                <a href="/shell-sustainability" class="ctaButton">Find out more</a>
-                            </section>
-                        </div>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-sustainability/slider-SH-sustain/m.jpg"></span><!-- use 4:3 aspect for ph -->
-                        <span data-src="https://transdiesel.com/shell-micro/landing-sustainability/slider-SH-sustain/l.jpg" data-media="(min-width: 1000px)"></span>
-                        <span data-src="https://transdiesel.com/shell-micro/landing-sustainability/slider-SH-sustain/xl.jpg" data-media="(min-width: 1200px)"></span>
-                    </div>
-                </section>
-            </div>
-        </article>
-    </div>
-</div>
-
-
-
-
-
-<div class="brandBody">
-
-
-
-    <article class="grid gridRow">
-        <div class="scontain">
-            <section>
-                <div>
-                    <div class="scontain">
-                        <section>
-                            <a href="/shell-helix-motor-oil">
-                                <img src="https://transdiesel.com/shell-micro/shell-logo-fam/sh-helix-logo.svg">
-                                <hr>
-                                <h3>Automotive Engine Oil</h3>
-                            </a>
-                        </section>
-                    </div>
-                </div>
-                <div>
-                    <div class="scontain">
-                        <section>
-                            <a href="/shell-rimula">
-                                <img src="https://transdiesel.com/shell-micro/shell-logo-fam/sh-rimula-logo.svg">
-                                <hr>
-                                <h3>Heavy Diesel Engine Oil</h3>
-                            </a>
-                        </section>
-                    </div>
-                </div>
-                <div>
-                    <div class="scontain">
-                        <section>
-                            <a href="/shell-tellus">
-                                <img src="https://transdiesel.com/shell-micro/shell-logo-fam/sh-tellus-logo.svg">
-                                <hr>
-                                <h3>Hydraulic Oil</h3>
-                            </a>
-                        </section>
-                    </div>
-                </div>
-                <div>
-                    <div class="scontain">
-                        <section>
-                            <a href="/shell-spirax">
-                                <img src="https://transdiesel.com/shell-micro/shell-logo-fam/sh-spirax-logo.svg">
-                                <hr>
-                                <h3>Transmission &amp; Axle Oil</h3>
-                            </a>
-                        </section>
-                    </div>
-                </div>
-                <div>
-                    <div class="scontain">
-                        <section>
-                            <a href="/shell-gadus">
-                                <img src="https://transdiesel.com/shell-micro/shell-logo-fam/sh-gadus-logo.svg">
-                                <hr>
-                                <h3>Greases</h3>
-                            </a>
-                        </section>
-                    </div>
-                </div>
-                <div>
-                    <div class="scontain">
-                        <section>
-                            <a href="/shell-omala">
-                                <img src="https://transdiesel.com/shell-micro/shell-logo-fam/sh-omala-logo.svg">
-                                <hr>
-                                <h3>Industrial Gear Oil</h3>
-                            </a>
-                        </section>
-                    </div>
-                </div>
-                <div>
-                    <div class="scontain">
-                        <section>
-                            <a href="/shell-corena">
-                                <img src="https://transdiesel.com/shell-micro/shell-logo-fam/sh-corena-logo.svg">
-                                <hr>
-                                <h3>Compressor Oil</h3>
-                            </a>
-                        </section>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </article>
-
-
-
-
-        
-
-
-
-</div>
-
-
-        <div class="related carouselThumbs shopProduct clearance">
-            <article class="">
-                    <header class="scontain">
-                        <h3>On Sale</h3>
-                            <a href="https://www.transdiesel.com/shop/engine-oil?brandId=1053">View More</a>
-                    </header>
-
-
-                <div class="scontain">
-                    <section class="home owl-carousel owl-theme owl-loaded owl-drag">
-                                
-
-                                
-
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 690px;"><div class="owl-item active" style="width: 344.789px;"><div class="item">
-        <a href="/shop/products/engine-oil/helix-hx3-20w-50-4l-550045163">
-            <div class="teaser">
-                <img src="https://www.transdiesel.com/media/images/19111.jpg" srcset="https://www.transdiesel.com/media/images/19110.jpg 2x" alt="Shell Helix HX3 20W-50 engine oil 4L">
-            </div>
-            <div class="shopDesc">
-                <div>
-                    <h6>Shell Helix HX3 20W-50 engine oil 4L</h6>
-                </div>
-                <div>
-                    <h4>$44.91</h4>
-
-
-                </div>
-            </div>
-        </a>
-        <a class="ctaButton ctaShop" href="/shop/products/engine-oil/helix-hx3-20w-50-4l-550045163">Shop Now</a>
-    </div></div><div class="owl-item active" style="width: 344.789px;"><div class="item">
-        <a href="/shop/products/engine-oil/helix-ultra-ect-c3-5w-30-1l-550049689">
-            <div class="teaser">
-                <img src="https://www.transdiesel.com/media/images/19402.jpg" srcset="https://www.transdiesel.com/media/images/19401.jpg 2x" alt="Shell Helix ULTRA ECT C3 5W-30 engine oil 1L">
-            </div>
-            <div class="shopDesc">
-                <div>
-                    <h6>Shell Helix ULTRA ECT C3 5W-30 engine oil 1L</h6>
-                </div>
-                <div>
-                    <h4>$21.13</h4>
-
-
-                </div>
-            </div>
-        </a>
-        <a class="ctaButton ctaShop" href="/shop/products/engine-oil/helix-ultra-ect-c3-5w-30-1l-550049689">Shop Now</a>
-    </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="icon-arrow-back"></span></button><button type="button" role="presentation" class="owl-next"><span class="icon-arrow-forward"></span></button></div><div class="owl-dots disabled"></div></section>
-                </div>
-
-            </article>
-        </div>
-
-
-
-
-
-
-
-
-
-        <div class="tradedoor-bnr">
-            <div>
-                <div class="copy">
-                    <h4>Get exclusive trade pricing and offers across our range of products</h4>
-                </div>
-                <div class="featuresList">
-                    <ul>
-                        <li>
-                            <img src="/images/misc/tradedoor-bnr/shell/tradedoor-bnr-offers.png" srcset="/images/misc/tradedoor-bnr/shell/tradedoor-bnr-offers@2x.png 2x">
-                            <p>Exclusive Offers &amp; the best everyday prices</p>
-                        </li>
-                        <li>
-                            <img src="/images/misc/tradedoor-bnr/shell/tradedoor-bnr-cart.png" srcset="/images/misc/tradedoor-bnr/shell/tradedoor-bnr-cart@2x.png 2x">
-                            <p>Bulk orders, repeat orders &amp; saved favourites</p>
-                        </li>
-                        <li>
-                            <img src="/images/misc/tradedoor-bnr/shell/tradedoor-bnr-rewards.png" srcset="/images/misc/tradedoor-bnr/shell/tradedoor-bnr-rewards@2x.png 2x">
-                            <p>Earn points &amp; redeem rewards for your team</p>
-                        </li>
-                        <li>
-                            <img src="/images/misc/tradedoor-bnr/shell/tradedoor-bnr-avails.png" srcset="/images/misc/tradedoor-bnr/shell/tradedoor-bnr-avails@2x.png 2x">
-                            <p>24/7 LIVE product pricing &amp; stock availability</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d">
-                    <img src="/images/misc/tradedoor-bnr/tradedoor-bnr-person2.png" srcset="/images/misc/tradedoor-bnr/tradedoor-bnr-person2@2x.png 2x">
-                </div>
-                <div class="ctaCol">
-                    <a href="https://cptransdiesel.co.nz/"><img src="/images/logos/treaddoor22-REV.svg" alt="TradeDoor Logo"></a>
-                    <a href="https://cptransdiesel.co.nz/"><img src="/images/misc/tradedoor-bnr/tradedoor-bnr-cta.png" srcset="/images/misc/tradedoor-bnr/tradedoor-bnr-cta@2x.png 2x" alt="Join TradeDoor"></a>
-                </div>
-            </div>
-        </div>
+    
 
 
 

@@ -6,7 +6,241 @@
 .smallLink {
     font-size: 12px;
 }
-
 .simpleTabs {
-    border:1px solid red;
+    margin-top: 1em;
 }
+.simpleTabs div.tabItem > *:not(.simpleTabsContent) {
+    display: flex;
+    column-gap:1vw;
+}
+.simpleTabs div.tabItem > * > * {
+    flex: 1 1 70%;
+}
+.simpleTabs div.tabItem > * > div.imageThumb {
+    flex: 1 1 auto;
+}
+div.imageThumb {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.tabItem a {
+    text-decoration: none;
+}
+div.simpleTabsContent {
+    background-color: #ffffff;
+    margin-bottom: 2em;
+}
+
+div.simpleTabsContent form {
+    margin-bottom: auto;
+}
+
+
+@media screen and (max-width:1100px) {
+    div.simpleTabs {
+        margin-bottom: 2em;
+    }
+    div.tabItem {
+        border-bottom: 2px solid rgba(87,166,123,1.0);
+        margin-bottom: 2vh;
+        padding: 2vh;
+    }
+    div.simpleTabsContent {
+        padding: 3vw;
+        margin-top: 1em;
+    }
+    div.simpleTabs.desktopTabs {
+        display: none;
+    }
+}
+
+@media screen and (max-width:760px) {
+    div.simpleTabsContent {
+        padding: 5vw 7vw;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .simpleTabs {
+        display: flex;
+        /*column-gap:2vw;*/
+        margin-top: 1.5em;
+    }
+    .simpleTabs div.tabItem {
+        flex:1 1 auto;
+    }
+    .simpleTabs div.tabItem > * > div.imageThumb {
+        flex: 1 1 20%;
+    }
+    div.simpleTabsContent {
+        padding: 3vw 2vw;
+    }
+    .simpleTabs div.tabItem > *:not(.simpleTabsContent) {
+        display: flex;
+        column-gap:2vw;
+    }
+    .simpleTabs.hasContent {
+        display: block;
+        margin-top: 0;
+    }
+    .simpleTabs.mobileTabs a.tabTrigger {
+        display: none;
+    }
+    .simpleTabs .tabItem a.tabTrigger {
+       padding:1vw 2vw;
+    }
+    div.simpleTabs.linksTabs {
+        margin-bottom: 1.5em;
+    }
+    div.simpleTabs.linksTabs div.tabItem:not(:last-child) a.tabTrigger {
+        border-right: 1px solid rgba(87,166,123,1.0);
+    }
+    div.simpleTabs.desktopTabs div.tabItem:not(:last-child) {
+        border-right: 1px solid rgba(255,255,255,0.75);
+    }
+    div.simpleTabs.desktopTabs div.tabItem {
+        background-color: rgba(0,0,0,0.04);
+    }
+    div.simpleTabs.desktopTabs div.tabItem.activeTab {
+        background-color: rgba(255,255,255,1.0);
+    }
+    div.simpleTabs.desktopTabs div.tabItem.activeTab a {
+        color: rgba(87,166,123,1.0);
+    }
+    div.simpleTabs.desktopTabs div.tabItem a.tabTrigger  {
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* oil finder specific css */
+
+@font-face {
+    font-family: 'robotoC';
+    src: url('/fonts/roboto/RobotoCondensed-Regular-webfont.eot');
+    src: url('/fonts/roboto/RobotoCondensed-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/roboto/RobotoCondensed-Regular-webfont.woff') format('woff'),
+         url('/fonts/roboto/RobotoCondensed-Regular-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+.oilFinder h1.subtitle {
+    font-family: "robotoC";
+    font-weight: 400;
+    background-color: #000;
+    color: #fff;
+    border-bottom: 4px solid #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size:16px;
+    padding: 4px 10px 6px 10px !important;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+
+.oilFinder div.autoIframeDuplicate-content {
+    padding: 15px;
+    background-color: #f7f7f7;
+    padding-bottom: 3vh;
+    min-height: 20vh;
+}
+
+.oilFinder p a {
+    color: rgba(87,166,123,1.0);
+}
+
+
+div.simpleTabsContent.hasIframe {
+    min-height: 150vh;
+}
+
+header.oilFinder div.brand-subHead {
+    background:none;
+}
+
+header.oilFinder img.shell {
+    width:50%;
+    margin: 2em auto 1em auto;
+}
+
+header.oilFinder div.brand-subHead {
+    border-bottom: 2px solid rgba(87,166,123,1.0);
+    padding-left: 2vw;
+}
+
+@media screen and (min-width:760px) {
+    header.oilFinder img.shell {
+        width:200px;
+        margin: 0;
+        margin-left: auto;
+    }
+    header.oilFinder div.brand-subHead {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .oilFinder h1.subtitle {
+        font-size:18px;
+        padding: 14px 15px 13px 15px !important;
+        text-align: left;
+    }
+    .simpleTabsContent.hasIframe {
+        min-height: 150vh;
+    }
+    iframe.lubeSearchiFrame {
+        min-height: 250vh;
+    }
+    div.oilFinder div.simpleTabsContent:not(.hasIframe) div.autoIframeDuplicate {
+        max-width: 1180px;
+        margin: 0px auto;
+    }
+    .oilFinder div.autoIframeDuplicate-content {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+   
+    header.oilFinder div.brand-subHead > div {
+        flex-basis: auto;
+        margin-left: 0 !important;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
+    }
+    header.oilFinder div.brand-subHead > div:first-child {
+        flex-basis: 90%;
+        flex-shrink: 1;
+        margin-right: auto;
+        padding-left: 0;
+    }
+    header.oilFinder div.brand-subHead {
+        border-bottom:none;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .simpleTabs.desktopTabs div.tabItem a.tabTrigger strong {
+        font-size: 1.2em;
+    }
+    .simpleTabs.desktopTabs div.tabItem > * > div.imageThumb {
+        flex: 1 1 40%;
+    }
+   
+}
+
+
+
+
