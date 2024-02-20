@@ -777,13 +777,18 @@
     <script type="text/javascript" src="/js/site.js"></script>
     
         
-
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            setTimeout(function(){$("body").focus()}, 100);
+        });
+    </script>
 
     
     <script type="text/javascript">
-
+        
 
         $(document).ready(function () {
+            
 
 
             $(".owl-brand-slider").owlCarousel({
