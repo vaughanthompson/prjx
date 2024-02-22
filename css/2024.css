@@ -244,3 +244,12 @@ header.oilFinder div.brand-subHead {
 
 
 
+@media screen and (min-width:1400px) {
+    div.centralise {
+        padding-left:8vw;
+        padding-right:8vw;
+        padding-bottom: 2em;
+        width: auto;
+        border-bottom: 2px solid rgba(87,166,123,1.0);
+    }
+}
