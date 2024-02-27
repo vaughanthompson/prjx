@@ -266,10 +266,13 @@ span.box {
     position: relative;
     margin: 1.6vw 1.8vw 1.6vw 1.4vw;
     display: block;
-    top: calc(-1.6vw - 25px);
+    top: calc(-1.6vw - 20px);
     margin-bottom: -30px;
     border-radius: 0 0 10px 0;
     box-shadow: 0px 2px 8px 0 rgba(0,0,0,0.25);
+    font-size: 0.9em;
+    line-height: 1.3em;
+    text-align: center;
   }
 
   span.box.model {
