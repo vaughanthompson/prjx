@@ -275,10 +275,13 @@ span.box {
   span.box.model {
     top: 0;
     margin-bottom: 1.6vw;
+    margin-left: 0;
+    margin-right: 0;
     border-radius: 0 0 0 0;
     box-shadow: 0px 2px 8px 0 rgba(0,0,0,0.25);
     min-height: 30px;
     line-height: 30px;
+    font-size: 1.2em;
   }
 
 
@@ -340,6 +343,7 @@ span.box {
         padding: 1.5vh;
         top: 0;
         text-align: center;
+        font-size: 1.0em;
       }
       .box.model.arrow-left:after {
         border: none;
