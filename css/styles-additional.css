@@ -3003,9 +3003,14 @@ span.pictureLink {
     .simpleFlex > * {
         flex: 0 1 30%;
     }
-
+    .simpleFlex2 > * {
+        flex: 0 1 48%;
+    }  
     .simpleFlex4 > * {
         flex: 0 1 22%;
+    }    
+    .simpleFlex5 > * {
+        flex: 0 1 17%;
     }
     .multiCol {
         column-count: 2;
