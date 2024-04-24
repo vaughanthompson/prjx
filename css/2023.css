@@ -835,6 +835,9 @@ article.dealPageMasthead .countDownBanner div.machine img {
     article.dealPageContent.twoThirds section div.scontain section {
         width:47%;
     }
+    article.dealPageContent.fiftyFifty section div.scontain section {
+        width:36%;
+    }
     article.dealPageContent.twoThirds section div.scontain section:last-child {
         width:25%;
     }

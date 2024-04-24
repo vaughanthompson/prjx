@@ -352,3 +352,291 @@ span.box {
         border: none;
       }
   }
+
+
+
+
+
+
+
+
+  /* yanmar you choose campaign */
+
+  .yanmarGradient1 {
+    background: linear-gradient(to top, 
+    rgba(214,30,66,1.0)20%,
+    rgba(139,6,37,1.0) 50%,
+    rgba(63,0,9,1.0) 80%,
+    rgba(0,0,0,1.0));
+  }
+
+  .yanmarGradient2 {
+    background: linear-gradient(to bottom, 
+    rgba(214,30,66,1.0)10%,
+    rgba(139,6,37,1.0) 50%,
+    rgba(63,0,9,1.0) 80%,
+    rgba(0,0,0,1.0));
+  }
+
+  .yanmarChoose {
+    color: white;
+  }
+
+  .yanmarChoose h1 {
+    font-size:80px;
+    padding:0;
+  }
+
+  .yanmarChoose h2 {
+    font-size:40px;
+    padding:0;
+  }
+
+  .yanmarChoose h2 span {
+    font-weight:200;
+  }
+  .yanmarChoose div.packageAdditions h2 {
+    font-size:50px;
+  }
+  .yanmarChoose div.packageAdditions h2 sup {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 60px;
+    font-weight: 300;
+    vertical-align: top;
+  }
+  .yanmarChoose h3 {
+    font-size:36px;
+    padding:0;
+  }
+  .yanmarChoose div.packageAdditions h3 {
+    color: #000;
+    font-weight: 500;
+  }
+  .yanmarChoose div.packageAdditions h4 {
+    font-weight: 500;
+    font-size: 26px;
+  }
+
+
+  .yanmarChoose .brandColor {
+    color:rgba(214,30,66,1.0) !important;
+  }
+
+  .yanmarChoose .terms {
+    font-size: 0.8em;
+    color: white;
+  }
+
+
+  .yanmarChoose div.packageAdditions {
+    padding: 0;
+    margin: 0;
+    row-gap: 0;
+    column-gap: 0;
+    width:100%;
+    flex-wrap: wrap;
+  }
+
+  .yanmarChoose div.packageAdditions div.item {
+    padding-left: 2vw;
+    padding-bottom: 2vw;
+    position: relative;
+    flex: 0 0 45%;
+    align-self: stretch;
+  }  
+  .yanmarChoose div.packageAdditions div.item > div {
+    background-color: rgba(214,30,66,1.0);
+    position: relative;
+    z-index: 100;
+    height: 100%;
+  }
+
+  .yanmarChoose div.packageAdditions div.item > div > div {
+    padding:1.5vw;
+  }
+
+  .yanmarChoose div.packageAdditions div.item ul {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    padding-bottom: 0.75em;
+    padding-left: 0;
+    margin-bottom: 1m;
+  }
+
+  .yanmarChoose div.packageAdditions div.item ul li {
+    list-style-type: none;
+    padding-bottom: 0.5em;
+    font-size: 1em;
+  }
+
+
+  .yanmarChoose div.packageAdditions div.item span.left {
+    width:2vw;
+    height: 100%;
+    background-image: url(/images/2024/yanmarChoose/left@2x.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+  }
+
+  .yanmarChoose div.packageAdditions div.item span.bottom {
+    width:100%;
+    height: 2vw;
+    background-image: url(/images/2024/yanmarChoose/bottom@2x.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom:0;
+    right:0;
+  }
+
+  .yanmarChoose div.packageAdditions div.item span.corner {
+    width:2vw;
+    height: 2vw;
+    background-image: url(/images/2024/yanmarChoose/corner@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom:0;
+    left:0;
+  }
+
+
+
+
+ div.opener {
+    display: flex;
+    align-items: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    height: 85vh;
+    column-gap: 3vw;
+ } 
+
+ div.opener > div {
+    flex:1 1 50%;
+    text-align: center;
+ }
+
+ div.opener > div:last-child {
+    flex:1 1 60%;
+ }
+
+ div.opener i {
+    color: white;
+ }
+
+
+div.teaser.yanmarChoose {
+    background-color: black;
+    padding: 2em 15vw 15vh 15vw;
+    text-align: center;
+}
+
+@media screen and (max-width:750px) {
+    div.teaser.yanmarChoose br {
+        display: none;
+    }
+}
+
+
+
+
+ @media screen and (max-width:750px) {
+    div.opener.desktop {
+        display: none;
+    }
+    div.opener.mobile {
+        height: 90vh;
+    }
+ }
+ @media screen and (min-width:750px) {
+    div.opener.mobile {
+        display: none;
+    }
+ }
+ @media screen and (min-width:750px) and (max-width:1100px) {
+    div.opener {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        height: 75vh;
+    }
+ }
+
+
+@media screen and (max-width:1100px) {
+    .yanmarChoose p,
+    .yanmarChoose .offerDetails > * {
+        width: auto !important;
+        max-width: 90% !important;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .yanmarChoose div.packageAdditions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .dealPageContent.fiftyFifty.yanmarChoose div.scontain {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .dealPageContent.fiftyFifty.yanmarChoose div.scontain {
+        text-align: center;
+    }
+    .dealPageContent.fiftyFifty.yanmarChoose div.scontain img {
+        height: 70vh;
+        width: auto;
+        margin: 0px auto;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    .dealPageContent.fiftyFifty.yanmarChoose div.scontain img {
+        width: 85vw;
+        height: auto;
+        margin: 0px auto 1em auto;
+    }
+
+    .yanmarChoose h1,
+    .yanmarChoose h2,
+    .yanmarChoose h3 {
+        font-size:30px;
+        padding:0;
+    }
+
+    .yanmarChoose div.packageAdditions div.item {
+        padding-left: 0;
+        padding-bottom: 0;
+        margin-bottom: 5vh;
+    }  
+
+    .yanmarChoose div.packageAdditions div.item > div > div {
+        padding:3vh;
+      }
+
+    .yanmarChoose div.packageAdditions {
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+
+ }
+
+
+
+ @media screen and (min-width:1100px) and (max-width:1400px) {
+    .yanmarChoose div.packageAdditions div.item {
+        flex: 0 0 70%;
+  }  
+ }
+
+
+
