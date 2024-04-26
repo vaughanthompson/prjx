@@ -386,7 +386,9 @@ span.box {
     font-size:80px;
     padding:0;
   }
-
+  .yanmarChoose h1 span {
+    font-weight:700 !important;
+  }
   .yanmarChoose h2 {
     font-size:40px;
     padding:0;
@@ -396,7 +398,7 @@ span.box {
     font-weight:200;
   }
   .yanmarChoose div.packageAdditions h2 {
-    font-size:50px;
+    font-size:48px;
   }
   .yanmarChoose div.packageAdditions h2 sup {
     font-size: 20px;
@@ -538,16 +540,58 @@ div.teaser.yanmarChoose {
     text-align: center;
 }
 
+
+div.yanmarChooseNav {
+    background-color: rgba(214,30,66,1.0);
+    color: #fff;
+    
+}
+div.yanmarChooseNav a.thumb {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
 @media screen and (max-width:750px) {
-    div.teaser.yanmarChoose br {
-        display: none;
+    div.yanmarChooseNav {
+        padding:15vh 3vh;
+    }
+    div.yanmarChooseNav a.thumb {
+        display: flex;
+        align-items: center;
+        column-gap: 5vw;
+        border-bottom: 2px solid rgba(0,0,0,0.25);
+        padding: 3vh;
+    }
+    div.yanmarChooseNav a.thumb img {
+        max-width: 25vw;
     }
 }
 
 
 
+@media screen and (min-width:750px) {
+    div.yanmarChooseNav {
+        display: flex;
+        padding: 10vw 10vw 10vw 10vw;
+        column-gap: 5vw;
+        border-bottom: 2px solid rgba(0,0,0,0.15);
+    }
+    .yanmarChooseContent {
+        padding-top: 5vw;
+    }
+    div.yanmarChooseNav a.thumb img {
+        margin-bottom: 1em;
+    }
+}
+
+
 
  @media screen and (max-width:750px) {
+    div.teaser.yanmarChoose br {
+        display: none;
+    }
     div.opener.desktop {
         display: none;
     }
@@ -594,6 +638,10 @@ div.teaser.yanmarChoose {
         width: auto;
         margin: 0px auto;
     }
+    div.yanmarChooseNav a.thumb br {
+        display: none;
+    }
+
 }
 
 
@@ -638,5 +686,18 @@ div.teaser.yanmarChoose {
   }  
  }
 
-
+@media screen and (min-width:1400px) {
+    .yanmarChoose div.packageAdditions div.item.canopy1 {
+        order:1;
+    }
+    .yanmarChoose div.packageAdditions div.item.canopy2 {
+        order:3;
+    }
+    .yanmarChoose div.packageAdditions div.item.cabin1 {
+        order:2;
+    }
+    .yanmarChoose div.packageAdditions div.item.cabin2 {
+        order:4;
+    }
+}
 
