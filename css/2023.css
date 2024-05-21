@@ -398,6 +398,13 @@ article.col2.twoThird.braintree p {
     padding-top: 0 !important;
 }
 
+.noPadLeft {
+    padding-left: 0 !important;
+}
+
+.noPadRight {
+    padding-right: 0 !important;
+}
 
 
 

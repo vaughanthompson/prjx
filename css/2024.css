@@ -701,3 +701,696 @@ div.yanmarChooseNav a.thumb {
     }
 }
 
+
+
+
+
+/* volvo emob pages */
+body.volvoEmob {
+    background-color: #ffffff;
+}
+.volvoEmob .reversed {
+    background-color: #000;
+}
+.volvoEmob .reversed,
+.volvoEmob .reversed a {
+    color: #fff;
+}
+.volvoEmob nav a {
+    font-size: 1.1em;
+}
+.volvoEmob h1,
+.volvoEmob h2,
+.volvoEmob h3,
+.volvoEmob h4 {
+    letter-spacing: 0.025em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.volvoEmob h1 {
+    font-family: 'volvo';
+    font-size: 8em;
+    line-height: 80%;
+    font-weight:200;
+}
+.volvoEmob h2 {
+    font-family: 'volvo';
+    font-size: 6em;
+    line-height: 90%;
+    font-weight:200;
+}
+.volvoEmob h3 {
+    font-family: 'volvo';
+    font-size: 4em;
+    line-height: 90%;
+    font-weight:200;
+    letter-spacing: 0.04em;
+}
+.volvoEmob h4 {
+    font-weight: 700;
+    font-size: 1.9em;
+    letter-spacing: 0;
+}
+.volvoEmob h4 span {
+    font-weight: 700;
+}
+
+.volvoEmob h5 {
+    font-weight: 500;
+    font-size: 1.6em;
+}
+.volvoEmob h6 {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+.volvoEmob p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 0.8em;
+    max-width:100%;
+    text-wrap: balance;
+}
+.volvoEmob a:not(.imgLink),
+.volvoEmob li {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.volvoEmob a.button {
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 2em;
+    padding: 10px 30px 11px 30px;
+}
+.volvoEmob .small {
+    font-size: 80%;
+}
+
+.volvoEmob .larger {
+    font-size: 130%;
+}
+
+.volvoEmob .marginMe {
+    margin-top:3em;
+    margin-bottom:2em;
+}
+
+/* navs */
+body.volvoEmob .activeLink {
+    font-weight: 300 !important;
+}
+body.volvoEmob header a.button {
+    margin-right:15px;
+    margin-left:15px;
+}
+body.volvoEmob header,
+div.fixedNav {
+    position: absolute;
+    z-index: 10000;
+    width:100vw;
+}
+
+body.volvoEmob header,
+body.volvoEmob header > div,
+div.fixedNav {
+    height: 70px;
+    display: flex;
+}
+
+body.volvoEmob footer,
+body.volvoEmob footer > div {
+    height: 90px;
+    display: flex;
+}
+body.volvoEmob header,
+body.volvoEmob footer {
+    justify-content: space-between;
+    border-bottom:1px solid rgba(255,255,255,0.25);
+}
+body.volvoEmob footer {
+    border-top:1px solid rgba(0,0,0,1.0);
+    background:none;
+    padding-top:0;
+    padding-bottom:0;
+}
+body.volvoEmob header > div,
+body.volvoEmob footer > div {
+    align-items: center;
+    padding-left:2em;
+    padding-right:2em;
+}
+body.volvoEmob header img.logoAsset,
+body.volvoEmob footer img.logoAsset {
+    height:40px;
+    width:auto;
+}
+body.volvoEmob header img.logoAsset.volvo,
+body.volvoEmob footer img.logoAsset.volvo {
+    height:39px;
+}
+div.fixedNav {
+    bottom:-1px;
+    background-color: #000;
+    border-top:1px solid rgba(255,255,255,0.25);
+    border-bottom:1px solid rgba(255,255,255,0.25);
+    align-items: center;
+    justify-content: center;
+}
+div.sticky {
+    position: fixed;
+    z-index: 200;
+    top:-1px;
+    display: none;
+    background-color: #000;
+}
+div.sticky div.fixedNav {
+    position: relative;
+}
+
+body.volvoEmob header nav a,
+div.fixedNav > nav > a {
+    padding: 0.5em 1em;
+    margin: 0 0.25em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+body.volvoEmob header nav {
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+}
+body.volvoEmob span.pipe {
+    display: block;
+    width:2px;
+    height: 70%;
+    background-color: rgba(255,255,255,0.25);
+    margin-left: 1em;
+    margin-right: 1em;
+}
+body.volvoEmob footer span.pipe {
+    background-color: rgba(0,0,0,0.25);
+}
+
+body.volvoEmob nav a:hover {
+    color: rgba(87,166,123,1.0)
+}
+
+
+
+
+/* layout */
+
+/* put this inside wrappers and hold content */
+body.volvoEmob div.panelFH {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+body.volvoEmob div.panelFH div.insetContent {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-basis: 100%;
+}
+
+body.volvoEmob div.padWidthDefault {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+body.volvoEmob div.padHeightDefault {
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+}
+
+
+
+
+/* misc elements */
+div.absPosLeft {
+    width: 7vw;
+    background-image: url(/images/pattern-fadeRL.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: auto 75%;
+    height: 50vh;
+    position: absolute;
+    top:25vh;
+}
+
+div.absPosRight {
+    width: 7vw;
+    background-image: url(/images/pattern-LR-flipped.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: auto 75%;
+    height: 50vh;
+    position: absolute;
+    top:25vh;
+    right:0;
+}
+
+.animated.flicker {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+  }
+.animated.slower {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+  }
+
+  @-webkit-keyframes flashSlow {
+    0% {
+      opacity: 0;
+    }
+    25% {
+        opacity: 0;
+      }  
+    50% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 1;
+      }
+     100% {
+        opacity: 0;
+      }
+  }
+  
+  @keyframes flashSlow {
+    0% {
+        opacity: 0;
+      }
+      25% {
+          opacity: 0;
+        }  
+      50% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 1;
+        }
+       100% {
+          opacity: 0;
+        }
+  }
+
+  .flashSlow {
+    -webkit-animation-name: flashSlow;
+    animation-name: flashSlow;
+  }
+
+  @-webkit-keyframes flashSlow2 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+        opacity: 1;
+      }  
+    40% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 1;
+      }
+     100% {
+        opacity: 0;
+      }
+  }
+  
+  @keyframes flashSlow2 {
+    0% {
+        opacity: 0;
+      }
+      25% {
+          opacity: 1;
+        }  
+      40% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 1;
+        }
+       100% {
+          opacity: 0;
+        }
+  }
+
+  .flashSlow2 {
+    -webkit-animation-name: flashSlow2;
+    animation-name: flashSlow2;
+  }
+
+  /*media*/
+.pbVideo {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+}
+.pbVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+div.video {
+    position: relative;
+}
+div.video > div {
+    width: 100%;
+    height: 100%;
+} 
+.hidden-xs {
+    display: none;
+}
+      
+div#vidHolder{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+      
+video.hidden-xs {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}   
+@media screen and (min-width:1100px) {
+    video.hidden-xs {
+        width: 100%;
+        height: 100%;
+    }
+          
+}  
+@media screen and (min-width:1100px) {
+    .hidden-xs {
+         display: block;
+    }      
+}
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* general class updates */
+.gradientLR {
+    background: linear-gradient(to right, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0.0));
+}
+.gradientGlow {
+    background-blend-mode: multiply;
+    background: radial-gradient(circle at center, rgba(87,166,123,1.0) 50%, rgba(0,0,0,0));
+}
+.gradientWall {
+    background: linear-gradient(to bottom,rgba(0,0,0,0.0) 20%, rgba(255,255,255,0.125) 45%,rgba(255,255,255,0.09) 45%,rgba(0,0,0,0.01) 60%,rgba(0,0,0,0.0));
+}
+.gradientLight {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.08) 40%, rgba(0,0,0,0.0));
+}
+.centerCol {
+    text-align: center;
+    width:75%;
+    margin: 0px auto;
+}
+.vertSpaceApart {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: space-between;
+
+}
+.content-spacer {
+    display: block;
+}
+.content-spacer.h25 {
+    height:25vh
+}
+.content-spacer.h20 {
+    height:20vh
+}
+.content-spacer.h15 {
+    height:15vh
+}
+.content-spacer.h10 {
+    height:10vh
+}
+.content-spacer.h7 {
+    height:7vh
+}
+.content-spacer.h5 {
+    height:5vh
+}
+
+.posRelative {
+    position: relative;
+}
+
+.zindex2000 {
+    z-index: 2000;
+}
+.zindex1000 {
+    z-index: 1000;
+}
+.zindex500 {
+    z-index: 500;
+}
+.bordered.reversed {
+    border-bottom:1px solid rgba(255,255,255,0.5);
+}
+.bordered {
+    border-bottom:1px solid rgba(0,0,0,1.0);
+}
+
+.flexRow {
+    display: flex;
+    column-gap: 7vw; 
+}
+.flexRow.compact {
+    column-gap: 3vw;
+}
+.flexRow.contentHeader {
+    align-items: flex-end;
+    width: 85%;
+}
+.flexRow > div {
+    flex: 1 0 0;
+}
+.flexRow div.item {
+    flex: 1 1 0;
+    display: flex;
+}
+.flexRow.twoColumn {
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+.flexRow.twoColumn > div {
+    flex: 0 1 45%;
+}
+
+.flexRow.contentHeader div.item:first-child {
+    flex-basis: 35%;
+}
+.flexRow.contentHeader div.item:last-child {
+    flex-basis: 65%;
+}
+.flexRow div.item.itemLink a {
+    text-decoration: none;
+    transition: 0.5s;
+    display: block;
+}
+.flexRow div.item.itemLink a:hover {
+    transform: scale(105%);
+}
+.flexRow div.item.itemLink a picture {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+.flexRow div.item.itemLink a picture::after {
+    transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    content: "";
+    z-index: 0;
+    opacity: 0;
+}
+
+.flexRow div.item.itemLink a:hover picture::after {
+    background: radial-gradient(circle at center, rgba(87,166,123,0.25) 20%, rgba(0,0,0,0) 50%);
+    opacity: 1;
+}
+.flexRow div.item.itemLink a img {
+    max-width:15vw;
+    position: relative;
+    z-index: 3;
+}
+.flexRow.withBGimages {
+    column-gap: 0;
+}
+.flexRow.withBGimages div.item div {
+    text-align: center;
+    padding: 7vw 6vw;
+    align-self: stretch;
+}
+.flexRow.withBGimages div.item div {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.parallaxElement40vh {
+    min-height:40vh
+}
+
+.parallaxElement40vh {
+    display: flex;
+}
+
+.parallaxElement40vh div.flexRow {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* column-gap: 5vw; */
+}
+
+.parallaxElement40vh div.flexRow div.item {
+    align-self: stretch;
+    align-items:center;
+    position: relative;
+    justify-content: center;
+}
+.parallaxElement40vh div.flexRow div.item > div.parallaxBg {
+    display: flex;
+    width:8.5vw;
+    height: 13vw;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+.parallaxElement40vh div.flexRow div.item > div.parallaxIcon {
+    display: flex;
+    width:4.5vw;
+    height: 4vw;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    /*margin-top: 5vh;*/
+}
+
+a.simpleLink {
+    color: rgba(87,166,123,1.0);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a.simpleLink:hover {
+    color: rgba(0,0,0,1.0);
+    text-decoration: underline;
+}
+
+div.imgLink,
+a.imgLink {
+    display: flex;
+    column-gap: 2em;
+    margin-bottom: 2em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+div.imgLink {
+    display: inline-flex;
+    justify-content: space-between;
+    column-gap: 4vw;
+    margin-bottom: 4vw;
+}
+div.imgLink.flip {
+    flex-direction: row-reverse;
+}
+a.imgLink {
+    color: rgba(87,166,123,1.0);
+}
+a.imgLink:hover {
+    transform: scale(105%);
+}
+div.imgLink div:first-of-type {
+    width:120px;
+    height:120px;
+}
+a.imgLink div:first-of-type {
+    width:65px;
+    height:65px;
+}
+i.smallIcon {
+    font-size:0.8em; 
+    width:auto; 
+    height: auto;
+}
+
+
+
+/* layered background images w/anim */
+div.layeredBG-rhs {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+div.layeredBG-rhs > div {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%; 
+    height: 100%;
+}
+
+
+
+
+/* faq styling */
+.rotateIC {
+    transition: 0.5s;
+    transform: rotate(180deg);
+  }
+a.faqTrigger {
+    display: block;
+    padding-bottom: 0.5em;
+    
+}
+a.faqTrigger:hover {
+    text-decoration: none;
+}
+a.faqTrigger h6  {
+    display: flex;
+}
+a.faqTrigger h6 i {
+    margin-left: auto;
+}
+div.faqDetail {
+    margin-top: 1em;
+    padding-bottom: 1em;  
+}
+.justBorder {
+    border-bottom:1px solid rgba(0,0,0,0.25);
+}
