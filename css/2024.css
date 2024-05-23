@@ -765,6 +765,7 @@ body.volvoEmob {
 .volvoEmob h6 {
     font-weight: 300;
     font-size: 1.2em;
+    line-height: 1.4em;
 }
 .volvoEmob p {
     margin: 0;
@@ -779,6 +780,9 @@ body.volvoEmob {
 .volvoEmob li {
     font-size: 1.1em;
     line-height: 1.5em;
+}
+.volvoEmob ul.vanilla li {
+    line-height: 1.4em;
 }
 
 .volvoEmob a.button {
@@ -914,6 +918,22 @@ body.volvoEmob div.panelFH div.insetContent {
     padding-top: 100px;
     padding-bottom: 100px;
     flex-basis: 100%;
+}
+@media screen and (min-width:1100px) {
+    body.volvoEmob div.panelFH div.insetContent {
+        margin-right: 15vw;
+    }
+}
+@media screen and (min-width:1300px) {
+    body.volvoEmob div.panelFH div.insetContent {
+        margin-right: 30vw;
+    }
+}
+@media screen and (min-width:1800px) {
+    body.volvoEmob div.panelFH div.insetContent {
+        margin-right: auto;
+        flex: 0 0 1000px;
+    }
 }
 
 body.volvoEmob div.padWidthDefault {
@@ -1404,18 +1424,30 @@ div.faqDetail {
 /* layered model image */
 div.absHolder {
     width:100vw; 
-    height:100vw; 
+    height:100vh; 
     position: absolute; 
     top: 0;
+    display: flex;
 }
 div.relHolder {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    border: 10px solid red;
+    width: 100%;
 }
 .imagePositioned {
-    height: 50vh;
+    height: 70vh;
     width: auto;
+    margin-right: 8vw;
+}
+
+
+.simpleGrid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 0.25em;
+}
+
+.restrictContentWidth {
+    max-width: 70%;
 }
