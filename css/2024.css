@@ -1343,8 +1343,8 @@ a.imgLink {
 div.imgLink {
     display: inline-flex;
     justify-content: space-between;
-    column-gap: 4vw;
-    margin-bottom: 4vw;
+    column-gap: 2vw;
+    margin-bottom: 2vw;
 }
 div.imgLink.flip {
     flex-direction: row-reverse;
@@ -1357,12 +1357,13 @@ a.imgLink:hover {
 }
 div.imgLink div:first-of-type {
     width:120px;
-    height:120px;
+    height:auto;
+    flex-shrink: 0;
 }
-a.imgLink div:first-of-type {
+/*a.imgLink div:first-of-type {
     width:65px;
     height:65px;
-}
+}*/
 i.smallIcon {
     font-size:0.8em; 
     width:auto; 
@@ -1445,8 +1446,16 @@ div.relHolder {
 .simpleGrid {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-gap: 0.25em;
+    grid-column-gap: 1em;
+    grid-row-gap: 0.25em;
 }
+.simpleGrid2 {
+    display: grid;
+    grid-template-columns: 46% 46%;
+    grid-column-gap: 6%;
+    grid-row-gap: 0.25em;
+}
+
 
 .restrictContentWidth {
     max-width: 70%;
