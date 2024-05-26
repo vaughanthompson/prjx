@@ -774,7 +774,7 @@ body.volvoEmob {
     line-height: 1.5em;
     margin-bottom: 0.8em;
     max-width:100%;
-    text-wrap: balance;
+    /*text-wrap: balance;*/
 }
 .volvoEmob a:not(.imgLink),
 .volvoEmob li {
@@ -1344,7 +1344,7 @@ div.imgLink {
     display: inline-flex;
     justify-content: space-between;
     column-gap: 2vw;
-    margin-bottom: 2vw;
+    margin-bottom: 3vw;
 }
 div.imgLink.flip {
     flex-direction: row-reverse;
