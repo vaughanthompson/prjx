@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 281.11">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #57a47b;
+      }
+
+      .cls-2 {
+        font-size: 30px;
+      }
+
+      .cls-2, .cls-4 {
+        font-family: TWKEverett-Regular, 'TWK Everett';
+      }
+
+      .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: none;
+      }
+
+      .cls-5, .cls-7 {
+        stroke: #57a47b;
+        stroke-width: 3.9px;
+      }
+
+      .cls-6 {
+        stroke: #f1f1f1;
+        stroke-width: 19.26px;
+      }
+
+      .cls-8 {
+        font-family: TWKEverett-Bold, 'TWK Everett';
+        font-weight: 700;
+      }
+
+      .cls-9 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-3 {
+        font-size: 76px;
+        letter-spacing: -.05em;
+      }
+
+      .cls-7 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="nav">
+    <path class="cls-6" d="M130,271.48c-33.24,0-63.33-13.47-85.11-35.26"/>
+    <path class="cls-6" d="M130,30.74c33.24,0,63.33,13.47,85.11,35.26"/>
+    <path class="cls-6" d="M215.11,236.23c-21.78,21.78-51.88,35.26-85.11,35.26"/>
+    <path class="cls-6" d="M44.89,66c21.78-21.78,51.88-35.26,85.11-35.26"/>
+    <path class="cls-6" d="M250.37,151.11c0,33.24-13.47,63.33-35.26,85.11"/>
+    <path class="cls-6" d="M44.89,236.23c-21.78-21.78-35.26-51.88-35.26-85.11"/>
+    <path class="cls-6" d="M215.11,66c21.78,21.78,35.26,51.88,35.26,85.11"/>
+    <path class="cls-6" d="M9.63,151.11c0-33.24,13.47-63.33,35.26-85.11"/>
+    <text class="cls-3" transform="translate(45.01 167.68)"><tspan class="cls-8" x="0" y="0">6</tspan><tspan class="cls-4" x="50.46" y="0">:</tspan><tspan class="cls-8" x="67.18" y="0">30</tspan></text>
+    <text class="cls-2" transform="translate(76.75 206.68)"><tspan class="cls-10" x="0" y="0">H</tspan><tspan class="cls-9" x="22.2" y="0">R</tspan><tspan class="cls-10" x="41.85" y="0" xml:space="preserve">S   M</tspan></text>
+    <path class="cls-1" d="M130,281.11c-34.51,0-67.1-13.58-91.76-38.24C13.58,218.21,0,185.62,0,151.11,0,138.06,1.93,125.23,5.75,112.85c1.66-5.38,7.55-8.21,12.78-6.13h0c4.65,1.85,7.12,6.97,5.64,11.76-3.26,10.56-4.91,21.5-4.91,32.64,0,29.36,11.58,57.11,32.6,78.14,21.02,21.02,48.77,32.6,78.14,32.6s57.11-11.58,78.14-32.6c21.02-21.02,32.6-48.77,32.6-78.14s-11.58-57.11-32.6-78.14c-21.02-21.02-48.77-32.6-78.14-32.6v-19.26c34.51,0,67.1,13.58,91.76,38.24,24.66,24.66,38.24,57.25,38.24,91.76s-13.58,67.1-38.24,91.76c-24.66,24.66-57.25,38.24-91.76,38.24Z"/>
+    <g>
+      <path class="cls-5" d="M84.09,35.48h-2.72c-3.16,0-5.72-2.56-5.72-5.72v-14.29c0-3.16,2.56-5.72,5.72-5.72h1.36V2.81c0-.47.38-.86.86-.86h5.79c.47,0,.86.38.86.86v6.94h10.52V2.81c0-.47.38-.86.86-.86h5.79c.47,0,.86.38.86.86v6.94h1.51c3.16,0,5.72,2.56,5.72,5.72v14.29c0,3.16-2.56,5.72-5.72,5.72h-3.51"/>
+      <polygon class="cls-7" points="106.27 44.46 96.22 44.46 99.5 24.87 80.94 53.84 93.61 53.84 91.03 73.57 106.27 44.46"/>
+    </g>
+  </g>
+</svg>

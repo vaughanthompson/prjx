@@ -771,7 +771,7 @@ body.volvoEmob {
     margin: 0;
     padding: 0;
     font-size: 1.1em;
-    line-height: 1.5em;
+    line-height: 1.45em;
     margin-bottom: 0.8em;
     max-width:100%;
     /*text-wrap: balance;*/
@@ -784,7 +784,16 @@ body.volvoEmob {
 .volvoEmob ul.vanilla li {
     line-height: 1.4em;
 }
-
+.volvoEmob td {
+    font-size: 1.1em;
+    padding-left: 0;
+}
+.volvoEmob td:first-child {
+    font-weight: 200;
+}
+.volvoEmob td:nth-child(2) {
+    font-weight: 500;
+}
 .volvoEmob a.button {
     background-color: rgba(255,255,255,0.15);
     border-radius: 2em;
@@ -1134,6 +1143,9 @@ video.hidden-xs {
 .gradientLR {
     background: linear-gradient(to right, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0.0));
 }
+.gradientRL {
+    background: linear-gradient(to left, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0.0));
+}
 .gradientGlow {
     background-blend-mode: multiply;
     background: radial-gradient(circle at center, rgba(87,166,123,1.0) 50%, rgba(0,0,0,0));
@@ -1144,6 +1156,10 @@ video.hidden-xs {
 .gradientLight {
     background: linear-gradient(to bottom, rgba(0,0,0,0.08) 40%, rgba(0,0,0,0.0));
 }
+.gradientLight1 {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.08), rgba(0,0,0,0.0) 300px);
+}
+
 .centerCol {
     text-align: center;
     width:75%;
@@ -1204,11 +1220,26 @@ video.hidden-xs {
 }
 .flexRow.compact {
     column-gap: 3vw;
+    row-gap: 3vw;
 }
+.flexRow.gallery {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 .flexRow.contentHeader {
     align-items: flex-end;
     width: 85%;
 }
+
+.flexRow.contentHeaderWide {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.flexRow.contentHeaderWide > div:last-child {
+    justify-content: flex-end;
+}
+
 .flexRow > div {
     flex: 1 0 0;
 }
@@ -1216,12 +1247,21 @@ video.hidden-xs {
     flex: 1 1 0;
     display: flex;
 }
+.flexRow.gallery > div {
+    flex: 0 1 auto;
+    align-items: center;
+    background-color: #fff;
+}
+.flexRow.gallery img {
+    max-height: 200px;
+    width: auto;
+}
 .flexRow.twoColumn {
     flex-wrap: wrap;
     row-gap: 1em;
 }
 .flexRow.twoColumn > div {
-    flex: 0 1 45%;
+    flex: 1 1 45%;
 }
 
 .flexRow.contentHeader div.item:first-child {
@@ -1237,6 +1277,16 @@ video.hidden-xs {
 }
 .flexRow div.item.itemLink a:hover {
     transform: scale(105%);
+}
+.flexRow.gallery div.item.itemLink {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.flexRow.gallery div.item.itemLink a:hover {
+    transform: none;
+}
+.flexRow.gallery div.item.itemLink:hover {
+    opacity: 1;
 }
 .flexRow div.item.itemLink a picture {
     position: relative;
@@ -1349,6 +1399,7 @@ div.imgLink {
 div.imgLink.flip {
     flex-direction: row-reverse;
 }
+
 a.imgLink {
     color: rgba(87,166,123,1.0);
 }
@@ -1357,6 +1408,11 @@ a.imgLink:hover {
 }
 div.imgLink div:first-of-type {
     width:120px;
+    height:auto;
+    flex-shrink: 0;
+}
+div.imgLink1 div:first-of-type {
+    width:200px;
     height:auto;
     flex-shrink: 0;
 }
@@ -1460,3 +1516,20 @@ div.relHolder {
 .restrictContentWidth {
     max-width: 70%;
 }
+
+.picturefill-background.contain {
+    background-size: contain !important;
+    background-position: 90% 50%;
+}
+
+table.itemCompare {
+    table-layout: fixed;
+}
+
+table.itemCompare img {
+    max-width: 250px;
+}
+table.itemCompare td {
+    vertical-align: baseline;
+}
+
