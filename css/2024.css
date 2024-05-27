@@ -1406,12 +1406,12 @@ a.imgLink {
 a.imgLink:hover {
     transform: scale(105%);
 }
-div.imgLink div:first-of-type {
+div.imgLink div:first-child {
     width:120px;
     height:auto;
     flex-shrink: 0;
 }
-div.imgLink1 div:first-of-type {
+div.imgLink1 div:first-child {
     width:200px;
     height:auto;
     flex-shrink: 0;
