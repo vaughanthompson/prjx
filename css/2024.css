@@ -1141,7 +1141,7 @@ video.hidden-xs {
 
 /* general class updates */
 .gradientLR {
-    background: linear-gradient(to right, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0.0));
+    background: linear-gradient(to right, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.0));
 }
 .gradientRL {
     background: linear-gradient(to left, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0.0));
@@ -1262,6 +1262,12 @@ video.hidden-xs {
 }
 .flexRow.twoColumn > div {
     flex: 1 1 45%;
+}
+.flexRow.noStretch {
+    justify-content: space-between;
+}
+.flexRow.noStretch > div {
+    flex: 0 1 47%;
 }
 
 .flexRow.contentHeader div.item:first-child {
@@ -1497,12 +1503,22 @@ div.relHolder {
     width: auto;
     margin-right: 8vw;
 }
+.imagePositioned2 {
+    height: 70vh;
+    width: auto;
+    margin-right: 4vw;
+}
+.imagePositioned3 {
+    height: 70vh;
+    width: auto;
+    margin-right: 0vw;
+}
 
 
 .simpleGrid {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-column-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(30%,1fr));
+    grid-column-gap: 1.5em;
     grid-row-gap: 0.25em;
 }
 .simpleGrid2 {
@@ -1514,7 +1530,7 @@ div.relHolder {
 
 
 .restrictContentWidth {
-    max-width: 70%;
+    max-width: 80%;
 }
 
 .picturefill-background.contain {
