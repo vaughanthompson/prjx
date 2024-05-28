@@ -1473,6 +1473,7 @@ a.faqTrigger h6  {
 a.faqTrigger h6 i {
     margin-left: auto;
     padding-left: 2em;
+    padding-right: 2em;
 }
 div.faqDetail {
     margin-top: 1em;
