@@ -65,9 +65,10 @@ div.simpleTabsContent form {
         display: flex;
         /*column-gap:2vw;*/
         margin-top: 1.5em;
+        flex-wrap: nowrap;
     }
     .simpleTabs div.tabItem {
-        flex:1 1 auto;
+        flex:1 1 0px;
     }
     .simpleTabs div.tabItem > * > div.imageThumb {
         flex: 1 1 20%;
@@ -1730,7 +1731,12 @@ div.relHolder {
     grid-column-gap: 6%;
     grid-row-gap: 0.25em;
 }
-
+.simpleGrid3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr) );
+    grid-column-gap: 3em;
+    grid-row-gap: 0.25em;
+}
 
 .restrictContentWidth {
     max-width: 80%;
@@ -1789,4 +1795,31 @@ div.mobileHero {
     div.mobileHero {
         display: none;
     }
+}
+
+
+
+/* shell stockists */
+div.simpleHeader {
+    background-color: #000;
+    color:rgba(87,166,123,1.0);
+    padding:4em 10vw;
+}
+@media screen and (min-width:1100px) {
+    div.simpleHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.directory td {
+    vertical-align: middle;
+}
+
+.directory td:first-of-type {
+    width:35px;
+}
+
+.externalLogo {
+    max-width:300px;
 }

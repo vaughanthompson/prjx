@@ -4478,8 +4478,8 @@ div#carouselIndicator div#cI-hook > div.active {
     }
     div.brand-subHead > div:last-child a.ctaButton {
         display: block;
-        margin-top:1em;
-        margin-bottom:1em;
+        margin-top:5px;
+        margin-bottom: 0;
     }
     header.brand-header nav {
         display: flex;
@@ -4509,13 +4509,13 @@ div#carouselIndicator div#cI-hook > div.active {
     }
     header.brand-header div.brand-subHead > div {
         text-align: center;
-        margin: 0 !important;
+        /*margin: 0 !important;*/
     }
     header.brand-header div.brand-subHead .logo_brand {
         margin: 0px auto;
         width: 70vw;
         height: auto;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
 }
 
