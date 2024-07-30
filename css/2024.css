@@ -2018,4 +2018,17 @@ div.item div.yanmarMassive .loader {
     div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled, div.item div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled {
         font-size: 3.5em;
     }
+    .dealPageContent.yanmarChoose.yanmarMassive div.scontain {
+        max-width:1900px ;
+        margin: 0px auto;
+    }
+    div.yanmarMassive {
+        height: 60vh;
+     }  
+     div.horizon {
+        height: 35vh;
+    }
+    div.yanmarMassive .loader {
+        width: 50vh !important; /* size */
+    }
 }
