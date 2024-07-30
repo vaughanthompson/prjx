@@ -379,8 +379,17 @@ span.box {
     rgba(0,0,0,1.0));
   }
 
+  .yanmarGradient3 {
+    background: linear-gradient(to top, 
+    rgba(214,30,66,1.0)5%,
+    rgba(139,6,37,1.0) 30%,
+    rgba(63,0,9,1.0) 40%,
+    rgba(0,0,0,1.0) 50%);
+  }
+
   .yanmarChoose {
     color: white;
+    position: relative;
   }
 
   .yanmarChoose h1 {
@@ -519,6 +528,7 @@ span.box {
     padding-right: 15vw;
     height: 85vh;
     column-gap: 3vw;
+    position: relative;
  } 
 
  div.opener > div {
@@ -533,6 +543,8 @@ span.box {
  div.opener i {
     color: white;
  }
+
+
 
 
 div.teaser.yanmarChoose {
@@ -1822,4 +1834,181 @@ div.simpleHeader {
 
 .externalLogo {
     max-width:300px;
+}
+
+
+
+div.yanmarMassive {
+    display: flex;
+    align-items: center;
+    /*padding-left: 15vw;
+    padding-right: 15vw;*/
+    height: 85vh;
+    position: relative;
+ } 
+
+ div.horizon {
+    position: absolute;
+    width:100%;
+    top:0;
+    height: 45vh;
+}
+
+div.item div.horizon {
+    height: 35vh !important;
+}
+
+ div.yanmarMassive .loader.preLive {
+    --b: 50px;  /* border thickness */
+    --n: 100;    /* number of dashes*/
+    --g: 6deg; /* gap between dashes*/
+    --c: #d71240;   /* the color */
+ 
+    width: 75vh; /* size */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000,var(--c)) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+            mask:
+      repeating-conic-gradient(#0000 0deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation: load 2.5s infinite steps(var(--n));
+  }
+  @keyframes load {to{transform: rotate(1turn)}}
+
+
+  div.yanmarMassive .loader.Live {
+    --b: 50px;  /* border thickness */
+    --n: 100;    /* number of dashes*/
+    --g: 6deg; /* gap between dashes*/
+    --c: rgba(255,255,255,0.3);   /* the color */
+ 
+    width: 75vh; /* size */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000,var(--c)) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+            mask:
+      repeating-conic-gradient(#0000 0deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation: load 2.5s infinite steps(var(--n));
+  }
+  @keyframes load {to{transform: rotate(1turn)}}
+
+
+
+div.yanmarChoose div.countDownBanner div.posCounter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}  
+div.yanmarChoose div.countDownBanner div.posCounter > div {
+   flex:0 0 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled {
+    padding: 6px 5px;
+    width:50%;
+    font-size: 2.8vw;
+    float: right;
+    background: none;
+}
+div.item div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled {
+    font-size: 2.7vw;
+}
+div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled span {
+    font-size: 0.3em;
+}
+
+.darkCover {
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+div.item div.yanmarMassive .loader {
+    width: 60vh !important; /* size */
+}
+
+.yanmarMassive h1 {
+    font-size: 3.6em;
+}
+.yanmarMassive h4 {
+    font-size: 1.5em;
+}
+
+
+@media screen and (max-width:1100px) {
+    div.yanmarMassive .loader,
+    div.item div.yanmarMassive .loader {
+        width: 100vw !important; /* size */
+    }
+    div.yanmarChoose div.countDownBanner div.posCounter {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    } 
+    div.yanmarMassive {
+        height: 75vh;
+     }  
+     div.horizon {
+        height: 35vh;
+    }
+    div.yanmarChoose div.countDownBanner div.posCounter > div {
+        flex:0 0 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 100%;
+     }
+     
+     div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled,
+     div.item div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled {
+         padding: 5px 3px;
+         width:100%;
+         font-size: 7.5vw;
+         float: right;
+         background: none;
+         margin-top: 7vh;
+         color: #d71240;
+     }
+
+     .dealPageContent.fiftyFifty.yanmarChoose.yanmarMassive div.scontain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .yanmarMassive h1 {
+        font-size: 2em;
+    }
+    .yanmarMassive h4 {
+        font-size: 1.5em;
+    }
+
+    .yanmarMassive form {
+        text-align: left;
+    }
+
+
 }

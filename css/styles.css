@@ -2067,7 +2067,7 @@ div.cmsRelated {
     article.introCopy,
     footer {
         padding:3vw;
-        margin-top:1em;
+        /* margin-top:1em;*/
     }
     article.bigdeals {
         margin-top: 3em;
