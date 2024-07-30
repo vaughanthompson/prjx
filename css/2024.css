@@ -1924,7 +1924,8 @@ div.yanmarChoose div.countDownBanner div.posCounter {
 div.yanmarChoose div.countDownBanner div.posCounter > div {
    flex:0 0 50%;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: contain;
+   background-position: 100% 0%;
 }
 
 div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled {
@@ -2011,4 +2012,10 @@ div.item div.yanmarMassive .loader {
     }
 
 
+}
+
+@media screen and (min-width:1900px) {
+    div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled, div.item div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled {
+        font-size: 3.5em;
+    }
 }
