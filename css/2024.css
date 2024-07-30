@@ -410,7 +410,7 @@ span.box {
   .yanmarChoose div.packageAdditions h2 {
     font-size:48px;
   }
-  .yanmarChoose div.packageAdditions h2 sup {
+  .yanmarChoose sup {
     font-size: 20px;
     letter-spacing: 0;
     line-height: 60px;
@@ -1958,6 +1958,16 @@ div.item div.yanmarMassive .loader {
 .yanmarMassive h4 {
     font-size: 1.5em;
 }
+
+.yanmarChoose.yanmarMassive div.packageAdditions div.item > div > div {
+    padding:1vw;
+  }
+.yanmarChoose.yanmarMassive div.packageAdditions h4 {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+  }
+
 
 
 @media screen and (max-width:1100px) {
