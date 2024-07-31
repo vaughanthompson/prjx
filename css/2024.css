@@ -1968,7 +1968,22 @@ div.item div.yanmarMassive .loader {
     text-align: center;
   }
 
+.moveMachine {
+    width:18vw; 
+    height:23vw; 
+    position: absolute; 
+    margin-top: -19vw; 
+    margin-left: -5vh;
+    background-image: url(/images/2024/yanmarMassive/animMachine.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
 
+.animated.slower {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+  }
 
 @media screen and (max-width:1100px) {
     div.yanmarMassive .loader,
@@ -1982,16 +1997,16 @@ div.item div.yanmarMassive .loader {
         justify-content: center;
     } 
     div.yanmarMassive {
-        height: 75vh;
+        min-height: 75vh;
      }  
      div.horizon {
-        height: 35vh;
+        height: 30vh;
     }
     div.yanmarChoose div.countDownBanner div.posCounter > div {
         flex:0 0 100%;
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: 0 100%;
+        background-position: 50% 100%;
      }
      
      div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled,
@@ -2020,8 +2035,6 @@ div.item div.yanmarMassive .loader {
     .yanmarMassive form {
         text-align: left;
     }
-
-
 }
 
 @media screen and (min-width:1900px) {
@@ -2040,5 +2053,11 @@ div.item div.yanmarMassive .loader {
     }
     div.yanmarMassive .loader {
         width: 50vh !important; /* size */
+    }
+    .moveMachine {
+        width:18vw; 
+        height:23vw; 
+        margin-top: -19vw; 
+        margin-left: -8vw;
     }
 }
