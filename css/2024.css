@@ -2060,4 +2060,8 @@ div.item div.yanmarMassive .loader {
         margin-top: -19vw; 
         margin-left: -8vw;
     }
+    .yanmarChoose div.packageAdditions div.item {
+        flex: 0 0 40%;
+
+      }  
 }
