@@ -445,13 +445,12 @@
                                 <div class="vidCover"></div>
                                 <div id="vidHolder">
                                     <video id="bgvid" class="hidden-xs" autoplay="" muted="">
-                                        <source type="video/mp4" data-src="/shell-micro/landing-auto/video/shell-helix/helix.mp4" src="/shell-micro/landing-auto/video/shell-helix/helix.mp4">
-                                        <source type="video/ogg" data-src="/shell-micro/landing-auto/video/shell-helix/helix.webm" src="/shell-micro/landing-auto/video/shell-helix/helix.webm">
+                                        <source type="video/mp4" data-src="/shell-micro/landing-auto/video/hearbeart/shell-helix-hbeat-web.mp4" src="/shell-micro/landing-auto/video/hearbeart/shell-helix-hbeat-web.mp4">
+                                        <source type="video/ogg" data-src="/shell-micro/landing-auto/video/hearbeart/shell-helix-hbeat-web-vp9-chrome.webm" src="/shell-micro/landing-auto/video/hearbeart/shell-helix-hbeat-web-vp9-chrome.webm">
                                     </video>
                                 </div>
-                            <span data-src="https://transdiesel.com/shell-micro/landing-auto/slider-SH-2/m.jpg"></span><!-- use 4:3 aspect for ph -->
-                            <span data-src="https://transdiesel.com/shell-micro/landing-auto/slider-SH-2/l.jpg" data-media="(min-width: 1000px)"></span>
-                            <span data-src="https://transdiesel.com/shell-micro/landing-auto/slider-SH-2/xl.jpg" data-media="(min-width: 1200px)"></span>
+                            <span data-src="/shell-micro/landing-auto/video/hearbeart/hbeat-m.jpg"></span><!-- use 4:3 aspect for ph -->
+                            <span data-src="/shell-micro/landing-auto/video/hearbeart/hbeat-d.jpg" data-media="(min-width: 1000px)"></span>
                         </div>
                     </section>
                 </div>
@@ -478,7 +477,7 @@
 
         var iterations = 1;
         bgvid.addEventListener('ended', function () {
-            if (iterations < 2) {
+            if (iterations < 3) {
                 this.currentTime = 0;
                 this.play();
                 iterations ++;

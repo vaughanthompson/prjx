@@ -771,7 +771,7 @@ div.owl-carousel-slider.shop div.item {
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 div.owl-brand-slider div.item {
-    height: 60vh;
+    height: 70vh;
 }
 div.owl-carousel-slider div.picturefill-background {
     height:73vh;
@@ -781,7 +781,7 @@ div.owl-carousel-slider.shop div.picturefill-background {
 }
 div.owl-brand-slider div.picturefill-background,
 article.teaser.banner div.picturefill-background {
-    height:60vh;
+    height:70vh;
 }
 div.owl-brand-slider.series div.picturefill-background {
     height:60vh;
