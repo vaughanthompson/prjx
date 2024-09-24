@@ -749,12 +749,14 @@ div.owl-carousel-slider,
     background-color: #000000;
 }
 div.owl-brand-slider,
+div.owl-static-slider,
 article.teaser.banner {
     margin-bottom: 0;
     position: relative;
 }
 div.owl-carousel-slider div.item,
-div.owl-brand-slider div.item {
+div.owl-brand-slider div.item,
+div.owl-static-slider div.item {
     height: 73vh;
     /* prevent flashing on infinite loop */
     backface-visibility: hidden;
@@ -770,7 +772,8 @@ div.owl-carousel-slider.shop div.item {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
-div.owl-brand-slider div.item {
+div.owl-brand-slider div.item,
+div.owl-static-slider div.item {
     height: 70vh;
 }
 div.owl-carousel-slider div.picturefill-background {
@@ -780,6 +783,7 @@ div.owl-carousel-slider.shop div.picturefill-background {
     height:45vh;
 }
 div.owl-brand-slider div.picturefill-background,
+div.owl-static-slider div.picturefill-background,
 article.teaser.banner div.picturefill-background {
     height:70vh;
 }
@@ -794,6 +798,7 @@ div.owl-brand-slider.series div.item {
 
 div.owl-carousel-slider div.picturefill-background div.scontain,
 div.owl-brand-slider div.picturefill-background div.scontain,
+div.owl-static-slider div.picturefill-background div.scontain,
 article.teaser.banner div.picturefill-background div.scontain {
     height:100%;
     display: flex;
@@ -814,6 +819,7 @@ div.owl-brand-slider.series div.picturefill-background div.scontain {
 }
 div.owl-carousel-slider div.picturefill-background div.scontain img,
 div.owl-brand-slider div.picturefill-background div.scontain img,
+div.owl-static-slider div.picturefill-background div.scontain img,
 article.teaser.banner div.picturefill-background div.scontain img {
     margin: 0px auto;
 }
@@ -823,6 +829,7 @@ div.owl-brand-slider.series div.picturefill-background div.scontain img {
 
 div.owl-carousel-slider div.picturefill-background div.scontain.left,
 div.owl-brand-slider div.picturefill-background div.scontain.left,
+div.owl-static-slider div.picturefill-background div.scontain.left,
 article.teaser.banner div.picturefill-background div.scontain.left {
     justify-content: flex-start;
     text-align: left;
@@ -836,6 +843,7 @@ div.owl-carousel-slider.shop div.picturefill-background div.scontain.left {
 }
 div.owl-carousel-slider div.picturefill-background div.scontain.right,
 div.owl-brand-slider div.picturefill-background div.scontain.right,
+div.owl-static-slider div.picturefill-background div.scontain.right,
 article.teaser.banner div.picturefill-background div.scontain.right {
     justify-content: flex-end;
     text-align: left;
@@ -864,6 +872,7 @@ article.teaser.banner div.picturefill-background div.scontain.bottom {
 
 div.owl-carousel-slider div.picturefill-background section,
 div.owl-brand-slider div.picturefill-background section,
+div.owl-static-slider div.picturefill-background section,
 article.teaser.banner div.picturefill-background section {
     width: 45%;
     margin-top:3vh;
@@ -877,6 +886,7 @@ div.owl-carousel-slider.shop  div.picturefill-background section {
 }
 
 div.owl-brand-slider div.picturefill-background section,
+div.owl-static-slider div.picturefill-background section,
 article.teaser.banner div.picturefill-background section {
     width: 55%;
     margin-top:7vh;
@@ -917,7 +927,14 @@ div.owl-brand-slider h3,
 div.owl-brand-slider h4,
 div.owl-brand-slider h5,
 div.owl-brand-slider h6,
-div.owl-brand-slider p {
+div.owl-brand-slider p,
+div.owl-static-slider h1,
+div.owl-static-slider h2,
+div.owl-static-slider h3,
+div.owl-static-slider h4,
+div.owl-static-slider h5,
+div.owl-static-slider h6,
+div.owl-static-slider p {
     color: #ffffff;
     text-transform: none;
     padding:0;
@@ -939,7 +956,8 @@ div.owl-brand-slider strong {
     color:var(--brand2);
 }
 div.owl-carousel-slider h1,
-div.owl-brand-slider h1 {
+div.owl-brand-slider h1,
+div.owl-static-slider h1 {
     font-size:5.8em;
     font-weight: 700;
     line-height: 0.95em;
@@ -947,25 +965,29 @@ div.owl-brand-slider h1 {
     letter-spacing: -1px;
 }
 div.owl-carousel-slider h2,
-div.owl-brand-slider h2 {
+div.owl-brand-slider h2,
+div.owl-static-slider h2 {
     font-size:3.5em;
     font-weight: 700;
     line-height: 1em;
     letter-spacing: -0.5px;
 }
 div.owl-carousel-slider h3,
-div.owl-brand-slider h3 {
+div.owl-brand-slider h3,
+div.owl-static-slider h3 {
     font-size:2em;
     font-weight: 700;
     line-height: 1.2em;
 }
 div.owl-carousel-slider h4,
-div.owl-brand-slider h4 {
+div.owl-brand-slider h4,
+div.owl-static-slider h4 {
     font-size:1.6em;
     font-weight: 500;
     line-height: 1.2em;
 }
-div.owl-brand-slider h4 {
+div.owl-brand-slider h4,
+div.owl-static-slider h4 {
     font-size:1.3em;
     font-weight: 200;
     line-height: 1.3em;
@@ -985,10 +1007,12 @@ div.owl-carousel-slider div.picturefill-background div.xperience section h2 {
     div.owl-carousel-slider div.picturefill-background {
         height:73vh;
     }
-    div.owl-brand-slider div.picturefill-background {
+    div.owl-brand-slider div.picturefill-background,
+    div.owl-static-slider div.picturefill-background {
         height:70vh;
     }
-    div.owl-brand-slider div.item {
+    div.owl-brand-slider div.item,
+    div.owl-static-slider div.item  {
         height: 70vh;
     }
     div.owl-carousel-slider.shop div.picturefill-background {
