@@ -2189,7 +2189,7 @@ div.lozengeLinks a h3 {
 div#carouselIndicator.tabbed,
 div#carouselIndicator.tabbed div#cI-hook,
 div#carouselIndicator.tabbed div#cI-hook > div {
-    height:100px;
+    height:90px;
     margin-bottom: 5px;
 }
 
@@ -2209,11 +2209,11 @@ div#carouselIndicator.tabbed div#cI-hook > div:hover {
 }
 
 div#carouselIndicator.tabbed div#cI-hook > div span {
-    padding: 25px;
+    padding: 20px;
     font-size: 1.2em;
 }
 div#carouselIndicator.tabbed div#cI-hook > div span img.thumb {
-    width:50px;
+    width:40px;
 }
 
 
