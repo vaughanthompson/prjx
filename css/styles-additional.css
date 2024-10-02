@@ -1159,9 +1159,26 @@ html, body {
 }
 p {
     font-weight: 300;
-    line-height: 1.5em;
+    line-height: 1.4em;
     padding-top: 0.3em;
-    padding-bottom: 1em;
+    padding-bottom: 0.3em;
+}
+p.larger {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+ul.larger li {
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+@media screen and (max-width:1000px) {
+    p.larger,
+    ul.larger li {
+        font-size: 1em;
+    }
 }
 .header2022 p {
     font-size: 0.8em;

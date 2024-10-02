@@ -2118,3 +2118,165 @@ hr.yanmarColor {
         flex:1 1 20%;
     }
 }
+
+div.lozengeLinks {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3vw;
+    row-gap: 3vw;
+}
+
+div.lozengeLinks a {
+    text-decoration: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  100% 100%;
+    display: inline-block;
+    width: 16vw;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+div.lozengeLinks a div {
+    height: 16vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+div.lozengeLinks a:hover div {
+    background-color: rgba(0,0,0,0.1);
+    /*border-radius: 0;*/
+}
+div.lozengeLinks a:hover {
+    background-size: 105% 105%;
+}
+div.lozengeLinks a h3 {
+    font-weight: bold;
+    font-size: 1.7em;
+    padding:0;
+    margin: 0 2vw;
+    letter-spacing: 0;
+}
+
+@media screen and (max-width:1000px) {
+    div.lozengeLinks {
+        margin-bottom: 10vh;
+        display: block;
+    }
+    div.lozengeLinks a {
+        display: block;
+        width: auto;
+        border-radius: 0;
+        background-size:  cover;
+        margin-bottom: 5vw;
+    }
+    div.lozengeLinks a div {
+        border-radius: 0;
+        height: 60vw;
+    }
+    div.lozengeLinks a:hover {
+        background-size:  cover;
+    }
+}
+
+
+
+
+div#carouselIndicator.tabbed,
+div#carouselIndicator.tabbed div#cI-hook,
+div#carouselIndicator.tabbed div#cI-hook > div {
+    height:100px;
+    margin-bottom: 5px;
+}
+
+div#carouselIndicator.tabbed div#cI-hook > div {
+    color: #ffffff;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: 0.3s ease-in;
+    justify-content: space-between;
+}
+
+div#carouselIndicator.tabbed div#cI-hook > div:hover {
+    cursor: pointer;
+    background-color: #cecece;
+}
+
+div#carouselIndicator.tabbed div#cI-hook > div span {
+    padding: 25px;
+    font-size: 1.2em;
+}
+div#carouselIndicator.tabbed div#cI-hook > div span img.thumb {
+    width:50px;
+}
+
+
+div.values-slider div.scontain.right {
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: auto 80%;
+}
+@media screen and (max-width:1000px) {
+    div.values-slider div.scontain.right {
+        background: none;
+        padding: 0 !important;
+    }
+    div.values-slider div.scontain.right {
+        background-color: rgba(0,0,0,0.40);
+    }
+    div.values-slider section {
+        align-self: flex-end;
+    }
+}
+@media screen and (min-width:1000px) {
+    div.values-slider div.scontain.right section {
+        width:50%;
+    }
+}
+
+
+div.values-slider div.item.green {
+    background-color: rgba(87,166,123,1.0);
+}
+div.values-slider div.item.grey {
+    background-color: rgba(0,0,0,1.0);
+}
+
+div.values-slider h2:first-of-type,
+div.values-slider p:first-of-type  {
+    color: rgba(87,166,123,1.0);
+}
+@media screen and (min-width:1000px) {
+    div.values-slider div.item.green h2:first-of-type,
+    div.values-slider div.item.green p:first-of-type  {
+        color: #000000;
+    }
+}
+
+
+
+@media screen and (min-width:1000px) {
+    div.values-slider div.picturefill-background {
+        background-size: auto 101%;
+        background-position: left center;
+    }
+
+    div.values-slider div.picturefill-background,
+    div.values-slider div.item {
+        height:60vh;
+    }
+}
+
+
+
+body > article.intro.header2022.about > div.scontain > section:last-child,
+body > article.intro.header2022.about > div.scontain > section:last-child > div.imgTeaser {
+    min-width: 50vw;    
+    min-height: 30vw;
+}
