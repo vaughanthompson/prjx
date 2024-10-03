@@ -2310,9 +2310,9 @@ body > article.intro.header2022.about > div.scontain > section:last-child > div.
 
 
 img.floatThumb {
-    width:120px;
+    width:110px;
     float: right;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 div.centredForm .offerDetails {
