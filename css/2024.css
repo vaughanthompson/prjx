@@ -410,6 +410,9 @@ span.box {
   .yanmarChoose div.packageAdditions h2 {
     font-size:48px;
   }
+  .yanmarChoose div.packageAdditions.singleItem h2 {
+    font-size:40px;
+  }
   .yanmarChoose sup {
     font-size: 20px;
     letter-spacing: 0;
@@ -423,6 +426,10 @@ span.box {
   }
   .yanmarChoose div.packageAdditions h3 {
     color: #000;
+    font-weight: 500;
+  }
+  .yanmarChoose div.packageAdditions.singleItem h3 {
+    color: rgba(214,30,66,1.0);
     font-weight: 500;
   }
   .yanmarChoose div.packageAdditions h4 {
@@ -449,6 +456,9 @@ span.box {
     width:100%;
     flex-wrap: wrap;
   }
+  .yanmarChoose div.packageAdditions.singleItem {
+    display: block;
+  }
 
   .yanmarChoose div.packageAdditions div.item {
     padding-left: 2vw;
@@ -463,6 +473,12 @@ span.box {
     z-index: 100;
     height: 100%;
   }
+  .yanmarChoose div.packageAdditions.singleItem div.item > div {
+    background-color: rgba(0,20,26,1.0);
+    position: relative;
+    z-index: 100;
+    height: 100%;
+  }
 
   .yanmarChoose div.packageAdditions div.item > div > div {
     padding:1.5vw;
@@ -472,7 +488,13 @@ span.box {
     border-bottom: 1px solid rgba(0,0,0,0.5);
     padding-bottom: 0.75em;
     padding-left: 0;
-    margin-bottom: 1m;
+    margin-bottom: 1em;
+  }
+
+  .yanmarChoose div.packageAdditions.singleItem div.item ul {
+    border-bottom: 1px solid rgba(214,30,66,1.0);
+    padding-bottom: 0.75em;
+    padding-left: 0;
   }
 
   .yanmarChoose div.packageAdditions div.item ul li {
@@ -480,6 +502,10 @@ span.box {
     padding-bottom: 0.5em;
     font-size: 1em;
   }
+  .yanmarChoose div.packageAdditions.singleItem div.item ul li {
+    font-size: 0.9em;
+  }
+
 
 
   .yanmarChoose div.packageAdditions div.item span.left {
@@ -2279,4 +2305,36 @@ body > article.intro.header2022.about > div.scontain > section:last-child,
 body > article.intro.header2022.about > div.scontain > section:last-child > div.imgTeaser {
     min-width: 50vw;    
     min-height: 30vw;
+}
+
+
+
+img.floatThumb {
+    width:120px;
+    float: right;
+    margin-top: -30px;
+}
+
+div.centredForm .offerDetails {
+    text-align: center;
+}
+
+div.centredForm {
+    padding-top: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vw;
+}
+
+@media screen and (min-width:1300px) {
+    div.centredForm {
+        padding-top: 5vw;
+        padding-left: 25vw;
+        padding-right: 25vw;
+        padding-bottom: 5vw;
+    }
+    div.centredForm form {
+        width:700px;
+        margin: 0px auto;
+    }
 }
