@@ -2338,3 +2338,152 @@ div.centredForm {
         margin: 0px auto;
     }
 }
+
+
+
+
+.responsiveLarge {
+    font-size:2.3em !important;
+}
+@media screen and (max-width:1100px) {
+    .responsiveLarge {
+        margin-bottom: 0.5em;
+    }
+}   
+@media screen and (min-width:1100px) {
+    .responsiveLarge {
+        font-size:6vw !important;
+    }
+}   
+
+.callout {
+    background-color: rgba(87,166,123,1.0);
+    padding: 15px 25px;
+    text-align: center;
+    min-width:30vw;
+    font-size: 1.8em;
+    display: inline-block;
+    color: #000;
+}
+.blkfriday h4 {
+    font-size: 2em !important;
+    font-weight: 600 !important;
+}
+
+.blkfriday h5 {
+    color: rgba(87,166,123,1.0) !important;
+    font-size: 2em;
+    font-weight: 300;
+}
+.dealPageContent.blkfriday h4,
+.dealPageContent.blkfriday h5 {
+    text-wrap: balance;
+}
+.blkfriday div.brands {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 0.8em;
+    row-gap: 0.5em;
+    height: auto; 
+    align-items: center;
+    width:80%;
+    margin: 2em auto;
+}
+.blkfriday div.brands span.item {
+    background-color: white;
+    flex: 0 1 15vw;
+    height:50px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dealPageMasthead.blkfriday {
+    padding: 10vh 10vw 3vh 10vw;
+}
+.dealPageContent.blkfriday section section:first-of-type {
+    text-align: center;
+}
+@media screen and (min-width:1100px) {
+    .dealPageContent.blkfriday section div.scontain section {
+        flex-basis: 33%;
+    }
+    .dealPageContent.blkfriday div.brands {
+        flex-wrap: wrap;
+    }
+    .dealPageContent.blkfriday div.brands span.item {
+        flex: 0 1 40%;
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .blkfriday div.brands {
+        flex-wrap: wrap;
+        margin: 0px auto;
+    }
+
+    .dealPageContent.blkfriday div.brands {
+        margin: 2em auto;
+    }
+    .blkfriday div.brands span.item {
+        flex: 1 1 30%;
+        min-height:30px;
+        height: auto;
+        padding: 5px 15px;
+        align-self: stretch;
+    }
+    .dealPageMasthead.blkfriday {
+        padding: 5vh 10vw 0 10vw;
+    }
+    .dealPageMasthead.blkfriday div.scontain {
+        padding-bottom: 1vh;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .callout {
+        background-color: rgba(87,166,123,1.0);
+        padding: 5px 25px;
+        text-align: center;
+        min-width:30vw;
+        font-size: 1.2em;
+        display: block;
+    }
+    .blkfriday h2,    
+    .blkfriday h4,
+    .blkfriday h5 {    
+        font-size: 1.1em !important;
+    }
+    
+}
+
+@media screen and (min-width:2000px) {
+    section.mobAdjust.blkfriday {
+        width:1500px !important;
+    }
+}
+
+
+
+
+ul.flexList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:0
+}
+ul.flexList li {
+    flex: 1 1 30%;
+    border:none;
+    padding:0;
+    line-height: 2em;
+}
+@media screen and (max-width:1100px) {
+    ul.flexList li {
+        flex: 1 1 100%;
+    }
+    
+}
