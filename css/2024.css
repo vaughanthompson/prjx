@@ -2382,24 +2382,34 @@ div.centredForm {
 .blkfriday div.brands {
     display: flex;
     flex-wrap: nowrap;
-    column-gap: 0.8em;
-    row-gap: 0.5em;
+    /* column-gap: 0.8em;
+    row-gap: 0.5em;*/
     height: auto; 
     align-items: center;
     width:80%;
-    margin: 2em auto;
+    margin: 0 auto;
 }
 .blkfriday div.brands span.item {
     background-color: white;
     flex: 0 1 15vw;
     height:50px;
-    padding: 10px 15px;
+    padding: 15px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-
+.blkfriday div.brands span.item.fullwidth {
+    flex-basis: 100%;
+    height: auto;
+    padding: 0px 25px 15px 25px;
+}
+.blkfriday div.brands span.item.fullwidth a {
+    height: auto;
+}
+.blkfriday div.brands span.item.fullwidth h4 {
+    color: rgba(87,166,123,1.0);
+    margin:0;
+}
 .dealPageMasthead.blkfriday {
     padding: 10vh 10vw 3vh 10vw;
 }
@@ -2413,10 +2423,12 @@ div.centredForm {
     .dealPageContent.blkfriday div.brands {
         flex-wrap: wrap;
         justify-content: center;
+        padding:10px 5px;
+        background-color: white;
     }
     .dealPageContent.blkfriday div.brands span.item {
         flex: 0 1 35%;
-        padding: 15px 20px;
+        padding: 10px 20px;
     }
 }
 
