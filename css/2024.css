@@ -2368,6 +2368,7 @@ div.centredForm {
 .blkfriday h4 {
     font-size: 2em !important;
     font-weight: 600 !important;
+    line-height: 140% !important;
 }
 
 .blkfriday h5 {
@@ -2386,14 +2387,14 @@ div.centredForm {
     row-gap: 0.5em;*/
     height: auto; 
     align-items: center;
-    width:80%;
+    width:70%;
     margin: 0 auto;
 }
 .blkfriday div.brands span.item {
     background-color: white;
     flex: 0 1 15vw;
     height:50px;
-    padding: 15px 25px;
+    padding: 5px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
