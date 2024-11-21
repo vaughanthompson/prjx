@@ -2734,6 +2734,7 @@ h1.large {
 .gridy3.packages > * > div.productImage {
     width:auto;
     border-radius: 0;
+    padding-top: 2em;
 }
 .gridy.radial > * > div.productImage,
 .gridy2.radial > * > div.productImage,
@@ -2754,6 +2755,7 @@ h1.large {
 .gridy3.packages > * > div.productDetails {
     flex: 0 0 20%;
     padding-top: 10px;
+    padding-bottom: 2em;
     border-top:1px solid #000000;
 }
 .gridy.filledBrand > * > div.productDetails,
@@ -2773,6 +2775,7 @@ h1.large {
 .gridy3.radial > * > div.productDetails > * {
     padding-left: 2em;
     padding-right: 2em;
+
 }
 
 
@@ -2841,6 +2844,8 @@ h1.large {
     font-weight: bold;
     color: red;
     font-size: 1.9em;
+}
+div.radial div.productDetails > h3 {
     padding-bottom: 1em;
 }
 .dealContent div.productDetails > h3 sup {
