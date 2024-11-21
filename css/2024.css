@@ -2699,7 +2699,6 @@ h1.large {
 .gridy > *,
 .gridy2 > *,
 .gridy3 > * {
-    aspect-ratio: 1;
     text-align: center;
     padding: 2em;
     position: relative;
@@ -2715,6 +2714,7 @@ h1.large {
 .gridy2.radial > *,
 .gridy3.radial > * {
     padding:1em;
+    aspect-ratio: 1;
 }
 
 
@@ -2747,7 +2747,7 @@ h1.large {
     flex: 0 0 30%;
     padding-top: 10px;
     border-top:1px solid #000000;
-    width:100%
+    width:100%;
 }
 .gridy.packages > * > div.productDetails,
 .gridy2.packages > * > div.productDetails,
