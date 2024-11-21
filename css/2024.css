@@ -438,7 +438,8 @@ span.box {
   }
 
 
-  .yanmarChoose .brandColor {
+  .yanmarChoose .brandColor,
+  .yanmarColor {
     color:rgba(214,30,66,1.0) !important;
   }
 
@@ -2342,9 +2343,7 @@ div.centredForm {
 
 
 
-.responsiveLarge {
-    font-size:2.3em !important;
-}
+
 @media screen and (max-width:1100px) {
     .responsiveLarge {
         margin-bottom: 0.5em;
@@ -2503,4 +2502,364 @@ ul.flexList li {
         flex: 1 1 100%;
     }
     
+}
+
+
+
+
+
+/* horizontal responsive form and new deals layout */
+div.forms input,
+div.forms input::placeholder,
+div.forms textarea::placeholder,
+div.forms textarea {
+    font-family: "twk";
+    font-weight: 300;
+    color: #000;
+}
+div.forms textarea {
+    min-height: 100px;
+}
+div.horizontalForm {
+    padding: 10vw 5vw 5vw 5vw;
+}
+
+
+
+
+div.horizontalForm .validation-summary-valid ul {
+        margin: 0;
+        padding: 0;
+}
+div.horizontalForm .validation-summary-valid li {
+    color: rgba(87,166,123,1.0);
+    border: none;
+    padding:1em 1em 0 1em;
+    line-height: 1.5em;
+}
+div.horizontalForm fieldset.formCol input[type=text],
+div.horizontalForm fieldset.formCol textarea {
+    width:100%;
+}
+div.horizontalForm fieldset.formCol input[type=text] {
+    margin-bottom: 1em;
+}
+
+
+div.horizontalForm .formOptions {
+    padding: 1em;
+    background-color: rgba(255,255,255,0.75);
+    margin-bottom: 1em;
+}
+
+div.horizontalForm .formOptions label {
+    white-space: nowrap;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    display: inline-block;
+}
+.dealContent div.header,
+div.horizontalForm div.header {
+    text-align: center;
+    margin-bottom: 2em;
+    max-width: 1000px;
+    margin-left:auto;
+    margin-right: auto;
+}
+div.horizontalForm {
+    max-width:1200px;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+@media screen and (min-width:750px) {
+    div.horizontalForm input#FirstName,
+    div.horizontalForm input#Phone {
+        float: left;
+        width:48%;
+    }
+    div.horizontalForm input#LastName,
+    div.horizontalForm input#CompanyName {
+        float: right;
+        width:48%;
+    }
+    div.horizontalForm input#Email {
+        clear: both;
+    }
+
+
+}
+@media screen and (min-width:1100px) {
+    div.horizontalForm {
+        padding-top:5vw;
+    }
+    
+    div.horizontalForm fieldset {
+        border:none !important;
+    }
+    div.horizontalForm div.forms {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;        
+        border:1px solid #ccc;
+        border-radius: 10px;
+    }
+    div.horizontalForm fieldset.formCol {
+        flex: 1 1 40%;
+        margin: 0;
+        border-radius: 0;
+        padding: 2em;
+    }
+
+
+}
+
+
+
+
+
+h1.large {
+    font-size: 30px;
+    padding-bottom: 0;
+}
+
+@media screen and (min-width:1500px) {
+    h1.large {
+        font-size:70px;
+    }
+}
+
+
+
+.noPadTop {
+    padding-top: 0 !important;
+}
+.dealContent li {
+    border-color: rgba(255,255,255,0.15);
+    border-width:1px;
+}
+.dealPageMasthead,
+.dealContent {
+    background-color: #000;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.dealContent div.scontain {
+    max-width: 1500px;
+    margin: 0px auto;
+    padding: 5vw;
+}
+@media screen and (min-width:750px) {
+    .dealContent div.scontain {
+        padding: 5vw 10vw;
+    }
+}
+@media screen and (min-width:1100px) {
+    .dealContent div.scontain {
+        display: flex;
+        column-gap: 5vw;
+    }
+    .dealContent div.scontain > * {
+        flex:1 1 50%;
+    }
+}
+
+
+
+.gridy {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15%,1fr));
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+}
+
+.gridy2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15%,1fr));
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+}
+
+.gridy3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    
+}
+@media screen and (max-width:1500px) {
+    .gridy3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.gridy > *,
+.gridy2 > *,
+.gridy3 > * {
+    aspect-ratio: 1;
+    text-align: center;
+    padding: 2em;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.gridy.radial > *,
+.gridy2.radial > *,
+.gridy3.radial > * {
+    padding:1em;
+}
+
+
+.gridy > * > div.productImage,
+.gridy2 > * > div.productImage,
+.gridy3 > * > div.productImage {
+    flex: 0 0 45%;
+    width:75%;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50% 50% 0 0;
+    margin-top: 5px;
+}
+.gridy.packages > * > div.productImage,
+.gridy2.packages > * > div.productImage,
+.gridy3.packages > * > div.productImage {
+    width:auto;
+    border-radius: 0;
+}
+.gridy.radial > * > div.productImage,
+.gridy2.radial > * > div.productImage,
+.gridy3.radial > * > div.productImage {
+    flex: 1 0 50%;
+    /*padding:2em;*/
+}
+.gridy > * > div.productDetails,
+.gridy2 > * > div.productDetails,
+.gridy3 > * > div.productDetails {
+    flex: 0 0 30%;
+    padding-top: 10px;
+    border-top:1px solid #000000;
+    width:100%
+}
+.gridy.packages > * > div.productDetails,
+.gridy2.packages > * > div.productDetails,
+.gridy3.packages > * > div.productDetails {
+    flex: 0 0 20%;
+    padding-top: 10px;
+    border-top:1px solid #000000;
+}
+.gridy.filledBrand > * > div.productDetails,
+.gridy2.filledBrand > * > div.productDetails,
+.gridy3.filledBrand > * > div.productDetails {
+    border-top:1px solid #ffffff;
+    align-self: stretch;
+}
+.gridy.radial > * > div.productDetails,
+.gridy2.radial > * > div.productDetails,
+.gridy3.radial > * > div.productDetails {
+    width:90%;
+    margin-bottom: 1em;
+}
+
+
+
+@media screen and (max-width:1100px) {
+    .gridy,
+    .gridy2,
+    .gridy3 {
+        display: block;
+        margin-bottom: 2em;
+}
+}
+
+.gridy.filled > *,
+.gridy2.filled > *,
+.gridy3.filled > * {
+    background-color: rgba(255,255,255,1.0);
+    color: #000;
+}
+.gridy.filledBrand > *,
+.gridy2.filledBrand > *,
+.gridy3.filledBrand > * {
+    background-color: rgba(87,166,123,1.0);
+}
+.gridy.radial > *,
+.gridy2.radial > *,
+.gridy3.radial > * {
+    border-radius: 50%;
+}
+.gridy.packages > *,
+.gridy2.packages > *,
+.gridy3.packages > * {
+    border-radius: 1em;
+}
+
+
+.dealContent .lozenge {
+    display: block;
+    background-color: red;
+    color: #ffffff;
+    width:125px;
+    height: 125px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    right: -1em;
+    transform: rotate(10deg);
+}
+
+.dealContent .lozenge > * {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1em;
+}
+
+.dealContent div.productDetails > * {
+    margin:0;
+    padding: 0;
+}
+.dealContent div.productDetails > h3 {
+    font-weight: bold;
+    color: red;
+}
+.dealContent div.productDetails > h3 sup {
+    font-weight: normal;
+    font-size: 60%;
+    letter-spacing: 0;
+}
+.dealContent div.productDetails > h4 {
+    font-size: 1.2em;
+}
+.dealContent h4.strike {
+    color: rgba(87,166,123,1.0);
+    font-size: 90%;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.filledBrand h4.strike {
+    color: #000;
+}
+
+.filledBrand h3.brandColor {
+    color: #fff !important;
+}
+@media screen and (max-width:1500px) {
+    .dealContent .lozenge {
+        width:125px;
+        height: 125px;
+    }
 }
