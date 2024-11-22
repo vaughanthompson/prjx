@@ -2729,6 +2729,18 @@ h1.large {
     border-radius: 50% 50% 0 0;
     margin-top: 5px;
 }
+.gridy.radial.filledBrand > * > div.productImage,
+.gridy2.radial.filledBrand > * > div.productImage,
+.gridy3.radial.filledBrand > * > div.productImage {
+    flex: 0 0 50%;
+    width:50%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-top: 1em;
+    background-color: #d71240;
+}
 .gridy.packages > * > div.productImage,
 .gridy2.packages > * > div.productImage,
 .gridy3.packages > * > div.productImage {
@@ -2764,8 +2776,8 @@ h1.large {
 .gridy.radial.filledBrand > * > div.productDetails,
 .gridy2.radial.filledBrand > * > div.productDetails,
 .gridy3.radial.filledBrand > * > div.productDetails {
-    border-top:1px solid #ffffff;
-    align-self: stretch;
+    border-top:none
+    /*align-self: stretch;*/
 }
 .gridy.radial > * > div.productDetails,
 .gridy2.radial > * > div.productDetails,
@@ -2802,6 +2814,8 @@ h1.large {
 .gridy2.filledBrand > *,
 .gridy3.filledBrand > * {
     background-color: rgba(87,166,123,1.0);
+    box-shadow: 0 0 0 6px rgba(87,166,123,1.0);
+    outline: dashed 4px #fff;
 }
 .gridy.radial > *,
 .gridy2.radial > *,
