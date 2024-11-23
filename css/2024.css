@@ -2677,8 +2677,8 @@ h1.large {
 .gridy2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15%,1fr));
-    grid-column-gap: 2em;
-    grid-row-gap: 2em;
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vw;
 }
 
 .gridy3 {
@@ -2686,8 +2686,24 @@ h1.large {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2em;
     grid-row-gap: 2em;
-    
 }
+.gridy3.largeLozenge {
+    margin-bottom: 10vh;
+}
+.gridy3.singleItem {
+    grid-template-columns: repeat(1, 1fr);
+    width:auto;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width:1100px) {
+    .gridy3.singleItem {
+        width:27vw;
+    }
+}
+
 @media screen and (max-width:1500px) {
     .gridy3 {
         display: grid;
@@ -2716,7 +2732,18 @@ h1.large {
     /*padding:0;*/
     aspect-ratio: 1;
 }
-
+.gridy > a,
+.gridy2 > a,
+.gridy3 > a {
+    transition: 0.3s;
+    text-decoration: none;
+}
+.gridy > a:hover,
+.gridy2 > a:hover,
+.gridy3 > a:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
 
 .gridy > * > div.productImage,
 .gridy2 > * > div.productImage,
@@ -2801,7 +2828,12 @@ h1.large {
     .gridy3 {
         display: block;
         margin-bottom: 2em;
-}
+    }
+    .gridy > *,
+    .gridy2 > *,
+    .gridy3 > * {
+        margin-bottom: 2em;
+    }
 }
 
 .gridy.filled > *,
@@ -2810,10 +2842,19 @@ h1.large {
     background-color: rgba(255,255,255,1.0);
     color: #000;
 }
+.gridy.filled.largeLozenge > *,
+.gridy2.filled.largeLozenge > *,
+.gridy3.filled.largeLozenge > * {
+    background-color: rgba(255,255,255,0.2);
+}
 .gridy.filledBrand > *,
 .gridy2.filledBrand > *,
 .gridy3.filledBrand > * {
     background-color: rgba(87,166,123,1.0);
+}
+.gridy.filledBrand.dashed > *,
+.gridy2.filledBrand.dashed > *,
+.gridy3.filledBrand.dashed > * {
     box-shadow: 0 0 0 6px rgba(87,166,123,1.0);
     outline: dashed 4px #fff;
 }
@@ -2852,6 +2893,41 @@ h1.large {
     padding: 0;
     line-height: 1.1em;
 }
+.largeLozenge .lozenge {
+    width:60%;
+    height:60%;
+    top:auto;
+    bottom:-1em;
+    right: -1em;
+    transform: rotate(5deg);
+    background-color: rgba(87,166,123,0.9);
+    box-shadow: 0 0 0 6px rgba(87,166,123,1.0);
+    outline: dashed 2px #fff;
+    padding: 1em;
+}
+.largeLozenge .lozenge h2 {
+    font-size: 3.5em;
+}
+.gridy2.largeLozenge .lozenge h2 {
+    font-size: 5em;
+}
+.largeLozenge .lozenge h5 {
+    font-size:1.5em;
+    font-weight: bold;
+}
+.largeLozenge .lozenge h6 {
+    font-size:1.2em;
+    padding-top: 0.5em;
+    font-weight: bold;
+    border-top: 1px solid #fff;
+    display: block;
+    margin:0.5em 1em 0 1em ;
+
+}
+img.radial {
+    border-radius: 50%;
+    
+}
 
 .dealContent div.productDetails > * {
     margin:0;
@@ -2887,9 +2963,71 @@ div.radial div.productDetails > h3 {
 .filledBrand h3.brandColor {
     color: #fff !important;
 }
+
 @media screen and (max-width:1500px) {
     .dealContent .lozenge {
         width:125px;
         height: 125px;
+    }
+}
+@media screen and (max-width:1100px) {
+    .largeLozenge .lozenge {
+        width:50%;
+        height: 50%;
+        bottom:1em;
+        right: 1em;
+    }
+}
+@media screen and (min-width:1100px) {
+    .largeLozenge .lozenge {
+        width:60%;
+        height: 60%;
+    }
+}
+
+
+
+
+
+.gridy3 > div.list {
+    border-radius: 0;
+    grid-column: 2/4;
+    aspect-ratio: auto;
+    align-self: center;
+    justify-self: flex-start;
+    text-align: left;
+    background:none !important;
+
+}
+div.list div.flexList {
+    padding:2vw 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.75em;
+    column-gap: 5%;  
+}
+div.list a {
+    flex: 1 1 40%;
+    color: rgba(87,166,123,1.0);
+}
+@media screen and (max-width:1100px) {
+    div.list div.flexList {    
+        display: block;
+    }
+    div.list a {
+        display: block;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+}
+
+
+div.gridyContainer {
+    margin-bottom: 5vh;
+}
+@media screen and (min-width:1100px) {
+    div.gridyContainer {
+        display: flex;
+        margin-bottom: 5vw;
     }
 }
