@@ -2749,7 +2749,7 @@ h1.large {
 .gridy2 > * > div.productImage,
 .gridy3 > * > div.productImage {
     flex: 0 0 45%;
-    width:75%;
+    width:50%;
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -2784,7 +2784,7 @@ h1.large {
 .gridy > * > div.productDetails,
 .gridy2 > * > div.productDetails,
 .gridy3 > * > div.productDetails {
-    flex: 0 0 25%;
+    flex: 0 0 40%;
     padding-top: 10px;
     width:100%;
 }
@@ -2810,7 +2810,7 @@ h1.large {
 .gridy2.radial > * > div.productDetails,
 .gridy3.radial > * > div.productDetails {
     width:90%;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 .gridy.radial > * > div.productDetails > *,
 .gridy2.radial > * > div.productDetails > *,
@@ -2939,7 +2939,7 @@ img.radial {
     font-size: 1.9em;
 }
 div.radial div.productDetails > h3 {
-    padding-bottom: 1em;
+    padding-bottom: 0.25em;
 }
 .dealContent div.productDetails > h3 sup {
     font-weight: normal;
@@ -2954,6 +2954,10 @@ div.radial div.productDetails > h3 {
     font-size: 90%;
     padding-top: 5px !important;
     padding-bottom: 5px !important;
+}
+div.radial span.ctaButton {
+    padding: 0.5em 2em 0.5em 1em !important;
+    text-align: left;
 }
 
 .filledBrand h4.strike {
@@ -3030,4 +3034,21 @@ div.gridyContainer {
         display: flex;
         margin-bottom: 5vw;
     }
+}
+
+.filled .overrideRadial {
+    background-color:rgba(0,0,0,0);
+    color: #fff ; 
+}
+
+.filled .overrideRadial div {
+    padding: 5vw 3vw;
+}
+
+.filled .overrideRadial div span {
+    text-decoration: underline;
+}
+
+.filled a.overrideRadial:hover {
+    transform: translateY(0);
 }
