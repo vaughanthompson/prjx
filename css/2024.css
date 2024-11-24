@@ -2778,7 +2778,7 @@ h1.large {
 .gridy.radial > * > div.productImage,
 .gridy2.radial > * > div.productImage,
 .gridy3.radial > * > div.productImage {
-    flex: 1 0 30%;
+    flex: 1 0 0;
     /*padding:2em;*/
 }
 .gridy > * > div.productDetails,
@@ -3040,9 +3040,14 @@ div.gridyContainer {
     background-color:rgba(0,0,0,0);
     color: #fff ; 
 }
-
 .filled .overrideRadial div {
-    padding: 5vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.filled .overrideRadial div > * {
+   width:80%;
 }
 
 .filled .overrideRadial div span {
