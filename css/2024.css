@@ -2714,7 +2714,8 @@ h1.large {
 
 .gridy > *,
 .gridy2 > *,
-.gridy3 > * {
+.gridy3 > *,
+.singleItem > * {
     text-align: center;
     /*padding: 2em;*/
     position: relative;
@@ -2916,7 +2917,7 @@ h1.large {
     font-weight: bold;
 }
 .largeLozenge .lozenge h6 {
-    font-size:1.2em;
+    font-size:1.1em;
     padding-top: 0.5em;
     font-weight: bold;
     border-top: 1px solid #fff;
@@ -3064,4 +3065,16 @@ div.gridyContainer {
 
 .filled a.overrideRadial:hover {
     transform: translateY(0);
+}
+
+
+.singleItem {
+    width:80vw;
+    margin: 0px auto;
+}
+@media screen and (min-width:1100px) {
+    .singleItem {
+        width:30vw;
+        margin: 0px auto;
+    }
 }
