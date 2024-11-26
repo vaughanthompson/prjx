@@ -3004,30 +3004,30 @@ div.radial span.ctaButton {
     background:none !important;
 
 }
-div.list div.flexList {
+.gridyContainer div.list div.flexList {
     padding:1vw 5vw;
     display: flex;
     flex-wrap: wrap;
     row-gap: 0.75em;
     column-gap: 5%;  
 }
-div.list a {
+.gridyContainer div.list a {
     font-size: 75%;
 }
-div.list a,
-div.list p {
+.gridyContainer div.list a,
+.gridyContainer div.list p {
     flex: 1 1 45%;
     color: rgba(87,166,123,1.0);
 }
-div.list p {
+.gridyContainer div.list p {
     color: rgba(255,255,255,1.0);
 }
 @media screen and (max-width:1100px) {
-    div.list div.flexList {    
+    .gridyContainer div.list div.flexList {    
         display: block;
     }
-    div.list a,
-    div.list p {
+    .gridyContainer div.list a,
+    .gridyContainer div.list p {
         display: block;
         margin-bottom: 1em;
         text-align: center;
