@@ -2683,7 +2683,7 @@ h1.large {
 
 .gridy3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25%,1fr));
     grid-column-gap: 2em;
     grid-row-gap: 2em;
 }
@@ -2810,15 +2810,14 @@ h1.large {
 .gridy.radial > * > div.productDetails,
 .gridy2.radial > * > div.productDetails,
 .gridy3.radial > * > div.productDetails {
-    width:90%;
+    width:80%;
     margin-bottom: 2em;
 }
 .gridy.radial > * > div.productDetails > *,
 .gridy2.radial > * > div.productDetails > *,
 .gridy3.radial > * > div.productDetails > * {
-    padding-left: 1em;
-    padding-right: 1em;
-
+    padding-left: 0em;
+    padding-right: 0em;
 }
 
 
