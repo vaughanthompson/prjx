@@ -2816,8 +2816,8 @@ h1.large {
 .gridy.radial > * > div.productDetails > *,
 .gridy2.radial > * > div.productDetails > *,
 .gridy3.radial > * > div.productDetails > * {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 
 }
 
@@ -2937,7 +2937,11 @@ img.radial {
 .dealContent div.productDetails > h3 {
     font-weight: bold;
     color: red;
-    font-size: 1.9em;
+    font-size: 1.8em;
+}
+.dealContent div.productDetails > h3 span.small {
+    font-size: 50%;
+    letter-spacing: 0;
 }
 div.radial div.productDetails > h3 {
     padding-bottom: 0.25em;
