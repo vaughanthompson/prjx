@@ -1,4 +1,12 @@
 /*  2024 css additions */
+.balanced {
+    text-wrap: balance;
+}
+
+.lighterGrey {
+    background-color: rgba(0,0,0,0.9) !important;
+}
+
 .marginMe {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -756,6 +764,10 @@ body.volvoEmob {
 .volvoEmob .reversed a {
     color: #fff;
 }
+
+.volvoEmob .reversed a:hover {
+    color: rgba(87,166,123,0.9);
+}
 .volvoEmob nav a {
     font-size: 1.1em;
 }
@@ -833,7 +845,28 @@ body.volvoEmob {
 }
 .volvoEmob td:nth-child(2) {
     font-weight: 500;
+} 
+.volvoEmob table.haulers td:not(:first-child) {
+    font-weight: 300;
 }
+.volvoEmob table.haulers-a35 td:nth-child(2) {
+    font-weight: 500;
+    color: rgba(87,166,123,0.9);
+}
+.volvoEmob table.haulers-a40 td:nth-child(3) {
+    font-weight: 500;
+    color: rgba(87,166,123,0.9);
+}
+.volvoEmob table.haulers-a45 td:nth-child(4) {
+    font-weight: 500;
+    color: rgba(87,166,123,0.9);
+}
+.volvoEmob table.haulers-a50 td:nth-child(5) {
+    font-weight: 500;
+    color: rgba(87,166,123,0.9);
+}
+
+
 .volvoEmob a.button {
     background-color: rgba(255,255,255,0.15);
     border-radius: 2em;
@@ -1265,9 +1298,17 @@ video.hidden-xs {
 
 .centerCol {
     text-align: center;
-    width:75%;
+    width:60%;
     margin: 0px auto;
 }
+@media screen and (max-width:1100px) {
+    .centerCol {
+        text-align: left;
+        width:auto;
+        margin: 0px auto;
+    }
+}
+
 .vertSpaceApart {
     display: flex;
     flex-direction: column;
@@ -1575,6 +1616,10 @@ div.imgLink {
     justify-content: space-between;
     column-gap: 2vw;
     margin-bottom: 3vw;
+    align-items: flex-start;
+}
+div.imgLink.centred {
+    align-items: center;
 }
 div.imgLink.flip {
     flex-direction: row-reverse;
@@ -1595,6 +1640,37 @@ div.imgLink1 div:first-child {
     width:200px;
     height:auto;
     flex-shrink: 0;
+}
+
+div.surroundMachine.flexRow {
+    column-gap: 15px;
+}
+div.surroundMachine.flexRow > div {
+    flex: 1 1 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.surroundMachine.flexRow > div:nth-child(2) {
+    flex-basis: 45%;
+}
+div.surroundMachine .imgLink {
+    width: 100%;
+    column-gap: 15px;
+}
+div.surroundMachine .imgLink > * {
+    flex: 1 1 auto;
+}
+div.surroundMachine .imgLink img {
+    width:80px;
+}
+div.surroundMachine .imgLink h5 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+div.surroundMachine .imgLink a {
+    font-size: 1em;
+    text-decoration: none;
 }
 /*a.imgLink div:first-of-type {
     width:65px;
@@ -1798,6 +1874,18 @@ div.relHolder {
        color: #fff;
        font-size: 90%;
     }
+    .simpleGrid2.adjustMobile {
+        display: block;
+    }
+
+    .simpleGrid2.adjustMobile div.imgLink {
+        display: block;
+        margin-bottom: 5vh;
+    }
+    .simpleGrid2.adjustMobile div.imgLink  img {
+        margin-bottom: 2vh;
+    }
+
 }
 
 .picturefill-background.contain {

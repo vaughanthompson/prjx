@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 874.73 836.03">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .8;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: none;
+        stroke: #57a57b;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-2 {
+        opacity: .9;
+      }
+
+      .cls-3 {
+        opacity: .3;
+      }
+
+      .cls-4 {
+        opacity: .5;
+      }
+
+      .cls-5 {
+        opacity: .6;
+      }
+
+      .cls-6 {
+        opacity: .7;
+      }
+
+      .cls-7 {
+        opacity: .4;
+      }
+    </style>
+  </defs>
+  <g id="Layer_4" data-name="Layer 4">
+    <g>
+      <line class="cls-4" x1="645.89" y1=".21" x2="65.6" y2="835.82"/>
+      <line class="cls-5" x1="678.54" y1=".21" x2="98.25" y2="835.82"/>
+      <line class="cls-6" x1="711.18" y1=".21" x2="130.9" y2="835.82"/>
+      <line class="cls-1" x1="743.83" y1=".21" x2="163.54" y2="835.82"/>
+      <line class="cls-2" x1="776.48" y1=".21" x2="196.19" y2="835.82"/>
+      <line class="cls-2" x1="809.13" y1=".21" x2="228.84" y2="835.82"/>
+      <line class="cls-2" x1="841.77" y1=".21" x2="261.49" y2="835.82"/>
+      <line class="cls-2" x1="874.42" y1=".21" x2="294.13" y2="835.82"/>
+      <line class="cls-3" x1="580.6" y1=".21" x2=".31" y2="835.82"/>
+      <line class="cls-7" x1="613.24" y1=".21" x2="32.95" y2="835.82"/>
+    </g>
+  </g>
+</svg>
