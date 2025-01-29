@@ -1988,17 +1988,17 @@ div.item div.horizon {
     aspect-ratio: 1;
     border-radius: 50%;
     padding: 1px;
-    background: conic-gradient(#0000,var(--c)) content-box;
+    background: conic-gradient(#000,var(--c)) content-box;
     -webkit-mask:
-      repeating-conic-gradient(#0000 0deg,
+      repeating-conic-gradient(#000 deg,
          #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
-         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
-      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+         #000    calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
             mask:
-      repeating-conic-gradient(#0000 0deg,
+      repeating-conic-gradient(#000 deg,
          #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
-         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
-      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+         #000    calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
     -webkit-mask-composite: destination-in;
             mask-composite: intersect;
     animation: load 2.5s infinite steps(var(--n));
@@ -2016,17 +2016,17 @@ div.item div.horizon {
     aspect-ratio: 1;
     border-radius: 50%;
     padding: 1px;
-    background: conic-gradient(#0000,var(--c)) content-box;
+    background: conic-gradient(#000000,var(--c)) content-box;
     -webkit-mask:
-      repeating-conic-gradient(#0000 0deg,
-         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
-         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
-      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+      repeating-conic-gradient(#000000 deg,
+         #000000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #000000    calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#000000 calc(98% - var(--b)),#000000 calc(100% - var(--b)));
             mask:
-      repeating-conic-gradient(#0000 0deg,
-         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
-         #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
-      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+      repeating-conic-gradient(#000000 deg,
+         #000000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #000000 calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#000000 calc(98% - var(--b)),#000000 calc(100% - var(--b)));
     -webkit-mask-composite: destination-in;
             mask-composite: intersect;
     animation: load 2.5s infinite steps(var(--n));
