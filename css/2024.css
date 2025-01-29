@@ -1892,6 +1892,11 @@ div.relHolder {
     background-size: contain !important;
     background-position: 90% 50%;
 }
+.picturefill-background.fromRight {
+    background-size: cover !important;
+    background-position: 100% 0;
+}
+
 
 table.itemCompare {
     table-layout: fixed;
@@ -3168,4 +3173,20 @@ div.gridyContainer {
         width:30vw;
         margin: 0px auto;
     }
+}
+
+
+
+.bgCrop1 {
+    background-size: 40% auto;
+    background-repeat: no-repeat;
+    background-position: 105% 95%;
+    background-image: url(/images/2025/volvo-hlr/a35/crop1.jpg);
+}
+
+.bgCrop2 {
+    background-size: 35% auto;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-image: url(/images/2025/volvo-hlr/a35/crop4.jpg);
 }
