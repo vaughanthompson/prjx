@@ -1030,57 +1030,68 @@ body.volvoEmob nav a:hover {
 /* layout */
 
 /* put this inside wrappers and hold content */
-body.volvoEmob div.panelFH {
+body.volvoEmob div.panelFH,
+.volvoEmob div.panelFH {
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
 @media screen and (max-width:1100px) {
-    body.volvoEmob div.panelFH {
+    body.volvoEmob div.panelFH,
+    .volvoEmob div.panelFH {
         align-items: flex-end;
     }
-    body.volvoEmob div.panelFH:last-of-type {
+    body.volvoEmob div.panelFH:last-of-type,
+    .volvoEmob div.panelFH:last-of-type {
         min-height: auto;
     }
 }
 
-body.volvoEmob div.panelFH div.insetContent {
+body.volvoEmob div.panelFH div.insetContent,
+.volvoEmob div.panelFH div.insetContent {
     padding-top: 100px;
     padding-bottom: 100px;
     flex-basis: 100%;
 }
 @media screen and (max-width:1100px) {
-    body.volvoEmob div.panelFH {
+    body.volvoEmob div.panelFH,
+    .volvoEmob div.panelFH {
         background-color: rgba(0,0,0,0.5);
     } 
 }
 @media screen and (min-width:1100px) {
-    body.volvoEmob div.panelFH div.insetContent {
+    body.volvoEmob div.panelFH div.insetContent,
+    .volvoEmob div.panelFH div.insetContent {
         margin-right: 15vw;
     }
 }
 @media screen and (min-width:1300px) {
-    body.volvoEmob div.panelFH div.insetContent {
+    body.volvoEmob div.panelFH div.insetContent,
+    .volvoEmob div.panelFH div.insetContent {
         margin-right: 30vw;
     }
 }
 @media screen and (min-width:1800px) {
-    body.volvoEmob div.panelFH div.insetContent {
+    body.volvoEmob div.panelFH div.insetContent,
+    .volvoEmob div.panelFH div.insetContent {
         margin-right: auto;
         flex: 0 0 1000px;
     }
 }
 
-body.volvoEmob div.padWidthDefault {
+body.volvoEmob div.padWidthDefault,
+.volvoEmob div.padWidthDefault {
     padding-left: 10vw;
     padding-right: 10vw;
 }
-body.volvoEmob div.padHeightDefault {
+body.volvoEmob div.padHeightDefault,
+.volvoEmob div.padHeightDefault {
     padding-top: 8vw;
     padding-bottom: 8vw;
 }
 @media screen and (max-width:1100px) {
-    body.volvoEmob div.padHeightDefault {
+    body.volvoEmob div.padHeightDefault,
+    .volvoEmob div.padHeightDefault {
         padding-top: 10vh;
         padding-bottom: 10vh;
     }
@@ -3195,4 +3206,51 @@ div.gridyContainer {
     background-repeat: no-repeat;
     background-position: 0% 100%;
     background-image: url(/images/2025/volvo-hlr/a35/crop4.jpg);
+}
+
+
+
+
+
+@font-face {
+    font-family: 'volvo';
+    src: url('/fonts/volvo/volvobroadpro.woff2') format('woff2'),
+         url('/fonts/volvo/volvobroadpro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.volvoFontAnywhere {
+    font-family: "volvo";
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+a.newReleaseLink {
+    text-decoration: none;
+    display: block;
+    margin: 2em 0;
+    text-align: center;
+    transition: 0.3s;
+    padding: 1em;
+}
+
+a.newReleaseLink h2 {
+    padding-bottom: 0;
+    font-size: 3.2em;
+}
+a.newReleaseLink h5 {
+    padding-top: 0;
+}
+a.newReleaseLink:hover {
+    transform: translateY(-5px);
+    transform: scale(105%);
+}
+
+.flexRow.withImages img {
+    height: 150px;
+    width: auto;
+    margin: 0px auto 1em auto;
 }

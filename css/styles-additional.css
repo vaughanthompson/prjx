@@ -1265,7 +1265,7 @@ a.minorCTA::after,
 a.ctaShop::after {
     content: '>';
     right:12px;
-    line-height: 1em;
+    line-height: 1.3em;
     position: absolute;
 }
 
