@@ -395,6 +395,12 @@ span.box {
     rgba(0,0,0,1.0) 50%);
   }
 
+  .yanmarGradient4 {
+    background: linear-gradient(to top, 
+    rgba(214,30,66,1.0)30%,
+    rgba(0,0,0,1.0) 60%);
+  }
+
   .yanmarChoose {
     color: white;
     position: relative;
@@ -580,7 +586,11 @@ span.box {
  }
 
 
-
+.yanmarWorkhorse  div.opener > div {
+    flex:1 1 50%;
+    text-align: center;
+    border:1px solid red;
+ }
 
 div.teaser.yanmarChoose {
     background-color: black;
@@ -594,7 +604,8 @@ div.yanmarChooseNav {
     color: #fff;
     
 }
-div.yanmarChooseNav a.thumb {
+div.yanmarChooseNav a.thumb,
+div.yanmarChooseNav div.thumb {
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -626,10 +637,18 @@ div.yanmarChooseNav a.thumb {
         column-gap: 5vw;
         border-bottom: 2px solid rgba(0,0,0,0.15);
     }
+    div.yanmarChooseNav2 {
+        column-gap: 2vw;
+        border-bottom: none;
+    }
+    div.yanmarChooseNav2 > div {
+        flex: 1 1 25%;
+    }
     .yanmarChooseContent {
         padding-top: 5vw;
     }
-    div.yanmarChooseNav a.thumb img {
+    div.yanmarChooseNav a.thumb img,
+    div.yanmarChooseNav div.thumb img {
         margin-bottom: 1em;
     }
 }
@@ -3253,4 +3272,27 @@ a.newReleaseLink:hover {
     height: 150px;
     width: auto;
     margin: 0px auto 1em auto;
+}
+
+
+
+
+/* yanmar ultimate workhorse mobile overrides */
+
+
+@media screen and (max-width:1100px) {
+    div.yanmarChooseNav.ultimateWorkhorse {
+        display: block;
+        flex-wrap: wrap;
+        padding: 10vw 10vw 20vw 10vw !important;
+        column-gap: 3vw;
+    }
+
+    div.yanmarChooseNav2.ultimateWorkhorse > div {
+        flex: 1 1 auto;
+    }
+    div.yanmarChooseNav.ultimateWorkhorse div.thumb img {
+        width:70vw;
+        margin: 3vh auto;
+    }
 }
