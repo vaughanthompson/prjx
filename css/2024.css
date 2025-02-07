@@ -1889,6 +1889,9 @@ div.relHolder {
     grid-row-gap: 0.25em;
 }
 
+p.restrictContentWidth {
+    max-width: 70%;
+}
 .restrictContentWidth {
     max-width: 80%;
 }
