@@ -2448,6 +2448,12 @@ img.floatThumb {
     margin-top: -20px;
 }
 
+img.floatThumb2 {
+    width:150px;
+    float: right;
+    margin-top: -20px;
+}
+
 div.centredForm .offerDetails {
     text-align: center;
 }
