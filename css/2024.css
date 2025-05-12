@@ -3304,6 +3304,13 @@ a.newReleaseLink:hover {
         width:70vw;
         margin: 3vh auto;
     }
+    div.yanmarChooseNav div.thumb ul {
+        padding-top: 1em;
+        padding-bottom: 3em;
+    }
+    div.yanmarChooseNav div.thumb li {
+        padding-top: 0;
+    }
 }
 
 
