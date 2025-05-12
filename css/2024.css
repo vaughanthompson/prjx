@@ -638,7 +638,7 @@ div.yanmarChooseNav div.thumb {
         border-bottom: 2px solid rgba(0,0,0,0.15);
     }
     div.yanmarChooseNav2 {
-        column-gap: 2vw;
+        column-gap: 5vw;
         border-bottom: none;
     }
     div.yanmarChooseNav2 > div {
@@ -3304,4 +3304,21 @@ a.newReleaseLink:hover {
         width:70vw;
         margin: 3vh auto;
     }
+}
+
+
+
+.yanmarChooseNav.dark {
+    background-color: #000;
+}
+
+.yanmarChooseNav.dark li {
+    border-color: #999;
+    border-top: none;
+    padding-top:30px;
+    color: #d71240;
+}
+
+.yanmarChooseNav ul {
+    margin-bottom: 0;
 }
