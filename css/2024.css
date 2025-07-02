@@ -2368,7 +2368,7 @@ div#carouselIndicator.tabbed.shell div#cI-hook > div {
     align-items: center;
     flex-wrap: nowrap;
     transition: 0.3s ease-in;
-    font-size: 1.2em;
+    font-size: 1em;
     justify-content: center;
 }
 div#carouselIndicator.shell div#cI-hook > div.active {
@@ -2413,6 +2413,10 @@ div.values-slider div.scontain.right {
     }
 }
 
+
+div.shell-slider ul {
+    font-size: 0.9em;
+}
 
 div.values-slider div.item.green {
     background-color: rgba(87,166,123,1.0);
@@ -3370,7 +3374,3 @@ a.newReleaseLink:hover {
 
 
 
-
-ul.larger li {
-    font-size: 1.1em;
-}
