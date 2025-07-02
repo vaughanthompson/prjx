@@ -2361,7 +2361,21 @@ div#carouselIndicator.tabbed div#cI-hook > div {
     transition: 0.3s ease-in;
     justify-content: space-between;
 }
-
+div#carouselIndicator.tabbed.shell div#cI-hook > div {
+    color: #ffffff;
+    background-color: #ffc40c;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: 0.3s ease-in;
+    font-size: 1.2em;
+    justify-content: center;
+}
+div#carouselIndicator.shell div#cI-hook > div.active {
+    background-color: #ed1d24 !important;
+    color: #ffffff;
+    font-weight: bold !important;
+}
 div#carouselIndicator.tabbed div#cI-hook > div:hover {
     cursor: pointer;
     background-color: #cecece;
@@ -2411,6 +2425,29 @@ div.values-slider h2:first-of-type,
 div.values-slider p:first-of-type  {
     color: rgba(87,166,123,1.0);
 }
+
+div.shell-slider div.item,
+div.shell-slider .owl-stage-outer  {
+    background-color: white;
+}
+div.shell-slider div.picturefill-background div.scontain {
+    background: none !important;
+    margin-left:3vw;
+    margin-right:3vw;
+    column-gap: 3vw;
+    align-items: center;
+}
+div.shell-slider {
+    border-bottom: 10px solid #ffc40c;
+}
+div.shell-slider div.picturefill-background div.scontain section  {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+div.shell-slider div.picturefill-background div.scontain section > * {
+    color: #000000;
+}
+
 @media screen and (min-width:1000px) {
     div.values-slider div.item.green h2:first-of-type,
     div.values-slider div.item.green p:first-of-type  {
@@ -3328,4 +3365,12 @@ a.newReleaseLink:hover {
 
 .yanmarChooseNav ul {
     margin-bottom: 0;
+}
+
+
+
+
+
+ul.larger li {
+    font-size: 1.1em;
 }
