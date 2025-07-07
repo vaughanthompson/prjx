@@ -78,7 +78,7 @@ div.donatedBy {
     align-items: center;
     column-gap: 15px;
     font-size: 1em;
-    width:320px;
+    width:300px;
 }
 div#currentBids li {
     display: flex;
