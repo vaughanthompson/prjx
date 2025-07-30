@@ -2452,6 +2452,113 @@ div.shell-slider div.picturefill-background div.scontain section > * {
     color: #000000;
 }
 
+
+
+
+div#carouselIndicator.tabbed.fuchs div#cI-hook {
+    column-gap: 1vw;
+}
+
+div#carouselIndicator.tabbed.fuchs,
+div#carouselIndicator.tabbed.fuchs div#cI-hook,
+div#carouselIndicator.tabbed.fuchs div#cI-hook > div {
+    height:auto;
+    margin-bottom: -1px;
+    z-index: 2000;
+}
+
+div#carouselIndicator.tabbed.fuchs div#cI-hook > div {
+    color: #ffffff;
+    background: none;
+    display: block;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: 0.3s ease-in;
+    justify-content: space-between;
+    align-self: stretch;
+}
+div#carouselIndicator.tabbed.fuchs div#cI-hook > div {
+    color: #ffffff;
+    background-color: none;
+    display: block;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: 0.3s ease-in;
+    font-size: 1em;
+    font-weight: 300 !important;
+    justify-content: center;
+    
+}
+div#carouselIndicator.tabbed.fuchs div#cI-hook > div > div > *:not(img) {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+div#carouselIndicator.tabbed.fuchs div#cI-hook > div > div {
+    border:1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid #000000;
+    padding-top: 1vw;
+    padding-bottom: 1vw;;
+
+}
+div#carouselIndicator.fuchs div#cI-hook > div.active {
+    background-color: #000000 !important;
+}
+div#carouselIndicator.fuchs div#cI-hook > div > h6 {
+    color: rgba(255,255,255,0.5);
+    font-weight: 200; 
+    text-align: center; 
+    font-size: 0.95em;
+}
+div#carouselIndicator.fuchs div#cI-hook > div.active > h6 {
+    color: #007cb1;
+}
+div#carouselIndicator.fuchs div#cI-hook > div.active > div {
+    background-color: #000000 !important;
+    color: #ffffff;
+    border-color: #007cb1;
+    font-weight: 300 !important;
+    border-bottom: 1px solid #000000;
+}
+div#carouselIndicator.tabbed.fuchs div#cI-hook > div:hover {
+    cursor: pointer;
+    background-color: none;
+}
+
+div#carouselIndicator.tabbed.fuchs div#cI-hook > div span {
+    display: block;
+    padding:5px;
+    font-size: 1em;
+}
+div#carouselIndicator.tabbed.fuchs div#cI-hook > div span img.thumb {
+    width:40px;
+}
+
+
+
+div.fuchs-model-slider {
+    border-bottom:  none;
+}
+div.fuchs-model-slider div.item {
+    height: auto !important;
+}
+
+div.fuchs-model-slider ul {
+    font-size: 1em;
+}
+div.fuchs-model-slider div.item,
+div.fuchs-model-slider .owl-stage-outer  {
+    background: none;
+}
+div.shell-slider div.picturefill-background div.scontain section > * {
+    color: #fff;
+}
+div.fuchs-model-slider button.owl-prev,
+div.fuchs-model-slider button.owl-next {
+    display: none !important;
+}
+
+
+
 @media screen and (min-width:1000px) {
     div.values-slider div.item.green h2:first-of-type,
     div.values-slider div.item.green p:first-of-type  {
@@ -3373,4 +3480,155 @@ a.newReleaseLink:hover {
 
 
 
+/* Fuchs Landing */
+.fuchs h1 {
+    font-size:3.5em !important; 
+    line-height:90%;
+}
+.fuchs h2 {
+    font-size:3.2em; 
+    line-height:90%;
+}
+.fuchs h3 {
+    font-size:2.8em; 
+    line-height:90%;
+}
+.fuchs h4 {
+    font-size:1.6em; 
+    line-height:110%;
+}
+.fuchsFontStd {
+    font-family: 'joyride-std' !important;
+    font-weight: 300 !important;
+}
+.fuchsFontExt {
+    font-family: 'joyride-ext' !important;
+    font-weight: 300 !important;
+    text-transform: uppercase;
+}
+.fuchsColor {
+    color: #007cb1 !important;
+}
+.fuchsBorderColor {
+    color: #007cb1;
+}
+.fuchsBgColor {
+    background-color: #007cb1;
+}
+.fuchsGradient {
+    background: linear-gradient(to top, 
+    rgba(0,124,177,1.0),
+    rgba(0,0,0,1.0));
+}
 
+.fuchsBorderBottom {
+    border-bottom: 1px solid #007cb1;
+}
+.fuchsBg {
+    background-image: url(/images/2025/fuchs/angleBg@2x.png);
+    background-position: top left;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.fuchsTabList {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+    line-height: 1.4em;
+    font-size: 0.9em;
+}
+.fuchsTabList > div:first-of-type {
+    color: rgba(255,255,255,0.5);
+}
+.fuchsTabList > div:last-of-type {
+    text-align: right;
+}
+
+
+.fuchs-model-slider .picturefill-background {
+    height: auto !important;
+    background-position: top right !important;
+}
+
+.fuchs.labelList {
+    width:300px;
+}
+.fuchs.labelList li  {
+    justify-content: space-between;
+}
+
+.restrictContentWidth.fuchs {
+    width:35vw;
+    max-width: 35vw;
+}
+div.industryIcons {
+    display: flex;
+    column-gap: 10px;
+}
+
+div.industryIcons span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    color: #007cb1;
+    background-size: 50%;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+}
+
+div.industryIcons span.icTimber {
+    background-image: url(/images/2025/fuchs/icons/ic-timber-rev.svg);
+}
+div.industryIcons span.icSmallScrap {
+    background-image: url(/images/2025/fuchs/icons/ic-small-scrap-rev.svg);
+}
+div.industryIcons span.icBulkWaste {
+    background-image: url(/images/2025/fuchs/icons/ic-bulk-rev.svg);
+}
+div.industryIcons span.icPort {
+    background-image: url(/images/2025/fuchs/icons/ic-port-rev.svg);
+}
+
+.ctaButton.fuchs {
+    background-color: white;
+    border-color: white;
+    color: #007cb1 !important;
+}
+
+.fuchs form {
+    text-align: left;
+}
+
+div.owl-carousel-slider.fuchs-intro,
+div.owl-carousel-slider.fuchs-intro div.item,
+div.owl-carousel-slider.fuchs-intro div.picturefill-background {
+    min-height: 100vh;
+}
+
+div.owl-carousel-slider.fuchs-intro div.picturefill-background {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width:1100px) {
+    .fuchs h1 {
+        font-size:2.4em !important; 
+        line-height:90%;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    div.owl-carousel-slider.fuchs-intro div.holder {
+        max-width: 50vw;
+        text-align: center;
+    }
+    div.owl-carousel-slider.fuchs-intro div.holder.right {
+        margin-left: auto;
+    }
+
+}
