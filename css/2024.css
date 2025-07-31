@@ -3481,6 +3481,11 @@ a.newReleaseLink:hover {
 
 
 /* Fuchs Landing */
+.twk {
+    font-family: 'twk' !important;
+    font-weight: 700 !important;
+    letter-spacing: 0 !important;
+}
 .fuchs h1 {
     font-size:3.5em !important; 
     line-height:90%;
@@ -3558,13 +3563,11 @@ a.newReleaseLink:hover {
     justify-content: space-between;
 }
 
-.restrictContentWidth.fuchs {
-    width:35vw;
-    max-width: 35vw;
-}
+
 div.industryIcons {
     display: flex;
     column-gap: 10px;
+    row-gap: 10px;
 }
 
 div.industryIcons span {
@@ -3617,12 +3620,52 @@ div.owl-carousel-slider.fuchs-intro div.picturefill-background {
 
 @media screen and (max-width:1100px) {
     .fuchs h1 {
-        font-size:2.4em !important; 
+        font-size:1.8em !important; 
         line-height:90%;
+    }
+    .fuchs h2 {
+        font-size:1.7em !important; 
+        line-height:90%;
+    }
+    .fuchs h3 {
+        font-size:1.6em !important; 
+        line-height:90%;
+    }
+    .fuchs h4 {
+        font-size:1.3em; 
+        line-height:110%;
+    }
+    .fuchs h5 {
+        font-size:1.1em !important; 
+        font-weight: 300;
+        line-height:1.45em;
+    }
+    ul.labelList li {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    div.industryIcons {
+        flex-wrap: wrap;
+    }
+    div.industryIcons span {
+        display: block;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background-color:#007cb1;
+        padding: 10px;
+        color: #fff;
+        background-size: 50%;
+        background-position: 50% 60%;
+        background-repeat: no-repeat;
     }
 }
 
 @media screen and (min-width:1100px) {
+    .restrictContentWidth.fuchs {
+        width:35vw;
+        max-width: 35vw;
+    }
     div.owl-carousel-slider.fuchs-intro div.holder {
         max-width: 50vw;
         text-align: center;
