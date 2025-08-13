@@ -2252,12 +2252,19 @@ div.item div.yanmarMassive .loader {
     }
 
     .yanmarBestDeal div.yanmarMassive {
-        max-height: 80vh;
-        min-height: 80vh;
+        height: 65vh;
+        align-items: flex-end;
+    } 
+
+    .yanmarBestDeal div.yanmarMassive {
+        max-height: 65vh;
+        min-height: 65vh;
+        height: 65vh;
      }  
     .yanmarBestDeal div.horizon {
-        max-height: 80vh;
-        min-height: 80vh;
+        max-height: 65vh;
+        min-height: 65vh;
+        height: 65vh;
     }
 }
 
