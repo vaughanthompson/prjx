@@ -2005,6 +2005,14 @@ div.yanmarMassive {
     height: 85vh;
     position: relative;
  } 
+.yanmarBestDeal div.yanmarMassive {
+    display: flex;
+    align-items: center;
+    /*padding-left: 15vw;
+    padding-right: 15vw;*/
+    height: 100vh;
+    position: relative;
+ } 
 
  div.horizon {
     position: absolute;
@@ -2013,37 +2021,70 @@ div.yanmarMassive {
     height: 45vh;
 }
 
+.yanmarBestDeal div.horizon {
+    min-height: 100vh;
+}
+
 div.item div.horizon {
     height: 35vh !important;
 }
 
+
+
  div.yanmarMassive .loader.preLive {
-    --b: 50px;  /* border thickness */
-    --n: 100;    /* number of dashes*/
-    --g: 6deg; /* gap between dashes*/
+    --b: 25px;  /* border thickness */
+    --n: 55;    /* number of dashes*/
+    --g: 5deg; /* gap between dashes*/
     --c: #d71240;   /* the color */
  
     width: 75vh; /* size */
     aspect-ratio: 1;
     border-radius: 50%;
     padding: 1px;
-    background: conic-gradient(#000,var(--c)) content-box;
+    background: conic-gradient(#0000,var(--c)) content-box;
     -webkit-mask:
-      repeating-conic-gradient(#000 deg,
+      repeating-conic-gradient(#0000 deg,
          #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
-         #000    calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
-      radial-gradient(farthest-side,#000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+         #0000    calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
             mask:
-      repeating-conic-gradient(#000 deg,
+      repeating-conic-gradient(#0000 deg,
          #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
-         #000    calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
-      radial-gradient(farthest-side,#000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+         #0000    calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
     -webkit-mask-composite: destination-in;
             mask-composite: intersect;
     animation: load 2.5s infinite steps(var(--n));
   }
   @keyframes load {to{transform: rotate(1turn)}}
 
+
+.yanmarBestDeal div.yanmarMassive .loader.preLive {
+    --b: 25px;  /* border thickness */
+    --n: 55;    /* number of dashes*/
+    --g: 5deg; /* gap between dashes*/
+    --c: rgba(0,0,0,0.5);   /* the color */
+ 
+    width: 55vh; /* size */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000,var(--c)) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000    calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+            mask:
+      repeating-conic-gradient(#0000 deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000    calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation: load 2.5s infinite steps(var(--n));
+  }
+  @keyframes load {to{transform: rotate(1turn)}}
 
   div.yanmarMassive .loader.Live {
     --b: 50px;  /* border thickness */
@@ -2055,17 +2096,17 @@ div.item div.horizon {
     aspect-ratio: 1;
     border-radius: 50%;
     padding: 1px;
-    background: conic-gradient(#000000,var(--c)) content-box;
+    background: conic-gradient(#0000,var(--c)) content-box;
     -webkit-mask:
-      repeating-conic-gradient(#000000 deg,
-         #000000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+      repeating-conic-gradient(#0000 deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
          #000000    calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
-      radial-gradient(farthest-side,#000000 calc(98% - var(--b)),#000000 calc(100% - var(--b)));
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
             mask:
-      repeating-conic-gradient(#000000 deg,
-         #000000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
-         #000000 calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
-      radial-gradient(farthest-side,#000000 calc(98% - var(--b)),#000000 calc(100% - var(--b)));
+      repeating-conic-gradient(#0000 deg,
+         #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+         #0000 calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+      radial-gradient(farthest-side,#0000 calc(98% - var(--b)),#000 calc(100% - var(--b)));
     -webkit-mask-composite: destination-in;
             mask-composite: intersect;
     animation: load 2.5s infinite steps(var(--n));
@@ -2099,6 +2140,21 @@ div.item div.yanmarChoose div.countDownBanner div.posCounter div.countdown.style
 }
 div.yanmarChoose div.countDownBanner div.posCounter div.countdown.styled span {
     font-size: 0.3em;
+}
+
+
+div.yanmarBestDeal div.countDownBanner div.posCounter {
+    display: block;
+
+}
+
+div.yanmarBestDeal div.countDownBanner div.posCounter div.countdown.styled {
+    padding: 5px;
+    min-width:60%;
+    font-size: 4em;
+    float: none;
+    background-color: #d71240;
+    margin: 15px auto;
 }
 
 .darkCover {
@@ -2194,6 +2250,15 @@ div.item div.yanmarMassive .loader {
     .yanmarMassive form {
         text-align: left;
     }
+
+    .yanmarBestDeal div.yanmarMassive {
+        max-height: 80vh;
+        min-height: 80vh;
+     }  
+    .yanmarBestDeal div.horizon {
+        max-height: 80vh;
+        min-height: 80vh;
+    }
 }
 
 @media screen and (min-width:1900px) {
@@ -2223,6 +2288,12 @@ div.item div.yanmarMassive .loader {
         flex: 0 0 40%;
 
       }  
+    .yanmarBestDeal div.yanmarMassive {
+        min-height: 100vh;
+     }  
+    .yanmarBestDeal div.horizon {
+        min-height: 100vh;
+    }
 }
 
 
@@ -2808,6 +2879,10 @@ div.forms textarea {
 }
 div.horizontalForm {
     padding: 10vw 5vw 5vw 5vw;
+}
+div.horizontalForm.singleCol {
+    padding: 10vh 5vw 5vw 5vw;
+    max-width: 900px;
 }
 
 
