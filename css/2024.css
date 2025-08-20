@@ -2087,12 +2087,12 @@ div.item div.horizon {
   @keyframes load {to{transform: rotate(1turn)}}
 
   div.yanmarMassive .loader.Live {
-    --b: 50px;  /* border thickness */
-    --n: 100;    /* number of dashes*/
-    --g: 6deg; /* gap between dashes*/
-    --c: rgba(255,255,255,0.3);   /* the color */
+    --b: 10px;  /* border thickness */
+    --n: 180;    /* number of dashes*/
+    --g: 1deg; /* gap between dashes*/
+    --c: rgba(0,0,0,0.5);   /* the color */
  
-    width: 75vh; /* size */
+    width: 82vh; /* size */
     aspect-ratio: 1;
     border-radius: 50%;
     padding: 1px;
@@ -3756,4 +3756,10 @@ div.owl-carousel-slider.fuchs-intro div.picturefill-background {
         margin-left: auto;
     }
 
+}
+
+
+
+.yanmarBG {
+    background-color:#d71240 !important;
 }

@@ -977,3 +977,47 @@ article.dealPageMasthead .countDownBanner div.machine img {
     white-space: nowrap;
 }
 
+
+
+@media screen and (max-width:1100px) {
+    .forceCentreMob {
+        text-align: center;
+    }
+    .packageAdditions25 {
+        text-align: center;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+    .packageAdditions25 p {
+        display: none;
+    }
+    .packageAdditions25 h3 {
+        font-size:1.5em !important;
+    }
+    .packageAdditions25 img {
+        width:60%;
+        margin: 0px auto;
+        margin-bottom: 1em;
+        border-radius: 50%;
+    }
+    .offerDetails h1.large {
+        color: #ffffff !important;
+        font-size: 7vh;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .packageAdditions25 {
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .packageAdditions25 > div {
+        flex: 1 1 75%;
+    }
+    .packageAdditions25 > div:first-of-type {
+        flex-basis: 25%;
+    }
+}
