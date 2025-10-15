@@ -3821,6 +3821,10 @@ div#an_testimonials2 {
         float: right;
     }    
 
+    .an_comment_box {   
+        margin-bottom: 10vh !important;
+    }
+
 }
 
 
