@@ -3779,6 +3779,7 @@ div.reviews {
 div#an_testimonials2 {
     min-height: 400px;
     margin-top: 0;
+    align-items: flex-start;
 }
 .an_testimonial_text {
     font-family: "twk" !important;
