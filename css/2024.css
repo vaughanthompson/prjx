@@ -3807,7 +3807,7 @@ div#an_testimonials2 {
 }
 
 .an_testimonial_text.an_testimonial_text_title {
-    text-wrap: balance;
+    /*text-wrap: balance;*/
     font-size: 20px !important;
     line-height: 26px !important;
 }
@@ -3825,6 +3825,8 @@ div#an_testimonials2 {
         margin-bottom: 10vh !important;
     }
 
+
+
 }
 
 
@@ -3837,10 +3839,6 @@ div#an_testimonials2 {
     }
     div.reviews h3 {
         text-align: center;
-    }
-    .an_testimonial_text.an_testimonial_text_title {
-        text-wrap: normal;
-        /*text-align: center;*/
     }
     .an_comment_box {
         height: auto !important;    
