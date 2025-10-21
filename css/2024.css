@@ -3881,3 +3881,22 @@ div#an_testimonials2 {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* newsletter single col */
+@media screen and (max-width:1100px) {
+    div.tdxintroInner.newsletter > section.insetCenter {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+}
