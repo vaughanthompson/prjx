@@ -401,6 +401,12 @@ span.box {
     rgba(0,0,0,1.0) 60%);
   }
 
+    .yanmarGradient5 {
+    background: linear-gradient(to top, 
+    rgba(214,30,66,1.0)70%,
+    rgba(0,0,0,0.7) );
+  }
+
   .yanmarChoose {
     color: white;
     position: relative;
@@ -643,6 +649,9 @@ div.yanmarChooseNav div.thumb {
     }
     div.yanmarChooseNav2 > div {
         flex: 1 1 25%;
+    }
+    div.yanmarChooseNav3 {
+        column-gap: 3vw;
     }
     .yanmarChooseContent {
         padding-top: 5vw;
