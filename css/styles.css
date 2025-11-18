@@ -694,7 +694,9 @@ table td {
 table thead {
     font-weight: 700;
 }
-
+table tr.tint td {
+    background-color: rgba(87,166,123,0.25);
+}
 
 
 
@@ -2365,12 +2367,14 @@ div.cmsRelated {
     }
     
     .col2.oneThird > div > section:last-child,
+    .col2.oneThird.content > div > section:last-child,
     .col2.twoThird > div > section:first-child {
         flex-basis: 62.5%;
         padding-top:2%;
         padding-bottom:4%;
     }
     .col2.oneThird > div > section:first-child,
+    .col2.oneThird.content > div > section:first-child,
     .col2.twoThird > div > section:last-child {
         flex-basis: 26.5%;
         padding:2% 3%;
