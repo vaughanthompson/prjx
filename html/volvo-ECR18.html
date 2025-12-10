@@ -69,6 +69,7 @@
         <a href="#sec1">Features</a>
         <a href="#sec2">Gallery</a>
         <a href="#sec3">Specifications</a>
+        <a href="#sec8">Savings Calculator</a>
         <a href="#sec4">Compare Models</a>
         <a href="#sec5">Attachments</a>
         <a href="#sec6">Why Electric FAQ</a>
@@ -142,6 +143,7 @@
             <a href="#sec1">Features</a>
             <a href="#sec2">Gallery</a>
             <a href="#sec3">Specifications</a>
+            <a href="#sec8">Savings Calculator</a>
             <a href="#sec4">Compare Models</a>
             <a href="#sec5">Attachments</a>
             <a href="#sec6">Why Electric FAQ</a>
@@ -535,6 +537,151 @@
        
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bordered"  id="sec8">
+    <div>
+        <div class="padWidthDefault padHeightDefault noPadBottom">
+            <div class="flexRow contentHeaderWide">
+                <div class="item"><h2>ECR18 Cost Savings Calculator</h2></div>
+                <div class="item" ><h6 class="brandColor balanced">Compare operating costs to similar diesel machines and add your operating conditions to see how the savings stack up against your machine.</h6></div>
+            </div>
+            <span class="content-spacer h5"></span>
+            <hr>
+            <span class="content-spacer h5"></span>
+            <div class="flexRow compact">
+                        <div class="formItem">
+                            <label for="machineName">Graph Label:</label>
+                            <input type="text" id="machineName" value="Your Machine" />  
+                        </div>
+
+                        <div class="formItem">
+                            <label for="dieselPricePerLitre">Diesel ($/Lt):</label>
+                            <input type="text" id="dieselPricePerLitre" value="2.00" />
+                        </div> 
+                                
+                        <div class="formItem">
+                            <label for="operatingHoursYear">Operating Duration (Hrs/Yr):</label>
+                            <input type="text" id="operatingHoursYear" value="10000" /> 
+                        </div> 
+                    
+                        <div class="formItem">
+                            <label for="averageFuelBurn">Avg. Fuel Burn  (Lt/Hr):</label>
+                            <input type="text" id="averageFuelBurn" value="0" />  
+                        </div> 
+                    
+                        <div class="formItem">
+                            <label for="dieselPricePerLitre">Est. Idling Time (%):</label>
+                            <input type="text" id="timeIdling" value="35" />
+                        </div> 
+                    </div>
+
+                    
+        </div>
+
+        <span class="content-spacer h5"></span>
+
+        <div class="padWidthDefault padHeightDefault noPadTop">
+            <div class="flexRow twoColumn ">
+                
+                <div>
+                    
+
+                    <h5>Operating Cost Comparison:</h5>
+                    <h6 class="brandColor">12 Months @ $2.00 p/Lt (Diesel)</h6>
+                    <br>
+                    <div class="chartContain">
+                        <div id="chart"></div>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h5>Savings VS Diesel Machine:</h5>
+                    <h6 class="brandColor">12 Months @ $2.00 p/Lt (Diesel)</h6>
+                    <br>
+
+
+                    
+                    <table class="zebra">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>Volvo ECR18</td>
+                                <td>Your Machine</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                        <tr>
+                            <td>Fuel Consumption SAVING (Per Hour)</td>
+                            <td>80%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Fuel Cost SAVING (10,000 Hours)</td>
+                            <td>$68,252</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>CO<sup>2</sup> Emissions SAVED (Tonnes)</td>
+                            <td>4.3t</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>CO<sup>2</sup> Emissions SAVED (%)</td>
+                            <td>79%</td>
+                            <td>-</td>
+                        </tr>
+                        
+                    </table>
+
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+       
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1159,6 +1306,160 @@
 
     });
     </script>
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<script>
+    var options = {
+    chart: {
+        margin:0,
+        height: 450,
+        type: "line",
+        stacked: false,
+        toolbar: {
+            show: false
+        }
+    },
+    grid: {
+        xaxis: {
+            lines: {
+                show: false
+            }
+        }
+    },
+    dataLabels: {
+        enabled: true,
+        offsetY: -13,
+        formatter: function(val, index) {
+            //return '$' + (val/1000).toFixed(0) + 'K';
+            return '$' + val.toFixed(0);
+            //return val.toFixed(0);
+        },
+        style: {
+            fontSize: '16px'
+        },
+        background: {
+            enabled: true,
+            borderWidth:0,
+            borderRadius:4,
+            padding:6
+        }
+    },
+    colors: ['#57a57b','#333333'],
+    fill: {
+        opacity: 1.0
+    },
+    series: [
+        {
+        name: 'Litres Per Year',
+        type: 'bar',
+        data: [3600, 616, 0],
+        },
+        {
+        name: "Cost Per Year",
+        type: 'line',
+        data: [6588, 1128, 0],
+        },
+    ],
+    stroke: {
+        width: [0, 0]
+    },
+    markers: {
+        size:8
+    },
+    plotOptions: {
+        bar: {
+        columnWidth: "80%",
+        dataLabels: {
+            position: 'bottom'
+            },
+        //distributed: true
+        }
+    },
+    xaxis: {
+        categories: ['Volvo Diesel', 'ECR18', 'Your Machine'],
+        labels: {
+            style: {
+                colors: '#333333',
+                fontFamily: 'twk',
+                fontSize: '14px'
+            }
+        }
+    },
+    yaxis: [
+        {
+        seriesName: 'Litres',
+        axisTicks: {
+            show: true
+        },
+        axisBorder: {
+            show: true,
+            color: '#57a57b'
+        },
+        labels: {
+            style: {
+                colors: '#57a57b',
+                fontFamily: 'twk',
+                fontSize: '11px'
+            },
+            formatter: function(val, index) {
+                //return val.toFixed(0);
+                return (val/1000).toFixed(0) + 'K';
+            }
+        }
+        },
+        {
+        seriesName: 'series2',
+        show: false
+        }, {
+        opposite: true,
+        seriesName: 'Cost',
+        axisTicks: {
+            show: true
+        },
+        axisBorder: {
+            show: true,
+            color: '#333333'
+        },
+        labels: {
+            style: {
+                colors: '#333333',
+                fontFamily: 'twk',
+                fontSize: '11px'
+            },
+            formatter: function(val, index) {
+                //return val.toFixed(0);
+                return '$' + val.toFixed(0) + 'K';
+            }
+
+        }
+        }
+    ],
+    tooltip: {
+        shared: false,
+        intersect: true,
+        x: {
+        show: false
+        }
+    },
+    legend: {
+        horizontalAlign: "center",
+        offsetY: 5,
+        fontFamily: 'twk',
+        fontSize: '14px'
+
+    }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+    chart.render();
+
+</script>
      
 
 </body>

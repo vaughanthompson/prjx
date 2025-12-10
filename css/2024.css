@@ -3909,3 +3909,13 @@ div#an_testimonials2 {
         text-align: left;
     }
 }
+
+
+
+/* imageRow calc handling */
+@media screen and (min-width:1100px) {
+    div.imageRow {
+        display: flex;
+        column-gap: 5vw;
+    }
+}
