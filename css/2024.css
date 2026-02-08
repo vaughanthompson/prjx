@@ -3918,4 +3918,7 @@ div#an_testimonials2 {
         display: flex;
         column-gap: 5vw;
     }
+    div.imageRow > * {
+        width: 20vw;
+    }
 }
