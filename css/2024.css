@@ -644,7 +644,7 @@ div.yanmarChooseNav div.thumb {
         border-bottom: 2px solid rgba(0,0,0,0.15);
     }
     div.yanmarChooseNav2 {
-        column-gap: 7vw;
+        column-gap: 3vw;
         border-bottom: none;
     }
     div.yanmarChooseNav2 > div {
@@ -3539,7 +3539,7 @@ a.newReleaseLink:hover {
     div.yanmarChooseNav2.ultimateWorkhorse > div {
         flex: 1 1 auto;
     }
-    div.yanmarChooseNav.ultimateWorkhorse div.thumb img {
+    div.yanmarChooseNav.ultimateWorkhorse:not(.EOFY) div.thumb img {
         width:70vw;
         margin: 3vh auto;
     }
@@ -3550,6 +3550,23 @@ a.newReleaseLink:hover {
     div.yanmarChooseNav div.thumb li {
         padding-top: 0;
     }
+    div.yanmarChooseNav.EOFY div.thumb ul {
+        padding-top: 0;
+        padding-bottom: 0;
+        border: none;
+    }
+    div.yanmarChooseNav.EOFY div.thumb hr,
+    div.yanmarChooseNav.EOFY div.thumb br  {
+        display: none;
+    }
+
+
+    div.yanmarChooseNav.EOFY div.thumb label {
+        margin-bottom: 3em;
+        margin-top: 1em;
+    }
+
+
 }
 
 
@@ -3920,5 +3937,70 @@ div#an_testimonials2 {
     }
     div.imageRow > * {
         width: 20vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* yanmar EOFY styles */
+label.fancyLabel {
+    border:2px solid #d71240;
+    color: #d71240;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px 8px 5px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+label.fancyLabel:hover {
+    border-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+
+div.ultimateWorkhorse div.thumb ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-wrap: balance;
+}
+
+.yanmarTextShadow {
+    text-shadow: 5px 5px 5px #d71240;
+}
+
+.thumb.EOFY {
+    position: relative;
+    min-width: 25vw;
+}
+
+.yanmarNoiseBG {
+    min-width: 25vw; 
+    min-height: 25vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/images/2026/17-2-eofy-deals/thumb-bg.webp);
+}
+
+@media screen and (max-width:1100px) {
+    .dealContent.EOFY h2 {
+        font-size:1.2em;
+    }
+    .dealContent.EOFY h4 {
+        font-size:1.1em;
+    }
+    .dealContent.EOFY section {
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 }
