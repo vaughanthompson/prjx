@@ -877,22 +877,19 @@ body.volvoEmob {
 .volvoEmob table.haulers td:not(:first-child) {
     font-weight: 300;
 }
-.volvoEmob table.haulers-a35 td:nth-child(2) {
+.volvoEmob table.firstRow td:nth-child(2) {
     font-weight: 500;
     color: rgba(87,166,123,0.9);
 }
-.volvoEmob table.haulers-a40 td:nth-child(3) {
+.volvoEmob table.default td:nth-child(3) {
     font-weight: 500;
     color: rgba(87,166,123,0.9);
 }
-.volvoEmob table.haulers-a45 td:nth-child(4) {
+.volvoEmob table.endRow td:nth-child(4) {
     font-weight: 500;
     color: rgba(87,166,123,0.9);
 }
-.volvoEmob table.haulers-a50 td:nth-child(5) {
-    font-weight: 500;
-    color: rgba(87,166,123,0.9);
-}
+
 
 
 .volvoEmob a.button {

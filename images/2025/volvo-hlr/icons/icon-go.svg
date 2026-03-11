@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 168">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Impact, Impact;
+        font-size: 60px;
+        letter-spacing: .02em;
+      }
+
+      .cls-2 {
+        fill: #57a47b;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: bevel;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <polygon class="cls-2" points="0 83.99 50 168 150 168 200 83.99 150 0 50 0 0 83.99"/>
+    <polygon class="cls-3" points="40.82 83.99 70.41 133.71 129.59 133.71 159.18 83.99 129.59 34.29 70.41 34.29 40.82 83.99"/>
+    <text class="cls-1" transform="translate(67.36 107.97)"><tspan x="0" y="0">GO</tspan></text>
+  </g>
+</svg>
