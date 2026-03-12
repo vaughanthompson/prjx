@@ -138,10 +138,84 @@
 
 
 
+<div class="d picturefill-background video full top reversed " style="height:80vh;">
+    <div>
+        <div style="z-index:2; position: relative;">
+            <div class="content">
+                &nbsp;
+            </div>
+        </div>
+        <div id="vidHolder" style="z-index:1;">
+            <video id="bgvid" class="hidden-xs" autoplay muted>
+                <source type="video/mp4" data-src="/images/2025/volvo-hlr/video/a60_1.mp4">
+                <source type="video/webm" data-src="/images/2025/volvo-hlr/video/a60_1.webm" />
+            </video>
+        </div>
+    </div>
+    <span data-src="/images/2025/volvo-hlr/model-overview/a60.jpg" data-media="(min-width: 1100px)"></span><!-- desktop -->    
+</div>
+
+
+
+<!-- for bg video loop -->
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+        var bgv = document.getElementById("bgvid");
+
+        var visible = !!(bgv.offsetWidth ||
+        bgv.offsetHeight ||
+        bgv.getClientRects().length);
+
+        if (visible) {
+        var children = bgv.getElementsByTagName("source");
+            for (var i = 0; i < children.length; ++i) {
+            children[i].src = children[i].getAttribute("data-src");
+            }
+        }
+        //bgv.load();
+        // try to trigger this with waypoints
+        $('video').css('opacity','0');
+
+        new Waypoint({
+        element: document.getElementsByClassName('video'),
+        handler: function(direction) {
+            if (direction === 'down') {
+                bgv.load();
+                $('video').fadeTo(2500,'1.0');
+
+            }
+            else {
+                //
+                $('video').fadeTo(1000,'0');
+
+            }
+        },
+            offset: '50%'
+        })
+
+
+
+        var iterations = 1;
+        bgvid.addEventListener('ended', function () {
+            if (iterations < 3) {
+                this.currentTime = 0;
+                this.play();
+                iterations ++;
+            }
+        }, false);
+
+    });
+</script>
+
+
+
+
+
 
 
 
 <div class="reversed bordered" style="position: relative;">
+
     <div class="picturefill-background">
         <div class="panelFH padWidthDefault gradientLR">
             <div class="insetContent zindex2000">
@@ -163,8 +237,7 @@
                 </div> 
             </div>
         </div>
-        <span data-src="/images/2025/volvo-hlr/volvo-launch-mob-100.jpg"></span><!-- use 4:3 aspect for ph -->
-        <span data-src="/images/2025/volvo-hlr/volvo-launch-desk-100.jpg" data-media="(min-width: 1100px)"></span>
+        
         
         <!-- hero image -->
         <div class="zindex1000 absHolder">
@@ -174,13 +247,10 @@
             
         </div>
 
-        <div class="absPosLeft arrowsLeft zindex1000 animated infinite flash slower">&nbsp;</div>
-        <!-- div class="absPosRight arrowsRight zindex1000 animated infinite flash slower">&nbsp;</div -->
-        
-        <div class="zindex500" style="width:100vw; height:100vh; background-color: rgba(0,0,0,0.50); position: absolute; top: 0;"></div>
     </div>
     
 </div>
+
 
 
 
@@ -204,7 +274,6 @@
         </nav>
     </div>
 </div>
-
 
 
 
