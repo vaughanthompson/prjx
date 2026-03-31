@@ -3448,6 +3448,26 @@ Great support
 
         <script type="text/javascript">
             $(document).ready(function () {
+            $(".owl-carousel-slider").owlCarousel({
+                    items:1,
+                    margin:0,
+                    rewind:true,
+                    loop:true,
+                    autoplay:false,
+                    autoplayTimeout:10000,
+                    autoplayHoverPause:true,
+                    animateIn: 'fadeIn',
+                    touchDrag:true,
+                    mouseDrag:true,
+                    stopOnHover:false,
+                    dots:true,
+                    nav:true,
+                    navText: ["<span class='icon-arrow-back'></span>","<span class='icon-arrow-forward'></span>"],
+                    autoplaySpeed:2000,
+                    smartSpeed:2000,
+                    fluidSpeed:1
+                });
+                
                 $(".owl-carousel").owlCarousel({
                     items: 1,
                     margin: 10,
