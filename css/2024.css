@@ -1536,8 +1536,9 @@ video.hidden-xs {
     }
     .flexRow.withBGimages div.item div {
         text-align: left;
-        padding: 20vh 10vw 15vw 10vw;
+        padding: 10vh 10vw 15vw 10vw;
         align-self: stretch;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
     }
     .flexRow div.item.itemLink a img {
         max-width:70vw;
