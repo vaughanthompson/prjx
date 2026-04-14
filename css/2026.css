@@ -1,0 +1,370 @@
+/* 2026 css */
+.ctaButton26,
+.ctaButton26:visited {
+    transition: 0.2s;
+    background-color: rgba(87,166,123,1.0);
+    color:rgba(255,255,255,1.0);
+    display: inline-block;
+    margin-top: 1em;
+    text-align: center;
+    border: 2px solid rgba(87,166,123,1.0);
+    padding:  12px 2vw 12px 2vw;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom:5px;
+    position: relative;
+}
+.ctaButton26:hover,
+.ctaButton26:visited:hover {
+    background-color: rgba(255,255,255,0.0);
+    color: rgba(87,166,123,1.0);
+}
+
+.ctaButton26.mimimal {
+    padding-right: 2.5vw;
+    padding-left: 0.5vw;
+    text-align: left;
+    background-color: rgba(255,255,255,0.0);
+    border: 2px solid rgba(87,166,123,0);
+    border-radius: 0;
+}
+.ctaButton26.mimimal:hover {
+    border-bottom: 2px solid rgba(87,166,123,1.0);
+}
+.ctaButton26.mimimal::after {
+    font-family: 'icomoon';
+    content: "\e9ad";
+    position: absolute;
+    right: 1vw;
+    font-size: 0.9em;
+    margin-top: 0.1em;
+    transition: 0.2s;
+    color: rgba(87,166,123,1.0);
+}
+.ctaButton26.mimimal:hover::after {
+    right: 0.5vw;
+}
+.ctaButton26.reversed,
+.ctaButton26.reversed:visited {
+    color: rgba(87,166,123,1.0);
+}
+
+
+.relative {
+    position: relative;
+}
+
+.gradientBlackFromBottom {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackFromTop {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackFromLeft {
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackFromTopLeft {
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackFromBottomLeft {
+    background: linear-gradient(to top right, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackFromRight {
+    background: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackFromTopRight {
+    background: linear-gradient(to bottom left, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+.gradientBlackBottomRight {
+    background: linear-gradient(to top left, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
+
+
+/* new banners */
+.banner {
+    background-color: black;
+}
+a.bannerLinkImage {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 100%;
+}
+a.bannerLinkImage > img {
+    margin: 0px auto;
+}
+
+
+
+
+/* width control */
+.heroBanner {
+    width:100vw;
+}
+
+@media screen and (max-width: 750px) {
+    .subHeroBanner {
+        width:100vw;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+    .subHeroBanner {
+        width:100vw;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .subHeroBanner {
+        width:50vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .tileBanner {
+        width:100vw;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+    .tileBanner {
+        width:50vw;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .tileBanner {
+        width:25vw;
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .bannerContent {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+    .bannerContent {
+        padding-left: 5vw; 
+        padding-right: 5vw;
+    }
+    .subHeroBanner .bannerContent {
+        padding-left: 5vw; 
+        padding-right: 5vw;
+    }
+    .tileBanner .bannerContent {
+        padding-left: 5vw; 
+        padding-right: 5vw;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .bannerContent {
+        padding-left: 8vw; 
+        padding-right: 8vw;
+    }
+    .subHeroBanner .bannerContent {
+        padding-left: 5vw; 
+        padding-right: 5vw;
+    }
+    .tileBanner .bannerContent {
+        padding-left: 2vw; 
+        padding-right: 2vw;
+    }
+}
+.bannerContent.noPadForce {
+    padding-left: 0; 
+    padding-right: 0;
+}
+
+
+.bannerInnerContent {
+    border:1px solid white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;  
+}
+@media screen and (max-width: 750px) {
+    .bannerInnerContent {
+        height: 75vh;
+    }
+    .tileBanner .bannerInnerContent {
+        height: 35vh;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+    .bannerInnerContent {
+        height: 75vh;
+    }
+    .tileBanner .bannerInnerContent {
+        height: 45vw;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .bannerInnerContent {
+        height: 80vh;
+    }
+    .tileBanner .bannerInnerContent {
+        height: 25vw;
+    }
+}
+
+
+
+
+
+.bannerDetail {
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%; 
+    height: 100%; 
+    border: 1px solid red;
+}
+
+
+.textBanner .bannerDetail {
+    width: auto; 
+    height: auto; 
+}
+@media screen and (min-width: 1100px) {
+    .textBanner .bannerDetail {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* text-based (non-image) banner updates */
+
+.textBanner {
+    color: white;
+    text-wrap: balance;
+}
+
+.volvoLarge {
+    font-family: 'volvo';
+     font-size:8vw; 
+     letter-spacing: 0.05em;
+     font-weight: 300;
+     line-height: 0.8em;
+     padding: 0;
+}
+
+.volvoMed {
+    font-family: 'volvo';
+    font-size:6vw; 
+    letter-spacing: 0.03em;
+    font-weight: 300; 
+    line-height: 0.85em; 
+    padding: 0;
+}
+
+.volvoSml {
+    font-family: 'volvo';
+     font-size:2.5vw; 
+     letter-spacing: 0.05em;
+     font-weight: 300; 
+     line-height: 0.9em;
+     padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* banner lozenges */
+.ctaLozenge {
+    display: inline-block; 
+    position: absolute;
+    right:1vw;
+    bottom: 1vw;   
+}
+.ctaLozenge a {
+    margin: 0;
+}
+.brandLozenge {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    left:0;
+    bottom: 0;
+    padding: 10px 1.5vw 8px 1.5vw;
+}
+.brandLozenge > span {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 150px;
+    height: 40px;
+}
+.brandLozenge.tdx > span {
+    background-image: url(/images/logos/TDX-logo-Rev.svg);
+}
+.brandLozenge.volvo > span {
+    background-image: url(/images/icons/icons2022/brand-volvo-REV.svg);
+}
+.brandLozenge.yanmar > span {
+    background-image: url(/images/icons/icons2022//brand-yanmar-Rev.svg);
+}
+.arrowLozenge {
+    display: block;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left:0;
+    bottom: 5px;
+    text-align: center;
+    line-height: 1em;
+    
+}
+.arrowLozenge > i {
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-size: 2em;
+}
+
+.arrowLozenge > i::before {
+    box-shadow: 10px 10px 10px rgba(255,0,0,0.5);
+
+}

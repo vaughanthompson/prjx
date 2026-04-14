@@ -11,6 +11,7 @@
     //    offset: {top:-100}
     //});
 
+    /*
 
     $(".owl-carousel-slider").owlCarousel({
         items:1,
@@ -31,6 +32,8 @@
         smartSpeed:2000,
         fluidSpeed:1
     });
+    */
+
 
 /* move the following into model page itself 
 
