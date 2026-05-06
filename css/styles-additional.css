@@ -2444,6 +2444,9 @@ div.tdxintroInner  {
 div.tdxintroInner.darken {
     background-color:rgba(0,0,0,0.3);
 }
+div.tdxintroInner.darkenMore {
+        background-color:rgba(0,0,0,0.5);
+    }
 div.tdxintroInner.overrideHeight {
     min-height: 10vh;
 }

@@ -286,10 +286,149 @@ a.bannerLinkImage > img {
 
 
 
+/* 2026 volvo landing */
+.basicList {
+    line-height: 1.6em;
+}
+.basicList li {
+    margin-left: 1.5em;
+}
+.basicList li {
+    list-style-type: disc;
+    border: none;
+    padding: 0;
+    
+}
+
+body.volvo26 ol li {
+    border: none;
+    padding: 0;
+    line-height:2em;
+} 
+
+
+body.volvo26 h3 {
+    font-size:3em;
+}
+
+body.volvo26 p, ul, ol {
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+@media screen and (max-width: 1100px) {
+    body.volvo26 h3 {
+        font-size: 2.5em;
+    }
+}
+
+
+body.volvo26 .fullscreen {
+    height: 100vh;
+}
 
 
 
+@media screen and (max-width: 1100px) {
+    body.volvo26 div.tdxintroInner > section.insetCenter {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+    body.volvo26 div.tdxintroContain {
+        border-top: 1px solid #999
+    }
+}
 
+
+@media screen and (min-width: 1100px) {
+    .trackBG1 {
+        background-image: url(/images/2026/6-5-volvo-undercarriage/sec2-bg@2x.webp);
+        background-size: 55vw;
+        background-position: 100% -40%;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+@media screen and (min-width: 1100px) {
+    body.volvo26 div.tdxintroContain.sideBar div.tdxintroInner {
+        column-gap: 4vw;
+    }
+    body.volvo26 div.tdxintroContain.sideBar div.tdxintroInner > section:first-of-type {
+        flex-basis: 20%;
+    }
+    body.volvo26 div.tdxintroContain.sideBar div.tdxintroInner > section:first-of-type {
+        flex-basis: 20%;
+    }
+
+}
+
+
+div.hoverTrigger {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    column-gap: 2em;
+}
+
+div.hoverTrigger > div {
+    flex: 1 1 1px;
+    padding: 1em;
+    display: inline-flex;
+    column-gap: 10px;
+}
+div.hoverTrigger > div span:first-of-type {
+    font-size: 3em;
+    line-height: 0.9em;
+    font-family: 'volvo';
+}
+div.hoverTrigger > div span:last-of-type {
+    color: rgba(87,166,123,1.0);
+    text-transform: uppercase;
+    text-wrap: balance;
+    font-size: 0.9em;
+}
+div.hoverTrigger > div:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1100px) {
+    div.hoverContent {
+        padding: 1em 8em 1em 4em;
+        font-size: 0.9em;
+        min-height: 150px;
+    }
+}
+div.hoverContent p {
+    font-size: 0.95em;
+    line-height: 1.4em;
+}
+
+
+@media screen and (min-width: 1100px) {
+    body.volvo26 div.productRow {
+        display: flex;
+        column-gap: 4em;
+    }
+}
+body.volvo26 div.productRow > div {
+    margin-bottom: 3em;
+    text-align: center;
+}
+body.volvo26 div.productRow > div img {
+    width:80%;
+    margin-bottom: 2em;
+}
+
+body.volvo26 div#contact {
+    background-image: linear-gradient(to bottom, rgba(51,51,51,1.0),rgba(0,0,0,1.0));
+}
+
+body.volvo26 div.g-recaptcha > div,
+body.volvo26 div.g-recaptcha > div iframe {
+    width:270px !important;
+}
 
 
 
