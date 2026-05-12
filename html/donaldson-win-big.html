@@ -530,9 +530,34 @@
             color: #000;
             
         }
+        @media screen and (max-width: 1100px) {
+            .donaldson p {
+                font-size: 1em;
+                line-height: 1.2em;
+            }
+            .donaldson h2 {
+                font-size: 1.5em;
+                line-height: 1.3em;
+            }
+            .donaldson h3 {
+                font-size: 1.3em;
+                line-height: 1.2em;
+            }
+        }
+        
         .donaldson p {
-            font-size: 1.1em;
+            font-size: 1.05em;
             font-weight: 200;
+            padding-top: 0;
+            text-wrap: balance;
+            max-width:100%;
+        }
+        .donaldson p.small {
+            font-size: 0.85em;
+            font-weight: 300;
+        }
+        .donaldson h3 {
+            letter-spacing: 0;
         }
         .donaldsonTxt1 {
             color: #0081c6;
@@ -547,7 +572,7 @@
             font-size: 42px;
         }
         .donaldsonTxtSize2 {
-            font-size: 30px;
+            font-size: 28px;
         }
         .donaldsonTxtSize3 {
             font-size: 21px;
@@ -555,6 +580,71 @@
         strong.extraBlack {
             font-weight: 800;
         }
+        .donaldson .twoCol.reversed {
+            background-color: #0c3865;
+            color: white;
+            padding: 2em 1em;
+            box-shadow: 0px 20px 20px 0 rgba(0,0,0,0.2);
+        }
+        .donaldson .twoCol > div:first-of-type {
+            margin-bottom: 5vh;
+        }
+        @media screen and (min-width: 1100px) {
+            .donaldson .twoCol {
+                display: flex;
+                column-gap: 0;
+            }
+            .donaldson .twoCol > div {
+                flex: 1 1 2px;
+                padding: 1em 2em;
+            }
+            .donaldson .twoCol.reversed > div {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            .donaldson .twoCol > div:first-of-type {
+            margin-bottom: 0;
+            }
+        }
+        
+        @media screen and (min-width: 1100px) {
+            .donaldson .twoCol > div.twoColSep {
+                border-left:1px solid #0081c6;
+            }
+        }
+        
+
+        ul#donaldsonBenefits {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        #donaldsonBenefits li {
+            padding-left: 100px;
+            text-align: left;
+        }
+
+        #donaldsonBenefits li:before {
+            content:"";
+            width:70px;
+            height:70px;
+            background-size: contain;
+            padding: 0;
+            margin-top: 5px;
+            margin-left: -90px;
+        }
+        #donaldsonBenefits li:nth-child(1):before {
+            background-image: url(/images/2026/13-5-donaldson-win-big/icon-extend@2x.png);
+        }
+        #donaldsonBenefits li:nth-child(2):before {
+            background-image: url(/images/2026/13-5-donaldson-win-big/icon-time@2x.png);
+        }
+        #donaldsonBenefits li:nth-child(3):before {
+            background-image: url(/images/2026/13-5-donaldson-win-big/icon-savings@2x.png);
+        }
+        #donaldsonBenefits li:nth-child(4):before {
+            background-image: url(/images/2026/13-5-donaldson-win-big/icon-portable@2x.png);
+        }
+
 
     </style>
 
@@ -593,30 +683,104 @@
 
                     
 
-                <span class="content-spacer h10"></span>
+                <span class="content-spacer h7"></span>
 
 
-                <div>
+                <div class="twoCol restrictContentWidth" style="margin: 0px auto;">
                     <div>
                         <p><strong>The Donaldson filter cart</strong> provides a convenient, portable mode of off-line kidney loop filtration, flushing, and fluid transfer. </p>
                         <p>Use it with your in-plant machinery and hydraulic equipment to achieve and maintain proper ISO cleanliness levels.</p>
                         <p>The Donaldson filter cart is designed with performance, convenience, and safety in mind. </p>
                         <p>It includes value-added features to protect your machinery and equipment from breakdowns caused by contamination.</p>
-                        
-
                     </div>
-                    <div>
-
+                    <div class="twoColSep">
+                            <ul class="vanilla bulleted " id="donaldsonBenefits">
+                                <li>
+                                    <p>
+                                        <strong>EXTEND EQUIPMENT LIFE</strong><br>
+                                        Remove harmful contaminents that cause wear, downtime and costly repairs.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>REDUCE DOWNTIME</strong><br>
+                                        Keep your systems running smoother with clean, high performance oil.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>SAVE MONEY</strong><br>
+                                        Lower maintenance costs and avoid unplanned breakdowns.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>BUILT FOR CONVIENENCE</strong><br>
+                                        Portable, compact and easy to use where you need it most.
+                                    </p>
+                                </li>
+                            </ul>
                     </div>
                 </div>
                 
                 
-                
-                <span class="content-spacer h5 m"></span>
                 <span class="content-spacer h10"></span>
+                <span class="content-spacer h3"></span>
+
+
 
                 <h2 class="m balanced donaldsonTxt1 restrictContentWidth" style="margin: 0px auto;">The more filters you buy, <strong class="donaldsonTxt2">the more chances you have to WIN!</strong></h2> 
                 <h2 class="d balanced donaldsonTxt1 restrictContentWidth" style="margin: 0px 20%;">The more filters you buy, <strong class="donaldsonTxt2">the more chances you have to WIN!</strong></h2> 
+
+                <span class="content-spacer h10"></span>
+                <span class="content-spacer h5 m"></span>
+
+
+                <div class="twoCol restrictContentWidth reversed" style="margin: 0px auto;">
+                    <div>
+                        <h2 class="balanced donaldsonTxtLighter"><strong>First Weekly Draw 8 June 2026!</strong></h2>
+
+                        <h3 class="donaldsonTxtSize2 balanced"><strong>One prize drawn every week thereafter for 8 Weeks. Offer ends 31 August 2026</strong> </h3>
+                        <br>
+                        <p>Full T&Cs below.</p>
+                        
+                        
+                    </div>
+                    <div class="twoColSep">
+                            <h3 class="donaldsonTxtSize2 donaldsonTxtLighter"><strong>HOW TO ENTER</strong></h3>
+                            <br>
+
+                            <p><strong>IN-STORE:</strong>  Simply make a purchase of any Donaldson product at any TDX branch during the competition period and you will be automatically entered into the draw.</p>
+
+                            <p><strong>ONLINE:</strong>  Customers will automatically be entered when purchasing any Donaldson products on the TDX TradeDoor Portal over the competition period.</p>
+                    </div>
+                </div>
+
+
+                <span class="content-spacer h10"></span>
+                <span class="content-spacer h10 m"></span>
+
+                <img src="/images/2026/13-5-donaldson-win-big/donaldson-logo@2x.webp" style="height:100px; width:auto; margin: 0px auto;" class="d">
+
+                <img src="/images/2026/13-5-donaldson-win-big/donaldson-logo@2x.webp" style=" width:90%;height:auto; margin: 0px auto;">
+
+                <span class="content-spacer h5"></span>
+                <p class="donaldsonTxt1"><strong>Cleaner Systems, Greater Reliability... <span class="donaldsonTxt2">Bigger Wins</span>.</strong></p>
+
+                <span class="content-spacer h7"></span>
+
+
+
+
+                <p class="balanced restrictContentWidth small">Terms and conditions.<br>
+                Weekly draws for the 8 trolleys will commence from 8 June. Draws will be completely random based on all Donaldson filter sales made from 11 May (campaign launch date) until the date the draw takes place.</p>
+                <p class="balanced restrictContentWidth small">Customers will need a trade account to enter the draw. The judge's decision is final. TDX will contact and will arrange delivery. Offer ends 31 August 2026. There are eight Donaldson Portable Filter Assembly Trolleys P506037 to be won.</p>
+                <p class="balanced restrictContentWidth small">TDX reserves the right to amend, suspend, or cancel this promotion at any time.</p>
+
+                
+
+
+                <span class="content-spacer h10"></span>
 
             
             
