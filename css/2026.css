@@ -86,15 +86,17 @@
 .banner {
     background-color: black;
 }
-a.bannerLinkImage {
+.bannerLinkImage {
     display: flex; 
     align-items: center;
     justify-content: center;
     width: 100%; 
     height: 100%;
 }
-a.bannerLinkImage > img {
-    margin: 0px auto;
+.bannerLinkImage > div > img {
+    width: auto;
+    height: 55vh;
+    border:3px solid red;
 }
 
 
