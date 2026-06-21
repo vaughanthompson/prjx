@@ -1826,6 +1826,10 @@ footer {
     border-top:none;
     background-color: rgba(87,166,123,1.0);
 }
+article > footer {
+    background-color: rgba(0,0,0,1.0);
+    color: rgba(255,255,255,1.0);
+}
 footer a {
     transition: 0.3s;
 }
