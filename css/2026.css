@@ -340,6 +340,39 @@
 
 
 
+/* article footer promos */
+article > footer.promo {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 96%, 53% 96%, 50% 100%, 47% 96%, 0 96%);
+}
+@media screen and (max-width: 750px) {
+    article > footer.promo {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 96%, 60% 96%, 50% 100%, 40% 96%, 0 96%);
+}
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+    article > footer.promo {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 96%, 55% 96%, 50% 100%, 45% 96%, 0 96%);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 2026 volvo landing */
