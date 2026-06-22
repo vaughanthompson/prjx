@@ -25,7 +25,7 @@
 .ctaButton26:hover,
 .ctaButton26:visited:hover {
     background-color: rgba(255,255,255,0.0);
-    color: rgba(87,166,123,1.0);
+    color: rgba(87,166,123,1.0) !important;
 }
 
 .ctaButton26.mimimal {
