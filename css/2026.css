@@ -275,18 +275,26 @@
         background-position: 0 99%;
     }
 }
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 750px) {
     body.content2026 .heroBanner .clipBanner {
         background-position: 0 100%;
-        background-size: contain;
-
+        background-size: 100% auto;
     }
     body.content2026 .heroBanner .bannerInnerContent {
         min-height: 80vh;
         text-align: center;
     }
+}
 
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+    body.content2026 .heroBanner .clipBanner {
+        background-position: 0 10vh;
+        background-size: 100% auto;
+    }
+    body.content2026 .heroBanner .bannerInnerContent {
+        min-height: 80vh;
+        text-align: center;
+    }
 }
 
 
@@ -601,11 +609,29 @@ body.volvo26 div.g-recaptcha > div iframe {
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
 }
 
+
+
 div.imageGrid {
     width:55vw; 
     margin: 0px auto; 
     position: relative;
 }
+div.imageGrid > div:not(.hero) {
+    width:16vw; 
+    height: 16vw;
+    position: absolute;
+} 
+div.imageGrid > div.top {
+    bottom:-1.75vw; right: 13.25vw;
+} 
+div.imageGrid > div.bottom {
+    top:-1.75vw; right: 13.25vw;
+} 
+div.imageGrid > div.right {
+    top:calc(50% - 8vw); right: 0;
+} 
+
+
 @media screen and (max-width:1100px) {
     div.imageGrid {
         width:80vw; 
@@ -618,6 +644,19 @@ div.imageGrid {
         width:calc(100% - 12px);
         height: calc(100% - 12px);
     }
+    div.imageGrid > div:not(.hero) {
+        display: none;
+    }  
+    div.imageGrid > div.hero {
+        width:80vw;
+        height: 80vw;
+    } 
+}
+@media screen and (min-width:1100px) {
+    div.imageGrid > div.hero {
+        width:28vw;
+        height: 28vw;
+    } 
 }
 
 
