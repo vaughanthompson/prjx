@@ -773,7 +773,12 @@ footer p,
 footer ul.vanilla {
     margin-top:0.1em;
 }
-
+body footer p a {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
 #breadcrumb {
     padding-bottom: 1.5em;
 }
