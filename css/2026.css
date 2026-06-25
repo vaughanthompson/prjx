@@ -277,7 +277,7 @@
 }
 @media screen and (max-width: 750px) {
     body.content2026 .heroBanner .clipBanner {
-        background-position: 0 100%;
+        background-position: 0 120%;
         background-size: 100% auto;
     }
     body.content2026 .heroBanner .bannerInnerContent {
@@ -798,6 +798,29 @@ body.content2026 main article section {
     body.content2026 main article section > div.inset {
         padding: 0 10vw;
     }
+    body.content2026 main article section.wrap-columns {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5vw;
+        row-gap: 5vw;
+        justify-content: space-around;
+    }
+    body.content2026 main article section.wrap-columns > div {
+        flex: 0 1 27vw;
+    }
+    body.content2026 main article section.wrap-columns.teaser {
+        text-align: left;
+        align-items: center;
+    }
+    body.content2026 main article section.wrap-columns.teaser.flip {
+        flex-direction: row-reverse;
+    }
+    body.content2026 main article section.wrap-columns.teaser > div.image {
+        flex: 0 1 25vw;
+    }
+    body.content2026 main article section.wrap-columns.teaser > div.content {
+        flex: 0 1 29vw;
+    }
 }
 @media screen and (min-width:1300px) {
     
@@ -823,10 +846,12 @@ body.content2026 main h1 {
 body.content2026 main h2 {
     font-size: 3vw;
     font-weight: 600;
+    line-height: 1em;
 }
 body.content2026 main h3 {
     font-size: 2vw;
     font-weight: 600;
+    line-height: 1.1em;
 }
 body.content2026 main h3 span {
     font-weight: 600;
@@ -855,6 +880,10 @@ body.content2026 main td {
     font-size: 1.2em;
     line-height: 1.4em;
     font-weight: 200;
+}
+
+.termsText {
+    font-size: 1em !important;
 }
 
 .centerMe ul.basicList {
