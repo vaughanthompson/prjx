@@ -69,7 +69,6 @@
     </style>
     <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="/fonts/sf/fonts.css" />
     <link rel="stylesheet" type="text/css" href="/fonts/twk/fonts.css" />
     <link rel="stylesheet" type="text/css" href="/images/icons/icomoon/style.css" />
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
@@ -78,6 +77,8 @@
     <link rel="stylesheet" type="text/css" href="/css/2024.css">
     <link rel="stylesheet" type="text/css" href="/css/2026.css">
     <link rel="stylesheet" type="text/css" href="/fonts/volvo/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="/fonts/joyride/stylesheet.css" />
+
 
         
     
@@ -90,7 +91,7 @@
 
 </head>
 
-<body id="top" class="">
+<body id="top" class="content2026">
 
 
     
@@ -100,401 +101,423 @@
         <div id="siteWideHeader"></div>
 
 
+        <div class="banner heroBanner picturefill-background relative overflowHidden bgBlack">
+            <div class="bannerGradient gradientBlackFromTop relative" >
+                <div class="bannerContent " >
+                    <div class="bannerInnerContent " >
+
+                            <a href="/" class="d bannerLinkImage" style="z-index: 1;"><!-- desktop -->
+                                <div class="setContentBG setContentHeight60 flexBasis80 centreMe">
+                                    <h2 class="volvoFont fw300 vh5 balanced noMargin">Spend Less. Shift More.</h2>
+                                    <h1 class="volvoFont fw300 vh7 balanced">Smile even more.</h1>
+                                    <h4 class="vh2 balanced">All-New Volvo Wheel Loaders have landed!&nbsp;&nbsp;&nbsp;</h4>
+                                </div>
+                            </a>
+
+                            <a href="/" class="m bannerLinkImage  "><!-- mobile -->
+                                <div class="setContentBG setContentHeight80 flexBasis100 centreMe">
+                                <h2 class="volvoFont fw300 vh6 balanced">Spend Less. Shift More.</h2>
+                                    <h1 class="volvoFont fw300 vh9 balanced">Smile even more.</h1>
+                                    <span class="content-spacer h20"></span>
+                                    <h4 class="vh2 balanced">All-New Volvo Wheel Loaders have landed!&nbsp;&nbsp;&nbsp;</h4>
+                            </div>
+                            </a>
+
+                            
+                    </div>
+
+                    <div class="arrowLozenge d" style="z-index: 2"><i class="icon-arrow-down animated infinite fadeIn"></i></div>
+                    <div class="brandLozenge volvo" style="z-index: 2;"><span>&nbsp;</span></div>
+                    <div class="ctaLozenge d" style="z-index: 2"><a href="/" class="ctaButton26 mimimal">More</a></div>
+                </div>
+                <div id="vidHolder" style="z-index:0; opacity: 0.5;">
+                    <video id="bgvid" class="hidden-xs" autoplay muted>
+                        <source type="video/mp4" data-src="/video/Volvo-WL-2026.mp4">
+                    </video>
+                </div>
+            </div>
+            <span data-src="/images/banners/2026/16-07-volvo-wheel-loaders/volvo-wheel-load-mob@2x-100.jpg" data-media="(max-width: 1100px)"></span>
+            
+        </div>
+
+
+
+
+
+<!-- for bg video loop -->
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+        var bgv = document.getElementById("bgvid");
+    
+        var visible = !!(bgv.offsetWidth ||
+        bgv.offsetHeight ||
+        bgv.getClientRects().length);
+    
+        if (visible) {
+        var children = bgv.getElementsByTagName("source");
+            for (var i = 0; i < children.length; ++i) {
+            children[i].src = children[i].getAttribute("data-src");
+            }
+        }
+        bgv.load();
+    
+        var iterations = 1;
+        bgvid.addEventListener('ended', function () {
+            if (iterations < 5) {
+                this.currentTime = 0;
+                this.play();
+                iterations ++;
+            }
+        }, false);
+    
+    }); 
+    </script>
+    
+    
+
+    
+
+
+
+
+        <!-- div class="banner heroBanner picturefill-background">
+            <div class="bannerGradient">
+                <div class="bannerContent relative">
+                    <div class="bannerInnerContent ">
+
+                            <a href="" class="d bannerLinkImage alignLeft">
+                                <div class="setContentBG setContentHeight70 flexBasis70" style="background-image:url(/images/2026/27-5-yanmar-white-hot/landing-title-desk.webp);">
+                                    &nbsp;
+                                </div>
+                            </a>
+
+                            <a href="" class="m bannerLinkImage ">
+                                <div class="setContentHeight100 flexBasis100">
+                                    &nbsp;
+                                </div>
+                                
+                            </a>
+
+                    </div>
+
+                    <div class="arrowLozenge d"><i class="icon-arrow-down animated infinite fadeIn"></i></div>
+                    <div class="brandLozenge volvo"><span>&nbsp;</span></div>
+                    <div class="ctaLozenge d"><a href="" class="ctaButton26 mimimal">More</a></div>
+                </div>
+            </div>
+            <span data-src="/images/2026/27-5-yanmar-white-hot/landing-mob-100.jpg"></span>
+            <span data-src="/images/2026/27-5-yanmar-white-hot/landing-bg-desk-100.jpg" data-media="(min-width: 1100px)"></span>
+        </div -->
+
+
+
+
+
+
 
 
         <div class="banner heroBanner picturefill-background">
-            <div class="bannerGradient">
-                <div class="bannerContent noPadForce relative">
-                    <div class="bannerInnerContent relative">
+            <div class="bannerGradient ">
+                <div class="bannerContent relative ">
+                    <div class="bannerInnerContent ">
 
-                        <div class="bannerDetail d" style="background-image: url(/images/2026/17-2-eofy-deals/Yanmar-EOFY-web-banner1.webp);">
-                            <a href="" class="bannerLinkImage">
+                        <a href="[destination]" class="d bannerLinkImage alignLeft">
+                            <div class="setContentBG setContentHeight60 flexBasis50 centreMe">
+                                <h1 class="vh5 fw800 balanced shellColorYellow ">The Shell Shop is NOW OPEN!</h1>
+                                <h3 class="vh2 fw200 balanced ">To celebrate the launch of our Shell Lubricants NZ Distributor  online shop we've got some sweet opening specials your engine will love!</h3>
+                                
                                 <div>
-                                    <img src="/images/2026/27-5-yanmar-white-hot/landing-title-desk.webp">
+                                    <span class="ctaButton26 shellRev vh2">Let's go shopping!</span>
+                                </div>
+                            </div>
+                            <!--div class=" flexBasis30">&nbsp;</div>you use this as a spacer for extra control or remove to allow the content to go right to the left or right default padding-->
+                        </a>
+
+                        <a href="" class="m bannerLinkImage alignTop">
+                            <div class="setContentBG setContentHeight50 flexBasis100 centreMe">
+                                <h1 class="vh5 fw800 balanced shellColorYellow">The Shell Shop is NOW OPEN!</h1>
+                                
+                                <div>
+                                    <span class="ctaButton26 shellRev vh2">Let's go shopping!</span>
+                                </div>
+                            </div>
+                            
+                        </a>
+
+                    </div>
+
+                    <div class="brandLozenge shell"><span>&nbsp;</span></div>
+                    <div class="ctaLozenge d"><a href="" class="ctaButton26 mimimal">More</a></div>
+                </div>
+            </div>
+            <span data-src="/images/banners/2026/06-06-shellshop/shell-shop-mob@2x.webp"></span>
+            <span data-src="/images/banners/2026/06-06-shellshop/shell-shop-desk@2x.webp" data-media="(min-width: 1100px)"></span>
+        </div>
+
+
+
+
+        
+
+
+
+        <div class="rowBannerHolder">
+
+            <div class="banner subHeroBanner picturefill-background ">
+                <div class="bannerGradient">
+                    <div class="bannerContent relative overflowHidden noPadLeft noPadRight">
+
+                        <div class="ribbonBase bg-yanmarColor">
+                            <h3 class="vh2 fw500 upperCase animated infinite pulse">Hurry! Ends 31 July</h3>
+                        </div>
+                        
+                        <div class="bannerInnerContent ">
+
+                            <a href="[destination]" class="d bannerLinkImage">
+                                <div class="setContentBG setContentHeight100 flexBasis90" style="background-image: url(/images/banners/2026/08-07-sharp/yanmar-sharp-c-half@2x.webp);">
+                                    &nbsp;
                                 </div>
                             </a>
-                        </div>
 
-                        <div class="bannerDetail m" style="background-image: url(/images/2026/17-2-eofy-deals/Yanmar-EOFY-web-banner-mob.webp);">
-                            <a href="" class="bannerLinkImage">&nbsp;</a>
-                        </div>
-                        
-                    </div>
-
-                    <div class="arrowLozenge"><i class="icon-arrow-down animated infinite fadeIn"></i></div>
-                    <div class="brandLozenge volvo"><span>&nbsp;</span></div>
-                    <div class="ctaLozenge"><a href="" class="ctaButton26 mimimal">More</a></div>
-                </div>
-            </div>
-            <span data-src="/images/2025/volvo-hlr/made-for-the-wild-mob.jpg"></span>
-            <span data-src="/images/2026/27-5-yanmar-white-hot/landing-bg-desk-100.jpg" data-media="(min-width: 1100px)"></span>
-        </div>
-
-
-        <div class="banner subHeroBanner picturefill-background">
-            <div class="bannerGradient"><!-- overlay -->
-                <div class="bannerContent noPadForce"><!-- content pad this L & R and give position:relative -->
-                    <div class="bannerInnerContent relative"><!-- set alignment and width / height -->
-                        
-                        <div class="bannerDetail" style="background-image: url(/images/2026/17-2-eofy-deals/Yanmar-EOFY-web-banner.webp); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 100%; ">
-                        <a href="" style="display: block; width: 100%; height: 100%; "></a>
-                        </div>
-
-                        
-                
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="banner tileBanner picturefill-background">
-            <div class="bannerGradient"><!-- overlay -->
-                <div class="bannerContent noPadForce"><!-- content pad this L & R and give position:relative -->
-                    <div class="bannerInnerContent relative"><!-- set alignment and width / height -->
-                        
-                        <div class="bannerDetail" style="background-image: url(/images/2026/17-2-eofy-deals/Yanmar-EOFY-web-banner.webp); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 100%; ">
-                        <a href="" style="display: block; width: 100%; height: 100%; "></a>
-                        </div>
-                    
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    
-        
-        <div class="banner textBanner fullWidth picturefill-background" >
-            <div class="bannerGradient gradientBlackFromLeft">
-                <div class="bannerContent">
-                    <div class="bannerInnerContent relative">
-                        
-                        <div class="bannerDetail">
-                            <h1 class="volvoLarge">Made for the wild</h1>
-                            <h3 class="volvoSml">The biggest and the best! New Volvo A60 Articulated Hauler</h3>
-                            <a href="" class="ctaButton26">More</a>
-                            <a href="" class="ctaButton26 mimimal">More</a>
-                        </div>
-                    
-                        
-                    </div>
-                </div>
-            </div>
-            <span data-src="/images/2025/volvo-hlr/made-for-the-wild-mob.jpg"></span>
-            <span data-src="/images/2025/volvo-hlr/made-for-the-wild-desk.jpg" data-media="(min-width: 1100px)"></span>
-        </div>
-
-
-
-
-
-
-
-        <div class="owl-carousel-slider  ">
-
-
-        
-            
-
-
-            <div class="item">
-                <article>
-                    <div class="scontain">
-                        <section style="position: relative; overflow: hidden;">
-                            <div class="picturefill-background">
-                                <div class="scontain" style="background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.0));">
-                                    <section class="mobAdjust" >
-                                        <link rel="stylesheet" type="text/css" href="/fonts/volvo/stylesheet.css" />
-
-                                        <style>
-                                            section.mobAdjust {
-                                                width:85vw !important;
-                                                justify-content: center; 
-                                                align-self: center;
-                                                align-content: center !important;
-                                            }
-                                        </style>
-
-                                        <div class="content d" style="display: flex; justify-content: flex-start; align-items: flex-end; padding-right: 8vw; padding-left: 8vw;">
-                                            <div style="width:50%; text-align: left;">
-                                                <h1 class="balanced" style="font-family: 'volvo'; font-size:7.5vw; letter-spacing: 0.05em;font-weight: 300;line-height: 0.8em;">Made for the wild</h1>
-                                                <h3 class="balanced" style="font-family: 'volvo'; font-size:2.5vw; letter-spacing: 0.05em;font-weight: 300; line-height: 0.9em;">The biggest and the best! New Volvo A60 Articulated Hauler</h3>
-                                                <a href="/volvo-A60" class="ctaButton">Learn more</a>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="content m" style="display: flex; justify-content: flex-start; align-items: flex-end; padding-right: 8vw; padding-left: 8vw;">
-                                            <div style="width:100%; text-align: left;">
-                                                <span class="content-spacer h15"></span>
-                                                <h1 class="balanced" style="font-family: 'volvo'; font-size:10vh; letter-spacing: 0.05em;font-weight: 300;line-height: 0.8em;">Made for the wild</h1>
-                                                <h3 class="balanced" style="font-family: 'volvo'; font-size:4vh; letter-spacing: 0.05em;font-weight: 300; line-height: 0.9em;">The biggest and the best! New Volvo A60 Articulated Hauler</h3>
-                                                <a href="/volvo-A60" class="ctaButton">Learn more</a>
-                                            </div>
-                                        </div>
-                                  
-                                     
-                                    </section>
+                            <a href="" class="m bannerLinkImage">
+                                <div class="setContentBG setContentHeight100 flexBasis90" style="background-image: url(/images/banners/2026/08-07-sharp/yanmar-sharp-c-mob@2x.webp);">
+                                    &nbsp;
                                 </div>
-                                <span data-src="/images/2025/volvo-hlr/made-for-the-wild-mob.jpg"></span>
-                                <span data-src="/images/2025/volvo-hlr/made-for-the-wild-desk.jpg" data-media="(min-width: 1100px)"></span>
-        
-    
-                            </div>
-                        </section>
+                            </a>
+
+                        </div>
+
+                        <div class="brandLozenge yanmar"><span>&nbsp;</span></div>
+                        <div class="ctaLozenge d"><a href="" class="ctaButton26 mimimal">More</a></div>
                     </div>
-                </article>
+                </div>
+                <span data-src="/images/banners/2026/08-07-sharp/yanmar-sharp-mob@2x-100.jpg"></span>
+                <span data-src="/images/banners/2026/08-07-sharp/yanmar-sharp-half@2x-100.jpg" data-media="(min-width: 1100px)"></span>
             </div>
 
 
 
+            <div class="banner subHeroBanner picturefill-background">
+                <div class="bannerGradient gradientBlackFromTopRight">
+                    <div class="bannerContent relative overflowHidden ">
 
+                        <div class="ribbonBase bg-donaldsonColor">
+                            <h3 class="vh2 fw500 upperCase animated infinite pulse">6 Prizes Left. Enter Now!</h3>
+                        </div>
 
+                        <div class="bannerInnerContent ">
 
+                            <a href="[destination]" class="d bannerLinkImage">
+                                <div class="setContentBG setContentHeight90 flexBasis100" style="background-image: url(/images/banners/2026/07-06-donaldson/donaldson-c-half@2x.webp);">
+                                    &nbsp;
+                                </div>
+                            </a>
 
-
-
-
-
-
-
-
-
-
-
-            <div class="item">
-                <article>
-                    <div class="scontain">
-                        <section style="position: relative; overflow: hidden;">
-                            <div class="picturefill-background">
-                                <div class="scontain" style="border: 1px solid red;">
-                                    <section class="mobAdjust" style="border: 1px solid red;">
-                                        
-
-                                       
-
-                                        <a href="/yanmar-EOFY-deals"><img src="/images/2026/17-2-eofy-deals/Yanmar-EOFY-web-banner.webp" style="height:70vh; width: auto;" class="d"><img src="/images/2026/17-2-eofy-deals/Yanmar-EOFY-web-banner-mob.webp" style="margin: 0px auto; " class="m"></a>
-
-                                                                             
-                                        
-                                     
-                                    </section>
+                            <a href="" class="m bannerLinkImage alignTop">
+                                <div class="setContentBG setContentHeight100 flexBasis100" style="background-image: url(/images/banners/2026/07-06-donaldson/donaldson-c-mob@2x.webp);">
+                                    &nbsp;
                                 </div>
                                 
-    
-                            </div>
-                        </section>
+                            </a>
+
+                        </div>
+
+                        <div class="brandLozenge donaldson"><span>&nbsp;</span></div>
+                        <div class="ctaLozenge d"><a href="" class="ctaButton26 mimimal">More</a></div>
                     </div>
-                </article>
+                </div>
+                <span data-src="/images/banners/2026/07-06-donaldson/donaldson-mob@2x.webp"></span>
+                <span data-src="/images/banners/2026/07-06-donaldson/donaldson-desk@2x.webp" data-media="(min-width: 1100px)"></span>
             </div>
 
+        </div>
 
 
+        <!-- div class="banner subHeroBanner picturefill-background">
+                <div class="bannerGradient gradientBlackFromRight">
+                    <div class="bannerContent relative ">
+                        <div class="bannerInnerContent ">
 
-
-
-
-
-
-
-
-
-
-
-            <div class="item">
-                <article>
-                    <div class="scontain">
-                        <section style="position: relative; overflow: hidden;">
-                            <div class="picturefill-background">
-                                <div class="scontain" style="background-color: rgba(0,0,0,0.15);">
-                                    <section class="mobAdjust" >
-                                        <link rel="stylesheet" type="text/css" href="/fonts/volvo/stylesheet.css" />
-
-                                        <style>
-                                            section.mobAdjust {
-                                                width:85vw !important;
-                                                justify-content: center; 
-                                                align-self: center;
-                                                align-content: center !important;
-                                            }
-                                        </style>
-
-
-                                        <div class="content d" style="display: flex; justify-content: flex-end; align-items: center;height: 50vh; padding-right: 8vw; padding-left: 8vw;">
-                                            <div style="width:100%;">
-                                                
-
-                                                <h1 class="balanced" style="font-family: 'volvo'; font-size:6vw; letter-spacing: 0.03em;font-weight: 300; line-height: 0.9em; text-align: center; margin-top: 10px; color:white; text-shadow: 3px 3px 8px rgba(0,0,0,0.85);">2,000 hours free servicing &amp; 5 years warranty*</h1> 
-
-                                                <h1 class="volvoMed">2,000 hours free servicing &amp; 5 years warranty*</h1> 
-                                                
-                                                <span class="content-spacer h10"></span>
-
-                                                <h3 class="balanced" style="font-family: 'volvo'; font-size:3.5vw; letter-spacing: 0.03em;font-weight: 300; line-height: 0.8em; text-align: center; text-shadow: 3px 3px 8px rgba(0,0,0,0.85);">On any Volvo Excavator up to 50 Tonne!</h3>   
-
-                                                <img src="/images/icons/icons2022/brand-volvo-REV.svg" style="width:300px; margin: 0px auto;">
-
-
-                                                <a href="/volvo-servicing-offer" class="ctaButton" style="line-height: 1em;">Click here to Learn More</a>
-                                            </div>
-                                            
-                                        </div>
-
-                                        <div class="content m" style="display: flex; justify-content: flex-end; align-items: center;height: 60vh; padding-right: 5vw; padding-left: 5vw;">
-                                            <div>
-                                                
-
-                                                <h1 class="balanced" style="font-family: 'volvo'; font-size:7vh; letter-spacing: 0.03em;font-weight: 300; line-height: 0.9em; text-align: center; margin-top: 10px; color:white; text-shadow: 3px 3px 8px rgba(0,0,0,0.85);">2,000 hours free servicing &amp; 5 years warranty*</h1>  
-
-                                                <span class="content-spacer h10"></span>
-                                                
-                                                <h3 class="balanced" style="font-family: 'volvo'; font-size:4vh; letter-spacing: 0.03em;font-weight: 300; line-height: 0.8em; text-align: center; text-shadow: 3px 3px 8px rgba(0,0,0,0.85);">On any Volvo Excavator up to 50 Tonne!</h3> 
-                                                
-                                                <img src="/images/icons/icons2022/brand-volvo-REV.svg" style="width:200px; margin: 0px auto;">
-                                                
-                                                <a href="/volvo-servicing-offer" class="ctaButton" style="line-height: 1em;">More Info</a>
-                                            </div>
-                                            
-                                        </div>
-                                  
-                                     
-                                    </section>
+                            <a href="[destination]" class="d bannerLinkImage">
+                                <div class="setContentBG setContentHeight100 flexBasis100" style="background-image: url(/images/banners/2026/07-06-donaldson/donaldson-half@2x.webp);">
+                                    &nbsp;
                                 </div>
-                                <span data-src="/images/2026/26-1-volvo-servicing/servicing-desk.jpg"></span><!-- use 4:3 aspect for ph -->
-                                <span data-src="/images/2026/26-1-volvo-servicing/servicing-desk.jpg" data-media="(min-width: 1100px)"></span>
-    
-                            </div>
-                        </section>
-                    </div>
-                </article>
-            </div>
+                            </a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="item">
-                <article>
-                    <div class="scontain">
-                        <section style="position: relative; overflow: hidden;">
-                            <div class="picturefill-background">
-                                <div class="scontain">
-                                    <section class="mobAdjust">
-                                        <style>
-                                            section.mobAdjust {
-                                                width:85vw !important;
-                                                justify-content: center; 
-                                                align-self: center;
-                                                align-content: center !important;
-                                            }
-                                        </style>
-
-                                       
-
-                                        <a href="/volvo-electric-machines"><img src="/images/2025/save80-desk.webp" style="height:70vh; width: auto;" class="d"><img src="/images/2025/save80-mob.webp" style="margin: 0px auto; " class="m"></a>
-
-                                                                             
-                                        
-                                     
-                                    </section>
+                            <a href="" class="m bannerLinkImage alignTop">
+                                <div class="setContentBG setContentHeight50 flexBasis80 centreMe">
+                                    <h1 class="vh5 fw800 balanced shellColorYellow">The Shell Shop is NOW OPEN!</h1>
+                                    
+                                    <div>
+                                        <span class="ctaButton26 shellRev vh2">Let's go shopping!</span>
+                                    </div>
                                 </div>
                                 
-    
-                            </div>
-                        </section>
+                            </a>
+
+                        </div>
+
+                        <div class="brandLozenge donaldson"><span>&nbsp;</span></div>
+                        <div class="ctaLozenge d"><a href="" class="ctaButton26 mimimal">More</a></div>
                     </div>
-                </article>
+                </div>
+                <span data-src="/images/banners/2026/07-06-donaldson/donaldson-mob@2x.webp"></span>
+                <span data-src="/images/banners/2026/07-06-donaldson/donaldson-desk@2x.webp" data-media="(min-width: 1100px)"></span>
             </div>
 
-
-
-            
-            
-            
-            
-            
-            
+        </div -->
 
 
 
-            <div class="item">
-                <article>
-                    <div class="scontain">
-                        <section style="position: relative; overflow: hidden;">
-                            <div class="picturefill-background">
-                                <div class="scontain" style="background: none !important;">
-                                    <section class="mobAdjust" >
-                                        <link rel="stylesheet" type="text/css" href="/fonts/joyride/stylesheet.css" />
 
-                                        <style>
-                                            section.mobAdjust {
-                                                width:85vw !important;
-                                                justify-content: center; 
-                                                align-self: center;
-                                                align-content: center !important;
-                                            }
-                                        </style>
+        
 
 
-                                        <div class="content fuchs d" style="display: flex; justify-content: flex-start; align-items: flex-end; padding-right: 8vw; padding-left: 8vw;">
-                                            <div style="width:50%; text-align: left;">
-                                                <h1 class="balanced fuchsFontExt fuchsColor">ALL EYES ON US.</h1>
-                                                <h4 class="balanced">It's official. TDX is now the exclusive NZ distributor for FUCHS material handlers!</h4>
-                                                <a href="/terex-fuchs" class="ctaButton fuchs">LEARN MORE</a>
-                                            </div>
-                                        </div>
 
-                                        <div class="content m" style="display: flex; justify-content: flex-start; align-items: flex-end; padding-right: 8vw; padding-left: 8vw;">
-                                            <div style="width:100%; text-align: left;">
-                                                <h1 class="balanced fuchsFontExt fuchsColor" style="font-size: 2em;">ALL EYES ON US.</h1>
-                                                <h3>It's official. TDX is now the exclusive NZ distributor for FUCHS material handlers!</h3>
-                                                <a href="/terex-fuchs" class="ctaButton fuchs">LEARN MORE</a>
-                                            </div>
-                                        </div>
 
-                                    </section>
+
+
+
+
+
+        <div class="rowBannerHolder">
+
+
+            <div class="banner tileBanner picturefill-background">
+                <div class="bannerGradient gradientBlackFromBottom">
+                    <div class="bannerContent relative">
+                        <div class="bannerInnerContent">
+
+                            <a href="[destination]" class="d bannerLinkImage alignBottom">
+                                <div class="setContentBG setContentHeight70 flexBasis90 centreMe">
+                                    <h1 class="vh5 fw300 balanced volvoFont ">Made For The Wild</h1>
+                                    <h6 class="vh0 fw200 balanced">All-New Volvo Articulated Haulers Are Here</h6>
                                 </div>
-                                <span data-src="/images/2025/fuchs/fuchs-slider-2-mob.jpg"></span><!-- use 4:3 aspect for ph -->
-                                <span data-src="/images/2025/fuchs/fuchs-slider-4.jpg" data-media="(min-width: 1100px)"></span>
-    
-                            </div>
-                        </section>
+                            </a>
+
+                            <a href="" class="m bannerLinkImage alignBottom">
+                                <div class="setContentBG setContentHeight50 flexBasis90 centreMe">
+                                    <h1 class="vh6 fw300 balanced volvoFont">Made For The Wild</h1>
+                                    <h6 class="vh1 fw300 balanced">All-New Volvo Articulated Haulers Are Here</h6>
+                                </div>
+                                
+                            </a>
+                        
+
+                        </div>
+
                     </div>
-                </article>
+                </div>
+                <span data-src="/images/banners/2026/08-07-volvo-haulers/volvo-haulers-tile@2x-100.jpg"></span>
+                <span data-src="/images/banners/2026/08-07-volvo-haulers/volvo-haulers-half@2x-100.jpg" data-media="(min-width: 1100px)"></span>
             </div>
 
+            <div class="banner tileBanner picturefill-background">
+                <div class="bannerGradient">
+                    <div class="bannerContent relative">
+                        <div class="bannerInnerContent">
+
+                            <a href="[destination]" class="d bannerLinkImage alignBottom">
+                                <div class="setContentBG setContentHeight60 flexBasis90 centreMe">
+                                    <h1 class="vh2 fw300 balanced fuchsFont2 upperCase fuchsColor">All Eyes On Us</h1>
+                                    <h6 class="vh0 fw200 balanced">We are the Exclusive NZ Distributor for FUCHS Material Handlers.</h6>
+                                </div>
+                            </a>
+
+                            <a href="" class="m bannerLinkImage alignLeft">
+                                <div class="setContentBG setContentHeight60 flexBasis50">
+                                    <h1 class="vh2 fw300 balanced fuchsFont2 upperCase fuchsColor">All Eyes On Us</h1>
+                                    <h6 class="vh1 fw200 balanced">We are the Exclusive NZ Distributor for FUCHS Material Handlers.</h6>
+                                </div>
+                                
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <span data-src="/images/banners/2026/08-07-fuchs/fuchs-tile@2x-100.jpg"></span>
+                <span data-src="/images/banners/2026/08-07-fuchs/fuchs-half@2x-100.jpg" data-media="(min-width: 1100px)"></span>
+            </div>
+
+            <div class="banner tileBanner picturefill-background" >
+                <div class="bannerGradient gradientBlackFromLeft">
+                    <div class="bannerContent relative">
+                        <div class="bannerInnerContent">
+
+                            <a href="[destination]" class="d bannerLinkImage alignLeft">
+                                <div class="setContentBG setContentHeight70 flexBasis50">
+                                    <h1 class="vh2 fw600 balanced ">Finance That Moves With You</h1>
+                                    <h6 class="vh1 fw300 balanced tdxColor">TDX Finance, Leasing &amp; Insurance.</h6>
+                                </div>
+                            </a>
+
+                            <a href="" class="m bannerLinkImage alignLeft ">
+                                <div class="setContentBG setContentHeight70 flexBasis50">
+                                    <h1 class="vh3 fw600 balanced ">Finance That Moves With You</h1>
+                                    <h6 class="vh1 fw200 balanced tdxColor">TDX Finance, Leasing &amp; Insurance.</h6>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <span data-src="/images/banners/2026/08-07-finance/finance-tile@2x-100.jpg"></span>
+                <span data-src="/images/banners/2026/08-07-finance/finance-half@2x-100.jpg" data-media="(min-width: 1100px)"></span>
+            </div>
+
+            
+
+            <div class="banner tileBanner picturefill-background">
+                <div class="bannerGradient gradientBlackFromLeft">
+                    <div class="bannerContent relative">
+                        <div class="bannerInnerContent">
+
+                            <a href="[destination]" class="d bannerLinkImage alignLeft">
+                                <div class="setContentBG setContentHeight70 flexBasis50">
+                                    <h1 class="vh2 fw600 balanced tdxColor">Can We Fix It? Yes We Can!</h1>
+                                    <h6 class="vh1 fw300 balanced">Explore the TDX Component Rebuild Centre.</h6>
+                                </div>
+                            </a>
+
+                            <a href="" class="m bannerLinkImage alignLeft ">
+                                <div class="setContentBG setContentHeight70 flexBasis50">
+                                    <h1 class="vh3 fw600 balanced tdxColor">Can We Fix It? Yes We Can!</h1>
+                                    <h6 class="vh1 fw200 balanced ">Explore the TDX Component Rebuild Centre.</h6>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <span data-src="/images/banners/2026/08-07-finance/rebuild-tile@2x-100.jpg"></span>
+                <span data-src="/images/banners/2026/08-07-finance/rebuild-half@2x-100.jpg" data-media="(min-width: 1100px)"></span>
+            </div>
+
+
+        </div>
 
 
 
 
             
-    </div>
 
 
+        
+        <div class="banner heroBanner picturefill-background noBorder layerBG">
+            <div class="bannerGradient brandBg93">
+                <div class="bannerContent relative noPadLeft noPadRight gradientBlackFromTop2">
+                    <div class="bannerInnerContent alignBottom noPadBottom noPadTop">
 
-
- 
+                        <span class="tile-width-white"></span>
+                            
+                    </div>
+                </div>
+            </div>
+            <span data-src="/images/misc/2026/wheel-loader-mob-100.jpg"></span>
+            <span data-src="/images/misc/2026/wheel-loader-desk-100.jpg" data-media="(min-width: 1100px)"></span>
+        </div>
+    
+            
 
 
 
@@ -507,369 +530,233 @@
 
 
     <main>
-        <!--CMSStart-->
+
+        <span class="tile-width-green"></span>
+
+
         
+        <article class="layerBG-content">
 
+            <section class="noPadBottom">
+                <div class="balanced">
+                    <h2 class="balanced white centreMe upperCase fw500">Dig Deeper</h2>
+                    <h5 class="balanced white fw200">Explore more about our company, our people and our services. Find out how we provide a 360° wraparound offering which includes servicing,  parts & consumables, financing and genuine advice tailored to your needs- not ours.</h5>
+                    <span class="content-spacer h10 m"></span>
 
+                </div>                    
+            </section>
 
-
-
-
-    
-       
-
-
-<div class="m">
-
-    <div class="mblnavSection">
-        <div >
-            <a href="/search"><i class="icon-search inline"></i>&nbsp;Search our site</a>
-        </div>
-
-    </div>
-
-    <div class="mblnavSection">
-        <a href="/shell"><span style="color: rgba(239,10,10,1);">New!</span> Shell Oil</a>
-    </div>
-
-
-    <div class="mblnavSection">
-        <a href="/shop">Shop Online</a>
-    </div>
-
-    <div class="mblnavSection">
-        <a href="tel:0800848267" onclick="trackContactClick('/_Contact_0800Number_Mobile','0800 number - Mobile')">Call Free 0800 848 267</a>
-    </div>
-    <div class="mblnavSection">
-        <a href="/products/construction-equipment">Equipment</a>
-    </div>
-    <div class="mblnavSection">
-        <a href="/products/generators">Power Products</a>
-    </div>
-    <div class="mblnavSection">
-        <a href="/products/spare-parts">Spares &amp; Consumables</a>
-    </div>
-    <div class="mblnavSection">
-        <a href="/bigdeals">Big Deals</a>
-    </div>
-    <br>
-
-
-
-
-</div>
-
-
-
-<br>
-
-<article class="teaser banner ">
-    <div class="scontain">
-        <section>
-            <div class="picturefill-background">
-                <div class="scontain left arrow-in-left">
-                    <section>
-                        </section>
-                        </div>
-                        <span data-src="/images/2022/story1-mbl.jpg"></span><!-- use 4:3 aspect for ph -->
-                        <span data-src="/images/2022/story1.jpg" data-media="(min-width: 1000px)"></span>
-            </div>
-        </section>
-    </div>
-</article>
-
-
-
-<br>
-<article class="content col2">
-    <header>
-        <h1>Our story started simple</h1>
-    </header>
-    <div class="scontain">
-        <section>
-
-            <p>Two Kiwi
-                mates, with a passion for engines
-                and a relentless drive to find the
-                right solution and to do the best job
-                for their customers. Over 40 years
-                on, our team is nearly 300 strong
-                and the machines are better, faster,
-                and more high-tech.</p>
-
-                <p>Our industry is about getting your
-                    hands dirty but now it's also about
-                    embracing technology, innovation
-                    and sustainability. We're embracing the changes,
-                    constantly upskilling our people
-                    and working with our global
-                    partners to lead the way in
-                    delivering the tailored solutions
-                    our customers need.</p>
-
-
-        </section>
-        <section>
-
-
-
-            <p>So here's our commitment to you:
-                no matter what your world looks like
-                next year, or in another 40 years,
-                we'll still be right here, alongside
-                you, delivering the superior sales
-                and service experience you've
-                come to expect.</p>
-
-
-            <h3>We're locals just like you.
-            So let's roll up our sleeves and work
-            together to support you, and the
-            communities we both call home.</h3>
-
-        </section>
-
-    </div>
-
-
-</article>
-<br>
-    
-
-
-<article class="teaser banner">
-    <div class="scontain">
-        <section>
-            <div class="picturefill-background">
-                <div class="scontain left arrow-in-left">
-                    <section>
-                        </section>
-                        </div>
-                        <span data-src="/images/2022/02m.jpg"></span><!-- use 4:3 aspect for ph -->
-                        <span data-src="/images/2022/02d.jpg" data-media="(min-width: 1000px)"></span>
-            </div>
-        </section>
-    </div>
-</article>
-
-
-
-
-<br>
-<article class="content col2">
-    <header>
-        <h1>Our Brand Promise</h1>
-    </header>
-    <div class="scontain">
-        <section>
-
-            <h5>
-                Our promise to our customers is this:</h5>
-                    <p> We'll always seek to understand you and your
-                    needs better than our competitors. And we'll
-                    use this local knowledge to tailor the best sales,
-                    service and support experience possible, allowing
-                    you to achieve the things that matter to you.<br>
-                    <strong>We capture this promise in our new tagline:</strong></p>
-        </section>
-        <section>
-
-
-
-         
-            <picture class="">
-                <img src="/images/logos/TDX Primary Positive Tagline Horizontal RGB.svg">
-            </picture>
-
-        </section>
-
-    </div>
-
-
-</article>
-<br>
-    
-
-
-
-
-
-
-
-
-
-<article class="teaser grid gridRow d">
-    <div class="scontain">
-        <section>
-            <div class="imgTeaser multiply1 picturefill-background">
-                <div class="scontain">
-                    <section>
-                        <a href="/products/filtered-by/agriculture">Agriculture</a>
-                    </section>
+            <section class="multiColumns lighterText goLeft">
+                <div>
+                    <div class="thumbImage26" style="background-image: url(/images/misc/2026/8@2x-100.jpg);">&nbsp;</div>
+                    <h6 class="fw700">The TDX Story: Local know-how. World class experience.</h6>
+                    <p class="noPadBottom">Over the last 40 years our team has proudly been there, delivering exceptional experiences for our customers. Formerly TransDiesel and now as TDX- discover more about what drives us!</p>
+                    <div class="ctaHolder">
+                        <a href="#" class="ctaButton26 mimimal reversed noMargin">More</a>
+                    </div>
                 </div>
-                <span data-src="https://www.tdxltd.co.nz/images/artdir/industries/agriculture/4-3_s.jpg"></span>
-            </div>
-            <div class="imgTeaser multiply1 picturefill-background">
-                <div class="scontain">
-                    <section>
-                        <a href="/products/filtered-by/construction-civil">Construction &amp; Civil</a>
-                    </section>
+                <div>
+                    <div class="thumbImage26" style="background-image: url(/images/misc/2026/6@2x-100.jpg);">&nbsp;</div>
+                    <h6 class="fw700">The TDX Experience. Share our customers' success stories. </h6>
+                    <p class="noPadBottom">Join some fellow TDX customers in the field as they take you through their experience of working with us. Featuring users of brands such as Volvo, Yanmar and Shell Oils & Lubricants.</p>
+                    <div class="ctaHolder">
+                        <a href="#" class="ctaButton26 mimimal reversed noMargin">More</a>
+                    </div>
                 </div>
-                <span data-src="https://www.tdxltd.co.nz/images/artdir/industries/construction/4-3_s.jpg"></span>
-            </div>
-            <div class="imgTeaser multiply1 picturefill-background">
-                <div class="scontain">
-                    <section>
-                        <a href="/products/filtered-by/forestry">Forestry</a>
-                    </section>
+                <div>
+                    <div class="thumbImage26" style="background-image: url(/images/misc/2026/5@2x-100.jpg);">&nbsp;</div>
+                    <h6 class="fw700">Here for you: TDX Finance and Leasing</h6>
+                    <p class="noPadBottom">We take our time to understand your business and negotiate on your behalf to save you time and money through our strong relationships with our panel of lenders.</p>
+                    <div class="ctaHolder">
+                        <a href="#" class="ctaButton26 mimimal reversed noMargin">More</a>
+                    </div>
                 </div>
-                <span data-src="https://www.tdxltd.co.nz/images/artdir/industries/forestry/4-3_s.jpg"></span>
-            </div>
-            <div class="imgTeaser multiply1 picturefill-background">
-                <div class="scontain">
-                    <section>
-                        <a href="/products/filtered-by/hire-rental">Hire &amp; rental</a>
-                    </section>
+                <div>
+                    <div class="thumbImage26" style="background-image: url(/images/misc/2026/3@2x-100.jpg);">&nbsp;</div>
+                    <h6 class="fw700">TDX Locations: NZ Wide Sales & Servicing Network</h6>
+                    <p class="noPadBottom">We're local and New Zealand wide. From the tip of the North Island to the bottom of the South Island, there's a TDX branch or agent within reach and ready to help.</p>
+                    <div class="ctaHolder">
+                        <a href="#" class="ctaButton26 mimimal reversed noMargin">More</a>
+                    </div>
                 </div>
-                <span data-src="https://www.tdxltd.co.nz/images/artdir/industries/hirerental/4-3_s.jpg"></span>
-            </div>
-            <div class="imgTeaser multiply1 picturefill-background">
-                <div class="scontain">
-                    <section>
-                        <a href="/products/filtered-by/industrial-power">Industrial Power</a>
-                    </section>
+                
+            </section>
+
+        
+        </article>
+
+
+
+ 
+
+
+
+        <article>
+
+            <section class="noPadBottom noPadTop">
+                <div class="balanced">
+                    <span class="content-spacer h10 m"></span>
+                    <h2 class="balanced tdxColor centreMe upperCase fw500">More To Explore</h2>
+                    <h5 class="balanced tdxColor fw200">Useful tools, new tech, resources. The following features showcase how we at TDX are so much more than heavy equipment sales.</h5>
+                    <span class="content-spacer h10 m"></span>
+                </div>                    
+            </section>  
+            
+            <section class="multiColumns lighterText goLeft">
+                <div>
+                    <div class="thumbImage26" style="background-image: url(/images/misc/2026/2@2x-100.jpg);">&nbsp;</div>
+                    <h6 class="fw700">Ask Rob: TDX Oil &  Lubricants Engineer</h6>
+                    <p class="noPadBottom">Rob tackles common questions around lubrication and machine wear in this informative and easy to follow 10 episode video series. Heavy duty, SAE grades, Synthetic oils, lubricant, engine protection - get the low-down. </p>
+                    <div class="ctaHolder">
+                        <a href="#" class="ctaButton26 mimimal reversed noMargin">More</a>
+                    </div>
+                    
                 </div>
-                <span data-src="https://www.tdxltd.co.nz/images/artdir/industries/industrial/4-3_s.jpg"></span>
-            </div>
-
-            <div class="imgTeaser multiply1 picturefill-background">
-                <div class="scontain">
-                    <section>
-                        <a href="/products/filtered-by/quarrying-mining">Quarrying &amp; Mining</a>
-                    </section>
+                <div>
+                    <div class="thumbImage26" style="background-image: url(/images/misc/2026/7@2x-100.jpg);">&nbsp;</div>
+                    <h6 class="fw700">Shell Oil Finder and Lubematch Search</h6>
+                    <p class="noPadBottom">Using the right product is essential to keep your vehicle or machine both in tip-top operation - or operating at all. Use these tools to look up using a rego, model or engine matching tool.</p>
+                    <div class="ctaHolder">
+                        <a href="#" class="ctaButton26 mimimal reversed noMargin">More</a>
+                    </div>
+                </div> 
+                <div>
+                    <div class="thumbImage26" style="background-image: url(/images/misc/2026/4@2x-100.jpg);">&nbsp;</div>
+                    <h6 class="fw700">Volvo ActiveCare Proactive Maintenance</h6>
+                    <p class="noPadBottom">With Volvo ActiveCare, Volvo monitors the health of your machines remotely, and immediately alerts you if a machine intervention is required.</p>
+                    <div class="ctaHolder">
+                        <a href="#" class="ctaButton26 mimimal reversed noMargin">More</a>
+                    </div>
+                </div>                        
+                <div>
+                    <div class="thumbImage26" style="background-image: url(/images/misc/2026/1@2x-100.jpg);">&nbsp;</div>
+                    <h6 class="fw700">LDX. When you need stuff lifted, stacked & shifted!</h6>
+                    <p class="noPadBottom">Visit the website of our sister company LDX. Providing sales and servicing of Linde & Baoli material handling equipment the LDX team deliver 5-star solutions nationwide.</p>
+                    <div class="ctaHolder">
+                        <a href="#" class="ctaButton26 mimimal reversed noMargin">More</a>
+                    </div>
                 </div>
-                <span data-src="https://www.tdxltd.co.nz/images/artdir/industries/quarrymining/4-3_s.jpg"></span>
-            </div>
-            <div class="imgTeaser multiply1 picturefill-background">
-                <div class="scontain">
-                    <section>
-                        <a href="/products/filtered-by/waste-scrap">Waste &amp; scrap</a>
-                    </section>
-                </div>
-                <span data-src="https://www.tdxltd.co.nz/images/artdir/industries/wastescrap/4-3_s.jpg"></span>
-            </div>
+                
+            </section>
+            
 
-        </section>
-    </div>
-</article>
-
-
-
-<br>
-<br>
-<br>
+        </article>
 
 
 
 
+        <article>
+            <section class="multiColumns noPadTop ">
+                <div class="flexBasis100 noMargin ">
+                    <section class="multiColumns noPad panel overflowHidden boxShadowLight noGaps">
 
+                        <div class="flexBasis50 noMargin">
+                            <div class="picturefill-background">
+                                <div class="bannerGradient blackBg70">
+                                    <div class="bannerContent noPad">
+                                        <div class="bannerInnerContent overrideHeight">
+                                
+                                            <span class="bannerLinkImage alignTop">
+                                                <div class="flexBasis80 centreMe"> 
+                                                    <span class="content-spacer h5 d"></span>
+   
+                                                    <h2 class="fw800 vh4 upperCase white">The TDX Trade<span class="tdxColor">Door</span> </h2>
+                                                    <h6 class="white balanced">Login to our trade site for exclusive pricing and offers across our range of parts, consumbles and more!</h6>
 
+                                                    <ul class=" white vanilla bulleted">
+                                                        <li>Exclusive Offers & the best everyday prices</li>
+                                                        <li>Earn points & redeem rewards for your team</li>
+                                                        <li>Bulk orders, repeat orders & saved favourites</li>
+                                                        <li>24/7 LIVE product pricing & stock availability</li>
+                                                    </ul>
 
-    <article class="teaser col2 customShop">
-        <div class="scontain">
+                                                    <a href="/" class="ctaButton26">Learn More</a> <a href="/" class="ctaButton26">Apply here</a>
+                                                    <span class="content-spacer h5 d"></span>
+                                                </div>
+                                            </span>
 
-            <section>
-                <div class="imgTeaser teaserHalf featureProduct">
-                    <div class="scontain">
-                        <header>
-                            <h1 class="bigger">ONLINE SHOP</h1>
-                            <a href="/shop">Online Shop Home</a>
-                        </header>
-                        <section>
-                            <div class="containDesc">
-                                <div class="featDesc">
-                                    <h3>CAR SANITISER</h3>
-                                    <p>Holts Car Sanitiser quickly eliminates bad smells and bacteria including viruses from your car and air conditioning system, to freshen your car and its interior fabrics.</p>
-
-                                    
-
-                                </div>
-                                    <a href="/shop/products/car-care/air-con-cleaner-hlt-happ0086b">
-                                        <div class="featImage">
-                                            <picture>
-                                                <img src="https://www.tdxltd.co.nz/media/images/51036.jpg" srcset="https://www.tdxltd.co.nz/media/images/51035.jpg 2x" alt="CAR SANITISER">
-                                            </picture>
                                         </div>
-                                    </a>
-
+                                    </div>
+                                </div>
+                                <span data-src="/images/misc/2026/tradedoor-mob@3x-100.jpg"></span>
+                                <span data-src="/images/misc/2026/tradedoor-desk@3x-100.jpg" data-media="(min-width: 1100px)"></span>
                             </div>
 
-                            <div class="featCTA">
-                                    <h3>$9.38</h3>
-                                        <p><span>Normally: $10.03</span></p>
-                                <a href="/shop/products/car-care/air-con-cleaner-hlt-happ0086b" class="ctaButton ctaInline ctaShop">Shop Now</a>
+                        </div>
+
+                        <div class=" flexBasis50 noMargin goLeft">
+                            <div class="bannerInnerContent overrideHeight">
+                                <span class="bannerLinkImage alignTop">
+                                    <div class="flexBasis80">   
+                                        <span class="content-spacer h5 d"></span>
+ 
+                                        <h2 class="fw500 vh4 upperCase balanced ">Trade<span class="tdxColor">Door</span><br>Login</h2>
+
+                                        <br>                                                    
+                                        <form class=" noMargin" style="width: 90%;">
+                                            <div class="forms" >
+                                                <input type="text" placeholder="Username">
+
+        
+                                                <input type="password" placeholder="Password">
+                                                <input type="submit" value="Login" class=" ctaButton26">
+                                                &nbsp;
+                                                <a href="/" class="ctaButton26 mimimal reversed noMargin">Forgot Password</a>
+                                            </div>
+                                        </form>
+                                        
+                                    </div>
+                                </span>
                             </div>
-                            <div class="featShadow">&nbsp;</div>
-                        </section>
-                    </div>
+                        </div>
+                        
+                    </section>
                 </div>
             </section>
-
-            <section class="d">
-                <div class="imgTeaser teaserHalf picturefill-background splitTopBottom">
-                    <div class="scontain">
-                        <section>
-                            <picture class="blackBG">
-                                <img src="/images/logos/treaddoor22-REV.svg">
-                            </picture>
-                            <br>
-                            <br>
-                            <h3>Head over to our trade site for trade only online orders, pricing &amp; offers.</h3>
-
-                        </section>
-                        <section>
-                            <a href="https://cpTDX.co.nz" class="ctaButton ctaInline">Login Now</a>
-                            <p>
-                                <strong>No Account? No Worries!</strong><br>
-                                <a href="https://cpTDX.co.nz/account/newuser">Click here to learn more &amp; apply online.</a>
-                            </p>
-                        </section>
-                    </div>
-                    <span data-src="/images/2022/trade-mbl.jpg"></span>
-                   
-                </div>
-            </section>
-        </div>
-    </article>
-
-
-    
+        </article>
 
 
 
 
 
 
+        <span class="content-spacer h10 "></span>
+        <span class="content-spacer h10 m"></span>
 
 
 
 
 
 
-
-
-
-
-
-
-        <!--CMSEnd-->
+        
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
     <div class="reviews">
 
-        <h3 class="balanced brandColor">Hear what our customers say:</h3>
+        <h2 class="balanced tdxColor centreMe upperCase vh3 fw500">What our customers say:</h2>
         <!-- AskNicely Testimonial Widget -->
         <div id="an_testimonials"></div>
         <script src="https://static.asknice.ly/js/testimonials.js"
@@ -1079,7 +966,7 @@ Great support
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $('#siteWideHeader').load("/html/!header.html");
+            $('#siteWideHeader').load("/html/!header-2026.html");
             $('#siteWideFooter').load("/html/!footer.html");
         });
     </script>
