@@ -1002,13 +1002,13 @@ div#masthead21 div.logo {
     }
 }  
 
-
+/* use this when brand bar added 
 div.dropDownPosition {
     position: absolute;
     z-index: 3500;
     width:100vw;
     top:-4.5em;
-}
+}*/
 
 
 
