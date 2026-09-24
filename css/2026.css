@@ -1614,6 +1614,12 @@ table.searchResult td.itemTitle a {
 table.zebra.searchResult tbody tr:nth-child(odd) {
    background-color: rgba(0,0,0,0.05);
 }
+@media (max-resolution: 1dppx) {
+  table.zebra.searchResult tbody tr:nth-child(odd) {
+    background-color: rgba(0,0,0,0.1);
+  }
+}
+
 table.zebra.searchResult tbody tr:nth-child(even) {
    background-color: white;
 }
