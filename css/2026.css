@@ -1623,10 +1623,14 @@ table.zebra.searchResult tbody tr:nth-child(odd) {
 table.zebra.searchResult tbody tr:nth-child(even) {
    background-color: white;
 }
-table.searchResult tbody td:first-of-type,
+table.searchResult tbody td:first-of-type {
+    white-space: nowrap;
+    border-radius: 8px 0px 0px 8px;
+}
+
 table.searchResult tbody td:last-of-type {
     white-space: nowrap;
-    border-radius: 8px;
+    border-radius: 0px 8px 8px 0px;
 }
 
 table.searchResult a.triggerShow,
