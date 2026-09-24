@@ -96,7 +96,9 @@
 .gradientBlackBottomRight {
     background: linear-gradient(to top left, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
 }
-
+.gradientBlackGreyFromLeft {
+    background: linear-gradient(to right, rgba(0,0,0,1.0), rgba(26,26,26,0.2) 50%);
+}
 
 /* new banners */
 .banner {
@@ -460,7 +462,9 @@
     max-height: 100%;
 }
 
-
+.tileBannerBg {
+    background-image: url(/images/2026/tile26.png);
+}
 
 
 
@@ -1079,17 +1083,30 @@ body.content2026 main {
 body.content2026 main article section {
     padding: 5vw 10vw;
     text-align: center;
+    
 }
 body.content2026 main article section.goLeft,
 .goLeft {
     text-align: left;
 }
 
+body.content2026 main article section.goRight,
+.goRight {
+    text-align: right;
+}
+
+
 @media screen and (min-width:1100px) {
     body.content2026 main article section {
-        padding: 5vw 20vw;
+        padding: 5vw 10vw;
+    }
+    body.content2026 main article section.loose {
+        padding: 5vw 15vw;
     }
     body.content2026 main article section > div.inset {
+        padding: 0 10vw;
+    }
+    .inset {
         padding: 0 10vw;
     }
     body.content2026 main article section.wrap-columns {
@@ -1116,11 +1133,13 @@ body.content2026 main article section.goLeft,
         flex: 0 1 28vw;
     }
 }
-@media screen and (min-width:1300px) {
+@media screen and (min-width:1500px) {
 
+body.content2026 main article section {
+        padding: 5vw 15vw;
+    }
 }
 @media screen and (min-width:1800px) {
-    
 }
 
 
@@ -1406,6 +1425,12 @@ body.content2026 input[type=radio] {
 .blackBg50 {
     background-color: rgba(0,0,0,0.5);
 }
+.blackBg10 {
+    background-color: rgba(0,0,0,0.1);
+}
+.blackBg05 {
+    background-color: rgba(0,0,0,0.05);
+}
 
 
 
@@ -1531,6 +1556,191 @@ div.thumbImage26 {
     column-gap: 0 !important;
 }
 
+.simplePanel {
+    padding: 2em 3em 2.5em 3em;
+}
+.simplePanel form {
+    margin-bottom: 0;
+}
+
+
+
+
+/* search result table parts */
+table.searchResult td {
+    font-weight:300 !important;
+    padding:20px 20px 20px 15px;
+}
+table.searchResult span {
+    font-size:0.75em;
+    
+}
+table.searchResult .highlight {
+    background-color: #ddd;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+table.searchResult td.sale {
+    color:red !important;
+}
+table.searchResult td {
+    border: none;
+}
+table.searchResult thead td {
+    background: none;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+table.searchResult thead td,
+table.searchResult td.inactive {
+    color: #999;
+}  
+table.searchResult a {
+    color: rgba(87,166,123,1.0);
+    font-weight: 600;
+}
+table.searchResult td.itemTitle a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+table.zebra.searchResult tbody tr:nth-child(odd) {
+   background-color: rgba(0,0,0,0.05);
+}
+table.zebra.searchResult tbody tr:nth-child(even) {
+   background-color: white;
+}
+table.searchResult tbody td:first-of-type,
+table.searchResult tbody td:last-of-type {
+    white-space: nowrap;
+    border-radius: 8px;
+}
+
+table.searchResult a.triggerShow,
+table.searchResult a.close {
+    font-size: 0.75em;
+    color: rgba(87,166,123,1.0) !important;
+    font-weight: 300 !important; 
+    text-decoration: underline !important;
+    margin-left: 15px;
+}
+
+table.searchResult div.showContent {
+    display: inline;
+}
+
+tr.partsTotal {
+    background-color: rgba(0, 0, 0, 0) !important;
+    text-align: right;
+}
+tr.partsTotal div {
+    padding: 1em 1.3em 0 1em;
+    display: inline-flex;
+    align-items: baseline;
+    column-gap: 3vw;
+    justify-content: flex-end;
+    border-top: 4px solid rgba(87,166,123,1.0);
+}
+tr.partsTotal div:last-of-type {
+    text-align: right;
+}
+tr.partsTotal h6 {
+    padding-right: 1em;
+}
+
+
+
+
+/* wishlist */
+div.wishlist {
+    display: inline-block;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    border: 2px solid white;
+    position: fixed;
+    bottom: 15px;
+    right:15px;
+    /*top:-25px;*/
+}
+div.wishlist span {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+div.wishlist a.ctaButton26 {
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    font-size: 1.2em;
+}
+
+
+/* misc parts search elements */
+.filterItem span {
+    background-color: rgba(0,0,0,0.05);
+    display: inline-block;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.filterItem span i {
+    font-size: 1em;
+    width: auto;
+}
+.filterSearch {
+    align-items: center;
+}
+.filterSearch {
+    display: flex;
+    flex:0 0 0 !important;    
+    column-gap: 0;
+}
+/*
+@media screen and (min-width: 1300px) {
+    .filterSearch > div:first-of-type {
+    flex-basis: 75%;
+}
+    .filterSearch > div:last-of-type {
+        flex-basis: 20%;
+    }
+}*/
+
+
+
+.column-list-down {
+  column-gap: 20px; 
+  list-style: none;    
+  padding-left: 20px;
+  margin: 0 !important;
+  overflow: visible;
+}
+
+.column-list-down li,
+.list-across li {
+  break-inside: avoid;    
+  margin-bottom: 1em;
+  font-size: 0.8em !important;
+  color: rgba(87,166,123,1.0);
+}
+.column-list-down li a,
+.list-across li a {
+  font-size: 1.2em;
+  color: rgba(87,166,123,1.0);
+  margin-right: 5px;
+  font-weight: 300;
+}
+@media screen and (min-width: 1100px) {
+    .column-list-down {
+        column-count: 3; 
+    }
+    .list-across {
+        display: flex;
+        column-gap: 40px; 
+        justify-content: center;
+    }
+}
 
 
 
@@ -1545,7 +1755,8 @@ div.thumbImage26 {
 .panel {
     border-radius: 8px;
 }
-.borderRadius10 {
+.borderRadius10,
+.simplePanel {
     border-radius: 10px;
 }
 .borderRadius12 {

@@ -90,11 +90,13 @@
     $('.showContent').hide();
     $('.showContent .close').click(function(){
         $('.showContent').hide();
+        $('.triggerShow').show();
         return false;
     });
 
     $('.triggerShow').click(function(){
-        $('.showContent').show();
+        $(this).closest("div").find(".showContent").show();
+        $(this).hide();
         return false;
     });
 
