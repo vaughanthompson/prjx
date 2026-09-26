@@ -1329,6 +1329,12 @@ div.forms > fieldset:last-of-type {
     border-bottom: 1px solid #cccccc;
     padding-bottom: 2em;
 }
+@media screen and (max-width: 1100px) {
+    div.forms > fieldset:last-of-type {
+        border-bottom: none;
+    }
+}
+
 
 select {
     min-width: 50px;
