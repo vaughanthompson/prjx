@@ -1724,7 +1724,24 @@ div.wishlist a.ctaButton26 {
     display: block;
     font-size: 1.2em;
 }
+@media screen and (max-width: 1100px) {
+    div.wishlist {
+        display: inline-block;
+        padding: 15px 0 25px 0;
+        border-radius: 20px 20px 0 0 ;
+        border: none;
+        bottom: 0;
+        right:0;
+        z-index: 1000;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+        /*top:-25px;*/
+    }
+    div.wishlist a.ctaButton26 {
+        margin: 10px 25px 10px 25px;
 
+    }
+}
 
 /* misc parts search elements */
 .filterItem span {
