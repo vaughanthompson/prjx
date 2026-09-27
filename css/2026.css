@@ -1670,8 +1670,25 @@ tr.partsTotal h6 {
     padding-right: 1em;
 }
 @media screen and (max-width: 1100px) {
+    tr.partsTotal {
+        text-align: left;
+    }
+    tr.partsTotal td {
+        padding: 0 !important;
+    }
+    tr.partsTotal {
+        border-bottom: none !important;
+    }
+    tr.partsTotal div {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: flex-start;
+        border-top: 4px solid rgba(87,166,123,1.0);
+    }
     table.searchResult {
         margin-top: 5vh;
+        margin-bottom: 5vh;
     }
     table.searchResult thead {
         display: none;
@@ -1763,6 +1780,22 @@ div.wishlist a.ctaButton26 {
     flex:0 0 0 !important;    
     column-gap: 0;
 }
+@media screen and (max-width: 1100px) {
+    .filterSearch {
+        flex-direction: column;   
+        row-gap: 3vh;
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
+    .filterItem {
+        margin-top: 0.5em;
+        text-align: center;
+    }
+    .filterItem strong {
+        display: block;
+        margin-bottom: 1em;
+    }
+}
 /*
 @media screen and (min-width: 1300px) {
     .filterSearch > div:first-of-type {
@@ -1796,6 +1829,14 @@ div.wishlist a.ctaButton26 {
   color: rgba(87,166,123,1.0);
   margin-right: 5px;
   font-weight: 300;
+}
+@media screen and (max-width: 1100px) {
+    .column-list-down {
+        padding-left: 0;
+    }
+    .list-across {
+        text-align: left;
+    }
 }
 @media screen and (min-width: 1100px) {
     .column-list-down {
