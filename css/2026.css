@@ -1730,7 +1730,7 @@ div.wishlist {
     z-index: 10;
     /*top:-25px;*/
 }
-div.wishlist span {
+div.wishlist > span {
     font-size: 1.2em;
     margin-right: 10px;
 }
