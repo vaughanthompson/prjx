@@ -2502,7 +2502,8 @@ div.tdxintroInner section.cols.two div {
  .tdxintroContain {
     background-color: #fff;
 }
- .tdxintroContain.dark {
+ .tdxintroContain.dark,
+ .dark {
     background-color: #000;
     color: #fff;
 }
@@ -3051,15 +3052,22 @@ span.pictureLink {
         margin-bottom: 5vh;
         margin-top: 5vh;
     }
-    
+    .simpleFlex3,
+    .simpleFlex4  {
+        column-gap: 2vw;
+        justify-content: space-between;
+    }  
     .simpleFlex > * {
         flex: 0 1 30%;
     }
     .simpleFlex2 > * {
         flex: 0 1 48%;
     }  
+    .simpleFlex3 > * {
+        flex: 0 1 28%;
+    }  
     .simpleFlex4 > * {
-        flex: 0 1 22%;
+        flex: 0 1 20%;
     }    
     .simpleFlex5 > * {
         flex: 0 1 17%;

@@ -1142,6 +1142,14 @@ i.tiny {
     width:auto;
     height: auto;
 }
+.tinyInlineIcon {
+    height: 20px; 
+    width: auto; 
+    display: inline; 
+    position: relative;
+    margin-bottom: -5px;
+    margin-right: 5px;
+}
 p.icon i.round,
 p.icon i.brand-bg {
     width:80px;

@@ -2994,7 +2994,7 @@ div.horizontalForm {
     div.horizontalForm fieldset {
         border:none !important;
     }
-    div.horizontalForm div.forms {
+    div.horizontalForm:not(.singleCol) div.forms {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;        
@@ -3980,11 +3980,30 @@ label.fancyLabel {
     font-weight: bold;
     transition: 0.5s;
 }
+label.fancyLabel.tdx {
+    border:2px solid white;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px 8px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+    margin: 2px;
+}
 
 label.fancyLabel:hover {
-    border-color: white;
-    color: white;
+    border-color: rgba(87,166,123,1.0);
+    color: rgba(87,166,123,1.0);
     cursor: pointer;
+}
+
+@media screen and (max-width:1100px) {
+    label.fancyLabel.tdx {
+        display: block;
+        text-align: left;
+    }
 }
 
 
