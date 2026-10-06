@@ -1992,6 +1992,17 @@ div.wishlist a.ctaButton26 {
 
 
 /* rotobec clearance sale */
+.contentReveal > div {
+    position: relative;
+}
+a.closeContent {
+    position: absolute;
+    right:10px;
+    top: -60px;
+}
+a.closeContent > i {
+    color: rgba(87,166,123,1.0) !important;
+}
 
 .fadeOut {
     opacity: 0.15;

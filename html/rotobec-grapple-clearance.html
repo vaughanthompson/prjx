@@ -679,6 +679,11 @@
 
             <section class="contentReveal noPadTop noPadBottom wider content1">
                 <div><!-- 125CHD COMBINATION GRAPPLE -->
+
+                    <a href="#" class="closeContent">
+                        <i class="icon icon-ico-close" ></i>
+                    </a>
+
                     <hr class="thickLine">
                     <div class="simpleFlex simpleFlex5">
                         <div>
@@ -740,6 +745,10 @@
 
             <section class="contentReveal noPadTop noPadBottom wider content2">
                 <div><!-- 4560SHD LOG GRAPPLE -->
+                    <a href="#" class="closeContent">
+                        <i class="icon icon-ico-close" ></i>
+                    </a>
+
                     <hr class="thickLine">
                     <div class="simpleFlex simpleFlex5">
                         <div>
@@ -800,6 +809,10 @@
 
             <section class="contentReveal noPadTop noPadBottom wider content3">
                 <div><!-- 6065SHD LOG GRAPPLE -->
+                    <a href="#" class="closeContent">
+                        <i class="icon icon-ico-close" ></i>
+                    </a>
+
                     <hr class="thickLine">
                     <div class="simpleFlex simpleFlex5">
                         <div>
@@ -861,6 +874,10 @@
 
             <section class="contentReveal noPadTop noPadBottom wider content4">
                 <div><!-- F520HD BUNCHING GRAPPLE -->
+                    <a href="#" class="closeContent">
+                        <i class="icon icon-ico-close" ></i>
+                    </a>
+
                     <hr class="thickLine">
                     <div class="simpleFlex simpleFlex5">
                         <div>
@@ -1010,6 +1027,9 @@
 
             <section class="contentReveal noPadTop noPadBottom wider content5">
                 <div><!-- PC018R MINI PC RAKE -->
+                    <a href="#" class="closeContent">
+                        <i class="icon icon-ico-close" ></i>
+                    </a>
                     <hr class="thickLine">
                     <div class="simpleFlex simpleFlex5">
                         <div>
@@ -1069,6 +1089,9 @@
 
             <section class="contentReveal noPadTop noPadBottom wider content6">
                 <div><!-- RPA2030T WASTE GRAPPLE -->
+                    <a href="#" class="closeContent">
+                        <i class="icon icon-ico-close" ></i>
+                    </a>
                     <hr class="thickLine">
                     <div class="simpleFlex simpleFlex3">
                         <div>
@@ -1121,6 +1144,9 @@
 
             <section class="contentReveal noPadTop noPadBottom wider content7">
                 <div><!-- RPA3045T WASTE GRAPPLE -->
+                    <a href="#" class="closeContent">
+                        <i class="icon icon-ico-close" ></i>
+                    </a>
                     <hr class="thickLine">
                     <div class="simpleFlex simpleFlex3">
                         <div>
@@ -1174,6 +1200,9 @@
 
             <section class="contentReveal noPadTop noPadBottom wider content8">
                 <div><!-- RPA3045D32 DEMOLITION GRAPPLE -->
+                    <a href="#" class="closeContent">
+                        <i class="icon icon-ico-close" ></i>
+                    </a>
                     <hr class="thickLine">
                     <div class="simpleFlex simpleFlex5">
                         <div>
@@ -1304,12 +1333,14 @@
                 <div class=" balanced">    
                     
                     <span class="content-spacer h5 d"></span>
-                    <h2 class="brandColor">Interested in this offer?</h2>
-                    <p>Fill out the form below and we'll be in touch. Not sure which product/offer is the right fit for your needs? No problem- simply leave the options blank and we'll help you with your selection.</p>
-
-                    <p>T&Cs: Finance offer based on 0% deposit, GST repaid in the loan in month 3, financed over a 60 month term. Available to business customers only. TDX Ltd reserves the right to change, extend or withdraw an offer at any time. Subject to final credit approval. While stocks last.</p>
+                    
 
                     <div class="horizontalForm singleCol noPadTop">
+                        <h2 class="brandColor">Interested in this offer?</h2>
+                        
+                        <p>Fill out the form below and we'll be in touch. Not sure which product/offer is the right fit for your needs? No problem- simply leave the options blank or select "Not Sure" and we'll help you with your selection.</p>
+
+                        <p>* T&Cs: Finance offer based on 0% deposit, GST repaid in the loan in month 3, financed over a 60 month term. Available to business customers only. TDX Ltd reserves the right to change, extend or withdraw an offer at any time. Subject to final credit approval. While stocks last.</p>
                         <form method="post" novalidate="novalidate">
                             <div class="content" id="enquiryContent">
                                 <div class="forms">
@@ -1336,6 +1367,8 @@
                                         <label for="7" class="fancyLabel tdx"><input type="checkbox" value="" id="7">&nbsp;PA3045T</label> 
 
                                         <label for="8" class="fancyLabel tdx"><input type="checkbox" value="" id="8">&nbsp;PA3045D32</label> 
+
+                                        <label for="9" class="fancyLabel tdx"><input type="checkbox" value="" id="9">&nbsp;Not Sure</label> 
                                         
                                         <span class="content-spacer h10 m"></span>
                                         
@@ -1452,6 +1485,7 @@
 
             $('.closeContent').click(function(){
                 $('.contentReveal').hide();
+                $('.simpleRowItem').removeClass('fadeOut');
                 return false;
             });
             $('.closeMContent').click(function(){
