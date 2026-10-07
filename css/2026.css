@@ -867,6 +867,9 @@ body.volvo26 div.g-recaptcha > div iframe {
 .brandLozenge.donaldson > span {
     background-image: url(/images/icons/icons2022/brand-donaldson-REV.svg);
 }
+.brandLozenge.rotobec > span {
+    background-image: url(/images/2026/02-10-rotobec-grapple-clearance/rotobec.svg);
+}
 .arrowLozenge {
     display: block;
     width: 100%;
