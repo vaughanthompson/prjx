@@ -2922,7 +2922,11 @@ div.horizontalForm.singleCol {
 }
 
 
-
+div.horizontalForm input[type=checkbox],
+div.horizontalForm input[type=radio] {
+    width: 18px; 
+    height: 18px;
+}
 
 div.horizontalForm .validation-summary-valid ul {
         margin: 0;
