@@ -2522,7 +2522,7 @@ div.tdxintroInner section.cols.two div {
 .tdxintroContain.baseLayer {
     z-index: 0;
     position: absolute;
-    width: 100vw;
+    width: 100%;
 }
 .tdxintroContain {
     z-index: 1;
